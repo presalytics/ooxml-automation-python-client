@@ -28,15 +28,15 @@ class TestLineEndSizesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_line_end_sizes_get(self):
-        """Test case for line_end_sizes_get
+    def test_o_a_line_end_sizes_get(self):
+        """Test case for o_a_line_end_sizes_get
 
         LineEndSizes: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_line_end_sizes_get_id(self):
-        """Test case for line_end_sizes_get_id
+    def test_o_a_line_end_sizes_get_id(self):
+        """Test case for o_a_line_end_sizes_get_id
 
         LineEndSizes: Get by Id  # noqa: E501
         """

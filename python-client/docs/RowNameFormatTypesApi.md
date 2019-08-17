@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**row_name_format_types_get**](RowNameFormatTypesApi.md#row_name_format_types_get) | **GET** /charts/RowNameFormatTypes | RowNameFormatTypes: List All Possible Types
-[**row_name_format_types_get_id**](RowNameFormatTypesApi.md#row_name_format_types_get_id) | **GET** /charts/RowNameFormatTypes/{id} | RowNameFormatTypes: Get by Id
+[**o_a_row_name_format_types_get**](RowNameFormatTypesApi.md#o_a_row_name_format_types_get) | **GET** /charts/RowNameFormatTypes | RowNameFormatTypes: List All Possible Types
+[**o_a_row_name_format_types_get_id**](RowNameFormatTypesApi.md#o_a_row_name_format_types_get_id) | **GET** /charts/RowNameFormatTypes/{id} | RowNameFormatTypes: Get by Id
 
 
-# **row_name_format_types_get**
-> list[ChartRowNameFormatTypes] row_name_format_types_get()
+# **o_a_row_name_format_types_get**
+> list[ChartRowNameFormatTypes] o_a_row_name_format_types_get()
 
 RowNameFormatTypes: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.RowNameFormatTypesApi()
 
 try:
     # RowNameFormatTypes: List All Possible Types
-    api_response = api_instance.row_name_format_types_get()
+    api_response = api_instance.o_a_row_name_format_types_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RowNameFormatTypesApi->row_name_format_types_get: %s\n" % e)
+    print("Exception when calling RowNameFormatTypesApi->o_a_row_name_format_types_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **row_name_format_types_get_id**
-> ChartRowNameFormatTypes row_name_format_types_get_id(id)
+# **o_a_row_name_format_types_get_id**
+> ChartRowNameFormatTypes o_a_row_name_format_types_get_id(id)
 
 RowNameFormatTypes: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the RowNameFormatTypes object
 
 try:
     # RowNameFormatTypes: Get by Id
-    api_response = api_instance.row_name_format_types_get_id(id)
+    api_response = api_instance.o_a_row_name_format_types_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RowNameFormatTypesApi->row_name_format_types_get_id: %s\n" % e)
+    print("Exception when calling RowNameFormatTypesApi->o_a_row_name_format_types_get_id: %s\n" % e)
 ```
 
 ### Parameters

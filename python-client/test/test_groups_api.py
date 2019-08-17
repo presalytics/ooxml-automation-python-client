@@ -28,8 +28,8 @@ class TestGroupsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_groups_get_id(self):
-        """Test case for groups_get_id
+    def test_o_a_groups_get_id(self):
+        """Test case for o_a_groups_get_id
 
         Groups: Get by Id  # noqa: E501
         """

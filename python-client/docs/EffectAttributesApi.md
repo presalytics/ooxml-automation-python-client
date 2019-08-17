@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**effect_attributes_get_id**](EffectAttributesApi.md#effect_attributes_get_id) | **GET** /shared/EffectAttributes/{id} | EffectAttributes: Get by Id
-[**effect_attributes_put_id**](EffectAttributesApi.md#effect_attributes_put_id) | **PUT** /shared/EffectAttributes/{id} | EffectAttributes: Modify Values
+[**o_a_effect_attributes_get_id**](EffectAttributesApi.md#o_a_effect_attributes_get_id) | **GET** /shared/EffectAttributes/{id} | EffectAttributes: Get by Id
+[**o_a_effect_attributes_put_id**](EffectAttributesApi.md#o_a_effect_attributes_put_id) | **PUT** /shared/EffectAttributes/{id} | EffectAttributes: Modify Values
 
 
-# **effect_attributes_get_id**
-> SharedEffectAttributes effect_attributes_get_id(id)
+# **o_a_effect_attributes_get_id**
+> SharedEffectAttributes o_a_effect_attributes_get_id(id)
 
 EffectAttributes: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the EffectAttributes object
 
 try:
     # EffectAttributes: Get by Id
-    api_response = api_instance.effect_attributes_get_id(id)
+    api_response = api_instance.o_a_effect_attributes_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling EffectAttributesApi->effect_attributes_get_id: %s\n" % e)
+    print("Exception when calling EffectAttributesApi->o_a_effect_attributes_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **effect_attributes_put_id**
-> effect_attributes_put_id(id, shared_effect_attributes=shared_effect_attributes)
+# **o_a_effect_attributes_put_id**
+> o_a_effect_attributes_put_id(id, shared_effect_attributes=shared_effect_attributes)
 
 EffectAttributes: Modify Values
 
@@ -86,9 +86,9 @@ shared_effect_attributes = presalytics_ooxml_automation.SharedEffectAttributes()
 
 try:
     # EffectAttributes: Modify Values
-    api_instance.effect_attributes_put_id(id, shared_effect_attributes=shared_effect_attributes)
+    api_instance.o_a_effect_attributes_put_id(id, shared_effect_attributes=shared_effect_attributes)
 except ApiException as e:
-    print("Exception when calling EffectAttributesApi->effect_attributes_put_id: %s\n" % e)
+    print("Exception when calling EffectAttributesApi->o_a_effect_attributes_put_id: %s\n" % e)
 ```
 
 ### Parameters

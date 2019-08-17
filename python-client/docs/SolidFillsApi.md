@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**solid_fills_get_id**](SolidFillsApi.md#solid_fills_get_id) | **GET** /shared/SolidFills/{id} | SolidFills: Get by Id
-[**solid_fills_put_id**](SolidFillsApi.md#solid_fills_put_id) | **PUT** /shared/SolidFills/{id} | SolidFills: Modify Values
+[**o_a_solid_fills_get_id**](SolidFillsApi.md#o_a_solid_fills_get_id) | **GET** /shared/SolidFills/{id} | SolidFills: Get by Id
+[**o_a_solid_fills_put_id**](SolidFillsApi.md#o_a_solid_fills_put_id) | **PUT** /shared/SolidFills/{id} | SolidFills: Modify Values
 
 
-# **solid_fills_get_id**
-> SharedSolidFills solid_fills_get_id(id)
+# **o_a_solid_fills_get_id**
+> SharedSolidFills o_a_solid_fills_get_id(id)
 
 SolidFills: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the SolidFills object
 
 try:
     # SolidFills: Get by Id
-    api_response = api_instance.solid_fills_get_id(id)
+    api_response = api_instance.o_a_solid_fills_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling SolidFillsApi->solid_fills_get_id: %s\n" % e)
+    print("Exception when calling SolidFillsApi->o_a_solid_fills_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **solid_fills_put_id**
-> solid_fills_put_id(id, shared_solid_fills=shared_solid_fills)
+# **o_a_solid_fills_put_id**
+> o_a_solid_fills_put_id(id, shared_solid_fills=shared_solid_fills)
 
 SolidFills: Modify Values
 
@@ -86,9 +86,9 @@ shared_solid_fills = presalytics_ooxml_automation.SharedSolidFills() # SharedSol
 
 try:
     # SolidFills: Modify Values
-    api_instance.solid_fills_put_id(id, shared_solid_fills=shared_solid_fills)
+    api_instance.o_a_solid_fills_put_id(id, shared_solid_fills=shared_solid_fills)
 except ApiException as e:
-    print("Exception when calling SolidFillsApi->solid_fills_put_id: %s\n" % e)
+    print("Exception when calling SolidFillsApi->o_a_solid_fills_put_id: %s\n" % e)
 ```
 
 ### Parameters

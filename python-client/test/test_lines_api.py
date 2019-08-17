@@ -28,15 +28,15 @@ class TestLinesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_lines_get_id(self):
-        """Test case for lines_get_id
+    def test_o_a_lines_get_id(self):
+        """Test case for o_a_lines_get_id
 
         Lines: Get by Id  # noqa: E501
         """
         pass
 
-    def test_lines_put_id(self):
-        """Test case for lines_put_id
+    def test_o_a_lines_put_id(self):
+        """Test case for o_a_lines_put_id
 
         Lines: Modify Values  # noqa: E501
         """

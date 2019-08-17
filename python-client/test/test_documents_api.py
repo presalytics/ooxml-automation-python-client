@@ -28,22 +28,22 @@ class TestDocumentsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_documents_download_document_id(self):
-        """Test case for documents_download_document_id
+    def test_o_a_documents_download_document_id(self):
+        """Test case for o_a_documents_download_document_id
 
         Link to download a user's document. Can only be accessed by the users who owns the document  # noqa: E501
         """
         pass
 
-    def test_documents_get_id(self):
-        """Test case for documents_get_id
+    def test_o_a_documents_get_id(self):
+        """Test case for o_a_documents_get_id
 
         Get document information by document id  # noqa: E501
         """
         pass
 
-    def test_documents_post(self):
-        """Test case for documents_post
+    def test_o_a_documents_post(self):
+        """Test case for o_a_documents_post
 
         Upload a file into the docAPI, returns a document ids  # noqa: E501
         """

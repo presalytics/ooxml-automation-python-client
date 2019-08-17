@@ -28,8 +28,8 @@ class TestChartDataApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_chart_data_get_id(self):
-        """Test case for chart_data_get_id
+    def test_o_a_chart_data_get_id(self):
+        """Test case for o_a_chart_data_get_id
 
         ChartData: Get by Id  # noqa: E501
         """

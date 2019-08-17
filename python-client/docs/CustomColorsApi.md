@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**custom_colors_get_id**](CustomColorsApi.md#custom_colors_get_id) | **GET** /themes/CustomColors/{id} | CustomColors: Get by Id
+[**o_a_custom_colors_get_id**](CustomColorsApi.md#o_a_custom_colors_get_id) | **GET** /themes/CustomColors/{id} | CustomColors: Get by Id
 
 
-# **custom_colors_get_id**
-> ThemeCustomColors custom_colors_get_id(id)
+# **o_a_custom_colors_get_id**
+> ThemeCustomColors o_a_custom_colors_get_id(id)
 
 CustomColors: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the CustomColors object
 
 try:
     # CustomColors: Get by Id
-    api_response = api_instance.custom_colors_get_id(id)
+    api_response = api_instance.o_a_custom_colors_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CustomColorsApi->custom_colors_get_id: %s\n" % e)
+    print("Exception when calling CustomColorsApi->o_a_custom_colors_get_id: %s\n" % e)
 ```
 
 ### Parameters

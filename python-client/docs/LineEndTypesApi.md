@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**line_end_types_get**](LineEndTypesApi.md#line_end_types_get) | **GET** /shared/LineEndTypes | LineEndTypes: List All Possible Types
-[**line_end_types_get_id**](LineEndTypesApi.md#line_end_types_get_id) | **GET** /shared/LineEndTypes/{id} | LineEndTypes: Get by Id
+[**o_a_line_end_types_get**](LineEndTypesApi.md#o_a_line_end_types_get) | **GET** /shared/LineEndTypes | LineEndTypes: List All Possible Types
+[**o_a_line_end_types_get_id**](LineEndTypesApi.md#o_a_line_end_types_get_id) | **GET** /shared/LineEndTypes/{id} | LineEndTypes: Get by Id
 
 
-# **line_end_types_get**
-> list[SharedLineEndTypes] line_end_types_get()
+# **o_a_line_end_types_get**
+> list[SharedLineEndTypes] o_a_line_end_types_get()
 
 LineEndTypes: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.LineEndTypesApi()
 
 try:
     # LineEndTypes: List All Possible Types
-    api_response = api_instance.line_end_types_get()
+    api_response = api_instance.o_a_line_end_types_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling LineEndTypesApi->line_end_types_get: %s\n" % e)
+    print("Exception when calling LineEndTypesApi->o_a_line_end_types_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **line_end_types_get_id**
-> SharedLineEndTypes line_end_types_get_id(id)
+# **o_a_line_end_types_get_id**
+> SharedLineEndTypes o_a_line_end_types_get_id(id)
 
 LineEndTypes: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the LineEndTypes object
 
 try:
     # LineEndTypes: Get by Id
-    api_response = api_instance.line_end_types_get_id(id)
+    api_response = api_instance.o_a_line_end_types_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling LineEndTypesApi->line_end_types_get_id: %s\n" % e)
+    print("Exception when calling LineEndTypesApi->o_a_line_end_types_get_id: %s\n" % e)
 ```
 
 ### Parameters

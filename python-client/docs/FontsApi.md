@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fonts_get_id**](FontsApi.md#fonts_get_id) | **GET** /themes/Fonts/{id} | Fonts: Get by Id
+[**o_a_fonts_get_id**](FontsApi.md#o_a_fonts_get_id) | **GET** /themes/Fonts/{id} | Fonts: Get by Id
 
 
-# **fonts_get_id**
-> ThemeFonts fonts_get_id(id)
+# **o_a_fonts_get_id**
+> ThemeFonts o_a_fonts_get_id(id)
 
 Fonts: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the Fonts object
 
 try:
     # Fonts: Get by Id
-    api_response = api_instance.fonts_get_id(id)
+    api_response = api_instance.o_a_fonts_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling FontsApi->fonts_get_id: %s\n" % e)
+    print("Exception when calling FontsApi->o_a_fonts_get_id: %s\n" % e)
 ```
 
 ### Parameters

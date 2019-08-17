@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**lines_get_id**](LinesApi.md#lines_get_id) | **GET** /shared/Lines/{id} | Lines: Get by Id
-[**lines_put_id**](LinesApi.md#lines_put_id) | **PUT** /shared/Lines/{id} | Lines: Modify Values
+[**o_a_lines_get_id**](LinesApi.md#o_a_lines_get_id) | **GET** /shared/Lines/{id} | Lines: Get by Id
+[**o_a_lines_put_id**](LinesApi.md#o_a_lines_put_id) | **PUT** /shared/Lines/{id} | Lines: Modify Values
 
 
-# **lines_get_id**
-> SharedLines lines_get_id(id)
+# **o_a_lines_get_id**
+> SharedLines o_a_lines_get_id(id)
 
 Lines: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the Lines object
 
 try:
     # Lines: Get by Id
-    api_response = api_instance.lines_get_id(id)
+    api_response = api_instance.o_a_lines_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling LinesApi->lines_get_id: %s\n" % e)
+    print("Exception when calling LinesApi->o_a_lines_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **lines_put_id**
-> lines_put_id(id, shared_lines=shared_lines)
+# **o_a_lines_put_id**
+> o_a_lines_put_id(id, shared_lines=shared_lines)
 
 Lines: Modify Values
 
@@ -86,9 +86,9 @@ shared_lines = presalytics_ooxml_automation.SharedLines() # SharedLines |  (opti
 
 try:
     # Lines: Modify Values
-    api_instance.lines_put_id(id, shared_lines=shared_lines)
+    api_instance.o_a_lines_put_id(id, shared_lines=shared_lines)
 except ApiException as e:
-    print("Exception when calling LinesApi->lines_put_id: %s\n" % e)
+    print("Exception when calling LinesApi->o_a_lines_put_id: %s\n" % e)
 ```
 
 ### Parameters

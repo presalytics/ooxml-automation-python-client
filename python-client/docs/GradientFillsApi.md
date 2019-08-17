@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**gradient_fills_get_id**](GradientFillsApi.md#gradient_fills_get_id) | **GET** /shared/GradientFills/{id} | GradientFills: Get by Id
-[**gradient_fills_put_id**](GradientFillsApi.md#gradient_fills_put_id) | **PUT** /shared/GradientFills/{id} | GradientFills: Modify Values
+[**o_a_gradient_fills_get_id**](GradientFillsApi.md#o_a_gradient_fills_get_id) | **GET** /shared/GradientFills/{id} | GradientFills: Get by Id
+[**o_a_gradient_fills_put_id**](GradientFillsApi.md#o_a_gradient_fills_put_id) | **PUT** /shared/GradientFills/{id} | GradientFills: Modify Values
 
 
-# **gradient_fills_get_id**
-> SharedGradientFills gradient_fills_get_id(id)
+# **o_a_gradient_fills_get_id**
+> SharedGradientFills o_a_gradient_fills_get_id(id)
 
 GradientFills: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the GradientFills object
 
 try:
     # GradientFills: Get by Id
-    api_response = api_instance.gradient_fills_get_id(id)
+    api_response = api_instance.o_a_gradient_fills_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GradientFillsApi->gradient_fills_get_id: %s\n" % e)
+    print("Exception when calling GradientFillsApi->o_a_gradient_fills_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **gradient_fills_put_id**
-> gradient_fills_put_id(id, shared_gradient_fills=shared_gradient_fills)
+# **o_a_gradient_fills_put_id**
+> o_a_gradient_fills_put_id(id, shared_gradient_fills=shared_gradient_fills)
 
 GradientFills: Modify Values
 
@@ -86,9 +86,9 @@ shared_gradient_fills = presalytics_ooxml_automation.SharedGradientFills() # Sha
 
 try:
     # GradientFills: Modify Values
-    api_instance.gradient_fills_put_id(id, shared_gradient_fills=shared_gradient_fills)
+    api_instance.o_a_gradient_fills_put_id(id, shared_gradient_fills=shared_gradient_fills)
 except ApiException as e:
-    print("Exception when calling GradientFillsApi->gradient_fills_put_id: %s\n" % e)
+    print("Exception when calling GradientFillsApi->o_a_gradient_fills_put_id: %s\n" % e)
 ```
 
 ### Parameters

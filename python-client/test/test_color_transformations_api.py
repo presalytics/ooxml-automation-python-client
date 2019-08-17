@@ -28,8 +28,8 @@ class TestColorTransformationsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_color_transformations_get_id(self):
-        """Test case for color_transformations_get_id
+    def test_o_a_color_transformations_get_id(self):
+        """Test case for o_a_color_transformations_get_id
 
         ColorTransformations: Get by Id  # noqa: E501
         """

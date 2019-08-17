@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**color_maps_get_id**](ColorMapsApi.md#color_maps_get_id) | **GET** /slides/ColorMaps/{id} | ColorMaps: Get by Id
+[**o_a_color_maps_get_id**](ColorMapsApi.md#o_a_color_maps_get_id) | **GET** /slides/ColorMaps/{id} | ColorMaps: Get by Id
 
 
-# **color_maps_get_id**
-> SlideColorMaps color_maps_get_id(id)
+# **o_a_color_maps_get_id**
+> SlideColorMaps o_a_color_maps_get_id(id)
 
 ColorMaps: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the ColorMaps object
 
 try:
     # ColorMaps: Get by Id
-    api_response = api_instance.color_maps_get_id(id)
+    api_response = api_instance.o_a_color_maps_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ColorMapsApi->color_maps_get_id: %s\n" % e)
+    print("Exception when calling ColorMapsApi->o_a_color_maps_get_id: %s\n" % e)
 ```
 
 ### Parameters

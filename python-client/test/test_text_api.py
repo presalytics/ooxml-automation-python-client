@@ -28,15 +28,15 @@ class TestTextApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_text_get_id(self):
-        """Test case for text_get_id
+    def test_o_a_text_get_id(self):
+        """Test case for o_a_text_get_id
 
         Text: Get by Id  # noqa: E501
         """
         pass
 
-    def test_text_put_id(self):
-        """Test case for text_put_id
+    def test_o_a_text_put_id(self):
+        """Test case for o_a_text_put_id
 
         Text: Modify Values  # noqa: E501
         """

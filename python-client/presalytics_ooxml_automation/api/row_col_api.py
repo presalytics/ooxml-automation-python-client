@@ -36,13 +36,13 @@ class RowColApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def row_col_get(self, **kwargs):  # noqa: E501
+    def o_a_row_col_get(self, **kwargs):  # noqa: E501
         """RowCol: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the RowCol type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.row_col_get(async_req=True)
+        >>> thread = api.o_a_row_col_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -58,15 +58,15 @@ class RowColApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.row_col_get_with_http_info(**kwargs)  # noqa: E501
+        return self.o_a_row_col_get_with_http_info(**kwargs)  # noqa: E501
 
-    def row_col_get_with_http_info(self, **kwargs):  # noqa: E501
+    def o_a_row_col_get_with_http_info(self, **kwargs):  # noqa: E501
         """RowCol: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the RowCol type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.row_col_get_with_http_info(async_req=True)
+        >>> thread = api.o_a_row_col_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -96,7 +96,7 @@ class RowColApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method row_col_get" % key
+                    " to method o_a_row_col_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -136,13 +136,13 @@ class RowColApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def row_col_get_id(self, id, **kwargs):  # noqa: E501
+    def o_a_row_col_get_id(self, id, **kwargs):  # noqa: E501
         """RowCol: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowCol object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.row_col_get_id(id, async_req=True)
+        >>> thread = api.o_a_row_col_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -159,15 +159,15 @@ class RowColApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.row_col_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.o_a_row_col_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def row_col_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def o_a_row_col_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """RowCol: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowCol object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.row_col_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.o_a_row_col_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -198,14 +198,14 @@ class RowColApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method row_col_get_id" % key
+                    " to method o_a_row_col_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `row_col_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `o_a_row_col_get_id`")  # noqa: E501
 
         collection_formats = {}
 

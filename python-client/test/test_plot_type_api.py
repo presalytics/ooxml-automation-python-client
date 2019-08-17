@@ -28,15 +28,15 @@ class TestPlotTypeApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_plot_type_get(self):
-        """Test case for plot_type_get
+    def test_o_a_plot_type_get(self):
+        """Test case for o_a_plot_type_get
 
         PlotType: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_plot_type_get_id(self):
-        """Test case for plot_type_get_id
+    def test_o_a_plot_type_get_id(self):
+        """Test case for o_a_plot_type_get_id
 
         PlotType: Get by Id  # noqa: E501
         """

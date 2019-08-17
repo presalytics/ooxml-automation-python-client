@@ -28,15 +28,15 @@ class TestFillTypesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_fill_types_get(self):
-        """Test case for fill_types_get
+    def test_o_a_fill_types_get(self):
+        """Test case for o_a_fill_types_get
 
         FillTypes: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_fill_types_get_id(self):
-        """Test case for fill_types_get_id
+    def test_o_a_fill_types_get_id(self):
+        """Test case for o_a_fill_types_get_id
 
         FillTypes: Get by Id  # noqa: E501
         """

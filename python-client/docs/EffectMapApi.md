@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**effect_map_get_id**](EffectMapApi.md#effect_map_get_id) | **GET** /themes/EffectMap/{id} | EffectMap: Get by Id
+[**o_a_effect_map_get_id**](EffectMapApi.md#o_a_effect_map_get_id) | **GET** /themes/EffectMap/{id} | EffectMap: Get by Id
 
 
-# **effect_map_get_id**
-> ThemeEffectMap effect_map_get_id(id)
+# **o_a_effect_map_get_id**
+> ThemeEffectMap o_a_effect_map_get_id(id)
 
 EffectMap: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the EffectMap object
 
 try:
     # EffectMap: Get by Id
-    api_response = api_instance.effect_map_get_id(id)
+    api_response = api_instance.o_a_effect_map_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling EffectMapApi->effect_map_get_id: %s\n" % e)
+    print("Exception when calling EffectMapApi->o_a_effect_map_get_id: %s\n" % e)
 ```
 
 ### Parameters

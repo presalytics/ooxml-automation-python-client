@@ -28,15 +28,15 @@ class TestRowNameFormatTypesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_row_name_format_types_get(self):
-        """Test case for row_name_format_types_get
+    def test_o_a_row_name_format_types_get(self):
+        """Test case for o_a_row_name_format_types_get
 
         RowNameFormatTypes: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_row_name_format_types_get_id(self):
-        """Test case for row_name_format_types_get_id
+    def test_o_a_row_name_format_types_get_id(self):
+        """Test case for o_a_row_name_format_types_get_id
 
         RowNameFormatTypes: Get by Id  # noqa: E501
         """

@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**plot_type_get**](PlotTypeApi.md#plot_type_get) | **GET** /charts/PlotType | PlotType: List All Possible Types
-[**plot_type_get_id**](PlotTypeApi.md#plot_type_get_id) | **GET** /charts/PlotType/{id} | PlotType: Get by Id
+[**o_a_plot_type_get**](PlotTypeApi.md#o_a_plot_type_get) | **GET** /charts/PlotType | PlotType: List All Possible Types
+[**o_a_plot_type_get_id**](PlotTypeApi.md#o_a_plot_type_get_id) | **GET** /charts/PlotType/{id} | PlotType: Get by Id
 
 
-# **plot_type_get**
-> list[ChartPlotType] plot_type_get()
+# **o_a_plot_type_get**
+> list[ChartPlotType] o_a_plot_type_get()
 
 PlotType: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.PlotTypeApi()
 
 try:
     # PlotType: List All Possible Types
-    api_response = api_instance.plot_type_get()
+    api_response = api_instance.o_a_plot_type_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PlotTypeApi->plot_type_get: %s\n" % e)
+    print("Exception when calling PlotTypeApi->o_a_plot_type_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **plot_type_get_id**
-> ChartPlotType plot_type_get_id(id)
+# **o_a_plot_type_get_id**
+> ChartPlotType o_a_plot_type_get_id(id)
 
 PlotType: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the PlotType object
 
 try:
     # PlotType: Get by Id
-    api_response = api_instance.plot_type_get_id(id)
+    api_response = api_instance.o_a_plot_type_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PlotTypeApi->plot_type_get_id: %s\n" % e)
+    print("Exception when calling PlotTypeApi->o_a_plot_type_get_id: %s\n" % e)
 ```
 
 ### Parameters

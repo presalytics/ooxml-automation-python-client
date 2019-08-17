@@ -36,13 +36,13 @@ class ColumnsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def columns_get_id(self, id, **kwargs):  # noqa: E501
+    def o_a_columns_get_id(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.columns_get_id(id, async_req=True)
+        >>> thread = api.o_a_columns_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -59,15 +59,15 @@ class ColumnsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.columns_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.o_a_columns_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def columns_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def o_a_columns_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.columns_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.o_a_columns_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -98,14 +98,14 @@ class ColumnsApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method columns_get_id" % key
+                    " to method o_a_columns_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `columns_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `o_a_columns_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -144,13 +144,13 @@ class ColumnsApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def columns_get_id_0(self, id, **kwargs):  # noqa: E501
+    def o_a_columns_get_id_0(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.columns_get_id_0(id, async_req=True)
+        >>> thread = api.o_a_columns_get_id_0(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -167,15 +167,15 @@ class ColumnsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.columns_get_id_0_with_http_info(id, **kwargs)  # noqa: E501
+        return self.o_a_columns_get_id_0_with_http_info(id, **kwargs)  # noqa: E501
 
-    def columns_get_id_0_with_http_info(self, id, **kwargs):  # noqa: E501
+    def o_a_columns_get_id_0_with_http_info(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.columns_get_id_0_with_http_info(id, async_req=True)
+        >>> thread = api.o_a_columns_get_id_0_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -206,14 +206,14 @@ class ColumnsApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method columns_get_id_0" % key
+                    " to method o_a_columns_get_id_0" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `columns_get_id_0`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `o_a_columns_get_id_0`")  # noqa: E501
 
         collection_formats = {}
 

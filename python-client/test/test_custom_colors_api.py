@@ -28,8 +28,8 @@ class TestCustomColorsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_custom_colors_get_id(self):
-        """Test case for custom_colors_get_id
+    def test_o_a_custom_colors_get_id(self):
+        """Test case for o_a_custom_colors_get_id
 
         CustomColors: Get by Id  # noqa: E501
         """

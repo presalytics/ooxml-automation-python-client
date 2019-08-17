@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fills_get_id**](FillsApi.md#fills_get_id) | **GET** /themes/Fills/{id} | Fills: Get by Id
+[**o_a_fills_get_id**](FillsApi.md#o_a_fills_get_id) | **GET** /themes/Fills/{id} | Fills: Get by Id
 
 
-# **fills_get_id**
-> ThemeFills fills_get_id(id)
+# **o_a_fills_get_id**
+> ThemeFills o_a_fills_get_id(id)
 
 Fills: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the Fills object
 
 try:
     # Fills: Get by Id
-    api_response = api_instance.fills_get_id(id)
+    api_response = api_instance.o_a_fills_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling FillsApi->fills_get_id: %s\n" % e)
+    print("Exception when calling FillsApi->o_a_fills_get_id: %s\n" % e)
 ```
 
 ### Parameters

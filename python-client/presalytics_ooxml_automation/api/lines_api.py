@@ -36,13 +36,13 @@ class LinesApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def lines_get_id(self, id, **kwargs):  # noqa: E501
+    def o_a_lines_get_id(self, id, **kwargs):  # noqa: E501
         """Lines: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Lines object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.lines_get_id(id, async_req=True)
+        >>> thread = api.o_a_lines_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -59,15 +59,15 @@ class LinesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.lines_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.o_a_lines_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def lines_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def o_a_lines_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Lines: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Lines object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.lines_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.o_a_lines_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -98,14 +98,14 @@ class LinesApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method lines_get_id" % key
+                    " to method o_a_lines_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `lines_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `o_a_lines_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -144,13 +144,13 @@ class LinesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def lines_put_id(self, id, **kwargs):  # noqa: E501
+    def o_a_lines_put_id(self, id, **kwargs):  # noqa: E501
         """Lines: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Lines objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.lines_put_id(id, async_req=True)
+        >>> thread = api.o_a_lines_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -168,15 +168,15 @@ class LinesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.lines_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.o_a_lines_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def lines_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def o_a_lines_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Lines: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Lines objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.lines_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.o_a_lines_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -208,14 +208,14 @@ class LinesApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method lines_put_id" % key
+                    " to method o_a_lines_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `lines_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `o_a_lines_put_id`")  # noqa: E501
 
         collection_formats = {}
 

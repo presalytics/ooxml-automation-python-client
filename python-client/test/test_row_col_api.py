@@ -28,15 +28,15 @@ class TestRowColApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_row_col_get(self):
-        """Test case for row_col_get
+    def test_o_a_row_col_get(self):
+        """Test case for o_a_row_col_get
 
         RowCol: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_row_col_get_id(self):
-        """Test case for row_col_get_id
+    def test_o_a_row_col_get_id(self):
+        """Test case for o_a_row_col_get_id
 
         RowCol: Get by Id  # noqa: E501
         """

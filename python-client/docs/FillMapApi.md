@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fill_map_get_id**](FillMapApi.md#fill_map_get_id) | **GET** /shared/FillMap/{id} | FillMap: Get by Id
+[**o_a_fill_map_get_id**](FillMapApi.md#o_a_fill_map_get_id) | **GET** /shared/FillMap/{id} | FillMap: Get by Id
 
 
-# **fill_map_get_id**
-> SharedFillMap fill_map_get_id(id)
+# **o_a_fill_map_get_id**
+> SharedFillMap o_a_fill_map_get_id(id)
 
 FillMap: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the FillMap object
 
 try:
     # FillMap: Get by Id
-    api_response = api_instance.fill_map_get_id(id)
+    api_response = api_instance.o_a_fill_map_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling FillMapApi->fill_map_get_id: %s\n" % e)
+    print("Exception when calling FillMapApi->o_a_fill_map_get_id: %s\n" % e)
 ```
 
 ### Parameters

@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**axis_data_types_get**](AxisDataTypesApi.md#axis_data_types_get) | **GET** /charts/AxisDataTypes | AxisDataTypes: List All Possible Types
-[**axis_data_types_get_id**](AxisDataTypesApi.md#axis_data_types_get_id) | **GET** /charts/AxisDataTypes/{id} | AxisDataTypes: Get by Id
+[**o_a_axis_data_types_get**](AxisDataTypesApi.md#o_a_axis_data_types_get) | **GET** /charts/AxisDataTypes | AxisDataTypes: List All Possible Types
+[**o_a_axis_data_types_get_id**](AxisDataTypesApi.md#o_a_axis_data_types_get_id) | **GET** /charts/AxisDataTypes/{id} | AxisDataTypes: Get by Id
 
 
-# **axis_data_types_get**
-> list[ChartAxisDataTypes] axis_data_types_get()
+# **o_a_axis_data_types_get**
+> list[ChartAxisDataTypes] o_a_axis_data_types_get()
 
 AxisDataTypes: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.AxisDataTypesApi()
 
 try:
     # AxisDataTypes: List All Possible Types
-    api_response = api_instance.axis_data_types_get()
+    api_response = api_instance.o_a_axis_data_types_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling AxisDataTypesApi->axis_data_types_get: %s\n" % e)
+    print("Exception when calling AxisDataTypesApi->o_a_axis_data_types_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **axis_data_types_get_id**
-> ChartAxisDataTypes axis_data_types_get_id(id)
+# **o_a_axis_data_types_get_id**
+> ChartAxisDataTypes o_a_axis_data_types_get_id(id)
 
 AxisDataTypes: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the AxisDataTypes object
 
 try:
     # AxisDataTypes: Get by Id
-    api_response = api_instance.axis_data_types_get_id(id)
+    api_response = api_instance.o_a_axis_data_types_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling AxisDataTypesApi->axis_data_types_get_id: %s\n" % e)
+    print("Exception when calling AxisDataTypesApi->o_a_axis_data_types_get_id: %s\n" % e)
 ```
 
 ### Parameters

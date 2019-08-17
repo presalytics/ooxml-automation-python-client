@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**gradient_stops_get_id**](GradientStopsApi.md#gradient_stops_get_id) | **GET** /shared/GradientStops/{id} | GradientStops: Get by Id
-[**gradient_stops_put_id**](GradientStopsApi.md#gradient_stops_put_id) | **PUT** /shared/GradientStops/{id} | GradientStops: Modify Values
+[**o_a_gradient_stops_get_id**](GradientStopsApi.md#o_a_gradient_stops_get_id) | **GET** /shared/GradientStops/{id} | GradientStops: Get by Id
+[**o_a_gradient_stops_put_id**](GradientStopsApi.md#o_a_gradient_stops_put_id) | **PUT** /shared/GradientStops/{id} | GradientStops: Modify Values
 
 
-# **gradient_stops_get_id**
-> SharedGradientStops gradient_stops_get_id(id)
+# **o_a_gradient_stops_get_id**
+> SharedGradientStops o_a_gradient_stops_get_id(id)
 
 GradientStops: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the GradientStops object
 
 try:
     # GradientStops: Get by Id
-    api_response = api_instance.gradient_stops_get_id(id)
+    api_response = api_instance.o_a_gradient_stops_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GradientStopsApi->gradient_stops_get_id: %s\n" % e)
+    print("Exception when calling GradientStopsApi->o_a_gradient_stops_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **gradient_stops_put_id**
-> gradient_stops_put_id(id, shared_gradient_stops=shared_gradient_stops)
+# **o_a_gradient_stops_put_id**
+> o_a_gradient_stops_put_id(id, shared_gradient_stops=shared_gradient_stops)
 
 GradientStops: Modify Values
 
@@ -86,9 +86,9 @@ shared_gradient_stops = presalytics_ooxml_automation.SharedGradientStops() # Sha
 
 try:
     # GradientStops: Modify Values
-    api_instance.gradient_stops_put_id(id, shared_gradient_stops=shared_gradient_stops)
+    api_instance.o_a_gradient_stops_put_id(id, shared_gradient_stops=shared_gradient_stops)
 except ApiException as e:
-    print("Exception when calling GradientStopsApi->gradient_stops_put_id: %s\n" % e)
+    print("Exception when calling GradientStopsApi->o_a_gradient_stops_put_id: %s\n" % e)
 ```
 
 ### Parameters

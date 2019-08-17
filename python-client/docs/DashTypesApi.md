@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**dash_types_get**](DashTypesApi.md#dash_types_get) | **GET** /shared/DashTypes | DashTypes: List All Possible Types
-[**dash_types_get_id**](DashTypesApi.md#dash_types_get_id) | **GET** /shared/DashTypes/{id} | DashTypes: Get by Id
+[**o_a_dash_types_get**](DashTypesApi.md#o_a_dash_types_get) | **GET** /shared/DashTypes | DashTypes: List All Possible Types
+[**o_a_dash_types_get_id**](DashTypesApi.md#o_a_dash_types_get_id) | **GET** /shared/DashTypes/{id} | DashTypes: Get by Id
 
 
-# **dash_types_get**
-> list[SharedDashTypes] dash_types_get()
+# **o_a_dash_types_get**
+> list[SharedDashTypes] o_a_dash_types_get()
 
 DashTypes: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.DashTypesApi()
 
 try:
     # DashTypes: List All Possible Types
-    api_response = api_instance.dash_types_get()
+    api_response = api_instance.o_a_dash_types_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DashTypesApi->dash_types_get: %s\n" % e)
+    print("Exception when calling DashTypesApi->o_a_dash_types_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **dash_types_get_id**
-> SharedDashTypes dash_types_get_id(id)
+# **o_a_dash_types_get_id**
+> SharedDashTypes o_a_dash_types_get_id(id)
 
 DashTypes: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the DashTypes object
 
 try:
     # DashTypes: Get by Id
-    api_response = api_instance.dash_types_get_id(id)
+    api_response = api_instance.o_a_dash_types_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DashTypesApi->dash_types_get_id: %s\n" % e)
+    print("Exception when calling DashTypesApi->o_a_dash_types_get_id: %s\n" % e)
 ```
 
 ### Parameters

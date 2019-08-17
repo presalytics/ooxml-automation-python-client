@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tables_details_id**](TablesApi.md#tables_details_id) | **GET** /Tables/Details/{Id} | Tables: Retrieve Object Tree
-[**tables_get_id**](TablesApi.md#tables_get_id) | **GET** /Tables/{Id} | Tables: Get by Id
+[**o_a_tables_details_id**](TablesApi.md#o_a_tables_details_id) | **GET** /Tables/Details/{Id} | Tables: Retrieve Object Tree
+[**o_a_tables_get_id**](TablesApi.md#o_a_tables_get_id) | **GET** /Tables/{Id} | Tables: Get by Id
 
 
-# **tables_details_id**
-> TableTables tables_details_id(id)
+# **o_a_tables_details_id**
+> TableTables o_a_tables_details_id(id)
 
 Tables: Retrieve Object Tree
 
@@ -30,10 +30,10 @@ id = 56 # int |
 
 try:
     # Tables: Retrieve Object Tree
-    api_response = api_instance.tables_details_id(id)
+    api_response = api_instance.o_a_tables_details_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling TablesApi->tables_details_id: %s\n" % e)
+    print("Exception when calling TablesApi->o_a_tables_details_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **tables_get_id**
-> TableTables tables_get_id(id)
+# **o_a_tables_get_id**
+> TableTables o_a_tables_get_id(id)
 
 Tables: Get by Id
 
@@ -85,10 +85,10 @@ id = 56 # int | The primary key (Id) of the Tables object
 
 try:
     # Tables: Get by Id
-    api_response = api_instance.tables_get_id(id)
+    api_response = api_instance.o_a_tables_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling TablesApi->tables_get_id: %s\n" % e)
+    print("Exception when calling TablesApi->o_a_tables_get_id: %s\n" % e)
 ```
 
 ### Parameters

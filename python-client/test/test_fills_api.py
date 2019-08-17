@@ -28,8 +28,8 @@ class TestFillsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_fills_get_id(self):
-        """Test case for fills_get_id
+    def test_o_a_fills_get_id(self):
+        """Test case for o_a_fills_get_id
 
         Fills: Get by Id  # noqa: E501
         """

@@ -4,13 +4,13 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**documents_download_document_id**](DocumentsApi.md#documents_download_document_id) | **GET** /Documents/download/{DocumentId} | Link to download a user&#39;s document. Can only be accessed by the users who owns the document
-[**documents_get_id**](DocumentsApi.md#documents_get_id) | **GET** /Documents/{id} | Get document information by document id
-[**documents_post**](DocumentsApi.md#documents_post) | **POST** /Documents | Upload a file into the docAPI, returns a document ids
+[**o_a_documents_download_document_id**](DocumentsApi.md#o_a_documents_download_document_id) | **GET** /Documents/download/{DocumentId} | Link to download a user&#39;s document. Can only be accessed by the users who owns the document
+[**o_a_documents_get_id**](DocumentsApi.md#o_a_documents_get_id) | **GET** /Documents/{id} | Get document information by document id
+[**o_a_documents_post**](DocumentsApi.md#o_a_documents_post) | **POST** /Documents | Upload a file into the docAPI, returns a document ids
 
 
-# **documents_download_document_id**
-> documents_download_document_id(document_id)
+# **o_a_documents_download_document_id**
+> o_a_documents_download_document_id(document_id)
 
 Link to download a user's document. Can only be accessed by the users who owns the document
 
@@ -29,9 +29,9 @@ document_id = 56 # int |
 
 try:
     # Link to download a user's document. Can only be accessed by the users who owns the document
-    api_instance.documents_download_document_id(document_id)
+    api_instance.o_a_documents_download_document_id(document_id)
 except ApiException as e:
-    print("Exception when calling DocumentsApi->documents_download_document_id: %s\n" % e)
+    print("Exception when calling DocumentsApi->o_a_documents_download_document_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -61,8 +61,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **documents_get_id**
-> documents_get_id(id)
+# **o_a_documents_get_id**
+> o_a_documents_get_id(id)
 
 Get document information by document id
 
@@ -81,9 +81,9 @@ id = 56 # int |
 
 try:
     # Get document information by document id
-    api_instance.documents_get_id(id)
+    api_instance.o_a_documents_get_id(id)
 except ApiException as e:
-    print("Exception when calling DocumentsApi->documents_get_id: %s\n" % e)
+    print("Exception when calling DocumentsApi->o_a_documents_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -115,8 +115,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **documents_post**
-> documents_post()
+# **o_a_documents_post**
+> o_a_documents_post()
 
 Upload a file into the docAPI, returns a document ids
 
@@ -134,9 +134,9 @@ api_instance = presalytics_ooxml_automation.DocumentsApi()
 
 try:
     # Upload a file into the docAPI, returns a document ids
-    api_instance.documents_post()
+    api_instance.o_a_documents_post()
 except ApiException as e:
-    print("Exception when calling DocumentsApi->documents_post: %s\n" % e)
+    print("Exception when calling DocumentsApi->o_a_documents_post: %s\n" % e)
 ```
 
 ### Parameters

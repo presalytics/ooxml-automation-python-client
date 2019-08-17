@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**borders_get_id**](BordersApi.md#borders_get_id) | **GET** /tables/Borders/{id} | Borders: Get by Id
+[**o_a_borders_get_id**](BordersApi.md#o_a_borders_get_id) | **GET** /tables/Borders/{id} | Borders: Get by Id
 
 
-# **borders_get_id**
-> TableBorders borders_get_id(id)
+# **o_a_borders_get_id**
+> TableBorders o_a_borders_get_id(id)
 
 Borders: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the Borders object
 
 try:
     # Borders: Get by Id
-    api_response = api_instance.borders_get_id(id)
+    api_response = api_instance.o_a_borders_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling BordersApi->borders_get_id: %s\n" % e)
+    print("Exception when calling BordersApi->o_a_borders_get_id: %s\n" % e)
 ```
 
 ### Parameters

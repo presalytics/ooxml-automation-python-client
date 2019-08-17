@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**line_map_get_id**](LineMapApi.md#line_map_get_id) | **GET** /themes/LineMap/{id} | LineMap: Get by Id
+[**o_a_line_map_get_id**](LineMapApi.md#o_a_line_map_get_id) | **GET** /themes/LineMap/{id} | LineMap: Get by Id
 
 
-# **line_map_get_id**
-> ThemeLineMap line_map_get_id(id)
+# **o_a_line_map_get_id**
+> ThemeLineMap o_a_line_map_get_id(id)
 
 LineMap: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the LineMap object
 
 try:
     # LineMap: Get by Id
-    api_response = api_instance.line_map_get_id(id)
+    api_response = api_instance.o_a_line_map_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling LineMapApi->line_map_get_id: %s\n" % e)
+    print("Exception when calling LineMapApi->o_a_line_map_get_id: %s\n" % e)
 ```
 
 ### Parameters

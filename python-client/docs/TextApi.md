@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**text_get_id**](TextApi.md#text_get_id) | **GET** /shared/Text/{id} | Text: Get by Id
-[**text_put_id**](TextApi.md#text_put_id) | **PUT** /shared/Text/{id} | Text: Modify Values
+[**o_a_text_get_id**](TextApi.md#o_a_text_get_id) | **GET** /shared/Text/{id} | Text: Get by Id
+[**o_a_text_put_id**](TextApi.md#o_a_text_put_id) | **PUT** /shared/Text/{id} | Text: Modify Values
 
 
-# **text_get_id**
-> SharedText text_get_id(id)
+# **o_a_text_get_id**
+> SharedText o_a_text_get_id(id)
 
 Text: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the Text object
 
 try:
     # Text: Get by Id
-    api_response = api_instance.text_get_id(id)
+    api_response = api_instance.o_a_text_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling TextApi->text_get_id: %s\n" % e)
+    print("Exception when calling TextApi->o_a_text_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **text_put_id**
-> text_put_id(id, shared_text=shared_text)
+# **o_a_text_put_id**
+> o_a_text_put_id(id, shared_text=shared_text)
 
 Text: Modify Values
 
@@ -86,9 +86,9 @@ shared_text = presalytics_ooxml_automation.SharedText() # SharedText |  (optiona
 
 try:
     # Text: Modify Values
-    api_instance.text_put_id(id, shared_text=shared_text)
+    api_instance.o_a_text_put_id(id, shared_text=shared_text)
 except ApiException as e:
-    print("Exception when calling TextApi->text_put_id: %s\n" % e)
+    print("Exception when calling TextApi->o_a_text_put_id: %s\n" % e)
 ```
 
 ### Parameters

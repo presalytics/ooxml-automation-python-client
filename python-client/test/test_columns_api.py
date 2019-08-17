@@ -28,15 +28,15 @@ class TestColumnsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_columns_get_id(self):
-        """Test case for columns_get_id
+    def test_o_a_columns_get_id(self):
+        """Test case for o_a_columns_get_id
 
         Columns: Get by Id  # noqa: E501
         """
         pass
 
-    def test_columns_get_id_0(self):
-        """Test case for columns_get_id_0
+    def test_o_a_columns_get_id_0(self):
+        """Test case for o_a_columns_get_id_0
 
         Columns: Get by Id  # noqa: E501
         """

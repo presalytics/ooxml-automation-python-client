@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**shape_trees_get_id**](ShapeTreesApi.md#shape_trees_get_id) | **GET** /slides/ShapeTrees/{id} | ShapeTrees: Get by Id
+[**o_a_shape_trees_get_id**](ShapeTreesApi.md#o_a_shape_trees_get_id) | **GET** /slides/ShapeTrees/{id} | ShapeTrees: Get by Id
 
 
-# **shape_trees_get_id**
-> SlideShapeTrees shape_trees_get_id(id)
+# **o_a_shape_trees_get_id**
+> SlideShapeTrees o_a_shape_trees_get_id(id)
 
 ShapeTrees: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the ShapeTrees object
 
 try:
     # ShapeTrees: Get by Id
-    api_response = api_instance.shape_trees_get_id(id)
+    api_response = api_instance.o_a_shape_trees_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ShapeTreesApi->shape_trees_get_id: %s\n" % e)
+    print("Exception when calling ShapeTreesApi->o_a_shape_trees_get_id: %s\n" % e)
 ```
 
 ### Parameters

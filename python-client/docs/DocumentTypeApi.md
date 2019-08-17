@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**document_type_get**](DocumentTypeApi.md#document_type_get) | **GET** /documents/DocumentType | DocumentType: List All Possible Types
-[**document_type_get_id**](DocumentTypeApi.md#document_type_get_id) | **GET** /documents/DocumentType/{id} | DocumentType: Get by Id
+[**o_a_document_type_get**](DocumentTypeApi.md#o_a_document_type_get) | **GET** /documents/DocumentType | DocumentType: List All Possible Types
+[**o_a_document_type_get_id**](DocumentTypeApi.md#o_a_document_type_get_id) | **GET** /documents/DocumentType/{id} | DocumentType: Get by Id
 
 
-# **document_type_get**
-> list[DocumentType] document_type_get()
+# **o_a_document_type_get**
+> list[DocumentType] o_a_document_type_get()
 
 DocumentType: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.DocumentTypeApi()
 
 try:
     # DocumentType: List All Possible Types
-    api_response = api_instance.document_type_get()
+    api_response = api_instance.o_a_document_type_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DocumentTypeApi->document_type_get: %s\n" % e)
+    print("Exception when calling DocumentTypeApi->o_a_document_type_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **document_type_get_id**
-> DocumentType document_type_get_id(id)
+# **o_a_document_type_get_id**
+> DocumentType o_a_document_type_get_id(id)
 
 DocumentType: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the DocumentType object
 
 try:
     # DocumentType: Get by Id
-    api_response = api_instance.document_type_get_id(id)
+    api_response = api_instance.o_a_document_type_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DocumentTypeApi->document_type_get_id: %s\n" % e)
+    print("Exception when calling DocumentTypeApi->o_a_document_type_get_id: %s\n" % e)
 ```
 
 ### Parameters

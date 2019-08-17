@@ -28,15 +28,15 @@ class TestSlidesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_slides_details_id(self):
-        """Test case for slides_details_id
+    def test_o_a_slides_details_id(self):
+        """Test case for o_a_slides_details_id
 
         Slides: Retrieve Object Tree  # noqa: E501
         """
         pass
 
-    def test_slides_get_id(self):
-        """Test case for slides_get_id
+    def test_o_a_slides_get_id(self):
+        """Test case for o_a_slides_get_id
 
         Slides: Get by Id  # noqa: E501
         """

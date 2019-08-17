@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**pictures_get_id**](PicturesApi.md#pictures_get_id) | **GET** /shared/Pictures/{id} | Pictures: Get by Id
-[**pictures_put_id**](PicturesApi.md#pictures_put_id) | **PUT** /shared/Pictures/{id} | Pictures: Modify Values
+[**o_a_pictures_get_id**](PicturesApi.md#o_a_pictures_get_id) | **GET** /shared/Pictures/{id} | Pictures: Get by Id
+[**o_a_pictures_put_id**](PicturesApi.md#o_a_pictures_put_id) | **PUT** /shared/Pictures/{id} | Pictures: Modify Values
 
 
-# **pictures_get_id**
-> SharedPictures pictures_get_id(id)
+# **o_a_pictures_get_id**
+> SharedPictures o_a_pictures_get_id(id)
 
 Pictures: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the Pictures object
 
 try:
     # Pictures: Get by Id
-    api_response = api_instance.pictures_get_id(id)
+    api_response = api_instance.o_a_pictures_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling PicturesApi->pictures_get_id: %s\n" % e)
+    print("Exception when calling PicturesApi->o_a_pictures_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **pictures_put_id**
-> pictures_put_id(id, shared_pictures=shared_pictures)
+# **o_a_pictures_put_id**
+> o_a_pictures_put_id(id, shared_pictures=shared_pictures)
 
 Pictures: Modify Values
 
@@ -86,9 +86,9 @@ shared_pictures = presalytics_ooxml_automation.SharedPictures() # SharedPictures
 
 try:
     # Pictures: Modify Values
-    api_instance.pictures_put_id(id, shared_pictures=shared_pictures)
+    api_instance.o_a_pictures_put_id(id, shared_pictures=shared_pictures)
 except ApiException as e:
-    print("Exception when calling PicturesApi->pictures_put_id: %s\n" % e)
+    print("Exception when calling PicturesApi->o_a_pictures_put_id: %s\n" % e)
 ```
 
 ### Parameters

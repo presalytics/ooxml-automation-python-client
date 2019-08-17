@@ -28,15 +28,15 @@ class TestDocumentTypeApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_document_type_get(self):
-        """Test case for document_type_get
+    def test_o_a_document_type_get(self):
+        """Test case for o_a_document_type_get
 
         DocumentType: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_document_type_get_id(self):
-        """Test case for document_type_get_id
+    def test_o_a_document_type_get_id(self):
+        """Test case for o_a_document_type_get_id
 
         DocumentType: Get by Id  # noqa: E501
         """

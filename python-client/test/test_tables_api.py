@@ -28,15 +28,15 @@ class TestTablesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_tables_details_id(self):
-        """Test case for tables_details_id
+    def test_o_a_tables_details_id(self):
+        """Test case for o_a_tables_details_id
 
         Tables: Retrieve Object Tree  # noqa: E501
         """
         pass
 
-    def test_tables_get_id(self):
-        """Test case for tables_get_id
+    def test_o_a_tables_get_id(self):
+        """Test case for o_a_tables_get_id
 
         Tables: Get by Id  # noqa: E501
         """

@@ -28,15 +28,15 @@ class TestDashTypesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_dash_types_get(self):
-        """Test case for dash_types_get
+    def test_o_a_dash_types_get(self):
+        """Test case for o_a_dash_types_get
 
         DashTypes: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_dash_types_get_id(self):
-        """Test case for dash_types_get_id
+    def test_o_a_dash_types_get_id(self):
+        """Test case for o_a_dash_types_get_id
 
         DashTypes: Get by Id  # noqa: E501
         """

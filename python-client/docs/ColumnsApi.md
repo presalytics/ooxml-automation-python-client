@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**columns_get_id**](ColumnsApi.md#columns_get_id) | **GET** /tables/Columns/{id} | Columns: Get by Id
-[**columns_get_id_0**](ColumnsApi.md#columns_get_id_0) | **GET** /charts/Columns/{id} | Columns: Get by Id
+[**o_a_columns_get_id**](ColumnsApi.md#o_a_columns_get_id) | **GET** /tables/Columns/{id} | Columns: Get by Id
+[**o_a_columns_get_id_0**](ColumnsApi.md#o_a_columns_get_id_0) | **GET** /charts/Columns/{id} | Columns: Get by Id
 
 
-# **columns_get_id**
-> TableColumns columns_get_id(id)
+# **o_a_columns_get_id**
+> TableColumns o_a_columns_get_id(id)
 
 Columns: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the Columns object
 
 try:
     # Columns: Get by Id
-    api_response = api_instance.columns_get_id(id)
+    api_response = api_instance.o_a_columns_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ColumnsApi->columns_get_id: %s\n" % e)
+    print("Exception when calling ColumnsApi->o_a_columns_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **columns_get_id_0**
-> ChartColumns columns_get_id_0(id)
+# **o_a_columns_get_id_0**
+> ChartColumns o_a_columns_get_id_0(id)
 
 Columns: Get by Id
 
@@ -85,10 +85,10 @@ id = 56 # int | The primary key (Id) of the Columns object
 
 try:
     # Columns: Get by Id
-    api_response = api_instance.columns_get_id_0(id)
+    api_response = api_instance.o_a_columns_get_id_0(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ColumnsApi->columns_get_id_0: %s\n" % e)
+    print("Exception when calling ColumnsApi->o_a_columns_get_id_0: %s\n" % e)
 ```
 
 ### Parameters

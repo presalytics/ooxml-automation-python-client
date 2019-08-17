@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**column_collections_get_id**](ColumnCollectionsApi.md#column_collections_get_id) | **GET** /charts/ColumnCollections/{id} | ColumnCollections: Get by Id
+[**o_a_column_collections_get_id**](ColumnCollectionsApi.md#o_a_column_collections_get_id) | **GET** /charts/ColumnCollections/{id} | ColumnCollections: Get by Id
 
 
-# **column_collections_get_id**
-> ChartColumnCollections column_collections_get_id(id)
+# **o_a_column_collections_get_id**
+> ChartColumnCollections o_a_column_collections_get_id(id)
 
 ColumnCollections: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the ColumnCollections object
 
 try:
     # ColumnCollections: Get by Id
-    api_response = api_instance.column_collections_get_id(id)
+    api_response = api_instance.o_a_column_collections_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ColumnCollectionsApi->column_collections_get_id: %s\n" % e)
+    print("Exception when calling ColumnCollectionsApi->o_a_column_collections_get_id: %s\n" % e)
 ```
 
 ### Parameters

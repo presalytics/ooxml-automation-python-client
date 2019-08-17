@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**paragraph_get_id**](ParagraphApi.md#paragraph_get_id) | **GET** /shared/Paragraph/{id} | Paragraph: Get by Id
+[**o_a_paragraph_get_id**](ParagraphApi.md#o_a_paragraph_get_id) | **GET** /shared/Paragraph/{id} | Paragraph: Get by Id
 
 
-# **paragraph_get_id**
-> SharedParagraph paragraph_get_id(id)
+# **o_a_paragraph_get_id**
+> SharedParagraph o_a_paragraph_get_id(id)
 
 Paragraph: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the Paragraph object
 
 try:
     # Paragraph: Get by Id
-    api_response = api_instance.paragraph_get_id(id)
+    api_response = api_instance.o_a_paragraph_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ParagraphApi->paragraph_get_id: %s\n" % e)
+    print("Exception when calling ParagraphApi->o_a_paragraph_get_id: %s\n" % e)
 ```
 
 ### Parameters

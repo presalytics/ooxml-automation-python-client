@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**image_fills_get_id**](ImageFillsApi.md#image_fills_get_id) | **GET** /shared/ImageFills/{id} | ImageFills: Get by Id
-[**image_fills_put_id**](ImageFillsApi.md#image_fills_put_id) | **PUT** /shared/ImageFills/{id} | ImageFills: Modify Values
+[**o_a_image_fills_get_id**](ImageFillsApi.md#o_a_image_fills_get_id) | **GET** /shared/ImageFills/{id} | ImageFills: Get by Id
+[**o_a_image_fills_put_id**](ImageFillsApi.md#o_a_image_fills_put_id) | **PUT** /shared/ImageFills/{id} | ImageFills: Modify Values
 
 
-# **image_fills_get_id**
-> SharedImageFills image_fills_get_id(id)
+# **o_a_image_fills_get_id**
+> SharedImageFills o_a_image_fills_get_id(id)
 
 ImageFills: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the ImageFills object
 
 try:
     # ImageFills: Get by Id
-    api_response = api_instance.image_fills_get_id(id)
+    api_response = api_instance.o_a_image_fills_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ImageFillsApi->image_fills_get_id: %s\n" % e)
+    print("Exception when calling ImageFillsApi->o_a_image_fills_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **image_fills_put_id**
-> image_fills_put_id(id, shared_image_fills=shared_image_fills)
+# **o_a_image_fills_put_id**
+> o_a_image_fills_put_id(id, shared_image_fills=shared_image_fills)
 
 ImageFills: Modify Values
 
@@ -86,9 +86,9 @@ shared_image_fills = presalytics_ooxml_automation.SharedImageFills() # SharedIma
 
 try:
     # ImageFills: Modify Values
-    api_instance.image_fills_put_id(id, shared_image_fills=shared_image_fills)
+    api_instance.o_a_image_fills_put_id(id, shared_image_fills=shared_image_fills)
 except ApiException as e:
-    print("Exception when calling ImageFillsApi->image_fills_put_id: %s\n" % e)
+    print("Exception when calling ImageFillsApi->o_a_image_fills_put_id: %s\n" % e)
 ```
 
 ### Parameters

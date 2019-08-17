@@ -28,15 +28,15 @@ class TestEffectAttributesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_effect_attributes_get_id(self):
-        """Test case for effect_attributes_get_id
+    def test_o_a_effect_attributes_get_id(self):
+        """Test case for o_a_effect_attributes_get_id
 
         EffectAttributes: Get by Id  # noqa: E501
         """
         pass
 
-    def test_effect_attributes_put_id(self):
-        """Test case for effect_attributes_put_id
+    def test_o_a_effect_attributes_put_id(self):
+        """Test case for o_a_effect_attributes_put_id
 
         EffectAttributes: Modify Values  # noqa: E501
         """

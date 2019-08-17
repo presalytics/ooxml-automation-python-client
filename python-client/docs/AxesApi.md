@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**axes_get_id**](AxesApi.md#axes_get_id) | **GET** /charts/Axes/{id} | Axes: Get by Id
+[**o_a_axes_get_id**](AxesApi.md#o_a_axes_get_id) | **GET** /charts/Axes/{id} | Axes: Get by Id
 
 
-# **axes_get_id**
-> ChartAxes axes_get_id(id)
+# **o_a_axes_get_id**
+> ChartAxes o_a_axes_get_id(id)
 
 Axes: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the Axes object
 
 try:
     # Axes: Get by Id
-    api_response = api_instance.axes_get_id(id)
+    api_response = api_instance.o_a_axes_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling AxesApi->axes_get_id: %s\n" % e)
+    print("Exception when calling AxesApi->o_a_axes_get_id: %s\n" % e)
 ```
 
 ### Parameters

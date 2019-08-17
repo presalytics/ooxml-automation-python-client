@@ -28,8 +28,8 @@ class TestGraphicsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_graphics_get_id(self):
-        """Test case for graphics_get_id
+    def test_o_a_graphics_get_id(self):
+        """Test case for o_a_graphics_get_id
 
         Graphics: Get by Id  # noqa: E501
         """

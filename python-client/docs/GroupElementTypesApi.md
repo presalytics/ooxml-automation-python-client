@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**group_element_types_get**](GroupElementTypesApi.md#group_element_types_get) | **GET** /slides/GroupElementTypes | GroupElementTypes: List All Possible Types
-[**group_element_types_get_id**](GroupElementTypesApi.md#group_element_types_get_id) | **GET** /slides/GroupElementTypes/{id} | GroupElementTypes: Get by Id
+[**o_a_group_element_types_get**](GroupElementTypesApi.md#o_a_group_element_types_get) | **GET** /slides/GroupElementTypes | GroupElementTypes: List All Possible Types
+[**o_a_group_element_types_get_id**](GroupElementTypesApi.md#o_a_group_element_types_get_id) | **GET** /slides/GroupElementTypes/{id} | GroupElementTypes: Get by Id
 
 
-# **group_element_types_get**
-> list[SlideGroupElementTypes] group_element_types_get()
+# **o_a_group_element_types_get**
+> list[SlideGroupElementTypes] o_a_group_element_types_get()
 
 GroupElementTypes: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.GroupElementTypesApi()
 
 try:
     # GroupElementTypes: List All Possible Types
-    api_response = api_instance.group_element_types_get()
+    api_response = api_instance.o_a_group_element_types_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GroupElementTypesApi->group_element_types_get: %s\n" % e)
+    print("Exception when calling GroupElementTypesApi->o_a_group_element_types_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **group_element_types_get_id**
-> SlideGroupElementTypes group_element_types_get_id(id)
+# **o_a_group_element_types_get_id**
+> SlideGroupElementTypes o_a_group_element_types_get_id(id)
 
 GroupElementTypes: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the GroupElementTypes object
 
 try:
     # GroupElementTypes: Get by Id
-    api_response = api_instance.group_element_types_get_id(id)
+    api_response = api_instance.o_a_group_element_types_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GroupElementTypesApi->group_element_types_get_id: %s\n" % e)
+    print("Exception when calling GroupElementTypesApi->o_a_group_element_types_get_id: %s\n" % e)
 ```
 
 ### Parameters

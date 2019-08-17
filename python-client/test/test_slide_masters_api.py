@@ -28,8 +28,8 @@ class TestSlideMastersApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_slide_masters_get_id(self):
-        """Test case for slide_masters_get_id
+    def test_o_a_slide_masters_get_id(self):
+        """Test case for o_a_slide_masters_get_id
 
         SlideMasters: Get by Id  # noqa: E501
         """

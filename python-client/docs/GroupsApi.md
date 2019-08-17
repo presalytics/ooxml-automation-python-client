@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**groups_get_id**](GroupsApi.md#groups_get_id) | **GET** /slides/Groups/{id} | Groups: Get by Id
+[**o_a_groups_get_id**](GroupsApi.md#o_a_groups_get_id) | **GET** /slides/Groups/{id} | Groups: Get by Id
 
 
-# **groups_get_id**
-> SlideGroups groups_get_id(id)
+# **o_a_groups_get_id**
+> SlideGroups o_a_groups_get_id(id)
 
 Groups: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the Groups object
 
 try:
     # Groups: Get by Id
-    api_response = api_instance.groups_get_id(id)
+    api_response = api_instance.o_a_groups_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GroupsApi->groups_get_id: %s\n" % e)
+    print("Exception when calling GroupsApi->o_a_groups_get_id: %s\n" % e)
 ```
 
 ### Parameters

@@ -28,15 +28,15 @@ class TestThemesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_themes_details_id(self):
-        """Test case for themes_details_id
+    def test_o_a_themes_details_id(self):
+        """Test case for o_a_themes_details_id
 
         Theme: Retrieve Object Tree  # noqa: E501
         """
         pass
 
-    def test_themes_get_id(self):
-        """Test case for themes_get_id
+    def test_o_a_themes_get_id(self):
+        """Test case for o_a_themes_get_id
 
         Themes: Get by Id  # noqa: E501
         """

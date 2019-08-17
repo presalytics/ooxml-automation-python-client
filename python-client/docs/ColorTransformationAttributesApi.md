@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**color_transformation_attributes_get_id**](ColorTransformationAttributesApi.md#color_transformation_attributes_get_id) | **GET** /shared/ColorTransformationAttributes/{id} | ColorTransformationAttributes: Get by Id
-[**color_transformation_attributes_put_id**](ColorTransformationAttributesApi.md#color_transformation_attributes_put_id) | **PUT** /shared/ColorTransformationAttributes/{id} | ColorTransformationAttributes: Modify Values
+[**o_a_color_transformation_attributes_get_id**](ColorTransformationAttributesApi.md#o_a_color_transformation_attributes_get_id) | **GET** /shared/ColorTransformationAttributes/{id} | ColorTransformationAttributes: Get by Id
+[**o_a_color_transformation_attributes_put_id**](ColorTransformationAttributesApi.md#o_a_color_transformation_attributes_put_id) | **PUT** /shared/ColorTransformationAttributes/{id} | ColorTransformationAttributes: Modify Values
 
 
-# **color_transformation_attributes_get_id**
-> SharedColorTransformationAttributes color_transformation_attributes_get_id(id)
+# **o_a_color_transformation_attributes_get_id**
+> SharedColorTransformationAttributes o_a_color_transformation_attributes_get_id(id)
 
 ColorTransformationAttributes: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the ColorTransformationAttributes object
 
 try:
     # ColorTransformationAttributes: Get by Id
-    api_response = api_instance.color_transformation_attributes_get_id(id)
+    api_response = api_instance.o_a_color_transformation_attributes_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ColorTransformationAttributesApi->color_transformation_attributes_get_id: %s\n" % e)
+    print("Exception when calling ColorTransformationAttributesApi->o_a_color_transformation_attributes_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **color_transformation_attributes_put_id**
-> color_transformation_attributes_put_id(id, shared_color_transformation_attributes=shared_color_transformation_attributes)
+# **o_a_color_transformation_attributes_put_id**
+> o_a_color_transformation_attributes_put_id(id, shared_color_transformation_attributes=shared_color_transformation_attributes)
 
 ColorTransformationAttributes: Modify Values
 
@@ -86,9 +86,9 @@ shared_color_transformation_attributes = presalytics_ooxml_automation.SharedColo
 
 try:
     # ColorTransformationAttributes: Modify Values
-    api_instance.color_transformation_attributes_put_id(id, shared_color_transformation_attributes=shared_color_transformation_attributes)
+    api_instance.o_a_color_transformation_attributes_put_id(id, shared_color_transformation_attributes=shared_color_transformation_attributes)
 except ApiException as e:
-    print("Exception when calling ColorTransformationAttributesApi->color_transformation_attributes_put_id: %s\n" % e)
+    print("Exception when calling ColorTransformationAttributesApi->o_a_color_transformation_attributes_put_id: %s\n" % e)
 ```
 
 ### Parameters

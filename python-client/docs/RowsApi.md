@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**rows_get_id**](RowsApi.md#rows_get_id) | **GET** /tables/Rows/{id} | Rows: Get by Id
-[**rows_get_id_0**](RowsApi.md#rows_get_id_0) | **GET** /charts/Rows/{id} | Rows: Get by Id
+[**o_a_rows_get_id**](RowsApi.md#o_a_rows_get_id) | **GET** /tables/Rows/{id} | Rows: Get by Id
+[**o_a_rows_get_id_0**](RowsApi.md#o_a_rows_get_id_0) | **GET** /charts/Rows/{id} | Rows: Get by Id
 
 
-# **rows_get_id**
-> TableRows rows_get_id(id)
+# **o_a_rows_get_id**
+> TableRows o_a_rows_get_id(id)
 
 Rows: Get by Id
 
@@ -30,10 +30,10 @@ id = 56 # int | The primary key (Id) of the Rows object
 
 try:
     # Rows: Get by Id
-    api_response = api_instance.rows_get_id(id)
+    api_response = api_instance.o_a_rows_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RowsApi->rows_get_id: %s\n" % e)
+    print("Exception when calling RowsApi->o_a_rows_get_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **rows_get_id_0**
-> ChartRows rows_get_id_0(id)
+# **o_a_rows_get_id_0**
+> ChartRows o_a_rows_get_id_0(id)
 
 Rows: Get by Id
 
@@ -85,10 +85,10 @@ id = 56 # int | The primary key (Id) of the Rows object
 
 try:
     # Rows: Get by Id
-    api_response = api_instance.rows_get_id_0(id)
+    api_response = api_instance.o_a_rows_get_id_0(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RowsApi->rows_get_id_0: %s\n" % e)
+    print("Exception when calling RowsApi->o_a_rows_get_id_0: %s\n" % e)
 ```
 
 ### Parameters

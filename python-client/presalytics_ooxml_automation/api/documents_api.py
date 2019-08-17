@@ -36,12 +36,12 @@ class DocumentsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def documents_download_document_id(self, document_id, **kwargs):  # noqa: E501
+    def o_a_documents_download_document_id(self, document_id, **kwargs):  # noqa: E501
         """Link to download a user's document. Can only be accessed by the users who owns the document  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_download_document_id(document_id, async_req=True)
+        >>> thread = api.o_a_documents_download_document_id(document_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -58,14 +58,14 @@ class DocumentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_download_document_id_with_http_info(document_id, **kwargs)  # noqa: E501
+        return self.o_a_documents_download_document_id_with_http_info(document_id, **kwargs)  # noqa: E501
 
-    def documents_download_document_id_with_http_info(self, document_id, **kwargs):  # noqa: E501
+    def o_a_documents_download_document_id_with_http_info(self, document_id, **kwargs):  # noqa: E501
         """Link to download a user's document. Can only be accessed by the users who owns the document  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_download_document_id_with_http_info(document_id, async_req=True)
+        >>> thread = api.o_a_documents_download_document_id_with_http_info(document_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -96,14 +96,14 @@ class DocumentsApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_download_document_id" % key
+                    " to method o_a_documents_download_document_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'document_id' is set
         if ('document_id' not in local_var_params or
                 local_var_params['document_id'] is None):
-            raise ApiValueError("Missing the required parameter `document_id` when calling `documents_download_document_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `document_id` when calling `o_a_documents_download_document_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -138,12 +138,12 @@ class DocumentsApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_get_id(self, id, **kwargs):  # noqa: E501
+    def o_a_documents_get_id(self, id, **kwargs):  # noqa: E501
         """Get document information by document id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_get_id(id, async_req=True)
+        >>> thread = api.o_a_documents_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -160,14 +160,14 @@ class DocumentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.o_a_documents_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def documents_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def o_a_documents_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get document information by document id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.o_a_documents_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -198,14 +198,14 @@ class DocumentsApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_get_id" % key
+                    " to method o_a_documents_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `documents_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `o_a_documents_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -240,12 +240,12 @@ class DocumentsApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_post(self, **kwargs):  # noqa: E501
+    def o_a_documents_post(self, **kwargs):  # noqa: E501
         """Upload a file into the docAPI, returns a document ids  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_post(async_req=True)
+        >>> thread = api.o_a_documents_post(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -261,14 +261,14 @@ class DocumentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_post_with_http_info(**kwargs)  # noqa: E501
+        return self.o_a_documents_post_with_http_info(**kwargs)  # noqa: E501
 
-    def documents_post_with_http_info(self, **kwargs):  # noqa: E501
+    def o_a_documents_post_with_http_info(self, **kwargs):  # noqa: E501
         """Upload a file into the docAPI, returns a document ids  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_post_with_http_info(async_req=True)
+        >>> thread = api.o_a_documents_post_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -298,7 +298,7 @@ class DocumentsApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_post" % key
+                    " to method o_a_documents_post" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']

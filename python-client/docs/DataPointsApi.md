@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**data_points_get_id**](DataPointsApi.md#data_points_get_id) | **GET** /charts/DataPoints/{id} | DataPoints: Get by Id
+[**o_a_data_points_get_id**](DataPointsApi.md#o_a_data_points_get_id) | **GET** /charts/DataPoints/{id} | DataPoints: Get by Id
 
 
-# **data_points_get_id**
-> ChartDataPoints data_points_get_id(id)
+# **o_a_data_points_get_id**
+> ChartDataPoints o_a_data_points_get_id(id)
 
 DataPoints: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the DataPoints object
 
 try:
     # DataPoints: Get by Id
-    api_response = api_instance.data_points_get_id(id)
+    api_response = api_instance.o_a_data_points_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DataPointsApi->data_points_get_id: %s\n" % e)
+    print("Exception when calling DataPointsApi->o_a_data_points_get_id: %s\n" % e)
 ```
 
 ### Parameters

@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**intensity_get**](IntensityApi.md#intensity_get) | **GET** /themes/Intensity | Intensity: List All Possible Types
-[**intensity_get_id**](IntensityApi.md#intensity_get_id) | **GET** /themes/Intensity/{id} | Intensity: Get by Id
+[**o_a_intensity_get**](IntensityApi.md#o_a_intensity_get) | **GET** /themes/Intensity | Intensity: List All Possible Types
+[**o_a_intensity_get_id**](IntensityApi.md#o_a_intensity_get_id) | **GET** /themes/Intensity/{id} | Intensity: Get by Id
 
 
-# **intensity_get**
-> list[ThemeIntensity] intensity_get()
+# **o_a_intensity_get**
+> list[ThemeIntensity] o_a_intensity_get()
 
 Intensity: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.IntensityApi()
 
 try:
     # Intensity: List All Possible Types
-    api_response = api_instance.intensity_get()
+    api_response = api_instance.o_a_intensity_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling IntensityApi->intensity_get: %s\n" % e)
+    print("Exception when calling IntensityApi->o_a_intensity_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **intensity_get_id**
-> ThemeIntensity intensity_get_id(id)
+# **o_a_intensity_get_id**
+> ThemeIntensity o_a_intensity_get_id(id)
 
 Intensity: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the Intensity object
 
 try:
     # Intensity: Get by Id
-    api_response = api_instance.intensity_get_id(id)
+    api_response = api_instance.o_a_intensity_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling IntensityApi->intensity_get_id: %s\n" % e)
+    print("Exception when calling IntensityApi->o_a_intensity_get_id: %s\n" % e)
 ```
 
 ### Parameters

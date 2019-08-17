@@ -28,15 +28,15 @@ class TestChartsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_charts_details_id(self):
-        """Test case for charts_details_id
+    def test_o_a_charts_details_id(self):
+        """Test case for o_a_charts_details_id
 
         Charts: Retrieve Object Tree  # noqa: E501
         """
         pass
 
-    def test_charts_get_id(self):
-        """Test case for charts_get_id
+    def test_o_a_charts_get_id(self):
+        """Test case for o_a_charts_get_id
 
         Charts: Get by Id  # noqa: E501
         """

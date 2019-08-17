@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**group_elements_get_id**](GroupElementsApi.md#group_elements_get_id) | **GET** /slides/GroupElements/{id} | GroupElements: Get by Id
+[**o_a_group_elements_get_id**](GroupElementsApi.md#o_a_group_elements_get_id) | **GET** /slides/GroupElements/{id} | GroupElements: Get by Id
 
 
-# **group_elements_get_id**
-> SlideGroupElements group_elements_get_id(id)
+# **o_a_group_elements_get_id**
+> SlideGroupElements o_a_group_elements_get_id(id)
 
 GroupElements: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the GroupElements object
 
 try:
     # GroupElements: Get by Id
-    api_response = api_instance.group_elements_get_id(id)
+    api_response = api_instance.o_a_group_elements_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GroupElementsApi->group_elements_get_id: %s\n" % e)
+    print("Exception when calling GroupElementsApi->o_a_group_elements_get_id: %s\n" % e)
 ```
 
 ### Parameters

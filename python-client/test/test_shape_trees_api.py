@@ -28,8 +28,8 @@ class TestShapeTreesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_shape_trees_get_id(self):
-        """Test case for shape_trees_get_id
+    def test_o_a_shape_trees_get_id(self):
+        """Test case for o_a_shape_trees_get_id
 
         ShapeTrees: Get by Id  # noqa: E501
         """

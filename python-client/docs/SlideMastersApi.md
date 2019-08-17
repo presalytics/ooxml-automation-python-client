@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**slide_masters_get_id**](SlideMastersApi.md#slide_masters_get_id) | **GET** /slides/SlideMasters/{id} | SlideMasters: Get by Id
+[**o_a_slide_masters_get_id**](SlideMastersApi.md#o_a_slide_masters_get_id) | **GET** /slides/SlideMasters/{id} | SlideMasters: Get by Id
 
 
-# **slide_masters_get_id**
-> SlideSlideMasters slide_masters_get_id(id)
+# **o_a_slide_masters_get_id**
+> SlideSlideMasters o_a_slide_masters_get_id(id)
 
 SlideMasters: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the SlideMasters object
 
 try:
     # SlideMasters: Get by Id
-    api_response = api_instance.slide_masters_get_id(id)
+    api_response = api_instance.o_a_slide_masters_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling SlideMastersApi->slide_masters_get_id: %s\n" % e)
+    print("Exception when calling SlideMastersApi->o_a_slide_masters_get_id: %s\n" % e)
 ```
 
 ### Parameters

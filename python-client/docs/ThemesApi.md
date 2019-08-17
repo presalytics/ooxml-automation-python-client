@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**themes_details_id**](ThemesApi.md#themes_details_id) | **GET** /Themes/Details/{Id} | Theme: Retrieve Object Tree
-[**themes_get_id**](ThemesApi.md#themes_get_id) | **GET** /Themes/{Id} | Themes: Get by Id
+[**o_a_themes_details_id**](ThemesApi.md#o_a_themes_details_id) | **GET** /Themes/Details/{Id} | Theme: Retrieve Object Tree
+[**o_a_themes_get_id**](ThemesApi.md#o_a_themes_get_id) | **GET** /Themes/{Id} | Themes: Get by Id
 
 
-# **themes_details_id**
-> ThemeThemes themes_details_id(id)
+# **o_a_themes_details_id**
+> ThemeThemes o_a_themes_details_id(id)
 
 Theme: Retrieve Object Tree
 
@@ -30,10 +30,10 @@ id = 56 # int |
 
 try:
     # Theme: Retrieve Object Tree
-    api_response = api_instance.themes_details_id(id)
+    api_response = api_instance.o_a_themes_details_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ThemesApi->themes_details_id: %s\n" % e)
+    print("Exception when calling ThemesApi->o_a_themes_details_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -63,8 +63,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **themes_get_id**
-> ThemeThemes themes_get_id(id)
+# **o_a_themes_get_id**
+> ThemeThemes o_a_themes_get_id(id)
 
 Themes: Get by Id
 
@@ -85,10 +85,10 @@ id = 56 # int | The primary key (Id) of the Themes object
 
 try:
     # Themes: Get by Id
-    api_response = api_instance.themes_get_id(id)
+    api_response = api_instance.o_a_themes_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ThemesApi->themes_get_id: %s\n" % e)
+    print("Exception when calling ThemesApi->o_a_themes_get_id: %s\n" % e)
 ```
 
 ### Parameters

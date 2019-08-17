@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**row_col_get**](RowColApi.md#row_col_get) | **GET** /charts/RowCol | RowCol: List All Possible Types
-[**row_col_get_id**](RowColApi.md#row_col_get_id) | **GET** /charts/RowCol/{id} | RowCol: Get by Id
+[**o_a_row_col_get**](RowColApi.md#o_a_row_col_get) | **GET** /charts/RowCol | RowCol: List All Possible Types
+[**o_a_row_col_get_id**](RowColApi.md#o_a_row_col_get_id) | **GET** /charts/RowCol/{id} | RowCol: Get by Id
 
 
-# **row_col_get**
-> list[ChartRowCol] row_col_get()
+# **o_a_row_col_get**
+> list[ChartRowCol] o_a_row_col_get()
 
 RowCol: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.RowColApi()
 
 try:
     # RowCol: List All Possible Types
-    api_response = api_instance.row_col_get()
+    api_response = api_instance.o_a_row_col_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RowColApi->row_col_get: %s\n" % e)
+    print("Exception when calling RowColApi->o_a_row_col_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **row_col_get_id**
-> ChartRowCol row_col_get_id(id)
+# **o_a_row_col_get_id**
+> ChartRowCol o_a_row_col_get_id(id)
 
 RowCol: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the RowCol object
 
 try:
     # RowCol: Get by Id
-    api_response = api_instance.row_col_get_id(id)
+    api_response = api_instance.o_a_row_col_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RowColApi->row_col_get_id: %s\n" % e)
+    print("Exception when calling RowColApi->o_a_row_col_get_id: %s\n" % e)
 ```
 
 ### Parameters

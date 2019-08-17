@@ -28,8 +28,8 @@ class TestBordersApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_borders_get_id(self):
-        """Test case for borders_get_id
+    def test_o_a_borders_get_id(self):
+        """Test case for o_a_borders_get_id
 
         Borders: Get by Id  # noqa: E501
         """

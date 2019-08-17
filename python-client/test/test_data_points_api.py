@@ -28,8 +28,8 @@ class TestDataPointsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_data_points_get_id(self):
-        """Test case for data_points_get_id
+    def test_o_a_data_points_get_id(self):
+        """Test case for o_a_data_points_get_id
 
         DataPoints: Get by Id  # noqa: E501
         """

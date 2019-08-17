@@ -36,13 +36,13 @@ class GroupElementsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def group_elements_get_id(self, id, **kwargs):  # noqa: E501
+    def o_a_group_elements_get_id(self, id, **kwargs):  # noqa: E501
         """GroupElements: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GroupElements object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.group_elements_get_id(id, async_req=True)
+        >>> thread = api.o_a_group_elements_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -59,15 +59,15 @@ class GroupElementsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.group_elements_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.o_a_group_elements_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def group_elements_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def o_a_group_elements_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GroupElements: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GroupElements object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.group_elements_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.o_a_group_elements_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -98,14 +98,14 @@ class GroupElementsApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method group_elements_get_id" % key
+                    " to method o_a_group_elements_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `group_elements_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `o_a_group_elements_get_id`")  # noqa: E501
 
         collection_formats = {}
 

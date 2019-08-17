@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**graphic_types_get**](GraphicTypesApi.md#graphic_types_get) | **GET** /slides/GraphicTypes | GraphicTypes: List All Possible Types
-[**graphic_types_get_id**](GraphicTypesApi.md#graphic_types_get_id) | **GET** /slides/GraphicTypes/{id} | GraphicTypes: Get by Id
+[**o_a_graphic_types_get**](GraphicTypesApi.md#o_a_graphic_types_get) | **GET** /slides/GraphicTypes | GraphicTypes: List All Possible Types
+[**o_a_graphic_types_get_id**](GraphicTypesApi.md#o_a_graphic_types_get_id) | **GET** /slides/GraphicTypes/{id} | GraphicTypes: Get by Id
 
 
-# **graphic_types_get**
-> list[SlideGraphicTypes] graphic_types_get()
+# **o_a_graphic_types_get**
+> list[SlideGraphicTypes] o_a_graphic_types_get()
 
 GraphicTypes: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.GraphicTypesApi()
 
 try:
     # GraphicTypes: List All Possible Types
-    api_response = api_instance.graphic_types_get()
+    api_response = api_instance.o_a_graphic_types_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GraphicTypesApi->graphic_types_get: %s\n" % e)
+    print("Exception when calling GraphicTypesApi->o_a_graphic_types_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **graphic_types_get_id**
-> SlideGraphicTypes graphic_types_get_id(id)
+# **o_a_graphic_types_get_id**
+> SlideGraphicTypes o_a_graphic_types_get_id(id)
 
 GraphicTypes: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the GraphicTypes object
 
 try:
     # GraphicTypes: Get by Id
-    api_response = api_instance.graphic_types_get_id(id)
+    api_response = api_instance.o_a_graphic_types_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GraphicTypesApi->graphic_types_get_id: %s\n" % e)
+    print("Exception when calling GraphicTypesApi->o_a_graphic_types_get_id: %s\n" % e)
 ```
 
 ### Parameters

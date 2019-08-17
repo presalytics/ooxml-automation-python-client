@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**graphics_get_id**](GraphicsApi.md#graphics_get_id) | **GET** /slides/Graphics/{id} | Graphics: Get by Id
+[**o_a_graphics_get_id**](GraphicsApi.md#o_a_graphics_get_id) | **GET** /slides/Graphics/{id} | Graphics: Get by Id
 
 
-# **graphics_get_id**
-> SlideGraphics graphics_get_id(id)
+# **o_a_graphics_get_id**
+> SlideGraphics o_a_graphics_get_id(id)
 
 Graphics: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the Graphics object
 
 try:
     # Graphics: Get by Id
-    api_response = api_instance.graphics_get_id(id)
+    api_response = api_instance.o_a_graphics_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GraphicsApi->graphics_get_id: %s\n" % e)
+    print("Exception when calling GraphicsApi->o_a_graphics_get_id: %s\n" % e)
 ```
 
 ### Parameters

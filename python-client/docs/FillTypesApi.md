@@ -4,12 +4,12 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fill_types_get**](FillTypesApi.md#fill_types_get) | **GET** /shared/FillTypes | FillTypes: List All Possible Types
-[**fill_types_get_id**](FillTypesApi.md#fill_types_get_id) | **GET** /shared/FillTypes/{id} | FillTypes: Get by Id
+[**o_a_fill_types_get**](FillTypesApi.md#o_a_fill_types_get) | **GET** /shared/FillTypes | FillTypes: List All Possible Types
+[**o_a_fill_types_get_id**](FillTypesApi.md#o_a_fill_types_get_id) | **GET** /shared/FillTypes/{id} | FillTypes: Get by Id
 
 
-# **fill_types_get**
-> list[SharedFillTypes] fill_types_get()
+# **o_a_fill_types_get**
+> list[SharedFillTypes] o_a_fill_types_get()
 
 FillTypes: List All Possible Types
 
@@ -29,10 +29,10 @@ api_instance = presalytics_ooxml_automation.FillTypesApi()
 
 try:
     # FillTypes: List All Possible Types
-    api_response = api_instance.fill_types_get()
+    api_response = api_instance.o_a_fill_types_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling FillTypesApi->fill_types_get: %s\n" % e)
+    print("Exception when calling FillTypesApi->o_a_fill_types_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -59,8 +59,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **fill_types_get_id**
-> SharedFillTypes fill_types_get_id(id)
+# **o_a_fill_types_get_id**
+> SharedFillTypes o_a_fill_types_get_id(id)
 
 FillTypes: Get by Id
 
@@ -81,10 +81,10 @@ id = 56 # int | The primary key (Id) of the FillTypes object
 
 try:
     # FillTypes: Get by Id
-    api_response = api_instance.fill_types_get_id(id)
+    api_response = api_instance.o_a_fill_types_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling FillTypesApi->fill_types_get_id: %s\n" % e)
+    print("Exception when calling FillTypesApi->o_a_fill_types_get_id: %s\n" % e)
 ```
 
 ### Parameters

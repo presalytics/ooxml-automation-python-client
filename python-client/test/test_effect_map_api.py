@@ -28,8 +28,8 @@ class TestEffectMapApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_effect_map_get_id(self):
-        """Test case for effect_map_get_id
+    def test_o_a_effect_map_get_id(self):
+        """Test case for o_a_effect_map_get_id
 
         EffectMap: Get by Id  # noqa: E501
         """

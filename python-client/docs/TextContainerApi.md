@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**text_container_get_id**](TextContainerApi.md#text_container_get_id) | **GET** /shared/TextContainer/{id} | TextContainer: Get by Id
+[**o_a_text_container_get_id**](TextContainerApi.md#o_a_text_container_get_id) | **GET** /shared/TextContainer/{id} | TextContainer: Get by Id
 
 
-# **text_container_get_id**
-> SharedTextContainer text_container_get_id(id)
+# **o_a_text_container_get_id**
+> SharedTextContainer o_a_text_container_get_id(id)
 
 TextContainer: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the TextContainer object
 
 try:
     # TextContainer: Get by Id
-    api_response = api_instance.text_container_get_id(id)
+    api_response = api_instance.o_a_text_container_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling TextContainerApi->text_container_get_id: %s\n" % e)
+    print("Exception when calling TextContainerApi->o_a_text_container_get_id: %s\n" % e)
 ```
 
 ### Parameters

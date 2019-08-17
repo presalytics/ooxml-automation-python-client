@@ -28,8 +28,8 @@ class TestBackgroundFillsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_background_fills_get_id(self):
-        """Test case for background_fills_get_id
+    def test_o_a_background_fills_get_id(self):
+        """Test case for o_a_background_fills_get_id
 
         BackgroundFills: Get by Id  # noqa: E501
         """

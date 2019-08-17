@@ -28,15 +28,15 @@ class TestGradientStopsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_gradient_stops_get_id(self):
-        """Test case for gradient_stops_get_id
+    def test_o_a_gradient_stops_get_id(self):
+        """Test case for o_a_gradient_stops_get_id
 
         GradientStops: Get by Id  # noqa: E501
         """
         pass
 
-    def test_gradient_stops_put_id(self):
-        """Test case for gradient_stops_put_id
+    def test_o_a_gradient_stops_put_id(self):
+        """Test case for o_a_gradient_stops_put_id
 
         GradientStops: Modify Values  # noqa: E501
         """

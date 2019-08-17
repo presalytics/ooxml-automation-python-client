@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**background_fills_get_id**](BackgroundFillsApi.md#background_fills_get_id) | **GET** /themes/BackgroundFills/{id} | BackgroundFills: Get by Id
+[**o_a_background_fills_get_id**](BackgroundFillsApi.md#o_a_background_fills_get_id) | **GET** /themes/BackgroundFills/{id} | BackgroundFills: Get by Id
 
 
-# **background_fills_get_id**
-> ThemeBackgroundFills background_fills_get_id(id)
+# **o_a_background_fills_get_id**
+> ThemeBackgroundFills o_a_background_fills_get_id(id)
 
 BackgroundFills: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the BackgroundFills object
 
 try:
     # BackgroundFills: Get by Id
-    api_response = api_instance.background_fills_get_id(id)
+    api_response = api_instance.o_a_background_fills_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling BackgroundFillsApi->background_fills_get_id: %s\n" % e)
+    print("Exception when calling BackgroundFillsApi->o_a_background_fills_get_id: %s\n" % e)
 ```
 
 ### Parameters

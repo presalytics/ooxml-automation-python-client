@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**color_transformations_get_id**](ColorTransformationsApi.md#color_transformations_get_id) | **GET** /shared/ColorTransformations/{id} | ColorTransformations: Get by Id
+[**o_a_color_transformations_get_id**](ColorTransformationsApi.md#o_a_color_transformations_get_id) | **GET** /shared/ColorTransformations/{id} | ColorTransformations: Get by Id
 
 
-# **color_transformations_get_id**
-> SharedColorTransformations color_transformations_get_id(id)
+# **o_a_color_transformations_get_id**
+> SharedColorTransformations o_a_color_transformations_get_id(id)
 
 ColorTransformations: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the ColorTransformations object
 
 try:
     # ColorTransformations: Get by Id
-    api_response = api_instance.color_transformations_get_id(id)
+    api_response = api_instance.o_a_color_transformations_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ColorTransformationsApi->color_transformations_get_id: %s\n" % e)
+    print("Exception when calling ColorTransformationsApi->o_a_color_transformations_get_id: %s\n" % e)
 ```
 
 ### Parameters

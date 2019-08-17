@@ -4,11 +4,11 @@ All URIs are relative to *http://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**chart_data_get_id**](ChartDataApi.md#chart_data_get_id) | **GET** /charts/ChartData/{id} | ChartData: Get by Id
+[**o_a_chart_data_get_id**](ChartDataApi.md#o_a_chart_data_get_id) | **GET** /charts/ChartData/{id} | ChartData: Get by Id
 
 
-# **chart_data_get_id**
-> ChartChartData chart_data_get_id(id)
+# **o_a_chart_data_get_id**
+> ChartChartData o_a_chart_data_get_id(id)
 
 ChartData: Get by Id
 
@@ -29,10 +29,10 @@ id = 56 # int | The primary key (Id) of the ChartData object
 
 try:
     # ChartData: Get by Id
-    api_response = api_instance.chart_data_get_id(id)
+    api_response = api_instance.o_a_chart_data_get_id(id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ChartDataApi->chart_data_get_id: %s\n" % e)
+    print("Exception when calling ChartDataApi->o_a_chart_data_get_id: %s\n" % e)
 ```
 
 ### Parameters

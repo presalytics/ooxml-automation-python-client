@@ -28,15 +28,15 @@ class TestPicturesApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_pictures_get_id(self):
-        """Test case for pictures_get_id
+    def test_o_a_pictures_get_id(self):
+        """Test case for o_a_pictures_get_id
 
         Pictures: Get by Id  # noqa: E501
         """
         pass
 
-    def test_pictures_put_id(self):
-        """Test case for pictures_put_id
+    def test_o_a_pictures_put_id(self):
+        """Test case for o_a_pictures_put_id
 
         Pictures: Modify Values  # noqa: E501
         """

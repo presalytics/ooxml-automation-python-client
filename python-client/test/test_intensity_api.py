@@ -28,15 +28,15 @@ class TestIntensityApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_intensity_get(self):
-        """Test case for intensity_get
+    def test_o_a_intensity_get(self):
+        """Test case for o_a_intensity_get
 
         Intensity: List All Possible Types  # noqa: E501
         """
         pass
 
-    def test_intensity_get_id(self):
-        """Test case for intensity_get_id
+    def test_o_a_intensity_get_id(self):
+        """Test case for o_a_intensity_get_id
 
         Intensity: Get by Id  # noqa: E501
         """
