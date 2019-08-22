@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "Presalytics API"
-VERSION = "0.2.10"
+VERSION = "0.2.11"
 # To install the library, run the following
 #
 # python setup.py install
