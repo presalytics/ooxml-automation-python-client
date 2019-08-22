@@ -1,7 +1,0 @@
-README.md
-setup.py
-presalytics_ooxml_automation.egg-info/PKG-INFO
-presalytics_ooxml_automation.egg-info/SOURCES.txt
-presalytics_ooxml_automation.egg-info/dependency_links.txt
-presalytics_ooxml_automation.egg-info/requires.txt
-presalytics_ooxml_automation.egg-info/top_level.txt
