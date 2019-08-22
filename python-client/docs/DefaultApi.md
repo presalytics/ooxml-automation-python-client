@@ -1,6 +1,6 @@
 # presalytics_ooxml_automation.DefaultApi
 
-All URIs are relative to *http://api.presalytics.io/ooxml-automation*
+All URIs are relative to *https://api.presalytics.io/ooxml-automation*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
