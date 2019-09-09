@@ -33,9 +33,9 @@ class ChartColumns(object):
     openapi_types = {
         'name': 'str',
         'index': 'int',
-        'axis_id': 'int',
-        'column_collection_id': 'int',
-        'id': 'int',
+        'axis_id': 'str',
+        'column_collection_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -72,10 +72,8 @@ class ChartColumns(object):
             self.name = name
         if index is not None:
             self.index = index
-        if axis_id is not None:
-            self.axis_id = axis_id
-        if column_collection_id is not None:
-            self.column_collection_id = column_collection_id
+        self.axis_id = axis_id
+        self.column_collection_id = column_collection_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -135,7 +133,7 @@ class ChartColumns(object):
 
 
         :return: The axis_id of this ChartColumns.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._axis_id
 
@@ -145,7 +143,7 @@ class ChartColumns(object):
 
 
         :param axis_id: The axis_id of this ChartColumns.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._axis_id = axis_id
@@ -156,7 +154,7 @@ class ChartColumns(object):
 
 
         :return: The column_collection_id of this ChartColumns.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._column_collection_id
 
@@ -166,7 +164,7 @@ class ChartColumns(object):
 
 
         :param column_collection_id: The column_collection_id of this ChartColumns.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._column_collection_id = column_collection_id
@@ -177,7 +175,7 @@ class ChartColumns(object):
 
 
         :return: The id of this ChartColumns.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -187,7 +185,7 @@ class ChartColumns(object):
 
 
         :param id: The id of this ChartColumns.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

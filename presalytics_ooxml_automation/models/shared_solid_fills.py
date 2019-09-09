@@ -34,9 +34,9 @@ class SharedSolidFills(object):
         'hex_value': 'str',
         'is_user_color': 'bool',
         'color_type_id': 'int',
-        'theme_fill_map_id': 'int',
-        'color_transformations_id': 'int',
-        'id': 'int',
+        'theme_fill_map_id': 'str',
+        'color_transformations_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -158,7 +158,7 @@ class SharedSolidFills(object):
 
 
         :return: The theme_fill_map_id of this SharedSolidFills.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._theme_fill_map_id
 
@@ -168,7 +168,7 @@ class SharedSolidFills(object):
 
 
         :param theme_fill_map_id: The theme_fill_map_id of this SharedSolidFills.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._theme_fill_map_id = theme_fill_map_id
@@ -179,7 +179,7 @@ class SharedSolidFills(object):
 
 
         :return: The color_transformations_id of this SharedSolidFills.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._color_transformations_id
 
@@ -189,7 +189,7 @@ class SharedSolidFills(object):
 
 
         :param color_transformations_id: The color_transformations_id of this SharedSolidFills.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._color_transformations_id = color_transformations_id
@@ -200,7 +200,7 @@ class SharedSolidFills(object):
 
 
         :return: The id of this SharedSolidFills.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -210,7 +210,7 @@ class SharedSolidFills(object):
 
 
         :param id: The id of this SharedSolidFills.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

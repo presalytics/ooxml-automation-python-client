@@ -31,7 +31,7 @@ class SlideColorMaps(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'slide_master_id': 'int',
+        'slide_master_id': 'str',
         'accent1': 'int',
         'accent2': 'int',
         'accent3': 'int',
@@ -44,7 +44,7 @@ class SlideColorMaps(object):
         'background2': 'int',
         'hyperlink': 'int',
         'followed_hyperlink': 'int',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -95,8 +95,7 @@ class SlideColorMaps(object):
         self._user_modified = None
         self.discriminator = None
 
-        if slide_master_id is not None:
-            self.slide_master_id = slide_master_id
+        self.slide_master_id = slide_master_id
         if accent1 is not None:
             self.accent1 = accent1
         if accent2 is not None:
@@ -138,7 +137,7 @@ class SlideColorMaps(object):
 
 
         :return: The slide_master_id of this SlideColorMaps.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._slide_master_id
 
@@ -148,7 +147,7 @@ class SlideColorMaps(object):
 
 
         :param slide_master_id: The slide_master_id of this SlideColorMaps.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._slide_master_id = slide_master_id
@@ -411,7 +410,7 @@ class SlideColorMaps(object):
 
 
         :return: The id of this SlideColorMaps.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -421,7 +420,7 @@ class SlideColorMaps(object):
 
 
         :param id: The id of this SlideColorMaps.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

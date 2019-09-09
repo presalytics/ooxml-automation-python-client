@@ -31,14 +31,15 @@ class SlideGroups(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'group_element_id': 'int',
+        'group_element_id': 'str',
         'name': 'str',
         'hidden': 'bool',
         'title': 'str',
         'ooxml_id': 'int',
         'svg_blob_location': 'str',
-        'oo_xml_blob_url': 'str',
-        'id': 'int',
+        'base_element_blob_url': 'str',
+        'package_uri': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -52,7 +53,8 @@ class SlideGroups(object):
         'title': 'Title',
         'ooxml_id': 'OoxmlId',
         'svg_blob_location': 'SvgBlobLocation',
-        'oo_xml_blob_url': 'OoXmlBlobUrl',
+        'base_element_blob_url': 'BaseElementBlobUrl',
+        'package_uri': 'PackageUri',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -60,7 +62,7 @@ class SlideGroups(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, group_element_id=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_location=None, oo_xml_blob_url=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, group_element_id=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_location=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideGroups - a model defined in OpenAPI"""  # noqa: E501
 
         self._group_element_id = None
@@ -69,7 +71,8 @@ class SlideGroups(object):
         self._title = None
         self._ooxml_id = None
         self._svg_blob_location = None
-        self._oo_xml_blob_url = None
+        self._base_element_blob_url = None
+        self._package_uri = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -77,8 +80,7 @@ class SlideGroups(object):
         self._user_modified = None
         self.discriminator = None
 
-        if group_element_id is not None:
-            self.group_element_id = group_element_id
+        self.group_element_id = group_element_id
         if name is not None:
             self.name = name
         if hidden is not None:
@@ -89,8 +91,10 @@ class SlideGroups(object):
             self.ooxml_id = ooxml_id
         if svg_blob_location is not None:
             self.svg_blob_location = svg_blob_location
-        if oo_xml_blob_url is not None:
-            self.oo_xml_blob_url = oo_xml_blob_url
+        if base_element_blob_url is not None:
+            self.base_element_blob_url = base_element_blob_url
+        if package_uri is not None:
+            self.package_uri = package_uri
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -108,7 +112,7 @@ class SlideGroups(object):
 
 
         :return: The group_element_id of this SlideGroups.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._group_element_id
 
@@ -118,7 +122,7 @@ class SlideGroups(object):
 
 
         :param group_element_id: The group_element_id of this SlideGroups.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._group_element_id = group_element_id
@@ -229,25 +233,46 @@ class SlideGroups(object):
         self._svg_blob_location = svg_blob_location
 
     @property
-    def oo_xml_blob_url(self):
-        """Gets the oo_xml_blob_url of this SlideGroups.  # noqa: E501
+    def base_element_blob_url(self):
+        """Gets the base_element_blob_url of this SlideGroups.  # noqa: E501
 
 
-        :return: The oo_xml_blob_url of this SlideGroups.  # noqa: E501
+        :return: The base_element_blob_url of this SlideGroups.  # noqa: E501
         :rtype: str
         """
-        return self._oo_xml_blob_url
+        return self._base_element_blob_url
 
-    @oo_xml_blob_url.setter
-    def oo_xml_blob_url(self, oo_xml_blob_url):
-        """Sets the oo_xml_blob_url of this SlideGroups.
+    @base_element_blob_url.setter
+    def base_element_blob_url(self, base_element_blob_url):
+        """Sets the base_element_blob_url of this SlideGroups.
 
 
-        :param oo_xml_blob_url: The oo_xml_blob_url of this SlideGroups.  # noqa: E501
+        :param base_element_blob_url: The base_element_blob_url of this SlideGroups.  # noqa: E501
         :type: str
         """
 
-        self._oo_xml_blob_url = oo_xml_blob_url
+        self._base_element_blob_url = base_element_blob_url
+
+    @property
+    def package_uri(self):
+        """Gets the package_uri of this SlideGroups.  # noqa: E501
+
+
+        :return: The package_uri of this SlideGroups.  # noqa: E501
+        :rtype: str
+        """
+        return self._package_uri
+
+    @package_uri.setter
+    def package_uri(self, package_uri):
+        """Sets the package_uri of this SlideGroups.
+
+
+        :param package_uri: The package_uri of this SlideGroups.  # noqa: E501
+        :type: str
+        """
+
+        self._package_uri = package_uri
 
     @property
     def id(self):
@@ -255,7 +280,7 @@ class SlideGroups(object):
 
 
         :return: The id of this SlideGroups.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -265,7 +290,7 @@ class SlideGroups(object):
 
 
         :param id: The id of this SlideGroups.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

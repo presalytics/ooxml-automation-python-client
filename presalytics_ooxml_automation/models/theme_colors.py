@@ -32,7 +32,7 @@ class ThemeColors(object):
     """
     openapi_types = {
         'name': 'str',
-        'theme_id': 'int',
+        'theme_id': 'str',
         'accent1': 'str',
         'accent2': 'str',
         'accent3': 'str',
@@ -45,7 +45,7 @@ class ThemeColors(object):
         'dark2': 'str',
         'hyperlink': 'str',
         'followed_hyperlink': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -100,8 +100,7 @@ class ThemeColors(object):
 
         if name is not None:
             self.name = name
-        if theme_id is not None:
-            self.theme_id = theme_id
+        self.theme_id = theme_id
         if accent1 is not None:
             self.accent1 = accent1
         if accent2 is not None:
@@ -164,7 +163,7 @@ class ThemeColors(object):
 
 
         :return: The theme_id of this ThemeColors.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._theme_id
 
@@ -174,7 +173,7 @@ class ThemeColors(object):
 
 
         :param theme_id: The theme_id of this ThemeColors.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._theme_id = theme_id
@@ -437,7 +436,7 @@ class ThemeColors(object):
 
 
         :return: The id of this ThemeColors.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -447,7 +446,7 @@ class ThemeColors(object):
 
 
         :param id: The id of this ThemeColors.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

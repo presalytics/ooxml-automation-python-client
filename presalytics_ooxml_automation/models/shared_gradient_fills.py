@@ -31,12 +31,12 @@ class SharedGradientFills(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'fill_map_id': 'int',
+        'fill_map_id': 'str',
         'angle': 'int',
         'rotate_with_shape': 'bool',
         'is_path': 'bool',
         'path_type': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -96,7 +96,7 @@ class SharedGradientFills(object):
 
 
         :return: The fill_map_id of this SharedGradientFills.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._fill_map_id
 
@@ -106,7 +106,7 @@ class SharedGradientFills(object):
 
 
         :param fill_map_id: The fill_map_id of this SharedGradientFills.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._fill_map_id = fill_map_id
@@ -201,7 +201,7 @@ class SharedGradientFills(object):
 
 
         :return: The id of this SharedGradientFills.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -211,7 +211,7 @@ class SharedGradientFills(object):
 
 
         :param id: The id of this SharedGradientFills.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

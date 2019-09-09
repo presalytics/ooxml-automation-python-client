@@ -32,10 +32,7 @@ class SharedFillMap(object):
     """
     openapi_types = {
         'fill_type_id': 'int',
-        'solid_fill_id': 'int',
-        'gradient_fill_id': 'int',
-        'image_fill_id': 'int',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -44,9 +41,6 @@ class SharedFillMap(object):
 
     attribute_map = {
         'fill_type_id': 'FillTypeId',
-        'solid_fill_id': 'SolidFillId',
-        'gradient_fill_id': 'GradientFillId',
-        'image_fill_id': 'ImageFillId',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -54,13 +48,10 @@ class SharedFillMap(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, fill_type_id=None, solid_fill_id=None, gradient_fill_id=None, image_fill_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedFillMap - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_type_id = None
-        self._solid_fill_id = None
-        self._gradient_fill_id = None
-        self._image_fill_id = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -70,9 +61,6 @@ class SharedFillMap(object):
 
         if fill_type_id is not None:
             self.fill_type_id = fill_type_id
-        self.solid_fill_id = solid_fill_id
-        self.gradient_fill_id = gradient_fill_id
-        self.image_fill_id = image_fill_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -106,75 +94,12 @@ class SharedFillMap(object):
         self._fill_type_id = fill_type_id
 
     @property
-    def solid_fill_id(self):
-        """Gets the solid_fill_id of this SharedFillMap.  # noqa: E501
-
-
-        :return: The solid_fill_id of this SharedFillMap.  # noqa: E501
-        :rtype: int
-        """
-        return self._solid_fill_id
-
-    @solid_fill_id.setter
-    def solid_fill_id(self, solid_fill_id):
-        """Sets the solid_fill_id of this SharedFillMap.
-
-
-        :param solid_fill_id: The solid_fill_id of this SharedFillMap.  # noqa: E501
-        :type: int
-        """
-
-        self._solid_fill_id = solid_fill_id
-
-    @property
-    def gradient_fill_id(self):
-        """Gets the gradient_fill_id of this SharedFillMap.  # noqa: E501
-
-
-        :return: The gradient_fill_id of this SharedFillMap.  # noqa: E501
-        :rtype: int
-        """
-        return self._gradient_fill_id
-
-    @gradient_fill_id.setter
-    def gradient_fill_id(self, gradient_fill_id):
-        """Sets the gradient_fill_id of this SharedFillMap.
-
-
-        :param gradient_fill_id: The gradient_fill_id of this SharedFillMap.  # noqa: E501
-        :type: int
-        """
-
-        self._gradient_fill_id = gradient_fill_id
-
-    @property
-    def image_fill_id(self):
-        """Gets the image_fill_id of this SharedFillMap.  # noqa: E501
-
-
-        :return: The image_fill_id of this SharedFillMap.  # noqa: E501
-        :rtype: int
-        """
-        return self._image_fill_id
-
-    @image_fill_id.setter
-    def image_fill_id(self, image_fill_id):
-        """Sets the image_fill_id of this SharedFillMap.
-
-
-        :param image_fill_id: The image_fill_id of this SharedFillMap.  # noqa: E501
-        :type: int
-        """
-
-        self._image_fill_id = image_fill_id
-
-    @property
     def id(self):
         """Gets the id of this SharedFillMap.  # noqa: E501
 
 
         :return: The id of this SharedFillMap.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -184,7 +109,7 @@ class SharedFillMap(object):
 
 
         :param id: The id of this SharedFillMap.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

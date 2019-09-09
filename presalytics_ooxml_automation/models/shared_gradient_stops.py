@@ -31,10 +31,10 @@ class SharedGradientStops(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'gradient_fills_id': 'int',
+        'gradient_fills_id': 'str',
         'position': 'int',
-        'solid_fills_id': 'int',
-        'id': 'int',
+        'solid_fills_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -65,12 +65,10 @@ class SharedGradientStops(object):
         self._user_modified = None
         self.discriminator = None
 
-        if gradient_fills_id is not None:
-            self.gradient_fills_id = gradient_fills_id
+        self.gradient_fills_id = gradient_fills_id
         if position is not None:
             self.position = position
-        if solid_fills_id is not None:
-            self.solid_fills_id = solid_fills_id
+        self.solid_fills_id = solid_fills_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -88,7 +86,7 @@ class SharedGradientStops(object):
 
 
         :return: The gradient_fills_id of this SharedGradientStops.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._gradient_fills_id
 
@@ -98,7 +96,7 @@ class SharedGradientStops(object):
 
 
         :param gradient_fills_id: The gradient_fills_id of this SharedGradientStops.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._gradient_fills_id = gradient_fills_id
@@ -130,7 +128,7 @@ class SharedGradientStops(object):
 
 
         :return: The solid_fills_id of this SharedGradientStops.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._solid_fills_id
 
@@ -140,7 +138,7 @@ class SharedGradientStops(object):
 
 
         :param solid_fills_id: The solid_fills_id of this SharedGradientStops.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._solid_fills_id = solid_fills_id
@@ -151,7 +149,7 @@ class SharedGradientStops(object):
 
 
         :return: The id of this SharedGradientStops.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +159,7 @@ class SharedGradientStops(object):
 
 
         :param id: The id of this SharedGradientStops.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

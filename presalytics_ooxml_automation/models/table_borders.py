@@ -31,13 +31,13 @@ class TableBorders(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'top_id': 'int',
-        'bottom_id': 'int',
-        'right_id': 'int',
-        'left_id': 'int',
-        't_lto_br_id': 'int',
-        'b_lto_tr_id': 'int',
-        'id': 'int',
+        'top_id': 'str',
+        'bottom_id': 'str',
+        'right_id': 'str',
+        'left_id': 'str',
+        't_lto_br_id': 'str',
+        'b_lto_tr_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -74,18 +74,12 @@ class TableBorders(object):
         self._user_modified = None
         self.discriminator = None
 
-        if top_id is not None:
-            self.top_id = top_id
-        if bottom_id is not None:
-            self.bottom_id = bottom_id
-        if right_id is not None:
-            self.right_id = right_id
-        if left_id is not None:
-            self.left_id = left_id
-        if t_lto_br_id is not None:
-            self.t_lto_br_id = t_lto_br_id
-        if b_lto_tr_id is not None:
-            self.b_lto_tr_id = b_lto_tr_id
+        self.top_id = top_id
+        self.bottom_id = bottom_id
+        self.right_id = right_id
+        self.left_id = left_id
+        self.t_lto_br_id = t_lto_br_id
+        self.b_lto_tr_id = b_lto_tr_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -103,7 +97,7 @@ class TableBorders(object):
 
 
         :return: The top_id of this TableBorders.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._top_id
 
@@ -113,7 +107,7 @@ class TableBorders(object):
 
 
         :param top_id: The top_id of this TableBorders.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._top_id = top_id
@@ -124,7 +118,7 @@ class TableBorders(object):
 
 
         :return: The bottom_id of this TableBorders.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._bottom_id
 
@@ -134,7 +128,7 @@ class TableBorders(object):
 
 
         :param bottom_id: The bottom_id of this TableBorders.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._bottom_id = bottom_id
@@ -145,7 +139,7 @@ class TableBorders(object):
 
 
         :return: The right_id of this TableBorders.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._right_id
 
@@ -155,7 +149,7 @@ class TableBorders(object):
 
 
         :param right_id: The right_id of this TableBorders.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._right_id = right_id
@@ -166,7 +160,7 @@ class TableBorders(object):
 
 
         :return: The left_id of this TableBorders.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._left_id
 
@@ -176,7 +170,7 @@ class TableBorders(object):
 
 
         :param left_id: The left_id of this TableBorders.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._left_id = left_id
@@ -187,7 +181,7 @@ class TableBorders(object):
 
 
         :return: The t_lto_br_id of this TableBorders.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._t_lto_br_id
 
@@ -197,7 +191,7 @@ class TableBorders(object):
 
 
         :param t_lto_br_id: The t_lto_br_id of this TableBorders.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._t_lto_br_id = t_lto_br_id
@@ -208,7 +202,7 @@ class TableBorders(object):
 
 
         :return: The b_lto_tr_id of this TableBorders.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._b_lto_tr_id
 
@@ -218,7 +212,7 @@ class TableBorders(object):
 
 
         :param b_lto_tr_id: The b_lto_tr_id of this TableBorders.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._b_lto_tr_id = b_lto_tr_id
@@ -229,7 +223,7 @@ class TableBorders(object):
 
 
         :return: The id of this TableBorders.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -239,7 +233,7 @@ class TableBorders(object):
 
 
         :param id: The id of this TableBorders.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

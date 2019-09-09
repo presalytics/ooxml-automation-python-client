@@ -33,8 +33,8 @@ class ThemeFonts(object):
     openapi_types = {
         'heading_font': 'str',
         'body_font': 'str',
-        'theme_id': 'int',
-        'id': 'int',
+        'theme_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -69,8 +69,7 @@ class ThemeFonts(object):
             self.heading_font = heading_font
         if body_font is not None:
             self.body_font = body_font
-        if theme_id is not None:
-            self.theme_id = theme_id
+        self.theme_id = theme_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -130,7 +129,7 @@ class ThemeFonts(object):
 
 
         :return: The theme_id of this ThemeFonts.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._theme_id
 
@@ -140,7 +139,7 @@ class ThemeFonts(object):
 
 
         :param theme_id: The theme_id of this ThemeFonts.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._theme_id = theme_id
@@ -151,7 +150,7 @@ class ThemeFonts(object):
 
 
         :return: The id of this ThemeFonts.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +160,7 @@ class ThemeFonts(object):
 
 
         :param id: The id of this ThemeFonts.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

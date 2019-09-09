@@ -31,11 +31,9 @@ class ChartChartData(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'chart_id': 'int',
-        'row_collections_id': 'int',
-        'column_collection_id': 'int',
+        'chart_id': 'str',
         'data_points': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -44,8 +42,6 @@ class ChartChartData(object):
 
     attribute_map = {
         'chart_id': 'ChartId',
-        'row_collections_id': 'RowCollectionsId',
-        'column_collection_id': 'ColumnCollectionId',
         'data_points': 'DataPoints',
         'id': 'Id',
         'date_created': 'DateCreated',
@@ -54,12 +50,10 @@ class ChartChartData(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, chart_id=None, row_collections_id=None, column_collection_id=None, data_points=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, chart_id=None, data_points=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartChartData - a model defined in OpenAPI"""  # noqa: E501
 
         self._chart_id = None
-        self._row_collections_id = None
-        self._column_collection_id = None
         self._data_points = None
         self._id = None
         self._date_created = None
@@ -68,12 +62,7 @@ class ChartChartData(object):
         self._user_modified = None
         self.discriminator = None
 
-        if chart_id is not None:
-            self.chart_id = chart_id
-        if row_collections_id is not None:
-            self.row_collections_id = row_collections_id
-        if column_collection_id is not None:
-            self.column_collection_id = column_collection_id
+        self.chart_id = chart_id
         if data_points is not None:
             self.data_points = data_points
         if id is not None:
@@ -93,7 +82,7 @@ class ChartChartData(object):
 
 
         :return: The chart_id of this ChartChartData.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._chart_id
 
@@ -103,52 +92,10 @@ class ChartChartData(object):
 
 
         :param chart_id: The chart_id of this ChartChartData.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._chart_id = chart_id
-
-    @property
-    def row_collections_id(self):
-        """Gets the row_collections_id of this ChartChartData.  # noqa: E501
-
-
-        :return: The row_collections_id of this ChartChartData.  # noqa: E501
-        :rtype: int
-        """
-        return self._row_collections_id
-
-    @row_collections_id.setter
-    def row_collections_id(self, row_collections_id):
-        """Sets the row_collections_id of this ChartChartData.
-
-
-        :param row_collections_id: The row_collections_id of this ChartChartData.  # noqa: E501
-        :type: int
-        """
-
-        self._row_collections_id = row_collections_id
-
-    @property
-    def column_collection_id(self):
-        """Gets the column_collection_id of this ChartChartData.  # noqa: E501
-
-
-        :return: The column_collection_id of this ChartChartData.  # noqa: E501
-        :rtype: int
-        """
-        return self._column_collection_id
-
-    @column_collection_id.setter
-    def column_collection_id(self, column_collection_id):
-        """Sets the column_collection_id of this ChartChartData.
-
-
-        :param column_collection_id: The column_collection_id of this ChartChartData.  # noqa: E501
-        :type: int
-        """
-
-        self._column_collection_id = column_collection_id
 
     @property
     def data_points(self):
@@ -177,7 +124,7 @@ class ChartChartData(object):
 
 
         :return: The id of this ChartChartData.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -187,7 +134,7 @@ class ChartChartData(object):
 
 
         :param id: The id of this ChartChartData.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

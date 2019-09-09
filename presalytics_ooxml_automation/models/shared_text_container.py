@@ -31,10 +31,10 @@ class SharedTextContainer(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'shape_id': 'int',
+        'shape_id': 'str',
         'outer_xml': 'str',
         'paragraphs': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -87,7 +87,7 @@ class SharedTextContainer(object):
 
 
         :return: The shape_id of this SharedTextContainer.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._shape_id
 
@@ -97,7 +97,7 @@ class SharedTextContainer(object):
 
 
         :param shape_id: The shape_id of this SharedTextContainer.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._shape_id = shape_id
@@ -150,7 +150,7 @@ class SharedTextContainer(object):
 
 
         :return: The id of this SharedTextContainer.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -160,7 +160,7 @@ class SharedTextContainer(object):
 
 
         :param id: The id of this SharedTextContainer.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

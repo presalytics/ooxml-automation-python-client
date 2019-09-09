@@ -31,7 +31,7 @@ class SharedLines(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'solid_fills_id': 'int',
+        'solid_fills_id': 'str',
         'dash_type_id': 'int',
         'head_end_type_id': 'int',
         'tail_end_type_id': 'int',
@@ -40,7 +40,7 @@ class SharedLines(object):
         'head_end_width_id': 'int',
         'tail_end_height_id': 'int',
         'tail_end_width_id': 'int',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -83,8 +83,7 @@ class SharedLines(object):
         self._user_modified = None
         self.discriminator = None
 
-        if solid_fills_id is not None:
-            self.solid_fills_id = solid_fills_id
+        self.solid_fills_id = solid_fills_id
         if dash_type_id is not None:
             self.dash_type_id = dash_type_id
         if head_end_type_id is not None:
@@ -118,7 +117,7 @@ class SharedLines(object):
 
 
         :return: The solid_fills_id of this SharedLines.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._solid_fills_id
 
@@ -128,7 +127,7 @@ class SharedLines(object):
 
 
         :param solid_fills_id: The solid_fills_id of this SharedLines.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._solid_fills_id = solid_fills_id
@@ -307,7 +306,7 @@ class SharedLines(object):
 
 
         :return: The id of this SharedLines.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -317,7 +316,7 @@ class SharedLines(object):
 
 
         :param id: The id of this SharedLines.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

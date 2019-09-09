@@ -31,8 +31,7 @@ class SlideSlideMasters(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'color_map_id': 'int',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -40,7 +39,6 @@ class SlideSlideMasters(object):
     }
 
     attribute_map = {
-        'color_map_id': 'ColorMapId',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -48,10 +46,9 @@ class SlideSlideMasters(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, color_map_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideSlideMasters - a model defined in OpenAPI"""  # noqa: E501
 
-        self._color_map_id = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -59,8 +56,6 @@ class SlideSlideMasters(object):
         self._user_modified = None
         self.discriminator = None
 
-        if color_map_id is not None:
-            self.color_map_id = color_map_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -73,33 +68,12 @@ class SlideSlideMasters(object):
             self.user_modified = user_modified
 
     @property
-    def color_map_id(self):
-        """Gets the color_map_id of this SlideSlideMasters.  # noqa: E501
-
-
-        :return: The color_map_id of this SlideSlideMasters.  # noqa: E501
-        :rtype: int
-        """
-        return self._color_map_id
-
-    @color_map_id.setter
-    def color_map_id(self, color_map_id):
-        """Sets the color_map_id of this SlideSlideMasters.
-
-
-        :param color_map_id: The color_map_id of this SlideSlideMasters.  # noqa: E501
-        :type: int
-        """
-
-        self._color_map_id = color_map_id
-
-    @property
     def id(self):
         """Gets the id of this SlideSlideMasters.  # noqa: E501
 
 
         :return: The id of this SlideSlideMasters.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -109,7 +83,7 @@ class SlideSlideMasters(object):
 
 
         :param id: The id of this SlideSlideMasters.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

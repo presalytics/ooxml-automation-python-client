@@ -32,10 +32,10 @@ class ChartRowCollections(object):
     """
     openapi_types = {
         'name_format_type': 'int',
-        'axis_id': 'int',
-        'chart_data_id': 'int',
+        'axis_id': 'str',
+        'chart_data_id': 'str',
         'rows': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -70,10 +70,8 @@ class ChartRowCollections(object):
 
         if name_format_type is not None:
             self.name_format_type = name_format_type
-        if axis_id is not None:
-            self.axis_id = axis_id
-        if chart_data_id is not None:
-            self.chart_data_id = chart_data_id
+        self.axis_id = axis_id
+        self.chart_data_id = chart_data_id
         if rows is not None:
             self.rows = rows
         if id is not None:
@@ -114,7 +112,7 @@ class ChartRowCollections(object):
 
 
         :return: The axis_id of this ChartRowCollections.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._axis_id
 
@@ -124,7 +122,7 @@ class ChartRowCollections(object):
 
 
         :param axis_id: The axis_id of this ChartRowCollections.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._axis_id = axis_id
@@ -135,7 +133,7 @@ class ChartRowCollections(object):
 
 
         :return: The chart_data_id of this ChartRowCollections.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._chart_data_id
 
@@ -145,7 +143,7 @@ class ChartRowCollections(object):
 
 
         :param chart_data_id: The chart_data_id of this ChartRowCollections.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._chart_data_id = chart_data_id
@@ -177,7 +175,7 @@ class ChartRowCollections(object):
 
 
         :return: The id of this ChartRowCollections.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -187,7 +185,7 @@ class ChartRowCollections(object):
 
 
         :param id: The id of this ChartRowCollections.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

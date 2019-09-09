@@ -31,9 +31,9 @@ class ChartColumnCollections(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'chart_data_id': 'int',
+        'chart_data_id': 'str',
         'columns': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -62,8 +62,7 @@ class ChartColumnCollections(object):
         self._user_modified = None
         self.discriminator = None
 
-        if chart_data_id is not None:
-            self.chart_data_id = chart_data_id
+        self.chart_data_id = chart_data_id
         if columns is not None:
             self.columns = columns
         if id is not None:
@@ -83,7 +82,7 @@ class ChartColumnCollections(object):
 
 
         :return: The chart_data_id of this ChartColumnCollections.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._chart_data_id
 
@@ -93,7 +92,7 @@ class ChartColumnCollections(object):
 
 
         :param chart_data_id: The chart_data_id of this ChartColumnCollections.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._chart_data_id = chart_data_id
@@ -125,7 +124,7 @@ class ChartColumnCollections(object):
 
 
         :return: The id of this ChartColumnCollections.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -135,7 +134,7 @@ class ChartColumnCollections(object):
 
 
         :param id: The id of this ChartColumnCollections.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

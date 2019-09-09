@@ -31,16 +31,16 @@ class TableCells(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'row_id': 'int',
-        'column_id': 'int',
+        'row_id': 'str',
+        'column_id': 'str',
         'row_span': 'int',
         'column_span': 'int',
         'is_merged_vertical': 'bool',
         'is_merged_horozontal': 'bool',
-        'fill_map_id': 'int',
-        'text_container_id': 'int',
-        'border_id': 'int',
-        'id': 'int',
+        'fill_map_id': 'str',
+        'text_container_id': 'str',
+        'border_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -83,10 +83,8 @@ class TableCells(object):
         self._user_modified = None
         self.discriminator = None
 
-        if row_id is not None:
-            self.row_id = row_id
-        if column_id is not None:
-            self.column_id = column_id
+        self.row_id = row_id
+        self.column_id = column_id
         if row_span is not None:
             self.row_span = row_span
         if column_span is not None:
@@ -115,7 +113,7 @@ class TableCells(object):
 
 
         :return: The row_id of this TableCells.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._row_id
 
@@ -125,7 +123,7 @@ class TableCells(object):
 
 
         :param row_id: The row_id of this TableCells.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._row_id = row_id
@@ -136,7 +134,7 @@ class TableCells(object):
 
 
         :return: The column_id of this TableCells.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._column_id
 
@@ -146,7 +144,7 @@ class TableCells(object):
 
 
         :param column_id: The column_id of this TableCells.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._column_id = column_id
@@ -241,7 +239,7 @@ class TableCells(object):
 
 
         :return: The fill_map_id of this TableCells.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._fill_map_id
 
@@ -251,7 +249,7 @@ class TableCells(object):
 
 
         :param fill_map_id: The fill_map_id of this TableCells.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._fill_map_id = fill_map_id
@@ -262,7 +260,7 @@ class TableCells(object):
 
 
         :return: The text_container_id of this TableCells.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._text_container_id
 
@@ -272,7 +270,7 @@ class TableCells(object):
 
 
         :param text_container_id: The text_container_id of this TableCells.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._text_container_id = text_container_id
@@ -283,7 +281,7 @@ class TableCells(object):
 
 
         :return: The border_id of this TableCells.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._border_id
 
@@ -293,7 +291,7 @@ class TableCells(object):
 
 
         :param border_id: The border_id of this TableCells.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._border_id = border_id
@@ -304,7 +302,7 @@ class TableCells(object):
 
 
         :return: The id of this TableCells.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -314,7 +312,7 @@ class TableCells(object):
 
 
         :param id: The id of this TableCells.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

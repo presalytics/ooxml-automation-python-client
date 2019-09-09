@@ -33,8 +33,8 @@ class TableColumns(object):
     openapi_types = {
         'index': 'int',
         'width': 'str',
-        'table_id': 'int',
-        'id': 'int',
+        'table_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -69,8 +69,7 @@ class TableColumns(object):
             self.index = index
         if width is not None:
             self.width = width
-        if table_id is not None:
-            self.table_id = table_id
+        self.table_id = table_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -130,7 +129,7 @@ class TableColumns(object):
 
 
         :return: The table_id of this TableColumns.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._table_id
 
@@ -140,7 +139,7 @@ class TableColumns(object):
 
 
         :param table_id: The table_id of this TableColumns.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._table_id = table_id
@@ -151,7 +150,7 @@ class TableColumns(object):
 
 
         :return: The id of this TableColumns.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +160,7 @@ class TableColumns(object):
 
 
         :param id: The id of this TableColumns.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

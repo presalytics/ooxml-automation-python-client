@@ -31,18 +31,14 @@ class SlideGraphics(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'group_elements_id': 'int',
+        'group_elements_id': 'str',
         'ooxml_id': 'int',
         'graphic_type_id': 'int',
         'height': 'int',
         'width': 'int',
         'x_offset': 'int',
         'y_offset': 'int',
-        'table_id': 'int',
-        'chart_id': 'int',
-        'smart_art_id': 'int',
-        'picture_id': 'int',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -57,10 +53,6 @@ class SlideGraphics(object):
         'width': 'Width',
         'x_offset': 'XOffset',
         'y_offset': 'YOffset',
-        'table_id': 'TableId',
-        'chart_id': 'ChartId',
-        'smart_art_id': 'SmartArtId',
-        'picture_id': 'PictureId',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -68,7 +60,7 @@ class SlideGraphics(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, group_elements_id=None, ooxml_id=None, graphic_type_id=None, height=None, width=None, x_offset=None, y_offset=None, table_id=None, chart_id=None, smart_art_id=None, picture_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, group_elements_id=None, ooxml_id=None, graphic_type_id=None, height=None, width=None, x_offset=None, y_offset=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideGraphics - a model defined in OpenAPI"""  # noqa: E501
 
         self._group_elements_id = None
@@ -78,10 +70,6 @@ class SlideGraphics(object):
         self._width = None
         self._x_offset = None
         self._y_offset = None
-        self._table_id = None
-        self._chart_id = None
-        self._smart_art_id = None
-        self._picture_id = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -89,8 +77,7 @@ class SlideGraphics(object):
         self._user_modified = None
         self.discriminator = None
 
-        if group_elements_id is not None:
-            self.group_elements_id = group_elements_id
+        self.group_elements_id = group_elements_id
         if ooxml_id is not None:
             self.ooxml_id = ooxml_id
         if graphic_type_id is not None:
@@ -103,10 +90,6 @@ class SlideGraphics(object):
             self.x_offset = x_offset
         if y_offset is not None:
             self.y_offset = y_offset
-        self.table_id = table_id
-        self.chart_id = chart_id
-        self.smart_art_id = smart_art_id
-        self.picture_id = picture_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -124,7 +107,7 @@ class SlideGraphics(object):
 
 
         :return: The group_elements_id of this SlideGraphics.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._group_elements_id
 
@@ -134,7 +117,7 @@ class SlideGraphics(object):
 
 
         :param group_elements_id: The group_elements_id of this SlideGraphics.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._group_elements_id = group_elements_id
@@ -266,96 +249,12 @@ class SlideGraphics(object):
         self._y_offset = y_offset
 
     @property
-    def table_id(self):
-        """Gets the table_id of this SlideGraphics.  # noqa: E501
-
-
-        :return: The table_id of this SlideGraphics.  # noqa: E501
-        :rtype: int
-        """
-        return self._table_id
-
-    @table_id.setter
-    def table_id(self, table_id):
-        """Sets the table_id of this SlideGraphics.
-
-
-        :param table_id: The table_id of this SlideGraphics.  # noqa: E501
-        :type: int
-        """
-
-        self._table_id = table_id
-
-    @property
-    def chart_id(self):
-        """Gets the chart_id of this SlideGraphics.  # noqa: E501
-
-
-        :return: The chart_id of this SlideGraphics.  # noqa: E501
-        :rtype: int
-        """
-        return self._chart_id
-
-    @chart_id.setter
-    def chart_id(self, chart_id):
-        """Sets the chart_id of this SlideGraphics.
-
-
-        :param chart_id: The chart_id of this SlideGraphics.  # noqa: E501
-        :type: int
-        """
-
-        self._chart_id = chart_id
-
-    @property
-    def smart_art_id(self):
-        """Gets the smart_art_id of this SlideGraphics.  # noqa: E501
-
-
-        :return: The smart_art_id of this SlideGraphics.  # noqa: E501
-        :rtype: int
-        """
-        return self._smart_art_id
-
-    @smart_art_id.setter
-    def smart_art_id(self, smart_art_id):
-        """Sets the smart_art_id of this SlideGraphics.
-
-
-        :param smart_art_id: The smart_art_id of this SlideGraphics.  # noqa: E501
-        :type: int
-        """
-
-        self._smart_art_id = smart_art_id
-
-    @property
-    def picture_id(self):
-        """Gets the picture_id of this SlideGraphics.  # noqa: E501
-
-
-        :return: The picture_id of this SlideGraphics.  # noqa: E501
-        :rtype: int
-        """
-        return self._picture_id
-
-    @picture_id.setter
-    def picture_id(self, picture_id):
-        """Sets the picture_id of this SlideGraphics.
-
-
-        :param picture_id: The picture_id of this SlideGraphics.  # noqa: E501
-        :type: int
-        """
-
-        self._picture_id = picture_id
-
-    @property
     def id(self):
         """Gets the id of this SlideGraphics.  # noqa: E501
 
 
         :return: The id of this SlideGraphics.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -365,7 +264,7 @@ class SlideGraphics(object):
 
 
         :param id: The id of this SlideGraphics.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

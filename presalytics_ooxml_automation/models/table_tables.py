@@ -35,12 +35,13 @@ class TableTables(object):
         'svg_blob_url': 'str',
         'has_style_part': 'bool',
         'style_part_outer_xml': 'str',
-        'parent_graphic_id': 'int',
+        'parent_graphic_id': 'str',
         'rows': 'str',
         'columns': 'str',
         'cells': 'str',
-        'oo_xml_blob_url': 'str',
-        'id': 'int',
+        'base_element_blob_url': 'str',
+        'package_uri': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -56,7 +57,8 @@ class TableTables(object):
         'rows': 'Rows',
         'columns': 'Columns',
         'cells': 'Cells',
-        'oo_xml_blob_url': 'OoXmlBlobUrl',
+        'base_element_blob_url': 'BaseElementBlobUrl',
+        'package_uri': 'PackageUri',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -64,7 +66,7 @@ class TableTables(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, name=None, svg_blob_url=None, has_style_part=None, style_part_outer_xml=None, parent_graphic_id=None, rows=None, columns=None, cells=None, oo_xml_blob_url=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, svg_blob_url=None, has_style_part=None, style_part_outer_xml=None, parent_graphic_id=None, rows=None, columns=None, cells=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableTables - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
@@ -75,7 +77,8 @@ class TableTables(object):
         self._rows = None
         self._columns = None
         self._cells = None
-        self._oo_xml_blob_url = None
+        self._base_element_blob_url = None
+        self._package_uri = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -91,16 +94,17 @@ class TableTables(object):
             self.has_style_part = has_style_part
         if style_part_outer_xml is not None:
             self.style_part_outer_xml = style_part_outer_xml
-        if parent_graphic_id is not None:
-            self.parent_graphic_id = parent_graphic_id
+        self.parent_graphic_id = parent_graphic_id
         if rows is not None:
             self.rows = rows
         if columns is not None:
             self.columns = columns
         if cells is not None:
             self.cells = cells
-        if oo_xml_blob_url is not None:
-            self.oo_xml_blob_url = oo_xml_blob_url
+        if base_element_blob_url is not None:
+            self.base_element_blob_url = base_element_blob_url
+        if package_uri is not None:
+            self.package_uri = package_uri
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -202,7 +206,7 @@ class TableTables(object):
 
 
         :return: The parent_graphic_id of this TableTables.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._parent_graphic_id
 
@@ -212,7 +216,7 @@ class TableTables(object):
 
 
         :param parent_graphic_id: The parent_graphic_id of this TableTables.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._parent_graphic_id = parent_graphic_id
@@ -281,25 +285,46 @@ class TableTables(object):
         self._cells = cells
 
     @property
-    def oo_xml_blob_url(self):
-        """Gets the oo_xml_blob_url of this TableTables.  # noqa: E501
+    def base_element_blob_url(self):
+        """Gets the base_element_blob_url of this TableTables.  # noqa: E501
 
 
-        :return: The oo_xml_blob_url of this TableTables.  # noqa: E501
+        :return: The base_element_blob_url of this TableTables.  # noqa: E501
         :rtype: str
         """
-        return self._oo_xml_blob_url
+        return self._base_element_blob_url
 
-    @oo_xml_blob_url.setter
-    def oo_xml_blob_url(self, oo_xml_blob_url):
-        """Sets the oo_xml_blob_url of this TableTables.
+    @base_element_blob_url.setter
+    def base_element_blob_url(self, base_element_blob_url):
+        """Sets the base_element_blob_url of this TableTables.
 
 
-        :param oo_xml_blob_url: The oo_xml_blob_url of this TableTables.  # noqa: E501
+        :param base_element_blob_url: The base_element_blob_url of this TableTables.  # noqa: E501
         :type: str
         """
 
-        self._oo_xml_blob_url = oo_xml_blob_url
+        self._base_element_blob_url = base_element_blob_url
+
+    @property
+    def package_uri(self):
+        """Gets the package_uri of this TableTables.  # noqa: E501
+
+
+        :return: The package_uri of this TableTables.  # noqa: E501
+        :rtype: str
+        """
+        return self._package_uri
+
+    @package_uri.setter
+    def package_uri(self, package_uri):
+        """Sets the package_uri of this TableTables.
+
+
+        :param package_uri: The package_uri of this TableTables.  # noqa: E501
+        :type: str
+        """
+
+        self._package_uri = package_uri
 
     @property
     def id(self):
@@ -307,7 +332,7 @@ class TableTables(object):
 
 
         :return: The id of this TableTables.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -317,7 +342,7 @@ class TableTables(object):
 
 
         :param id: The id of this TableTables.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

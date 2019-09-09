@@ -1625,16 +1625,15 @@ class DefaultApi(object):
             collection_formats=collection_formats)
 
     def charts_charts_details_id(self, id, **kwargs):  # noqa: E501
-        """Charts: Retrieve Object Tree  # noqa: E501
+        """Gets values from the entire object tree that respository class can perform CRUD operations on  # noqa: E501
 
-        Returns a nested JSON object of all the Charts base object and all of its descendants that can edited via the corresoponding methods tied to this object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.charts_charts_details_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1642,7 +1641,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: ChartCharts
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1650,16 +1649,15 @@ class DefaultApi(object):
         return self.charts_charts_details_id_with_http_info(id, **kwargs)  # noqa: E501
 
     def charts_charts_details_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Charts: Retrieve Object Tree  # noqa: E501
+        """Gets values from the entire object tree that respository class can perform CRUD operations on  # noqa: E501
 
-        Returns a nested JSON object of all the Charts base object and all of its descendants that can edited via the corresoponding methods tied to this object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.charts_charts_details_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1669,7 +1667,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(ChartCharts, status_code(int), headers(HTTPHeaderDict))
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1709,10 +1707,6 @@ class DefaultApi(object):
         local_var_files = {}
 
         body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
         # Authentication setting
         auth_settings = []  # noqa: E501
 
@@ -1724,7 +1718,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ChartCharts',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -1733,16 +1727,15 @@ class DefaultApi(object):
             collection_formats=collection_formats)
 
     def charts_charts_get_id(self, id, **kwargs):  # noqa: E501
-        """Charts: Get by Id  # noqa: E501
+        """Gets  the base DTO object for the repository  # noqa: E501
 
-        Get by Id: Use this method to retrieve a Charts object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.charts_charts_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Charts object (required)
+        :param int id: An Id of the respository DTO elemennt (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1750,7 +1743,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: ChartCharts
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1758,16 +1751,15 @@ class DefaultApi(object):
         return self.charts_charts_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
     def charts_charts_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Charts: Get by Id  # noqa: E501
+        """Gets  the base DTO object for the repository  # noqa: E501
 
-        Get by Id: Use this method to retrieve a Charts object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.charts_charts_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Charts object (required)
+        :param int id: An Id of the respository DTO elemennt (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1777,7 +1769,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(ChartCharts, status_code(int), headers(HTTPHeaderDict))
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1817,10 +1809,6 @@ class DefaultApi(object):
         local_var_files = {}
 
         body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
         # Authentication setting
         auth_settings = []  # noqa: E501
 
@@ -1832,7 +1820,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ChartCharts',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -2057,7 +2045,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int document_id: (required)
+        :param str document_id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2081,7 +2069,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int document_id: (required)
+        :param str document_id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2261,7 +2249,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param file filename: The file to upload.  Must be of type .pptx, ppt
+        :param file file: The file to upload.  Must be of type .pptx, ppt
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2269,7 +2257,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: None
+        :return: list[Document]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2285,7 +2273,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param file filename: The file to upload.  Must be of type .pptx, ppt
+        :param file file: The file to upload.  Must be of type .pptx, ppt
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2295,14 +2283,14 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: None
+        :return: tuple(list[Document], status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
         local_var_params = locals()
 
-        all_params = ['filename']  # noqa: E501
+        all_params = ['file']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2327,10 +2315,14 @@ class DefaultApi(object):
 
         form_params = []
         local_var_files = {}
-        if 'filename' in local_var_params:
-            local_var_files['filename'] = local_var_params['filename']  # noqa: E501
+        if 'file' in local_var_params:
+            local_var_files['file'] = local_var_params['file']  # noqa: E501
 
         body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
             ['multipart/form-data'])  # noqa: E501
@@ -2346,7 +2338,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='list[Document]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -2364,7 +2356,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorTransformationAttributes object (required)
+        :param str id: The primary key (Id) of the ColorTransformationAttributes object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2389,7 +2381,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorTransformationAttributes object (required)
+        :param str id: The primary key (Id) of the ColorTransformationAttributes object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2472,7 +2464,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedColorTransformationAttributes shared_color_transformation_attributes:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -2498,7 +2490,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedColorTransformationAttributes shared_color_transformation_attributes:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -3108,7 +3100,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the EffectAttributes object (required)
+        :param str id: The primary key (Id) of the EffectAttributes object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3133,7 +3125,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the EffectAttributes object (required)
+        :param str id: The primary key (Id) of the EffectAttributes object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -3216,7 +3208,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedEffectAttributes shared_effect_attributes:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -3242,7 +3234,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedEffectAttributes shared_effect_attributes:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -3960,7 +3952,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GradientFills object (required)
+        :param str id: The primary key (Id) of the GradientFills object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3985,7 +3977,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GradientFills object (required)
+        :param str id: The primary key (Id) of the GradientFills object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4068,7 +4060,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedGradientFills shared_gradient_fills:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -4094,7 +4086,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedGradientFills shared_gradient_fills:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -4180,7 +4172,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GradientStops object (required)
+        :param str id: The primary key (Id) of the GradientStops object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4205,7 +4197,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GradientStops object (required)
+        :param str id: The primary key (Id) of the GradientStops object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4288,7 +4280,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedGradientStops shared_gradient_stops:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -4314,7 +4306,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedGradientStops shared_gradient_stops:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -4400,7 +4392,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ImageFills object (required)
+        :param str id: The primary key (Id) of the ImageFills object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4425,7 +4417,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ImageFills object (required)
+        :param str id: The primary key (Id) of the ImageFills object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4508,7 +4500,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedImageFills shared_image_fills:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -4534,7 +4526,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedImageFills shared_image_fills:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -5036,7 +5028,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Lines object (required)
+        :param str id: The primary key (Id) of the Lines object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -5061,7 +5053,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Lines object (required)
+        :param str id: The primary key (Id) of the Lines object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -5144,7 +5136,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedLines shared_lines:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -5170,7 +5162,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedLines shared_lines:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -5364,7 +5356,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Pictures object (required)
+        :param str id: The primary key (Id) of the Pictures object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -5389,7 +5381,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Pictures object (required)
+        :param str id: The primary key (Id) of the Pictures object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -5472,7 +5464,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedPictures shared_pictures:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -5498,7 +5490,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedPictures shared_pictures:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -5584,7 +5576,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the SolidFills object (required)
+        :param str id: The primary key (Id) of the SolidFills object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -5609,7 +5601,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the SolidFills object (required)
+        :param str id: The primary key (Id) of the SolidFills object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -5692,7 +5684,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedSolidFills shared_solid_fills:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -5718,7 +5710,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedSolidFills shared_solid_fills:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -5912,7 +5904,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Text object (required)
+        :param str id: The primary key (Id) of the Text object (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -5937,7 +5929,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Text object (required)
+        :param str id: The primary key (Id) of the Text object (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -6020,7 +6012,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedText shared_text:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -6046,7 +6038,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param SharedText shared_text:
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -7187,16 +7179,15 @@ class DefaultApi(object):
             collection_formats=collection_formats)
 
     def slides_slides_details_id(self, id, **kwargs):  # noqa: E501
-        """Slides: Retrieve Object Tree  # noqa: E501
+        """Gets values from the entire object tree that respository class can perform CRUD operations on  # noqa: E501
 
-        Returns a nested JSON object of all the Slides base object and all of its descendants that can edited via the corresoponding methods tied to this object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.slides_slides_details_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -7204,7 +7195,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: SlideSlides
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7212,16 +7203,15 @@ class DefaultApi(object):
         return self.slides_slides_details_id_with_http_info(id, **kwargs)  # noqa: E501
 
     def slides_slides_details_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Slides: Retrieve Object Tree  # noqa: E501
+        """Gets values from the entire object tree that respository class can perform CRUD operations on  # noqa: E501
 
-        Returns a nested JSON object of all the Slides base object and all of its descendants that can edited via the corresoponding methods tied to this object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.slides_slides_details_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -7231,7 +7221,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(SlideSlides, status_code(int), headers(HTTPHeaderDict))
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7271,10 +7261,6 @@ class DefaultApi(object):
         local_var_files = {}
 
         body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
         # Authentication setting
         auth_settings = []  # noqa: E501
 
@@ -7286,7 +7272,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SlideSlides',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -7295,16 +7281,15 @@ class DefaultApi(object):
             collection_formats=collection_formats)
 
     def slides_slides_get_id(self, id, **kwargs):  # noqa: E501
-        """Slides: Get by Id  # noqa: E501
+        """Gets  the base DTO object for the repository  # noqa: E501
 
-        Get by Id: Use this method to retrieve a Slides object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.slides_slides_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Slides object (required)
+        :param int id: An Id of the respository DTO elemennt (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -7312,7 +7297,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: SlideSlides
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7320,16 +7305,15 @@ class DefaultApi(object):
         return self.slides_slides_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
     def slides_slides_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Slides: Get by Id  # noqa: E501
+        """Gets  the base DTO object for the repository  # noqa: E501
 
-        Get by Id: Use this method to retrieve a Slides object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.slides_slides_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Slides object (required)
+        :param int id: An Id of the respository DTO elemennt (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -7339,7 +7323,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(SlideSlides, status_code(int), headers(HTTPHeaderDict))
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -7379,10 +7363,6 @@ class DefaultApi(object):
         local_var_files = {}
 
         body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
         # Authentication setting
         auth_settings = []  # noqa: E501
 
@@ -7394,7 +7374,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SlideSlides',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -7844,7 +7824,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -7869,7 +7849,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -8051,16 +8031,15 @@ class DefaultApi(object):
             collection_formats=collection_formats)
 
     def theme_themes_details_id(self, id, **kwargs):  # noqa: E501
-        """Theme: Retrieve Object Tree  # noqa: E501
+        """Gets values from the entire object tree that respository class can perform CRUD operations on  # noqa: E501
 
-        Returns a nested JSON object of all the Theme base object and all of its descendants that can edited via the corresoponding methods tied to this object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.theme_themes_details_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -8068,7 +8047,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: ThemeThemes
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8076,16 +8055,15 @@ class DefaultApi(object):
         return self.theme_themes_details_id_with_http_info(id, **kwargs)  # noqa: E501
 
     def theme_themes_details_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Theme: Retrieve Object Tree  # noqa: E501
+        """Gets values from the entire object tree that respository class can perform CRUD operations on  # noqa: E501
 
-        Returns a nested JSON object of all the Theme base object and all of its descendants that can edited via the corresoponding methods tied to this object.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.theme_themes_details_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -8095,7 +8073,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(ThemeThemes, status_code(int), headers(HTTPHeaderDict))
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8135,10 +8113,6 @@ class DefaultApi(object):
         local_var_files = {}
 
         body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
         # Authentication setting
         auth_settings = []  # noqa: E501
 
@@ -8150,7 +8124,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ThemeThemes',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -8159,16 +8133,15 @@ class DefaultApi(object):
             collection_formats=collection_formats)
 
     def theme_themes_get_id(self, id, **kwargs):  # noqa: E501
-        """Themes: Get by Id  # noqa: E501
+        """Gets  the base DTO object for the repository  # noqa: E501
 
-        Get by Id: Use this method to retrieve a Themes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.theme_themes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Themes object (required)
+        :param int id: An Id of the respository DTO elemennt (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -8176,7 +8149,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: ThemeThemes
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8184,16 +8157,15 @@ class DefaultApi(object):
         return self.theme_themes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
     def theme_themes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """Themes: Get by Id  # noqa: E501
+        """Gets  the base DTO object for the repository  # noqa: E501
 
-        Get by Id: Use this method to retrieve a Themes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.theme_themes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Themes object (required)
+        :param int id: An Id of the respository DTO elemennt (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -8203,7 +8175,7 @@ class DefaultApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(ThemeThemes, status_code(int), headers(HTTPHeaderDict))
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -8243,10 +8215,6 @@ class DefaultApi(object):
         local_var_files = {}
 
         body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
         # Authentication setting
         auth_settings = []  # noqa: E501
 
@@ -8258,7 +8226,7 @@ class DefaultApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='ThemeThemes',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501

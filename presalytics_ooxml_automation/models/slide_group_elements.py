@@ -31,14 +31,10 @@ class SlideGroupElements(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'shape_tree_id': 'int',
-        'parent_group_element_id': 'int',
+        'shape_tree_id': 'str',
+        'parent_group_element_id': 'str',
         'group_element_type_id': 'int',
-        'group_id': 'int',
-        'shape_id': 'int',
-        'connector_id': 'int',
-        'graphics_id': 'int',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -49,10 +45,6 @@ class SlideGroupElements(object):
         'shape_tree_id': 'ShapeTreeId',
         'parent_group_element_id': 'ParentGroupElementId',
         'group_element_type_id': 'GroupElementTypeId',
-        'group_id': 'GroupId',
-        'shape_id': 'ShapeId',
-        'connector_id': 'ConnectorId',
-        'graphics_id': 'GraphicsId',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -60,16 +52,12 @@ class SlideGroupElements(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, shape_tree_id=None, parent_group_element_id=None, group_element_type_id=None, group_id=None, shape_id=None, connector_id=None, graphics_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, shape_tree_id=None, parent_group_element_id=None, group_element_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideGroupElements - a model defined in OpenAPI"""  # noqa: E501
 
         self._shape_tree_id = None
         self._parent_group_element_id = None
         self._group_element_type_id = None
-        self._group_id = None
-        self._shape_id = None
-        self._connector_id = None
-        self._graphics_id = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -82,11 +70,6 @@ class SlideGroupElements(object):
         self.parent_group_element_id = parent_group_element_id
         if group_element_type_id is not None:
             self.group_element_type_id = group_element_type_id
-        self.group_id = group_id
-        self.shape_id = shape_id
-        if connector_id is not None:
-            self.connector_id = connector_id
-        self.graphics_id = graphics_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -104,7 +87,7 @@ class SlideGroupElements(object):
 
 
         :return: The shape_tree_id of this SlideGroupElements.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._shape_tree_id
 
@@ -114,7 +97,7 @@ class SlideGroupElements(object):
 
 
         :param shape_tree_id: The shape_tree_id of this SlideGroupElements.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._shape_tree_id = shape_tree_id
@@ -125,7 +108,7 @@ class SlideGroupElements(object):
 
 
         :return: The parent_group_element_id of this SlideGroupElements.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._parent_group_element_id
 
@@ -135,7 +118,7 @@ class SlideGroupElements(object):
 
 
         :param parent_group_element_id: The parent_group_element_id of this SlideGroupElements.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._parent_group_element_id = parent_group_element_id
@@ -162,96 +145,12 @@ class SlideGroupElements(object):
         self._group_element_type_id = group_element_type_id
 
     @property
-    def group_id(self):
-        """Gets the group_id of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The group_id of this SlideGroupElements.  # noqa: E501
-        :rtype: int
-        """
-        return self._group_id
-
-    @group_id.setter
-    def group_id(self, group_id):
-        """Sets the group_id of this SlideGroupElements.
-
-
-        :param group_id: The group_id of this SlideGroupElements.  # noqa: E501
-        :type: int
-        """
-
-        self._group_id = group_id
-
-    @property
-    def shape_id(self):
-        """Gets the shape_id of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The shape_id of this SlideGroupElements.  # noqa: E501
-        :rtype: int
-        """
-        return self._shape_id
-
-    @shape_id.setter
-    def shape_id(self, shape_id):
-        """Sets the shape_id of this SlideGroupElements.
-
-
-        :param shape_id: The shape_id of this SlideGroupElements.  # noqa: E501
-        :type: int
-        """
-
-        self._shape_id = shape_id
-
-    @property
-    def connector_id(self):
-        """Gets the connector_id of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The connector_id of this SlideGroupElements.  # noqa: E501
-        :rtype: int
-        """
-        return self._connector_id
-
-    @connector_id.setter
-    def connector_id(self, connector_id):
-        """Sets the connector_id of this SlideGroupElements.
-
-
-        :param connector_id: The connector_id of this SlideGroupElements.  # noqa: E501
-        :type: int
-        """
-
-        self._connector_id = connector_id
-
-    @property
-    def graphics_id(self):
-        """Gets the graphics_id of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The graphics_id of this SlideGroupElements.  # noqa: E501
-        :rtype: int
-        """
-        return self._graphics_id
-
-    @graphics_id.setter
-    def graphics_id(self, graphics_id):
-        """Sets the graphics_id of this SlideGroupElements.
-
-
-        :param graphics_id: The graphics_id of this SlideGroupElements.  # noqa: E501
-        :type: int
-        """
-
-        self._graphics_id = graphics_id
-
-    @property
     def id(self):
         """Gets the id of this SlideGroupElements.  # noqa: E501
 
 
         :return: The id of this SlideGroupElements.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -261,7 +160,7 @@ class SlideGroupElements(object):
 
 
         :param id: The id of this SlideGroupElements.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

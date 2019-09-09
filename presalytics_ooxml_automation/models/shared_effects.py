@@ -32,7 +32,7 @@ class SharedEffects(object):
     """
     openapi_types = {
         'name': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -99,7 +99,7 @@ class SharedEffects(object):
 
 
         :return: The id of this SharedEffects.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -109,7 +109,7 @@ class SharedEffects(object):
 
 
         :param id: The id of this SharedEffects.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

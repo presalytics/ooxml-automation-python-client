@@ -31,10 +31,10 @@ class ThemeEffectMap(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'theme_id': 'int',
+        'theme_id': 'str',
         'intensity_id': 'int',
-        'effect_id': 'int',
-        'id': 'int',
+        'effect_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -65,12 +65,10 @@ class ThemeEffectMap(object):
         self._user_modified = None
         self.discriminator = None
 
-        if theme_id is not None:
-            self.theme_id = theme_id
+        self.theme_id = theme_id
         if intensity_id is not None:
             self.intensity_id = intensity_id
-        if effect_id is not None:
-            self.effect_id = effect_id
+        self.effect_id = effect_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -88,7 +86,7 @@ class ThemeEffectMap(object):
 
 
         :return: The theme_id of this ThemeEffectMap.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._theme_id
 
@@ -98,7 +96,7 @@ class ThemeEffectMap(object):
 
 
         :param theme_id: The theme_id of this ThemeEffectMap.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._theme_id = theme_id
@@ -130,7 +128,7 @@ class ThemeEffectMap(object):
 
 
         :return: The effect_id of this ThemeEffectMap.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._effect_id
 
@@ -140,7 +138,7 @@ class ThemeEffectMap(object):
 
 
         :param effect_id: The effect_id of this ThemeEffectMap.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._effect_id = effect_id
@@ -151,7 +149,7 @@ class ThemeEffectMap(object):
 
 
         :return: The id of this ThemeEffectMap.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +159,7 @@ class ThemeEffectMap(object):
 
 
         :param id: The id of this ThemeEffectMap.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

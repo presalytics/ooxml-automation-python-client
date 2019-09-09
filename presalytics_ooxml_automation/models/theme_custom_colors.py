@@ -31,10 +31,10 @@ class ThemeCustomColors(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'theme_id': 'int',
+        'theme_id': 'str',
         'name': 'str',
         'hex_value': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -65,8 +65,7 @@ class ThemeCustomColors(object):
         self._user_modified = None
         self.discriminator = None
 
-        if theme_id is not None:
-            self.theme_id = theme_id
+        self.theme_id = theme_id
         if name is not None:
             self.name = name
         if hex_value is not None:
@@ -88,7 +87,7 @@ class ThemeCustomColors(object):
 
 
         :return: The theme_id of this ThemeCustomColors.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._theme_id
 
@@ -98,7 +97,7 @@ class ThemeCustomColors(object):
 
 
         :param theme_id: The theme_id of this ThemeCustomColors.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._theme_id = theme_id
@@ -151,7 +150,7 @@ class ThemeCustomColors(object):
 
 
         :return: The id of this ThemeCustomColors.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +160,7 @@ class ThemeCustomColors(object):
 
 
         :param id: The id of this ThemeCustomColors.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

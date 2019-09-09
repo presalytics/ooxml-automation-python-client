@@ -31,10 +31,10 @@ class SharedColorTransformationAttributes(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'color_transformations_id': 'int',
+        'color_transformations_id': 'str',
         'name': 'str',
         'value': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -65,8 +65,7 @@ class SharedColorTransformationAttributes(object):
         self._user_modified = None
         self.discriminator = None
 
-        if color_transformations_id is not None:
-            self.color_transformations_id = color_transformations_id
+        self.color_transformations_id = color_transformations_id
         if name is not None:
             self.name = name
         if value is not None:
@@ -88,7 +87,7 @@ class SharedColorTransformationAttributes(object):
 
 
         :return: The color_transformations_id of this SharedColorTransformationAttributes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._color_transformations_id
 
@@ -98,7 +97,7 @@ class SharedColorTransformationAttributes(object):
 
 
         :param color_transformations_id: The color_transformations_id of this SharedColorTransformationAttributes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._color_transformations_id = color_transformations_id
@@ -151,7 +150,7 @@ class SharedColorTransformationAttributes(object):
 
 
         :return: The id of this SharedColorTransformationAttributes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +160,7 @@ class SharedColorTransformationAttributes(object):
 
 
         :param id: The id of this SharedColorTransformationAttributes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

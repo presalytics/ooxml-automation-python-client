@@ -31,10 +31,10 @@ class SharedParagraph(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'text_container_id': 'int',
+        'text_container_id': 'str',
         'number': 'int',
         'text': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -65,8 +65,7 @@ class SharedParagraph(object):
         self._user_modified = None
         self.discriminator = None
 
-        if text_container_id is not None:
-            self.text_container_id = text_container_id
+        self.text_container_id = text_container_id
         if number is not None:
             self.number = number
         if text is not None:
@@ -88,7 +87,7 @@ class SharedParagraph(object):
 
 
         :return: The text_container_id of this SharedParagraph.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._text_container_id
 
@@ -98,7 +97,7 @@ class SharedParagraph(object):
 
 
         :param text_container_id: The text_container_id of this SharedParagraph.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._text_container_id = text_container_id
@@ -151,7 +150,7 @@ class SharedParagraph(object):
 
 
         :return: The id of this SharedParagraph.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +160,7 @@ class SharedParagraph(object):
 
 
         :param id: The id of this SharedParagraph.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

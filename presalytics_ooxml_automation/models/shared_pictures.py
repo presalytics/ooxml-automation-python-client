@@ -31,11 +31,13 @@ class SharedPictures(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'graphics_id': 'int',
+        'graphics_id': 'str',
+        'image_fills_id': 'str',
         'image_file_blob_url': 'str',
         'file_extension': 'str',
-        'oo_xml_blob_url': 'str',
-        'id': 'int',
+        'base_element_blob_url': 'str',
+        'package_uri': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -44,9 +46,11 @@ class SharedPictures(object):
 
     attribute_map = {
         'graphics_id': 'GraphicsId',
+        'image_fills_id': 'ImageFillsId',
         'image_file_blob_url': 'ImageFileBlobUrl',
         'file_extension': 'FileExtension',
-        'oo_xml_blob_url': 'OoXmlBlobUrl',
+        'base_element_blob_url': 'BaseElementBlobUrl',
+        'package_uri': 'PackageUri',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -54,13 +58,15 @@ class SharedPictures(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, graphics_id=None, image_file_blob_url=None, file_extension=None, oo_xml_blob_url=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, graphics_id=None, image_fills_id=None, image_file_blob_url=None, file_extension=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedPictures - a model defined in OpenAPI"""  # noqa: E501
 
         self._graphics_id = None
+        self._image_fills_id = None
         self._image_file_blob_url = None
         self._file_extension = None
-        self._oo_xml_blob_url = None
+        self._base_element_blob_url = None
+        self._package_uri = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -68,14 +74,16 @@ class SharedPictures(object):
         self._user_modified = None
         self.discriminator = None
 
-        if graphics_id is not None:
-            self.graphics_id = graphics_id
+        self.graphics_id = graphics_id
+        self.image_fills_id = image_fills_id
         if image_file_blob_url is not None:
             self.image_file_blob_url = image_file_blob_url
         if file_extension is not None:
             self.file_extension = file_extension
-        if oo_xml_blob_url is not None:
-            self.oo_xml_blob_url = oo_xml_blob_url
+        if base_element_blob_url is not None:
+            self.base_element_blob_url = base_element_blob_url
+        if package_uri is not None:
+            self.package_uri = package_uri
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -93,7 +101,7 @@ class SharedPictures(object):
 
 
         :return: The graphics_id of this SharedPictures.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._graphics_id
 
@@ -103,10 +111,31 @@ class SharedPictures(object):
 
 
         :param graphics_id: The graphics_id of this SharedPictures.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._graphics_id = graphics_id
+
+    @property
+    def image_fills_id(self):
+        """Gets the image_fills_id of this SharedPictures.  # noqa: E501
+
+
+        :return: The image_fills_id of this SharedPictures.  # noqa: E501
+        :rtype: str
+        """
+        return self._image_fills_id
+
+    @image_fills_id.setter
+    def image_fills_id(self, image_fills_id):
+        """Sets the image_fills_id of this SharedPictures.
+
+
+        :param image_fills_id: The image_fills_id of this SharedPictures.  # noqa: E501
+        :type: str
+        """
+
+        self._image_fills_id = image_fills_id
 
     @property
     def image_file_blob_url(self):
@@ -151,25 +180,46 @@ class SharedPictures(object):
         self._file_extension = file_extension
 
     @property
-    def oo_xml_blob_url(self):
-        """Gets the oo_xml_blob_url of this SharedPictures.  # noqa: E501
+    def base_element_blob_url(self):
+        """Gets the base_element_blob_url of this SharedPictures.  # noqa: E501
 
 
-        :return: The oo_xml_blob_url of this SharedPictures.  # noqa: E501
+        :return: The base_element_blob_url of this SharedPictures.  # noqa: E501
         :rtype: str
         """
-        return self._oo_xml_blob_url
+        return self._base_element_blob_url
 
-    @oo_xml_blob_url.setter
-    def oo_xml_blob_url(self, oo_xml_blob_url):
-        """Sets the oo_xml_blob_url of this SharedPictures.
+    @base_element_blob_url.setter
+    def base_element_blob_url(self, base_element_blob_url):
+        """Sets the base_element_blob_url of this SharedPictures.
 
 
-        :param oo_xml_blob_url: The oo_xml_blob_url of this SharedPictures.  # noqa: E501
+        :param base_element_blob_url: The base_element_blob_url of this SharedPictures.  # noqa: E501
         :type: str
         """
 
-        self._oo_xml_blob_url = oo_xml_blob_url
+        self._base_element_blob_url = base_element_blob_url
+
+    @property
+    def package_uri(self):
+        """Gets the package_uri of this SharedPictures.  # noqa: E501
+
+
+        :return: The package_uri of this SharedPictures.  # noqa: E501
+        :rtype: str
+        """
+        return self._package_uri
+
+    @package_uri.setter
+    def package_uri(self, package_uri):
+        """Sets the package_uri of this SharedPictures.
+
+
+        :param package_uri: The package_uri of this SharedPictures.  # noqa: E501
+        :type: str
+        """
+
+        self._package_uri = package_uri
 
     @property
     def id(self):
@@ -177,7 +227,7 @@ class SharedPictures(object):
 
 
         :return: The id of this SharedPictures.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -187,7 +237,7 @@ class SharedPictures(object):
 
 
         :param id: The id of this SharedPictures.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

@@ -33,8 +33,8 @@ class ChartRows(object):
     openapi_types = {
         'name': 'str',
         'index': 'int',
-        'row_name_collection_id': 'int',
-        'id': 'int',
+        'row_name_collection_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -69,8 +69,7 @@ class ChartRows(object):
             self.name = name
         if index is not None:
             self.index = index
-        if row_name_collection_id is not None:
-            self.row_name_collection_id = row_name_collection_id
+        self.row_name_collection_id = row_name_collection_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -130,7 +129,7 @@ class ChartRows(object):
 
 
         :return: The row_name_collection_id of this ChartRows.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._row_name_collection_id
 
@@ -140,7 +139,7 @@ class ChartRows(object):
 
 
         :param row_name_collection_id: The row_name_collection_id of this ChartRows.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._row_name_collection_id = row_name_collection_id
@@ -151,7 +150,7 @@ class ChartRows(object):
 
 
         :return: The id of this ChartRows.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +160,7 @@ class ChartRows(object):
 
 
         :param id: The id of this ChartRows.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

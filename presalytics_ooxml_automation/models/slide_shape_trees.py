@@ -31,16 +31,16 @@ class SlideShapeTrees(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'slide_id': 'int',
-        'elements': 'str',
-        'group_element_id': 'int',
+        'slide_id': 'str',
+        'group_element_id': 'str',
         'name': 'str',
         'hidden': 'bool',
         'title': 'str',
         'ooxml_id': 'int',
         'svg_blob_location': 'str',
-        'oo_xml_blob_url': 'str',
-        'id': 'int',
+        'base_element_blob_url': 'str',
+        'package_uri': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -49,14 +49,14 @@ class SlideShapeTrees(object):
 
     attribute_map = {
         'slide_id': 'SlideId',
-        'elements': 'Elements',
         'group_element_id': 'GroupElementId',
         'name': 'Name',
         'hidden': 'Hidden',
         'title': 'Title',
         'ooxml_id': 'OoxmlId',
         'svg_blob_location': 'SvgBlobLocation',
-        'oo_xml_blob_url': 'OoXmlBlobUrl',
+        'base_element_blob_url': 'BaseElementBlobUrl',
+        'package_uri': 'PackageUri',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -64,18 +64,18 @@ class SlideShapeTrees(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, slide_id=None, elements=None, group_element_id=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_location=None, oo_xml_blob_url=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, slide_id=None, group_element_id=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_location=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideShapeTrees - a model defined in OpenAPI"""  # noqa: E501
 
         self._slide_id = None
-        self._elements = None
         self._group_element_id = None
         self._name = None
         self._hidden = None
         self._title = None
         self._ooxml_id = None
         self._svg_blob_location = None
-        self._oo_xml_blob_url = None
+        self._base_element_blob_url = None
+        self._package_uri = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -83,12 +83,8 @@ class SlideShapeTrees(object):
         self._user_modified = None
         self.discriminator = None
 
-        if slide_id is not None:
-            self.slide_id = slide_id
-        if elements is not None:
-            self.elements = elements
-        if group_element_id is not None:
-            self.group_element_id = group_element_id
+        self.slide_id = slide_id
+        self.group_element_id = group_element_id
         if name is not None:
             self.name = name
         if hidden is not None:
@@ -99,8 +95,10 @@ class SlideShapeTrees(object):
             self.ooxml_id = ooxml_id
         if svg_blob_location is not None:
             self.svg_blob_location = svg_blob_location
-        if oo_xml_blob_url is not None:
-            self.oo_xml_blob_url = oo_xml_blob_url
+        if base_element_blob_url is not None:
+            self.base_element_blob_url = base_element_blob_url
+        if package_uri is not None:
+            self.package_uri = package_uri
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -118,7 +116,7 @@ class SlideShapeTrees(object):
 
 
         :return: The slide_id of this SlideShapeTrees.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._slide_id
 
@@ -128,31 +126,10 @@ class SlideShapeTrees(object):
 
 
         :param slide_id: The slide_id of this SlideShapeTrees.  # noqa: E501
-        :type: int
-        """
-
-        self._slide_id = slide_id
-
-    @property
-    def elements(self):
-        """Gets the elements of this SlideShapeTrees.  # noqa: E501
-
-
-        :return: The elements of this SlideShapeTrees.  # noqa: E501
-        :rtype: str
-        """
-        return self._elements
-
-    @elements.setter
-    def elements(self, elements):
-        """Sets the elements of this SlideShapeTrees.
-
-
-        :param elements: The elements of this SlideShapeTrees.  # noqa: E501
         :type: str
         """
 
-        self._elements = elements
+        self._slide_id = slide_id
 
     @property
     def group_element_id(self):
@@ -160,7 +137,7 @@ class SlideShapeTrees(object):
 
 
         :return: The group_element_id of this SlideShapeTrees.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._group_element_id
 
@@ -170,7 +147,7 @@ class SlideShapeTrees(object):
 
 
         :param group_element_id: The group_element_id of this SlideShapeTrees.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._group_element_id = group_element_id
@@ -281,25 +258,46 @@ class SlideShapeTrees(object):
         self._svg_blob_location = svg_blob_location
 
     @property
-    def oo_xml_blob_url(self):
-        """Gets the oo_xml_blob_url of this SlideShapeTrees.  # noqa: E501
+    def base_element_blob_url(self):
+        """Gets the base_element_blob_url of this SlideShapeTrees.  # noqa: E501
 
 
-        :return: The oo_xml_blob_url of this SlideShapeTrees.  # noqa: E501
+        :return: The base_element_blob_url of this SlideShapeTrees.  # noqa: E501
         :rtype: str
         """
-        return self._oo_xml_blob_url
+        return self._base_element_blob_url
 
-    @oo_xml_blob_url.setter
-    def oo_xml_blob_url(self, oo_xml_blob_url):
-        """Sets the oo_xml_blob_url of this SlideShapeTrees.
+    @base_element_blob_url.setter
+    def base_element_blob_url(self, base_element_blob_url):
+        """Sets the base_element_blob_url of this SlideShapeTrees.
 
 
-        :param oo_xml_blob_url: The oo_xml_blob_url of this SlideShapeTrees.  # noqa: E501
+        :param base_element_blob_url: The base_element_blob_url of this SlideShapeTrees.  # noqa: E501
         :type: str
         """
 
-        self._oo_xml_blob_url = oo_xml_blob_url
+        self._base_element_blob_url = base_element_blob_url
+
+    @property
+    def package_uri(self):
+        """Gets the package_uri of this SlideShapeTrees.  # noqa: E501
+
+
+        :return: The package_uri of this SlideShapeTrees.  # noqa: E501
+        :rtype: str
+        """
+        return self._package_uri
+
+    @package_uri.setter
+    def package_uri(self, package_uri):
+        """Sets the package_uri of this SlideShapeTrees.
+
+
+        :param package_uri: The package_uri of this SlideShapeTrees.  # noqa: E501
+        :type: str
+        """
+
+        self._package_uri = package_uri
 
     @property
     def id(self):
@@ -307,7 +305,7 @@ class SlideShapeTrees(object):
 
 
         :return: The id of this SlideShapeTrees.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -317,7 +315,7 @@ class SlideShapeTrees(object):
 
 
         :param id: The id of this SlideShapeTrees.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

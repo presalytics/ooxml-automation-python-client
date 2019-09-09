@@ -31,44 +31,44 @@ class InlineObject(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'filename': 'file'
+        'file': 'file'
     }
 
     attribute_map = {
-        'filename': 'filename'
+        'file': 'file'
     }
 
-    def __init__(self, filename=None):  # noqa: E501
+    def __init__(self, file=None):  # noqa: E501
         """InlineObject - a model defined in OpenAPI"""  # noqa: E501
 
-        self._filename = None
+        self._file = None
         self.discriminator = None
 
-        if filename is not None:
-            self.filename = filename
+        if file is not None:
+            self.file = file
 
     @property
-    def filename(self):
-        """Gets the filename of this InlineObject.  # noqa: E501
+    def file(self):
+        """Gets the file of this InlineObject.  # noqa: E501
 
         The file to upload.  Must be of type .pptx, ppt  # noqa: E501
 
-        :return: The filename of this InlineObject.  # noqa: E501
+        :return: The file of this InlineObject.  # noqa: E501
         :rtype: file
         """
-        return self._filename
+        return self._file
 
-    @filename.setter
-    def filename(self, filename):
-        """Sets the filename of this InlineObject.
+    @file.setter
+    def file(self, file):
+        """Sets the file of this InlineObject.
 
         The file to upload.  Must be of type .pptx, ppt  # noqa: E501
 
-        :param filename: The filename of this InlineObject.  # noqa: E501
+        :param file: The file of this InlineObject.  # noqa: E501
         :type: file
         """
 
-        self._filename = filename
+        self._file = file
 
     def to_dict(self):
         """Returns the model properties as a dict"""

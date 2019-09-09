@@ -31,17 +31,17 @@ class SharedText(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'paragraph_id': 'int',
+        'paragraph_id': 'str',
         'sequence': 'int',
         'raw_text': 'str',
-        'color_solid_fills_id': 'int',
+        'color_solid_fills_id': 'str',
         'is_bold': 'bool',
         'is_italic': 'bool',
         'is_underline': 'bool',
         'font_size': 'int',
         'font': 'str',
         'is_theme_font': 'bool',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -86,8 +86,7 @@ class SharedText(object):
         self._user_modified = None
         self.discriminator = None
 
-        if paragraph_id is not None:
-            self.paragraph_id = paragraph_id
+        self.paragraph_id = paragraph_id
         if sequence is not None:
             self.sequence = sequence
         if raw_text is not None:
@@ -99,8 +98,7 @@ class SharedText(object):
             self.is_italic = is_italic
         if is_underline is not None:
             self.is_underline = is_underline
-        if font_size is not None:
-            self.font_size = font_size
+        self.font_size = font_size
         if font is not None:
             self.font = font
         if is_theme_font is not None:
@@ -122,7 +120,7 @@ class SharedText(object):
 
 
         :return: The paragraph_id of this SharedText.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._paragraph_id
 
@@ -132,7 +130,7 @@ class SharedText(object):
 
 
         :param paragraph_id: The paragraph_id of this SharedText.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._paragraph_id = paragraph_id
@@ -185,7 +183,7 @@ class SharedText(object):
 
 
         :return: The color_solid_fills_id of this SharedText.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._color_solid_fills_id
 
@@ -195,7 +193,7 @@ class SharedText(object):
 
 
         :param color_solid_fills_id: The color_solid_fills_id of this SharedText.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._color_solid_fills_id = color_solid_fills_id
@@ -332,7 +330,7 @@ class SharedText(object):
 
 
         :return: The id of this SharedText.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -342,7 +340,7 @@ class SharedText(object):
 
 
         :param id: The id of this SharedText.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

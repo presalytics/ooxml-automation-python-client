@@ -33,9 +33,9 @@ class SharedEffectAttributes(object):
     openapi_types = {
         'effect_type_id': 'int',
         'attributes_json': 'str',
-        'effect_id': 'int',
-        'fill_map_id': 'int',
-        'id': 'int',
+        'effect_id': 'str',
+        'fill_map_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -72,8 +72,7 @@ class SharedEffectAttributes(object):
             self.effect_type_id = effect_type_id
         if attributes_json is not None:
             self.attributes_json = attributes_json
-        if effect_id is not None:
-            self.effect_id = effect_id
+        self.effect_id = effect_id
         self.fill_map_id = fill_map_id
         if id is not None:
             self.id = id
@@ -134,7 +133,7 @@ class SharedEffectAttributes(object):
 
 
         :return: The effect_id of this SharedEffectAttributes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._effect_id
 
@@ -144,7 +143,7 @@ class SharedEffectAttributes(object):
 
 
         :param effect_id: The effect_id of this SharedEffectAttributes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._effect_id = effect_id
@@ -155,7 +154,7 @@ class SharedEffectAttributes(object):
 
 
         :return: The fill_map_id of this SharedEffectAttributes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._fill_map_id
 
@@ -165,7 +164,7 @@ class SharedEffectAttributes(object):
 
 
         :param fill_map_id: The fill_map_id of this SharedEffectAttributes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._fill_map_id = fill_map_id
@@ -176,7 +175,7 @@ class SharedEffectAttributes(object):
 
 
         :return: The id of this SharedEffectAttributes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -186,7 +185,7 @@ class SharedEffectAttributes(object):
 
 
         :param id: The id of this SharedEffectAttributes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

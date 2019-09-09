@@ -31,9 +31,7 @@ class SharedImageFills(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'fill_map_id': 'int',
-        'file_extension': 'str',
-        'img_blob_location': 'str',
+        'fill_map_id': 'str',
         'compression_state': 'str',
         'stretch': 'bool',
         'tile': 'str',
@@ -41,7 +39,7 @@ class SharedImageFills(object):
         'source_rectangle': 'str',
         'dpi': 'int',
         'effects_json': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -50,8 +48,6 @@ class SharedImageFills(object):
 
     attribute_map = {
         'fill_map_id': 'FillMapId',
-        'file_extension': 'FileExtension',
-        'img_blob_location': 'ImgBlobLocation',
         'compression_state': 'CompressionState',
         'stretch': 'Stretch',
         'tile': 'Tile',
@@ -66,12 +62,10 @@ class SharedImageFills(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, fill_map_id=None, file_extension=None, img_blob_location=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, dpi=None, effects_json=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_map_id=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, dpi=None, effects_json=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedImageFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_map_id = None
-        self._file_extension = None
-        self._img_blob_location = None
         self._compression_state = None
         self._stretch = None
         self._tile = None
@@ -87,10 +81,6 @@ class SharedImageFills(object):
         self.discriminator = None
 
         self.fill_map_id = fill_map_id
-        if file_extension is not None:
-            self.file_extension = file_extension
-        if img_blob_location is not None:
-            self.img_blob_location = img_blob_location
         if compression_state is not None:
             self.compression_state = compression_state
         if stretch is not None:
@@ -121,7 +111,7 @@ class SharedImageFills(object):
 
 
         :return: The fill_map_id of this SharedImageFills.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._fill_map_id
 
@@ -131,52 +121,10 @@ class SharedImageFills(object):
 
 
         :param fill_map_id: The fill_map_id of this SharedImageFills.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._fill_map_id = fill_map_id
-
-    @property
-    def file_extension(self):
-        """Gets the file_extension of this SharedImageFills.  # noqa: E501
-
-
-        :return: The file_extension of this SharedImageFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._file_extension
-
-    @file_extension.setter
-    def file_extension(self, file_extension):
-        """Sets the file_extension of this SharedImageFills.
-
-
-        :param file_extension: The file_extension of this SharedImageFills.  # noqa: E501
-        :type: str
-        """
-
-        self._file_extension = file_extension
-
-    @property
-    def img_blob_location(self):
-        """Gets the img_blob_location of this SharedImageFills.  # noqa: E501
-
-
-        :return: The img_blob_location of this SharedImageFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._img_blob_location
-
-    @img_blob_location.setter
-    def img_blob_location(self, img_blob_location):
-        """Sets the img_blob_location of this SharedImageFills.
-
-
-        :param img_blob_location: The img_blob_location of this SharedImageFills.  # noqa: E501
-        :type: str
-        """
-
-        self._img_blob_location = img_blob_location
 
     @property
     def compression_state(self):
@@ -331,7 +279,7 @@ class SharedImageFills(object):
 
 
         :return: The id of this SharedImageFills.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -341,7 +289,7 @@ class SharedImageFills(object):
 
 
         :param id: The id of this SharedImageFills.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

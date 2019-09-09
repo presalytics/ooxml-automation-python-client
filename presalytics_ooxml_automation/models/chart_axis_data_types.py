@@ -31,10 +31,11 @@ class ChartAxisDataTypes(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'type_id': 'int',
         'name': 'str',
         'description': 'str',
         'ooxml_name': 'str',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -42,6 +43,7 @@ class ChartAxisDataTypes(object):
     }
 
     attribute_map = {
+        'type_id': 'TypeId',
         'name': 'Name',
         'description': 'Description',
         'ooxml_name': 'OoxmlName',
@@ -52,9 +54,10 @@ class ChartAxisDataTypes(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, name=None, description=None, ooxml_name=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, type_id=None, name=None, description=None, ooxml_name=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartAxisDataTypes - a model defined in OpenAPI"""  # noqa: E501
 
+        self._type_id = None
         self._name = None
         self._description = None
         self._ooxml_name = None
@@ -65,6 +68,8 @@ class ChartAxisDataTypes(object):
         self._user_modified = None
         self.discriminator = None
 
+        if type_id is not None:
+            self.type_id = type_id
         if name is not None:
             self.name = name
         if description is not None:
@@ -81,6 +86,27 @@ class ChartAxisDataTypes(object):
             self.date_modified = date_modified
         if user_modified is not None:
             self.user_modified = user_modified
+
+    @property
+    def type_id(self):
+        """Gets the type_id of this ChartAxisDataTypes.  # noqa: E501
+
+
+        :return: The type_id of this ChartAxisDataTypes.  # noqa: E501
+        :rtype: int
+        """
+        return self._type_id
+
+    @type_id.setter
+    def type_id(self, type_id):
+        """Sets the type_id of this ChartAxisDataTypes.
+
+
+        :param type_id: The type_id of this ChartAxisDataTypes.  # noqa: E501
+        :type: int
+        """
+
+        self._type_id = type_id
 
     @property
     def name(self):
@@ -151,7 +177,7 @@ class ChartAxisDataTypes(object):
 
 
         :return: The id of this ChartAxisDataTypes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +187,7 @@ class ChartAxisDataTypes(object):
 
 
         :param id: The id of this ChartAxisDataTypes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

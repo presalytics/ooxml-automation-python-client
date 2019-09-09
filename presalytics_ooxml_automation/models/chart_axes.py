@@ -31,11 +31,11 @@ class ChartAxes(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'charts_id': 'int',
-        'title_text_container_id': 'int',
+        'charts_id': 'str',
+        'title_text_container_id': 'str',
         'ooxml_id': 'int',
         'axis_data_type_id': 'int',
-        'id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -92,7 +92,7 @@ class ChartAxes(object):
 
 
         :return: The charts_id of this ChartAxes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._charts_id
 
@@ -102,7 +102,7 @@ class ChartAxes(object):
 
 
         :param charts_id: The charts_id of this ChartAxes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._charts_id = charts_id
@@ -113,7 +113,7 @@ class ChartAxes(object):
 
 
         :return: The title_text_container_id of this ChartAxes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._title_text_container_id
 
@@ -123,7 +123,7 @@ class ChartAxes(object):
 
 
         :param title_text_container_id: The title_text_container_id of this ChartAxes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._title_text_container_id = title_text_container_id
@@ -176,7 +176,7 @@ class ChartAxes(object):
 
 
         :return: The id of this ChartAxes.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -186,7 +186,7 @@ class ChartAxes(object):
 
 
         :param id: The id of this ChartAxes.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

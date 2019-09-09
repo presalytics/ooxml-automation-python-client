@@ -18,7 +18,6 @@ from presalytics_ooxml_automation.models.bad_request import BadRequest
 from presalytics_ooxml_automation.models.chart_axes import ChartAxes
 from presalytics_ooxml_automation.models.chart_axis_data_types import ChartAxisDataTypes
 from presalytics_ooxml_automation.models.chart_chart_data import ChartChartData
-from presalytics_ooxml_automation.models.chart_charts import ChartCharts
 from presalytics_ooxml_automation.models.chart_column_collections import ChartColumnCollections
 from presalytics_ooxml_automation.models.chart_columns import ChartColumns
 from presalytics_ooxml_automation.models.chart_data_points import ChartDataPoints
@@ -27,6 +26,7 @@ from presalytics_ooxml_automation.models.chart_row_col import ChartRowCol
 from presalytics_ooxml_automation.models.chart_row_collections import ChartRowCollections
 from presalytics_ooxml_automation.models.chart_row_name_format_types import ChartRowNameFormatTypes
 from presalytics_ooxml_automation.models.chart_rows import ChartRows
+from presalytics_ooxml_automation.models.document import Document
 from presalytics_ooxml_automation.models.document_type import DocumentType
 from presalytics_ooxml_automation.models.inline_object import InlineObject
 from presalytics_ooxml_automation.models.shared_color_transformation_attributes import SharedColorTransformationAttributes
@@ -57,7 +57,6 @@ from presalytics_ooxml_automation.models.slide_group_elements import SlideGroupE
 from presalytics_ooxml_automation.models.slide_groups import SlideGroups
 from presalytics_ooxml_automation.models.slide_shape_trees import SlideShapeTrees
 from presalytics_ooxml_automation.models.slide_slide_masters import SlideSlideMasters
-from presalytics_ooxml_automation.models.slide_slides import SlideSlides
 from presalytics_ooxml_automation.models.table_borders import TableBorders
 from presalytics_ooxml_automation.models.table_cells import TableCells
 from presalytics_ooxml_automation.models.table_columns import TableColumns
@@ -71,4 +70,3 @@ from presalytics_ooxml_automation.models.theme_fills import ThemeFills
 from presalytics_ooxml_automation.models.theme_fonts import ThemeFonts
 from presalytics_ooxml_automation.models.theme_intensity import ThemeIntensity
 from presalytics_ooxml_automation.models.theme_line_map import ThemeLineMap
-from presalytics_ooxml_automation.models.theme_themes import ThemeThemes

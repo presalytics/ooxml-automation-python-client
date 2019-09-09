@@ -31,10 +31,11 @@ class ChartPlotType(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'type_id': 'int',
         'plot_type_name': 'str',
         'plot_qualifed_assy': 'str',
-        'row_col_id': 'int',
-        'id': 'int',
+        'row_col_type_id': 'int',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -42,9 +43,10 @@ class ChartPlotType(object):
     }
 
     attribute_map = {
+        'type_id': 'TypeId',
         'plot_type_name': 'PlotTypeName',
         'plot_qualifed_assy': 'PlotQualifedAssy',
-        'row_col_id': 'RowColId',
+        'row_col_type_id': 'RowColTypeId',
         'id': 'Id',
         'date_created': 'DateCreated',
         'user_created': 'UserCreated',
@@ -52,12 +54,13 @@ class ChartPlotType(object):
         'user_modified': 'UserModified'
     }
 
-    def __init__(self, plot_type_name=None, plot_qualifed_assy=None, row_col_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, type_id=None, plot_type_name=None, plot_qualifed_assy=None, row_col_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartPlotType - a model defined in OpenAPI"""  # noqa: E501
 
+        self._type_id = None
         self._plot_type_name = None
         self._plot_qualifed_assy = None
-        self._row_col_id = None
+        self._row_col_type_id = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -65,12 +68,14 @@ class ChartPlotType(object):
         self._user_modified = None
         self.discriminator = None
 
+        if type_id is not None:
+            self.type_id = type_id
         if plot_type_name is not None:
             self.plot_type_name = plot_type_name
         if plot_qualifed_assy is not None:
             self.plot_qualifed_assy = plot_qualifed_assy
-        if row_col_id is not None:
-            self.row_col_id = row_col_id
+        if row_col_type_id is not None:
+            self.row_col_type_id = row_col_type_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -81,6 +86,27 @@ class ChartPlotType(object):
             self.date_modified = date_modified
         if user_modified is not None:
             self.user_modified = user_modified
+
+    @property
+    def type_id(self):
+        """Gets the type_id of this ChartPlotType.  # noqa: E501
+
+
+        :return: The type_id of this ChartPlotType.  # noqa: E501
+        :rtype: int
+        """
+        return self._type_id
+
+    @type_id.setter
+    def type_id(self, type_id):
+        """Sets the type_id of this ChartPlotType.
+
+
+        :param type_id: The type_id of this ChartPlotType.  # noqa: E501
+        :type: int
+        """
+
+        self._type_id = type_id
 
     @property
     def plot_type_name(self):
@@ -125,25 +151,25 @@ class ChartPlotType(object):
         self._plot_qualifed_assy = plot_qualifed_assy
 
     @property
-    def row_col_id(self):
-        """Gets the row_col_id of this ChartPlotType.  # noqa: E501
+    def row_col_type_id(self):
+        """Gets the row_col_type_id of this ChartPlotType.  # noqa: E501
 
 
-        :return: The row_col_id of this ChartPlotType.  # noqa: E501
+        :return: The row_col_type_id of this ChartPlotType.  # noqa: E501
         :rtype: int
         """
-        return self._row_col_id
+        return self._row_col_type_id
 
-    @row_col_id.setter
-    def row_col_id(self, row_col_id):
-        """Sets the row_col_id of this ChartPlotType.
+    @row_col_type_id.setter
+    def row_col_type_id(self, row_col_type_id):
+        """Sets the row_col_type_id of this ChartPlotType.
 
 
-        :param row_col_id: The row_col_id of this ChartPlotType.  # noqa: E501
+        :param row_col_type_id: The row_col_type_id of this ChartPlotType.  # noqa: E501
         :type: int
         """
 
-        self._row_col_id = row_col_id
+        self._row_col_type_id = row_col_type_id
 
     @property
     def id(self):
@@ -151,7 +177,7 @@ class ChartPlotType(object):
 
 
         :return: The id of this ChartPlotType.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -161,7 +187,7 @@ class ChartPlotType(object):
 
 
         :param id: The id of this ChartPlotType.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id

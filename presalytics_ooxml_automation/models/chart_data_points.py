@@ -32,10 +32,10 @@ class ChartDataPoints(object):
     """
     openapi_types = {
         'value': 'float',
-        'column_id': 'int',
-        'row_id': 'int',
-        'chart_data_id': 'int',
-        'id': 'int',
+        'column_id': 'str',
+        'row_id': 'str',
+        'chart_data_id': 'str',
+        'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
         'date_modified': 'datetime',
@@ -70,12 +70,9 @@ class ChartDataPoints(object):
 
         if value is not None:
             self.value = value
-        if column_id is not None:
-            self.column_id = column_id
-        if row_id is not None:
-            self.row_id = row_id
-        if chart_data_id is not None:
-            self.chart_data_id = chart_data_id
+        self.column_id = column_id
+        self.row_id = row_id
+        self.chart_data_id = chart_data_id
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -114,7 +111,7 @@ class ChartDataPoints(object):
 
 
         :return: The column_id of this ChartDataPoints.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._column_id
 
@@ -124,7 +121,7 @@ class ChartDataPoints(object):
 
 
         :param column_id: The column_id of this ChartDataPoints.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._column_id = column_id
@@ -135,7 +132,7 @@ class ChartDataPoints(object):
 
 
         :return: The row_id of this ChartDataPoints.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._row_id
 
@@ -145,7 +142,7 @@ class ChartDataPoints(object):
 
 
         :param row_id: The row_id of this ChartDataPoints.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._row_id = row_id
@@ -156,7 +153,7 @@ class ChartDataPoints(object):
 
 
         :return: The chart_data_id of this ChartDataPoints.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._chart_data_id
 
@@ -166,7 +163,7 @@ class ChartDataPoints(object):
 
 
         :param chart_data_id: The chart_data_id of this ChartDataPoints.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._chart_data_id = chart_data_id
@@ -177,7 +174,7 @@ class ChartDataPoints(object):
 
 
         :return: The id of this ChartDataPoints.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -187,7 +184,7 @@ class ChartDataPoints(object):
 
 
         :param id: The id of this ChartDataPoints.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._id = id
