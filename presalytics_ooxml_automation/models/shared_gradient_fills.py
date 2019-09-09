@@ -44,16 +44,16 @@ class SharedGradientFills(object):
     }
 
     attribute_map = {
-        'fill_map_id': 'FillMapId',
-        'angle': 'Angle',
-        'rotate_with_shape': 'RotateWithShape',
-        'is_path': 'IsPath',
-        'path_type': 'PathType',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'fill_map_id': 'fillMapId',
+        'angle': 'angle',
+        'rotate_with_shape': 'rotateWithShape',
+        'is_path': 'isPath',
+        'path_type': 'pathType',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, fill_map_id=None, angle=None, rotate_with_shape=None, is_path=None, path_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

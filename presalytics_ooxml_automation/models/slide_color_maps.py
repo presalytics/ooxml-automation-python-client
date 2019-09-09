@@ -52,24 +52,24 @@ class SlideColorMaps(object):
     }
 
     attribute_map = {
-        'slide_master_id': 'SlideMasterId',
-        'accent1': 'Accent1',
-        'accent2': 'Accent2',
-        'accent3': 'Accent3',
-        'accent4': 'Accent4',
-        'accent5': 'Accent5',
-        'accent6': 'Accent6',
-        'text1': 'Text1',
-        'text2': 'Text2',
-        'background1': 'Background1',
-        'background2': 'Background2',
-        'hyperlink': 'Hyperlink',
-        'followed_hyperlink': 'FollowedHyperlink',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'slide_master_id': 'slideMasterId',
+        'accent1': 'accent1',
+        'accent2': 'accent2',
+        'accent3': 'accent3',
+        'accent4': 'accent4',
+        'accent5': 'accent5',
+        'accent6': 'accent6',
+        'text1': 'text1',
+        'text2': 'text2',
+        'background1': 'background1',
+        'background2': 'background2',
+        'hyperlink': 'hyperlink',
+        'followed_hyperlink': 'followedHyperlink',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, slide_master_id=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, text1=None, text2=None, background1=None, background2=None, hyperlink=None, followed_hyperlink=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

@@ -43,15 +43,15 @@ class ChartPlotType(object):
     }
 
     attribute_map = {
-        'type_id': 'TypeId',
-        'plot_type_name': 'PlotTypeName',
-        'plot_qualifed_assy': 'PlotQualifedAssy',
-        'row_col_type_id': 'RowColTypeId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'type_id': 'typeId',
+        'plot_type_name': 'plotTypeName',
+        'plot_qualifed_assy': 'plotQualifedAssy',
+        'row_col_type_id': 'rowColTypeId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, type_id=None, plot_type_name=None, plot_qualifed_assy=None, row_col_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

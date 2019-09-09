@@ -49,21 +49,21 @@ class SharedText(object):
     }
 
     attribute_map = {
-        'paragraph_id': 'ParagraphId',
-        'sequence': 'Sequence',
-        'raw_text': 'RawText',
-        'color_solid_fills_id': 'ColorSolidFillsId',
-        'is_bold': 'IsBold',
-        'is_italic': 'IsItalic',
-        'is_underline': 'IsUnderline',
-        'font_size': 'FontSize',
-        'font': 'Font',
-        'is_theme_font': 'IsThemeFont',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'paragraph_id': 'paragraphId',
+        'sequence': 'sequence',
+        'raw_text': 'rawText',
+        'color_solid_fills_id': 'colorSolidFillsId',
+        'is_bold': 'isBold',
+        'is_italic': 'isItalic',
+        'is_underline': 'isUnderline',
+        'font_size': 'fontSize',
+        'font': 'font',
+        'is_theme_font': 'isThemeFont',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, paragraph_id=None, sequence=None, raw_text=None, color_solid_fills_id=None, is_bold=None, is_italic=None, is_underline=None, font_size=None, font=None, is_theme_font=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

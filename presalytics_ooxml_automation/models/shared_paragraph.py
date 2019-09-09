@@ -42,14 +42,14 @@ class SharedParagraph(object):
     }
 
     attribute_map = {
-        'text_container_id': 'TextContainerId',
-        'number': 'Number',
-        'text': 'Text',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'text_container_id': 'textContainerId',
+        'number': 'number',
+        'text': 'text',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, text_container_id=None, number=None, text=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

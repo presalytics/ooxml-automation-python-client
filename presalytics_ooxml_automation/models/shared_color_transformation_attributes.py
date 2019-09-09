@@ -42,14 +42,14 @@ class SharedColorTransformationAttributes(object):
     }
 
     attribute_map = {
-        'color_transformations_id': 'ColorTransformationsId',
-        'name': 'Name',
-        'value': 'Value',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'color_transformations_id': 'colorTransformationsId',
+        'name': 'name',
+        'value': 'value',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, color_transformations_id=None, name=None, value=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

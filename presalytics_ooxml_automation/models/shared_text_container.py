@@ -42,14 +42,14 @@ class SharedTextContainer(object):
     }
 
     attribute_map = {
-        'shape_id': 'ShapeId',
-        'outer_xml': 'OuterXml',
-        'paragraphs': 'Paragraphs',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'shape_id': 'shapeId',
+        'outer_xml': 'outerXml',
+        'paragraphs': 'paragraphs',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, shape_id=None, outer_xml=None, paragraphs=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

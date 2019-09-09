@@ -44,16 +44,16 @@ class ChartRowCol(object):
     }
 
     attribute_map = {
-        'type_id': 'TypeId',
-        'row_name': 'RowName',
-        'row_qualifed_assy': 'RowQualifedAssy',
-        'col_name': 'ColName',
-        'col_qualified_assy': 'ColQualifiedAssy',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'type_id': 'typeId',
+        'row_name': 'rowName',
+        'row_qualifed_assy': 'rowQualifedAssy',
+        'col_name': 'colName',
+        'col_qualified_assy': 'colQualifiedAssy',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, type_id=None, row_name=None, row_qualifed_assy=None, col_name=None, col_qualified_assy=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

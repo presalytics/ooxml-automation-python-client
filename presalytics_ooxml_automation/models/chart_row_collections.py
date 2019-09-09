@@ -43,15 +43,15 @@ class ChartRowCollections(object):
     }
 
     attribute_map = {
-        'name_format_type': 'NameFormatType',
-        'axis_id': 'AxisId',
-        'chart_data_id': 'ChartDataId',
-        'rows': 'Rows',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'name_format_type': 'nameFormatType',
+        'axis_id': 'axisId',
+        'chart_data_id': 'chartDataId',
+        'rows': 'rows',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, name_format_type=None, axis_id=None, chart_data_id=None, rows=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

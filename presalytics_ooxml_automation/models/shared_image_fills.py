@@ -37,7 +37,7 @@ class SharedImageFills(object):
         'tile': 'str',
         'rotate_with_shape': 'bool',
         'source_rectangle': 'str',
-        'dpi': 'int',
+        'd_pi': 'int',
         'effects_json': 'str',
         'id': 'str',
         'date_created': 'datetime',
@@ -47,22 +47,22 @@ class SharedImageFills(object):
     }
 
     attribute_map = {
-        'fill_map_id': 'FillMapId',
-        'compression_state': 'CompressionState',
-        'stretch': 'Stretch',
-        'tile': 'Tile',
-        'rotate_with_shape': 'RotateWithShape',
-        'source_rectangle': 'SourceRectangle',
-        'dpi': 'DPI',
-        'effects_json': 'EffectsJson',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'fill_map_id': 'fillMapId',
+        'compression_state': 'compressionState',
+        'stretch': 'stretch',
+        'tile': 'tile',
+        'rotate_with_shape': 'rotateWithShape',
+        'source_rectangle': 'sourceRectangle',
+        'd_pi': 'dPI',
+        'effects_json': 'effectsJson',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
-    def __init__(self, fill_map_id=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, dpi=None, effects_json=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_map_id=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, d_pi=None, effects_json=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedImageFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_map_id = None
@@ -71,7 +71,7 @@ class SharedImageFills(object):
         self._tile = None
         self._rotate_with_shape = None
         self._source_rectangle = None
-        self._dpi = None
+        self._d_pi = None
         self._effects_json = None
         self._id = None
         self._date_created = None
@@ -91,7 +91,7 @@ class SharedImageFills(object):
             self.rotate_with_shape = rotate_with_shape
         if source_rectangle is not None:
             self.source_rectangle = source_rectangle
-        self.dpi = dpi
+        self.d_pi = d_pi
         if effects_json is not None:
             self.effects_json = effects_json
         if id is not None:
@@ -232,25 +232,25 @@ class SharedImageFills(object):
         self._source_rectangle = source_rectangle
 
     @property
-    def dpi(self):
-        """Gets the dpi of this SharedImageFills.  # noqa: E501
+    def d_pi(self):
+        """Gets the d_pi of this SharedImageFills.  # noqa: E501
 
 
-        :return: The dpi of this SharedImageFills.  # noqa: E501
+        :return: The d_pi of this SharedImageFills.  # noqa: E501
         :rtype: int
         """
-        return self._dpi
+        return self._d_pi
 
-    @dpi.setter
-    def dpi(self, dpi):
-        """Sets the dpi of this SharedImageFills.
+    @d_pi.setter
+    def d_pi(self, d_pi):
+        """Sets the d_pi of this SharedImageFills.
 
 
-        :param dpi: The dpi of this SharedImageFills.  # noqa: E501
+        :param d_pi: The d_pi of this SharedImageFills.  # noqa: E501
         :type: int
         """
 
-        self._dpi = dpi
+        self._d_pi = d_pi
 
     @property
     def effects_json(self):

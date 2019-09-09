@@ -42,14 +42,14 @@ class SlideGroupElements(object):
     }
 
     attribute_map = {
-        'shape_tree_id': 'ShapeTreeId',
-        'parent_group_element_id': 'ParentGroupElementId',
-        'group_element_type_id': 'GroupElementTypeId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'shape_tree_id': 'shapeTreeId',
+        'parent_group_element_id': 'parentGroupElementId',
+        'group_element_type_id': 'groupElementTypeId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, shape_tree_id=None, parent_group_element_id=None, group_element_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

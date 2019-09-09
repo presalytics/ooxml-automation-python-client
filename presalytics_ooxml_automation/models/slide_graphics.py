@@ -46,18 +46,18 @@ class SlideGraphics(object):
     }
 
     attribute_map = {
-        'group_elements_id': 'GroupElementsId',
-        'ooxml_id': 'OoxmlId',
-        'graphic_type_id': 'GraphicTypeId',
-        'height': 'Height',
-        'width': 'Width',
-        'x_offset': 'XOffset',
-        'y_offset': 'YOffset',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'group_elements_id': 'groupElementsId',
+        'ooxml_id': 'ooxmlId',
+        'graphic_type_id': 'graphicTypeId',
+        'height': 'height',
+        'width': 'width',
+        'x_offset': 'xOffset',
+        'y_offset': 'yOffset',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, group_elements_id=None, ooxml_id=None, graphic_type_id=None, height=None, width=None, x_offset=None, y_offset=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

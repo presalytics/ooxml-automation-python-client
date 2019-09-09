@@ -42,14 +42,14 @@ class ThemeFonts(object):
     }
 
     attribute_map = {
-        'heading_font': 'HeadingFont',
-        'body_font': 'BodyFont',
-        'theme_id': 'ThemeId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'heading_font': 'headingFont',
+        'body_font': 'bodyFont',
+        'theme_id': 'themeId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, heading_font=None, body_font=None, theme_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

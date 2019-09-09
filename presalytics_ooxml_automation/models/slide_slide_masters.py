@@ -39,11 +39,11 @@ class SlideSlideMasters(object):
     }
 
     attribute_map = {
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

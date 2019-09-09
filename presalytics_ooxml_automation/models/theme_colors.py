@@ -53,25 +53,25 @@ class ThemeColors(object):
     }
 
     attribute_map = {
-        'name': 'Name',
-        'theme_id': 'ThemeId',
-        'accent1': 'Accent1',
-        'accent2': 'Accent2',
-        'accent3': 'Accent3',
-        'accent4': 'Accent4',
-        'accent5': 'Accent5',
-        'accent6': 'Accent6',
-        'light1': 'Light1',
-        'light2': 'Light2',
-        'dark1': 'Dark1',
-        'dark2': 'Dark2',
-        'hyperlink': 'Hyperlink',
-        'followed_hyperlink': 'FollowedHyperlink',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'name': 'name',
+        'theme_id': 'themeId',
+        'accent1': 'accent1',
+        'accent2': 'accent2',
+        'accent3': 'accent3',
+        'accent4': 'accent4',
+        'accent5': 'accent5',
+        'accent6': 'accent6',
+        'light1': 'light1',
+        'light2': 'light2',
+        'dark1': 'dark1',
+        'dark2': 'dark2',
+        'hyperlink': 'hyperlink',
+        'followed_hyperlink': 'followedHyperlink',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, name=None, theme_id=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, light1=None, light2=None, dark1=None, dark2=None, hyperlink=None, followed_hyperlink=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

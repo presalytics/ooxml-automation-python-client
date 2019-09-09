@@ -48,20 +48,20 @@ class SharedLines(object):
     }
 
     attribute_map = {
-        'solid_fills_id': 'SolidFillsId',
-        'dash_type_id': 'DashTypeId',
-        'head_end_type_id': 'HeadEndTypeId',
-        'tail_end_type_id': 'TailEndTypeId',
-        'weight': 'Weight',
-        'head_end_height_id': 'HeadEndHeightId',
-        'head_end_width_id': 'HeadEndWidthId',
-        'tail_end_height_id': 'TailEndHeightId',
-        'tail_end_width_id': 'TailEndWidthId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'solid_fills_id': 'solidFillsId',
+        'dash_type_id': 'dashTypeId',
+        'head_end_type_id': 'headEndTypeId',
+        'tail_end_type_id': 'tailEndTypeId',
+        'weight': 'weight',
+        'head_end_height_id': 'headEndHeightId',
+        'head_end_width_id': 'headEndWidthId',
+        'tail_end_height_id': 'tailEndHeightId',
+        'tail_end_width_id': 'tailEndWidthId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, solid_fills_id=None, dash_type_id=None, head_end_type_id=None, tail_end_type_id=None, weight=None, head_end_height_id=None, head_end_width_id=None, tail_end_height_id=None, tail_end_width_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

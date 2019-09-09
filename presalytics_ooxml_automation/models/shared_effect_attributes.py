@@ -43,15 +43,15 @@ class SharedEffectAttributes(object):
     }
 
     attribute_map = {
-        'effect_type_id': 'EffectTypeId',
-        'attributes_json': 'AttributesJson',
-        'effect_id': 'EffectId',
-        'fill_map_id': 'FillMapId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'effect_type_id': 'effectTypeId',
+        'attributes_json': 'attributesJson',
+        'effect_id': 'effectId',
+        'fill_map_id': 'fillMapId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, effect_type_id=None, attributes_json=None, effect_id=None, fill_map_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

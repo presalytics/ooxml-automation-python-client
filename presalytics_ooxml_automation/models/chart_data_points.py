@@ -43,15 +43,15 @@ class ChartDataPoints(object):
     }
 
     attribute_map = {
-        'value': 'Value',
-        'column_id': 'ColumnId',
-        'row_id': 'RowId',
-        'chart_data_id': 'ChartDataId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'value': 'value',
+        'column_id': 'columnId',
+        'row_id': 'rowId',
+        'chart_data_id': 'chartDataId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, value=None, column_id=None, row_id=None, chart_data_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

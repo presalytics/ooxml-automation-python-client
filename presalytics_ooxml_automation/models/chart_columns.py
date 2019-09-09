@@ -43,15 +43,15 @@ class ChartColumns(object):
     }
 
     attribute_map = {
-        'name': 'Name',
-        'index': 'Index',
-        'axis_id': 'AxisId',
-        'column_collection_id': 'ColumnCollectionId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'name': 'name',
+        'index': 'index',
+        'axis_id': 'axisId',
+        'column_collection_id': 'columnCollectionId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, name=None, index=None, axis_id=None, column_collection_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

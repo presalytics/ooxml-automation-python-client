@@ -35,7 +35,7 @@ class DocumentType(object):
         'name': 'str',
         'file_extension': 'str',
         'description': 'str',
-        'mime_type': 'str',
+        'm_ime_type': 'str',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -44,26 +44,26 @@ class DocumentType(object):
     }
 
     attribute_map = {
-        'type_id': 'TypeId',
-        'name': 'Name',
-        'file_extension': 'FileExtension',
-        'description': 'Description',
-        'mime_type': 'MIMEType',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'type_id': 'typeId',
+        'name': 'name',
+        'file_extension': 'fileExtension',
+        'description': 'description',
+        'm_ime_type': 'mIMEType',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
-    def __init__(self, type_id=None, name=None, file_extension=None, description=None, mime_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, type_id=None, name=None, file_extension=None, description=None, m_ime_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """DocumentType - a model defined in OpenAPI"""  # noqa: E501
 
         self._type_id = None
         self._name = None
         self._file_extension = None
         self._description = None
-        self._mime_type = None
+        self._m_ime_type = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -79,8 +79,8 @@ class DocumentType(object):
             self.file_extension = file_extension
         if description is not None:
             self.description = description
-        if mime_type is not None:
-            self.mime_type = mime_type
+        if m_ime_type is not None:
+            self.m_ime_type = m_ime_type
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -177,25 +177,25 @@ class DocumentType(object):
         self._description = description
 
     @property
-    def mime_type(self):
-        """Gets the mime_type of this DocumentType.  # noqa: E501
+    def m_ime_type(self):
+        """Gets the m_ime_type of this DocumentType.  # noqa: E501
 
 
-        :return: The mime_type of this DocumentType.  # noqa: E501
+        :return: The m_ime_type of this DocumentType.  # noqa: E501
         :rtype: str
         """
-        return self._mime_type
+        return self._m_ime_type
 
-    @mime_type.setter
-    def mime_type(self, mime_type):
-        """Sets the mime_type of this DocumentType.
+    @m_ime_type.setter
+    def m_ime_type(self, m_ime_type):
+        """Sets the m_ime_type of this DocumentType.
 
 
-        :param mime_type: The mime_type of this DocumentType.  # noqa: E501
+        :param m_ime_type: The m_ime_type of this DocumentType.  # noqa: E501
         :type: str
         """
 
-        self._mime_type = mime_type
+        self._m_ime_type = m_ime_type
 
     @property
     def id(self):

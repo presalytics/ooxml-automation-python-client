@@ -42,14 +42,14 @@ class TableColumns(object):
     }
 
     attribute_map = {
-        'index': 'Index',
-        'width': 'Width',
-        'table_id': 'TableId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'index': 'index',
+        'width': 'width',
+        'table_id': 'tableId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, index=None, width=None, table_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

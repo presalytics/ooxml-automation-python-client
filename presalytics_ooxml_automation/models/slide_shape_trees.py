@@ -48,20 +48,20 @@ class SlideShapeTrees(object):
     }
 
     attribute_map = {
-        'slide_id': 'SlideId',
-        'group_element_id': 'GroupElementId',
-        'name': 'Name',
-        'hidden': 'Hidden',
-        'title': 'Title',
-        'ooxml_id': 'OoxmlId',
-        'svg_blob_location': 'SvgBlobLocation',
-        'base_element_blob_url': 'BaseElementBlobUrl',
-        'package_uri': 'PackageUri',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'slide_id': 'slideId',
+        'group_element_id': 'groupElementId',
+        'name': 'name',
+        'hidden': 'hidden',
+        'title': 'title',
+        'ooxml_id': 'ooxmlId',
+        'svg_blob_location': 'svgBlobLocation',
+        'base_element_blob_url': 'baseElementBlobUrl',
+        'package_uri': 'packageUri',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, slide_id=None, group_element_id=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_location=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

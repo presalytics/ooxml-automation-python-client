@@ -44,16 +44,16 @@ class SharedSolidFills(object):
     }
 
     attribute_map = {
-        'hex_value': 'HexValue',
-        'is_user_color': 'IsUserColor',
-        'color_type_id': 'ColorTypeId',
-        'theme_fill_map_id': 'ThemeFillMapId',
-        'color_transformations_id': 'ColorTransformationsId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'hex_value': 'hexValue',
+        'is_user_color': 'isUserColor',
+        'color_type_id': 'colorTypeId',
+        'theme_fill_map_id': 'themeFillMapId',
+        'color_transformations_id': 'colorTransformationsId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, hex_value=None, is_user_color=None, color_type_id=None, theme_fill_map_id=None, color_transformations_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

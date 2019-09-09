@@ -45,17 +45,17 @@ class SharedPictures(object):
     }
 
     attribute_map = {
-        'graphics_id': 'GraphicsId',
-        'image_fills_id': 'ImageFillsId',
-        'image_file_blob_url': 'ImageFileBlobUrl',
-        'file_extension': 'FileExtension',
-        'base_element_blob_url': 'BaseElementBlobUrl',
-        'package_uri': 'PackageUri',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'graphics_id': 'graphicsId',
+        'image_fills_id': 'imageFillsId',
+        'image_file_blob_url': 'imageFileBlobUrl',
+        'file_extension': 'fileExtension',
+        'base_element_blob_url': 'baseElementBlobUrl',
+        'package_uri': 'packageUri',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, graphics_id=None, image_fills_id=None, image_file_blob_url=None, file_extension=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

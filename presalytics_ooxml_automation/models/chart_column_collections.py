@@ -41,13 +41,13 @@ class ChartColumnCollections(object):
     }
 
     attribute_map = {
-        'chart_data_id': 'ChartDataId',
-        'columns': 'Columns',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'chart_data_id': 'chartDataId',
+        'columns': 'columns',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, chart_data_id=None, columns=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

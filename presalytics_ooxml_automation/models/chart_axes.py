@@ -43,15 +43,15 @@ class ChartAxes(object):
     }
 
     attribute_map = {
-        'charts_id': 'ChartsId',
-        'title_text_container_id': 'TitleTextContainerId',
-        'ooxml_id': 'OoxmlId',
-        'axis_data_type_id': 'AxisDataTypeId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'charts_id': 'chartsId',
+        'title_text_container_id': 'titleTextContainerId',
+        'ooxml_id': 'ooxmlId',
+        'axis_data_type_id': 'axisDataTypeId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, charts_id=None, title_text_container_id=None, ooxml_id=None, axis_data_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

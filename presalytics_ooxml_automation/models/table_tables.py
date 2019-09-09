@@ -49,21 +49,21 @@ class TableTables(object):
     }
 
     attribute_map = {
-        'name': 'Name',
-        'svg_blob_url': 'SvgBlobUrl',
-        'has_style_part': 'HasStylePart',
-        'style_part_outer_xml': 'StylePartOuterXml',
-        'parent_graphic_id': 'ParentGraphicId',
-        'rows': 'Rows',
-        'columns': 'Columns',
-        'cells': 'Cells',
-        'base_element_blob_url': 'BaseElementBlobUrl',
-        'package_uri': 'PackageUri',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'name': 'name',
+        'svg_blob_url': 'svgBlobUrl',
+        'has_style_part': 'hasStylePart',
+        'style_part_outer_xml': 'stylePartOuterXml',
+        'parent_graphic_id': 'parentGraphicId',
+        'rows': 'rows',
+        'columns': 'columns',
+        'cells': 'cells',
+        'base_element_blob_url': 'baseElementBlobUrl',
+        'package_uri': 'packageUri',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, name=None, svg_blob_url=None, has_style_part=None, style_part_outer_xml=None, parent_graphic_id=None, rows=None, columns=None, cells=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

@@ -48,20 +48,20 @@ class TableCells(object):
     }
 
     attribute_map = {
-        'row_id': 'RowId',
-        'column_id': 'ColumnId',
-        'row_span': 'RowSpan',
-        'column_span': 'ColumnSpan',
-        'is_merged_vertical': 'IsMergedVertical',
-        'is_merged_horozontal': 'IsMergedHorozontal',
-        'fill_map_id': 'FillMapId',
-        'text_container_id': 'TextContainerId',
-        'border_id': 'BorderId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'row_id': 'rowId',
+        'column_id': 'columnId',
+        'row_span': 'rowSpan',
+        'column_span': 'columnSpan',
+        'is_merged_vertical': 'isMergedVertical',
+        'is_merged_horozontal': 'isMergedHorozontal',
+        'fill_map_id': 'fillMapId',
+        'text_container_id': 'textContainerId',
+        'border_id': 'borderId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, row_id=None, column_id=None, row_span=None, column_span=None, is_merged_vertical=None, is_merged_horozontal=None, fill_map_id=None, text_container_id=None, border_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

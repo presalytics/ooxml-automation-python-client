@@ -45,17 +45,17 @@ class TableBorders(object):
     }
 
     attribute_map = {
-        'top_id': 'TopId',
-        'bottom_id': 'BottomId',
-        'right_id': 'RightId',
-        'left_id': 'LeftId',
-        't_lto_br_id': 'TLtoBRId',
-        'b_lto_tr_id': 'BLtoTRId',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'top_id': 'topId',
+        'bottom_id': 'bottomId',
+        'right_id': 'rightId',
+        'left_id': 'leftId',
+        't_lto_br_id': 'tLtoBRId',
+        'b_lto_tr_id': 'bLtoTRId',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, top_id=None, bottom_id=None, right_id=None, left_id=None, t_lto_br_id=None, b_lto_tr_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501

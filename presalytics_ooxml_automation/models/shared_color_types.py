@@ -43,15 +43,15 @@ class SharedColorTypes(object):
     }
 
     attribute_map = {
-        'type_id': 'TypeId',
-        'name': 'Name',
-        'description': 'Description',
-        'color_scheme_index_value_enum': 'ColorSchemeIndexValueEnum',
-        'id': 'Id',
-        'date_created': 'DateCreated',
-        'user_created': 'UserCreated',
-        'date_modified': 'DateModified',
-        'user_modified': 'UserModified'
+        'type_id': 'typeId',
+        'name': 'name',
+        'description': 'description',
+        'color_scheme_index_value_enum': 'colorSchemeIndexValueEnum',
+        'id': 'id',
+        'date_created': 'dateCreated',
+        'user_created': 'userCreated',
+        'date_modified': 'dateModified',
+        'user_modified': 'userModified'
     }
 
     def __init__(self, type_id=None, name=None, description=None, color_scheme_index_value_enum=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
