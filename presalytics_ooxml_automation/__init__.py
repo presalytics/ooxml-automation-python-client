@@ -14,7 +14,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "0.2.24"
+__version__ = "0.2.25"
 
 # import apis into sdk package
 from presalytics_ooxml_automation.api.default_api import DefaultApi
@@ -43,6 +43,7 @@ from presalytics_ooxml_automation.models.chart_rows import ChartRows
 from presalytics_ooxml_automation.models.document import Document
 from presalytics_ooxml_automation.models.document_type import DocumentType
 from presalytics_ooxml_automation.models.inline_object import InlineObject
+from presalytics_ooxml_automation.models.ooxml_dto import OoxmlDTO
 from presalytics_ooxml_automation.models.shared_color_transformation_attributes import SharedColorTransformationAttributes
 from presalytics_ooxml_automation.models.shared_color_transformations import SharedColorTransformations
 from presalytics_ooxml_automation.models.shared_color_types import SharedColorTypes

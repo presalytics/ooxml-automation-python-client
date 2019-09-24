@@ -37,6 +37,7 @@ class Document(object):
         'blob_location': 'str',
         'table_styles_xml_blob_url': 'str',
         'base_element_blob_url': 'str',
+        'changed_base_element_blob_url': 'str',
         'package_uri': 'str',
         'id': 'str',
         'date_created': 'datetime',
@@ -52,6 +53,7 @@ class Document(object):
         'blob_location': 'blobLocation',
         'table_styles_xml_blob_url': 'tableStylesXmlBlobUrl',
         'base_element_blob_url': 'baseElementBlobUrl',
+        'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
         'package_uri': 'packageUri',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -60,7 +62,7 @@ class Document(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """Document - a model defined in OpenAPI"""  # noqa: E501
 
         self._filename = None
@@ -69,6 +71,7 @@ class Document(object):
         self._blob_location = None
         self._table_styles_xml_blob_url = None
         self._base_element_blob_url = None
+        self._changed_base_element_blob_url = None
         self._package_uri = None
         self._id = None
         self._date_created = None
@@ -89,6 +92,8 @@ class Document(object):
             self.table_styles_xml_blob_url = table_styles_xml_blob_url
         if base_element_blob_url is not None:
             self.base_element_blob_url = base_element_blob_url
+        if changed_base_element_blob_url is not None:
+            self.changed_base_element_blob_url = changed_base_element_blob_url
         if package_uri is not None:
             self.package_uri = package_uri
         if id is not None:
@@ -227,6 +232,27 @@ class Document(object):
         """
 
         self._base_element_blob_url = base_element_blob_url
+
+    @property
+    def changed_base_element_blob_url(self):
+        """Gets the changed_base_element_blob_url of this Document.  # noqa: E501
+
+
+        :return: The changed_base_element_blob_url of this Document.  # noqa: E501
+        :rtype: str
+        """
+        return self._changed_base_element_blob_url
+
+    @changed_base_element_blob_url.setter
+    def changed_base_element_blob_url(self, changed_base_element_blob_url):
+        """Sets the changed_base_element_blob_url of this Document.
+
+
+        :param changed_base_element_blob_url: The changed_base_element_blob_url of this Document.  # noqa: E501
+        :type: str
+        """
+
+        self._changed_base_element_blob_url = changed_base_element_blob_url
 
     @property
     def package_uri(self):

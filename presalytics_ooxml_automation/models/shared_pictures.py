@@ -36,6 +36,7 @@ class SharedPictures(object):
         'image_file_blob_url': 'str',
         'file_extension': 'str',
         'base_element_blob_url': 'str',
+        'changed_base_element_blob_url': 'str',
         'package_uri': 'str',
         'id': 'str',
         'date_created': 'datetime',
@@ -50,6 +51,7 @@ class SharedPictures(object):
         'image_file_blob_url': 'imageFileBlobUrl',
         'file_extension': 'fileExtension',
         'base_element_blob_url': 'baseElementBlobUrl',
+        'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
         'package_uri': 'packageUri',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -58,7 +60,7 @@ class SharedPictures(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, graphics_id=None, image_fills_id=None, image_file_blob_url=None, file_extension=None, base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, graphics_id=None, image_fills_id=None, image_file_blob_url=None, file_extension=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedPictures - a model defined in OpenAPI"""  # noqa: E501
 
         self._graphics_id = None
@@ -66,6 +68,7 @@ class SharedPictures(object):
         self._image_file_blob_url = None
         self._file_extension = None
         self._base_element_blob_url = None
+        self._changed_base_element_blob_url = None
         self._package_uri = None
         self._id = None
         self._date_created = None
@@ -82,6 +85,8 @@ class SharedPictures(object):
             self.file_extension = file_extension
         if base_element_blob_url is not None:
             self.base_element_blob_url = base_element_blob_url
+        if changed_base_element_blob_url is not None:
+            self.changed_base_element_blob_url = changed_base_element_blob_url
         if package_uri is not None:
             self.package_uri = package_uri
         if id is not None:
@@ -199,6 +204,27 @@ class SharedPictures(object):
         """
 
         self._base_element_blob_url = base_element_blob_url
+
+    @property
+    def changed_base_element_blob_url(self):
+        """Gets the changed_base_element_blob_url of this SharedPictures.  # noqa: E501
+
+
+        :return: The changed_base_element_blob_url of this SharedPictures.  # noqa: E501
+        :rtype: str
+        """
+        return self._changed_base_element_blob_url
+
+    @changed_base_element_blob_url.setter
+    def changed_base_element_blob_url(self, changed_base_element_blob_url):
+        """Sets the changed_base_element_blob_url of this SharedPictures.
+
+
+        :param changed_base_element_blob_url: The changed_base_element_blob_url of this SharedPictures.  # noqa: E501
+        :type: str
+        """
+
+        self._changed_base_element_blob_url = changed_base_element_blob_url
 
     @property
     def package_uri(self):
