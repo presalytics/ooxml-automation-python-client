@@ -14,7 +14,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "0.2.28"
+__version__ = "0.2.29"
 
 # import apis into sdk package
 from presalytics_ooxml_automation.api.default_api import DefaultApi
@@ -69,7 +69,6 @@ from presalytics_ooxml_automation.models.slide_graphic_types import SlideGraphic
 from presalytics_ooxml_automation.models.slide_graphics import SlideGraphics
 from presalytics_ooxml_automation.models.slide_group_element_types import SlideGroupElementTypes
 from presalytics_ooxml_automation.models.slide_group_elements import SlideGroupElements
-from presalytics_ooxml_automation.models.slide_groups import SlideGroups
 from presalytics_ooxml_automation.models.slide_shape_trees import SlideShapeTrees
 from presalytics_ooxml_automation.models.slide_slide_masters import SlideSlideMasters
 from presalytics_ooxml_automation.models.table_borders import TableBorders
