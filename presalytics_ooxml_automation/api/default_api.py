@@ -36,13 +36,13 @@ class DefaultApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def chart_axes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_axes_get_id(self, id, **kwargs):  # noqa: E501
         """Axes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Axes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_axes_get_get_id(id, async_req=True)
+        >>> thread = api.chart_axes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -59,15 +59,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_axes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_axes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_axes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_axes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Axes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Axes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_axes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_axes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -98,14 +98,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_axes_get_get_id" % key
+                    " to method chart_axes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_axes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_axes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -144,13 +144,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_axisdatatypes_get_get(self, **kwargs):  # noqa: E501
+    def chart_axisdatatypes_get(self, **kwargs):  # noqa: E501
         """AxisDataTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the AxisDataTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_axisdatatypes_get_get(async_req=True)
+        >>> thread = api.chart_axisdatatypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -166,15 +166,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_axisdatatypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.chart_axisdatatypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def chart_axisdatatypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def chart_axisdatatypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """AxisDataTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the AxisDataTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_axisdatatypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.chart_axisdatatypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -204,7 +204,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_axisdatatypes_get_get" % key
+                    " to method chart_axisdatatypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -244,13 +244,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_axisdatatypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_axisdatatypes_get_id(self, id, **kwargs):  # noqa: E501
         """AxisDataTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a AxisDataTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_axisdatatypes_get_get_id(id, async_req=True)
+        >>> thread = api.chart_axisdatatypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -267,15 +267,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_axisdatatypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_axisdatatypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_axisdatatypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_axisdatatypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """AxisDataTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a AxisDataTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_axisdatatypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_axisdatatypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -306,14 +306,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_axisdatatypes_get_get_id" % key
+                    " to method chart_axisdatatypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_axisdatatypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_axisdatatypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -352,13 +352,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_chartdata_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_chartdata_get_id(self, id, **kwargs):  # noqa: E501
         """ChartData: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ChartData object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_chartdata_get_get_id(id, async_req=True)
+        >>> thread = api.chart_chartdata_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -375,15 +375,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_chartdata_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_chartdata_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_chartdata_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_chartdata_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ChartData: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ChartData object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_chartdata_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_chartdata_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -414,14 +414,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_chartdata_get_get_id" % key
+                    " to method chart_chartdata_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_chartdata_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_chartdata_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -460,13 +460,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_columncollections_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_columncollections_get_id(self, id, **kwargs):  # noqa: E501
         """ColumnCollections: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColumnCollections object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_columncollections_get_get_id(id, async_req=True)
+        >>> thread = api.chart_columncollections_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -483,15 +483,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_columncollections_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_columncollections_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_columncollections_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_columncollections_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ColumnCollections: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColumnCollections object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_columncollections_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_columncollections_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -522,14 +522,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_columncollections_get_get_id" % key
+                    " to method chart_columncollections_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_columncollections_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_columncollections_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -568,13 +568,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_columns_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_columns_get_id(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_columns_get_get_id(id, async_req=True)
+        >>> thread = api.chart_columns_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -591,15 +591,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_columns_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_columns_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_columns_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_columns_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_columns_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_columns_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -630,14 +630,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_columns_get_get_id" % key
+                    " to method chart_columns_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_columns_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_columns_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -676,13 +676,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_datapoints_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_datapoints_get_id(self, id, **kwargs):  # noqa: E501
         """DataPoints: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a DataPoints object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_datapoints_get_get_id(id, async_req=True)
+        >>> thread = api.chart_datapoints_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -699,15 +699,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_datapoints_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_datapoints_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_datapoints_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_datapoints_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """DataPoints: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a DataPoints object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_datapoints_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_datapoints_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -738,14 +738,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_datapoints_get_get_id" % key
+                    " to method chart_datapoints_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_datapoints_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_datapoints_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -784,13 +784,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_plottype_get_get(self, **kwargs):  # noqa: E501
+    def chart_plottype_get(self, **kwargs):  # noqa: E501
         """PlotType: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the PlotType type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_plottype_get_get(async_req=True)
+        >>> thread = api.chart_plottype_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -806,15 +806,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_plottype_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.chart_plottype_get_with_http_info(**kwargs)  # noqa: E501
 
-    def chart_plottype_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def chart_plottype_get_with_http_info(self, **kwargs):  # noqa: E501
         """PlotType: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the PlotType type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_plottype_get_get_with_http_info(async_req=True)
+        >>> thread = api.chart_plottype_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -844,7 +844,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_plottype_get_get" % key
+                    " to method chart_plottype_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -884,13 +884,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_plottype_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_plottype_get_id(self, id, **kwargs):  # noqa: E501
         """PlotType: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a PlotType object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_plottype_get_get_id(id, async_req=True)
+        >>> thread = api.chart_plottype_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -907,15 +907,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_plottype_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_plottype_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_plottype_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_plottype_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """PlotType: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a PlotType object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_plottype_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_plottype_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -946,14 +946,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_plottype_get_get_id" % key
+                    " to method chart_plottype_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_plottype_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_plottype_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -992,13 +992,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_rowcol_get_get(self, **kwargs):  # noqa: E501
+    def chart_rowcol_get(self, **kwargs):  # noqa: E501
         """RowCol: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the RowCol type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rowcol_get_get(async_req=True)
+        >>> thread = api.chart_rowcol_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1014,15 +1014,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_rowcol_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.chart_rowcol_get_with_http_info(**kwargs)  # noqa: E501
 
-    def chart_rowcol_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def chart_rowcol_get_with_http_info(self, **kwargs):  # noqa: E501
         """RowCol: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the RowCol type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rowcol_get_get_with_http_info(async_req=True)
+        >>> thread = api.chart_rowcol_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1052,7 +1052,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_rowcol_get_get" % key
+                    " to method chart_rowcol_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -1092,13 +1092,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_rowcol_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_rowcol_get_id(self, id, **kwargs):  # noqa: E501
         """RowCol: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowCol object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rowcol_get_get_id(id, async_req=True)
+        >>> thread = api.chart_rowcol_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1115,15 +1115,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_rowcol_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_rowcol_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_rowcol_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_rowcol_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """RowCol: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowCol object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rowcol_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_rowcol_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1154,14 +1154,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_rowcol_get_get_id" % key
+                    " to method chart_rowcol_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_rowcol_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_rowcol_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1200,13 +1200,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_rowcollections_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_rowcollections_get_id(self, id, **kwargs):  # noqa: E501
         """RowCollections: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowCollections object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rowcollections_get_get_id(id, async_req=True)
+        >>> thread = api.chart_rowcollections_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1223,15 +1223,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_rowcollections_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_rowcollections_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_rowcollections_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_rowcollections_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """RowCollections: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowCollections object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rowcollections_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_rowcollections_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1262,14 +1262,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_rowcollections_get_get_id" % key
+                    " to method chart_rowcollections_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_rowcollections_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_rowcollections_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1308,13 +1308,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_rownameformattypes_get_get(self, **kwargs):  # noqa: E501
+    def chart_rownameformattypes_get(self, **kwargs):  # noqa: E501
         """RowNameFormatTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the RowNameFormatTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rownameformattypes_get_get(async_req=True)
+        >>> thread = api.chart_rownameformattypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1330,15 +1330,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_rownameformattypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.chart_rownameformattypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def chart_rownameformattypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def chart_rownameformattypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """RowNameFormatTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the RowNameFormatTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Chart object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rownameformattypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.chart_rownameformattypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1368,7 +1368,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_rownameformattypes_get_get" % key
+                    " to method chart_rownameformattypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -1408,13 +1408,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_rownameformattypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_rownameformattypes_get_id(self, id, **kwargs):  # noqa: E501
         """RowNameFormatTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowNameFormatTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rownameformattypes_get_get_id(id, async_req=True)
+        >>> thread = api.chart_rownameformattypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1431,15 +1431,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_rownameformattypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_rownameformattypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_rownameformattypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_rownameformattypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """RowNameFormatTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a RowNameFormatTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rownameformattypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_rownameformattypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1470,14 +1470,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_rownameformattypes_get_get_id" % key
+                    " to method chart_rownameformattypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_rownameformattypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_rownameformattypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1516,13 +1516,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def chart_rows_get_get_id(self, id, **kwargs):  # noqa: E501
+    def chart_rows_get_id(self, id, **kwargs):  # noqa: E501
         """Rows: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Rows object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rows_get_get_id(id, async_req=True)
+        >>> thread = api.chart_rows_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1539,15 +1539,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.chart_rows_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.chart_rows_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def chart_rows_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def chart_rows_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Rows: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Rows object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.chart_rows_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.chart_rows_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1578,14 +1578,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method chart_rows_get_get_id" % key
+                    " to method chart_rows_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `chart_rows_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `chart_rows_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1832,12 +1832,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def charts_charts_get_get_id(self, id, **kwargs):  # noqa: E501
+    def charts_charts_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.charts_charts_get_get_id(id, async_req=True)
+        >>> thread = api.charts_charts_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1854,14 +1854,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.charts_charts_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.charts_charts_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def charts_charts_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def charts_charts_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.charts_charts_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.charts_charts_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -1892,14 +1892,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method charts_charts_get_get_id" % key
+                    " to method charts_charts_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `charts_charts_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `charts_charts_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2260,13 +2260,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_documenttype_get_get(self, **kwargs):  # noqa: E501
+    def documents_documenttype_get(self, **kwargs):  # noqa: E501
         """DocumentType: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the DocumentType type. Use the Id from oneof the returned elements on to make changes to elements in the Documents object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_documenttype_get_get(async_req=True)
+        >>> thread = api.documents_documenttype_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2282,15 +2282,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_documenttype_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.documents_documenttype_get_with_http_info(**kwargs)  # noqa: E501
 
-    def documents_documenttype_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def documents_documenttype_get_with_http_info(self, **kwargs):  # noqa: E501
         """DocumentType: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the DocumentType type. Use the Id from oneof the returned elements on to make changes to elements in the Documents object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_documenttype_get_get_with_http_info(async_req=True)
+        >>> thread = api.documents_documenttype_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2320,7 +2320,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_documenttype_get_get" % key
+                    " to method documents_documenttype_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -2360,13 +2360,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_documenttype_get_get_id(self, id, **kwargs):  # noqa: E501
+    def documents_documenttype_get_id(self, id, **kwargs):  # noqa: E501
         """DocumentType: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a DocumentType object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_documenttype_get_get_id(id, async_req=True)
+        >>> thread = api.documents_documenttype_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2383,15 +2383,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_documenttype_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.documents_documenttype_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def documents_documenttype_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def documents_documenttype_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """DocumentType: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a DocumentType object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_documenttype_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.documents_documenttype_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2422,14 +2422,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_documenttype_get_get_id" % key
+                    " to method documents_documenttype_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `documents_documenttype_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `documents_documenttype_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2570,12 +2570,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_get_get_id(self, id, **kwargs):  # noqa: E501
+    def documents_get_id(self, id, **kwargs):  # noqa: E501
         """Get document information by document id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_get_get_id(id, async_req=True)
+        >>> thread = api.documents_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2592,14 +2592,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.documents_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def documents_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def documents_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get document information by document id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.documents_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2630,14 +2630,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_get_get_id" % key
+                    " to method documents_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `documents_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `documents_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2672,12 +2672,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_post_post(self, **kwargs):  # noqa: E501
+    def documents_post(self, **kwargs):  # noqa: E501
         """Upload an Open Office XML file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_post_post(async_req=True)
+        >>> thread = api.documents_post(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2693,14 +2693,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_post_post_with_http_info(**kwargs)  # noqa: E501
+        return self.documents_post_with_http_info(**kwargs)  # noqa: E501
 
-    def documents_post_post_with_http_info(self, **kwargs):  # noqa: E501
+    def documents_post_with_http_info(self, **kwargs):  # noqa: E501
         """Upload an Open Office XML file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_post_post_with_http_info(async_req=True)
+        >>> thread = api.documents_post_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2730,7 +2730,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_post_post" % key
+                    " to method documents_post" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -2770,13 +2770,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_colortransformationattributes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_colortransformationattributes_get_id(self, id, **kwargs):  # noqa: E501
         """ColorTransformationAttributes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorTransformationAttributes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortransformationattributes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_colortransformationattributes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2793,15 +2793,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_colortransformationattributes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_colortransformationattributes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_colortransformationattributes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_colortransformationattributes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ColorTransformationAttributes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorTransformationAttributes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortransformationattributes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_colortransformationattributes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2832,14 +2832,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_colortransformationattributes_get_get_id" % key
+                    " to method shared_colortransformationattributes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortransformationattributes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortransformationattributes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2878,13 +2878,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_colortransformationattributes_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_colortransformationattributes_put_id(self, id, **kwargs):  # noqa: E501
         """ColorTransformationAttributes: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to ColorTransformationAttributes objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortransformationattributes_put_put_id(id, async_req=True)
+        >>> thread = api.shared_colortransformationattributes_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2902,15 +2902,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_colortransformationattributes_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_colortransformationattributes_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_colortransformationattributes_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_colortransformationattributes_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ColorTransformationAttributes: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to ColorTransformationAttributes objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortransformationattributes_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_colortransformationattributes_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2942,14 +2942,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_colortransformationattributes_put_put_id" % key
+                    " to method shared_colortransformationattributes_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortransformationattributes_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortransformationattributes_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2990,13 +2990,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_colortransformations_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_colortransformations_get_id(self, id, **kwargs):  # noqa: E501
         """ColorTransformations: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorTransformations object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortransformations_get_get_id(id, async_req=True)
+        >>> thread = api.shared_colortransformations_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3013,15 +3013,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_colortransformations_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_colortransformations_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_colortransformations_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_colortransformations_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ColorTransformations: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorTransformations object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortransformations_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_colortransformations_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3052,14 +3052,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_colortransformations_get_get_id" % key
+                    " to method shared_colortransformations_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortransformations_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortransformations_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -3098,13 +3098,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_colortypes_get_get(self, **kwargs):  # noqa: E501
+    def shared_colortypes_get(self, **kwargs):  # noqa: E501
         """ColorTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the ColorTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortypes_get_get(async_req=True)
+        >>> thread = api.shared_colortypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3120,15 +3120,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_colortypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.shared_colortypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def shared_colortypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def shared_colortypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """ColorTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the ColorTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.shared_colortypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3158,7 +3158,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_colortypes_get_get" % key
+                    " to method shared_colortypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -3198,13 +3198,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_colortypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_colortypes_get_id(self, id, **kwargs):  # noqa: E501
         """ColorTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortypes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_colortypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3221,15 +3221,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_colortypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_colortypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_colortypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_colortypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ColorTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_colortypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_colortypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3260,14 +3260,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_colortypes_get_get_id" % key
+                    " to method shared_colortypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_colortypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -3306,13 +3306,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_dashtypes_get_get(self, **kwargs):  # noqa: E501
+    def shared_dashtypes_get(self, **kwargs):  # noqa: E501
         """DashTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the DashTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_dashtypes_get_get(async_req=True)
+        >>> thread = api.shared_dashtypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3328,15 +3328,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_dashtypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.shared_dashtypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def shared_dashtypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def shared_dashtypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """DashTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the DashTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_dashtypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.shared_dashtypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3366,7 +3366,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_dashtypes_get_get" % key
+                    " to method shared_dashtypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -3406,13 +3406,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_dashtypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_dashtypes_get_id(self, id, **kwargs):  # noqa: E501
         """DashTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a DashTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_dashtypes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_dashtypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3429,15 +3429,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_dashtypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_dashtypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_dashtypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_dashtypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """DashTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a DashTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_dashtypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_dashtypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3468,14 +3468,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_dashtypes_get_get_id" % key
+                    " to method shared_dashtypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_dashtypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_dashtypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -3514,13 +3514,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_effectattributes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_effectattributes_get_id(self, id, **kwargs):  # noqa: E501
         """EffectAttributes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a EffectAttributes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effectattributes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_effectattributes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3537,15 +3537,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_effectattributes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_effectattributes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_effectattributes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_effectattributes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """EffectAttributes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a EffectAttributes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effectattributes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_effectattributes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3576,14 +3576,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_effectattributes_get_get_id" % key
+                    " to method shared_effectattributes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_effectattributes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_effectattributes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -3622,13 +3622,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_effectattributes_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_effectattributes_put_id(self, id, **kwargs):  # noqa: E501
         """EffectAttributes: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to EffectAttributes objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effectattributes_put_put_id(id, async_req=True)
+        >>> thread = api.shared_effectattributes_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3646,15 +3646,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_effectattributes_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_effectattributes_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_effectattributes_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_effectattributes_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """EffectAttributes: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to EffectAttributes objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effectattributes_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_effectattributes_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3686,14 +3686,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_effectattributes_put_put_id" % key
+                    " to method shared_effectattributes_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_effectattributes_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_effectattributes_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -3734,13 +3734,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_effects_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_effects_get_id(self, id, **kwargs):  # noqa: E501
         """Effects: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Effects object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effects_get_get_id(id, async_req=True)
+        >>> thread = api.shared_effects_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3757,15 +3757,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_effects_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_effects_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_effects_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_effects_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Effects: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Effects object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effects_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_effects_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3796,14 +3796,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_effects_get_get_id" % key
+                    " to method shared_effects_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_effects_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_effects_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -3842,13 +3842,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_effecttypes_get_get(self, **kwargs):  # noqa: E501
+    def shared_effecttypes_get(self, **kwargs):  # noqa: E501
         """EffectTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the EffectTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effecttypes_get_get(async_req=True)
+        >>> thread = api.shared_effecttypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3864,15 +3864,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_effecttypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.shared_effecttypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def shared_effecttypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def shared_effecttypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """EffectTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the EffectTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effecttypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.shared_effecttypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3902,7 +3902,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_effecttypes_get_get" % key
+                    " to method shared_effecttypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -3942,13 +3942,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_effecttypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_effecttypes_get_id(self, id, **kwargs):  # noqa: E501
         """EffectTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a EffectTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effecttypes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_effecttypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -3965,15 +3965,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_effecttypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_effecttypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_effecttypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_effecttypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """EffectTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a EffectTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_effecttypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_effecttypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4004,14 +4004,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_effecttypes_get_get_id" % key
+                    " to method shared_effecttypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_effecttypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_effecttypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -4050,13 +4050,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_fillmap_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_fillmap_get_id(self, id, **kwargs):  # noqa: E501
         """FillMap: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a FillMap object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_fillmap_get_get_id(id, async_req=True)
+        >>> thread = api.shared_fillmap_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4073,15 +4073,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_fillmap_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_fillmap_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_fillmap_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_fillmap_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """FillMap: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a FillMap object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_fillmap_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_fillmap_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4112,14 +4112,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_fillmap_get_get_id" % key
+                    " to method shared_fillmap_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_fillmap_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_fillmap_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -4158,13 +4158,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_filltypes_get_get(self, **kwargs):  # noqa: E501
+    def shared_filltypes_get(self, **kwargs):  # noqa: E501
         """FillTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the FillTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_filltypes_get_get(async_req=True)
+        >>> thread = api.shared_filltypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4180,15 +4180,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_filltypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.shared_filltypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def shared_filltypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def shared_filltypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """FillTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the FillTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_filltypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.shared_filltypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4218,7 +4218,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_filltypes_get_get" % key
+                    " to method shared_filltypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -4258,13 +4258,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_filltypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_filltypes_get_id(self, id, **kwargs):  # noqa: E501
         """FillTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a FillTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_filltypes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_filltypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4281,15 +4281,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_filltypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_filltypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_filltypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_filltypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """FillTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a FillTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_filltypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_filltypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4320,14 +4320,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_filltypes_get_get_id" % key
+                    " to method shared_filltypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_filltypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_filltypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -4366,13 +4366,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_gradientfills_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_gradientfills_get_id(self, id, **kwargs):  # noqa: E501
         """GradientFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GradientFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientfills_get_get_id(id, async_req=True)
+        >>> thread = api.shared_gradientfills_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4389,15 +4389,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_gradientfills_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_gradientfills_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_gradientfills_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_gradientfills_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GradientFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GradientFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientfills_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_gradientfills_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4428,14 +4428,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_gradientfills_get_get_id" % key
+                    " to method shared_gradientfills_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientfills_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientfills_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -4474,13 +4474,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_gradientfills_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_gradientfills_put_id(self, id, **kwargs):  # noqa: E501
         """GradientFills: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to GradientFills objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientfills_put_put_id(id, async_req=True)
+        >>> thread = api.shared_gradientfills_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4498,15 +4498,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_gradientfills_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_gradientfills_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_gradientfills_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_gradientfills_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GradientFills: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to GradientFills objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientfills_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_gradientfills_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4538,14 +4538,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_gradientfills_put_put_id" % key
+                    " to method shared_gradientfills_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientfills_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientfills_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -4586,13 +4586,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_gradientstops_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_gradientstops_get_id(self, id, **kwargs):  # noqa: E501
         """GradientStops: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GradientStops object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientstops_get_get_id(id, async_req=True)
+        >>> thread = api.shared_gradientstops_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4609,15 +4609,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_gradientstops_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_gradientstops_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_gradientstops_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_gradientstops_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GradientStops: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GradientStops object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientstops_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_gradientstops_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4648,14 +4648,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_gradientstops_get_get_id" % key
+                    " to method shared_gradientstops_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientstops_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientstops_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -4694,13 +4694,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_gradientstops_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_gradientstops_put_id(self, id, **kwargs):  # noqa: E501
         """GradientStops: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to GradientStops objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientstops_put_put_id(id, async_req=True)
+        >>> thread = api.shared_gradientstops_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4718,15 +4718,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_gradientstops_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_gradientstops_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_gradientstops_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_gradientstops_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GradientStops: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to GradientStops objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_gradientstops_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_gradientstops_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -4758,14 +4758,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_gradientstops_put_put_id" % key
+                    " to method shared_gradientstops_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientstops_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_gradientstops_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -5014,12 +5014,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_image_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_image_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_image_get_get_id(id, async_req=True)
+        >>> thread = api.shared_image_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5036,14 +5036,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_image_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_image_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_image_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_image_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_image_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_image_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5074,14 +5074,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_image_get_get_id" % key
+                    " to method shared_image_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_image_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_image_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -5336,13 +5336,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_imagefills_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_imagefills_get_id(self, id, **kwargs):  # noqa: E501
         """ImageFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ImageFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_imagefills_get_get_id(id, async_req=True)
+        >>> thread = api.shared_imagefills_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5359,15 +5359,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_imagefills_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_imagefills_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_imagefills_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_imagefills_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ImageFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ImageFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_imagefills_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_imagefills_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5398,14 +5398,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_imagefills_get_get_id" % key
+                    " to method shared_imagefills_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_imagefills_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_imagefills_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -5444,13 +5444,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_imagefills_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_imagefills_put_id(self, id, **kwargs):  # noqa: E501
         """ImageFills: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to ImageFills objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_imagefills_put_put_id(id, async_req=True)
+        >>> thread = api.shared_imagefills_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5468,15 +5468,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_imagefills_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_imagefills_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_imagefills_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_imagefills_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ImageFills: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to ImageFills objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_imagefills_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_imagefills_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5508,14 +5508,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_imagefills_put_put_id" % key
+                    " to method shared_imagefills_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_imagefills_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_imagefills_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -5556,13 +5556,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_lineendsizes_get_get(self, **kwargs):  # noqa: E501
+    def shared_lineendsizes_get(self, **kwargs):  # noqa: E501
         """LineEndSizes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the LineEndSizes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendsizes_get_get(async_req=True)
+        >>> thread = api.shared_lineendsizes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5578,15 +5578,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_lineendsizes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.shared_lineendsizes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def shared_lineendsizes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def shared_lineendsizes_get_with_http_info(self, **kwargs):  # noqa: E501
         """LineEndSizes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the LineEndSizes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendsizes_get_get_with_http_info(async_req=True)
+        >>> thread = api.shared_lineendsizes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5616,7 +5616,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_lineendsizes_get_get" % key
+                    " to method shared_lineendsizes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -5656,13 +5656,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_lineendsizes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_lineendsizes_get_id(self, id, **kwargs):  # noqa: E501
         """LineEndSizes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a LineEndSizes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendsizes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_lineendsizes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5679,15 +5679,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_lineendsizes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_lineendsizes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_lineendsizes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_lineendsizes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """LineEndSizes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a LineEndSizes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendsizes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_lineendsizes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5718,14 +5718,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_lineendsizes_get_get_id" % key
+                    " to method shared_lineendsizes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_lineendsizes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_lineendsizes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -5764,13 +5764,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_lineendtypes_get_get(self, **kwargs):  # noqa: E501
+    def shared_lineendtypes_get(self, **kwargs):  # noqa: E501
         """LineEndTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the LineEndTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendtypes_get_get(async_req=True)
+        >>> thread = api.shared_lineendtypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5786,15 +5786,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_lineendtypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.shared_lineendtypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def shared_lineendtypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def shared_lineendtypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """LineEndTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the LineEndTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Shared object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendtypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.shared_lineendtypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5824,7 +5824,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_lineendtypes_get_get" % key
+                    " to method shared_lineendtypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -5864,13 +5864,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_lineendtypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_lineendtypes_get_id(self, id, **kwargs):  # noqa: E501
         """LineEndTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a LineEndTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendtypes_get_get_id(id, async_req=True)
+        >>> thread = api.shared_lineendtypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5887,15 +5887,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_lineendtypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_lineendtypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_lineendtypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_lineendtypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """LineEndTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a LineEndTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lineendtypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_lineendtypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5926,14 +5926,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_lineendtypes_get_get_id" % key
+                    " to method shared_lineendtypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_lineendtypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_lineendtypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -5972,13 +5972,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_lines_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_lines_get_id(self, id, **kwargs):  # noqa: E501
         """Lines: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Lines object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lines_get_get_id(id, async_req=True)
+        >>> thread = api.shared_lines_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5995,15 +5995,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_lines_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_lines_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_lines_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_lines_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Lines: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Lines object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lines_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_lines_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6034,14 +6034,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_lines_get_get_id" % key
+                    " to method shared_lines_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_lines_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_lines_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6080,13 +6080,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_lines_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_lines_put_id(self, id, **kwargs):  # noqa: E501
         """Lines: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Lines objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lines_put_put_id(id, async_req=True)
+        >>> thread = api.shared_lines_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6104,15 +6104,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_lines_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_lines_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_lines_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_lines_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Lines: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Lines objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_lines_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_lines_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6144,14 +6144,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_lines_put_put_id" % key
+                    " to method shared_lines_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_lines_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_lines_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6192,13 +6192,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_paragraph_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_paragraph_get_id(self, id, **kwargs):  # noqa: E501
         """Paragraph: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Paragraph object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_paragraph_get_get_id(id, async_req=True)
+        >>> thread = api.shared_paragraph_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6215,15 +6215,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_paragraph_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_paragraph_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_paragraph_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_paragraph_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Paragraph: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Paragraph object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_paragraph_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_paragraph_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6254,14 +6254,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_paragraph_get_get_id" % key
+                    " to method shared_paragraph_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_paragraph_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_paragraph_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6300,13 +6300,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_pictures_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_pictures_get_id(self, id, **kwargs):  # noqa: E501
         """Pictures: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Pictures object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_pictures_get_get_id(id, async_req=True)
+        >>> thread = api.shared_pictures_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6323,15 +6323,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_pictures_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_pictures_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_pictures_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_pictures_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Pictures: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Pictures object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_pictures_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_pictures_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6362,14 +6362,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_pictures_get_get_id" % key
+                    " to method shared_pictures_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_pictures_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_pictures_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6408,13 +6408,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_pictures_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_pictures_put_id(self, id, **kwargs):  # noqa: E501
         """Pictures: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Pictures objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_pictures_put_put_id(id, async_req=True)
+        >>> thread = api.shared_pictures_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6432,15 +6432,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_pictures_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_pictures_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_pictures_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_pictures_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Pictures: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Pictures objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_pictures_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_pictures_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6472,14 +6472,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_pictures_put_put_id" % key
+                    " to method shared_pictures_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_pictures_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_pictures_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6520,13 +6520,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_solidfills_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_solidfills_get_id(self, id, **kwargs):  # noqa: E501
         """SolidFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a SolidFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_solidfills_get_get_id(id, async_req=True)
+        >>> thread = api.shared_solidfills_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6543,15 +6543,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_solidfills_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_solidfills_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_solidfills_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_solidfills_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """SolidFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a SolidFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_solidfills_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_solidfills_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6582,14 +6582,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_solidfills_get_get_id" % key
+                    " to method shared_solidfills_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_solidfills_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_solidfills_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6628,13 +6628,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_solidfills_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_solidfills_put_id(self, id, **kwargs):  # noqa: E501
         """SolidFills: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to SolidFills objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_solidfills_put_put_id(id, async_req=True)
+        >>> thread = api.shared_solidfills_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6652,15 +6652,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_solidfills_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_solidfills_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_solidfills_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_solidfills_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """SolidFills: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to SolidFills objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_solidfills_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_solidfills_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6692,14 +6692,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_solidfills_put_put_id" % key
+                    " to method shared_solidfills_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_solidfills_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_solidfills_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6740,13 +6740,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_text_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_text_get_id(self, id, **kwargs):  # noqa: E501
         """Text: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Text object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_text_get_get_id(id, async_req=True)
+        >>> thread = api.shared_text_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6763,15 +6763,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_text_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_text_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_text_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_text_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Text: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Text object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_text_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_text_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6802,14 +6802,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_text_get_get_id" % key
+                    " to method shared_text_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_text_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_text_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6848,13 +6848,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_text_put_put_id(self, id, **kwargs):  # noqa: E501
+    def shared_text_put_id(self, id, **kwargs):  # noqa: E501
         """Text: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Text objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_text_put_put_id(id, async_req=True)
+        >>> thread = api.shared_text_put_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6872,15 +6872,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_text_put_put_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_text_put_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_text_put_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_text_put_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Text: Modify Values  # noqa: E501
 
         PUT: Use this method for simple updates to Text objects.   Please Note: Using this method sidesteps some data validation steps executed by base objects.  Please review the documentation and ECMA-376 prior to using this method. Per IETF 7231, all fields must be include in PUT requests, even though user and timestamp fields will be modified by the server.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_text_put_put_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_text_put_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6912,14 +6912,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_text_put_put_id" % key
+                    " to method shared_text_put_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_text_put_put_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_text_put_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -6960,13 +6960,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_textcontainer_get_get_id(self, id, **kwargs):  # noqa: E501
+    def shared_textcontainer_get_id(self, id, **kwargs):  # noqa: E501
         """TextContainer: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a TextContainer object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_textcontainer_get_get_id(id, async_req=True)
+        >>> thread = api.shared_textcontainer_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -6983,15 +6983,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_textcontainer_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_textcontainer_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_textcontainer_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def shared_textcontainer_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """TextContainer: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a TextContainer object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_textcontainer_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_textcontainer_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7022,14 +7022,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_textcontainer_get_get_id" % key
+                    " to method shared_textcontainer_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_textcontainer_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_textcontainer_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -7068,13 +7068,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_colormaps_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_colormaps_get_id(self, id, **kwargs):  # noqa: E501
         """ColorMaps: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorMaps object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_colormaps_get_get_id(id, async_req=True)
+        >>> thread = api.slides_colormaps_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7091,15 +7091,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_colormaps_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_colormaps_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_colormaps_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_colormaps_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ColorMaps: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ColorMaps object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_colormaps_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_colormaps_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7130,14 +7130,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_colormaps_get_get_id" % key
+                    " to method slides_colormaps_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_colormaps_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_colormaps_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -7384,12 +7384,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_connectionshape_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_connectionshape_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_connectionshape_get_get_id(id, async_req=True)
+        >>> thread = api.slides_connectionshape_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7406,14 +7406,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_connectionshape_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_connectionshape_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_connectionshape_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_connectionshape_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_connectionshape_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_connectionshape_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7444,14 +7444,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_connectionshape_get_get_id" % key
+                    " to method slides_connectionshape_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_connectionshape_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_connectionshape_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -7706,13 +7706,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_graphics_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_graphics_get_id(self, id, **kwargs):  # noqa: E501
         """Graphics: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Graphics object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_graphics_get_get_id(id, async_req=True)
+        >>> thread = api.slides_graphics_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7729,15 +7729,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_graphics_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_graphics_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_graphics_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_graphics_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Graphics: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Graphics object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_graphics_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_graphics_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7768,14 +7768,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_graphics_get_get_id" % key
+                    " to method slides_graphics_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_graphics_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_graphics_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -7814,13 +7814,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_graphictypes_get_get(self, **kwargs):  # noqa: E501
+    def slides_graphictypes_get(self, **kwargs):  # noqa: E501
         """GraphicTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the GraphicTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Slides object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_graphictypes_get_get(async_req=True)
+        >>> thread = api.slides_graphictypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7836,15 +7836,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_graphictypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.slides_graphictypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def slides_graphictypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def slides_graphictypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """GraphicTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the GraphicTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Slides object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_graphictypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.slides_graphictypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7874,7 +7874,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_graphictypes_get_get" % key
+                    " to method slides_graphictypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -7914,13 +7914,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_graphictypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_graphictypes_get_id(self, id, **kwargs):  # noqa: E501
         """GraphicTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GraphicTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_graphictypes_get_get_id(id, async_req=True)
+        >>> thread = api.slides_graphictypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7937,15 +7937,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_graphictypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_graphictypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_graphictypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_graphictypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GraphicTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GraphicTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_graphictypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_graphictypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7976,14 +7976,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_graphictypes_get_get_id" % key
+                    " to method slides_graphictypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_graphictypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_graphictypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -8022,13 +8022,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_groupelements_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_groupelements_get_id(self, id, **kwargs):  # noqa: E501
         """GroupElements: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GroupElements object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groupelements_get_get_id(id, async_req=True)
+        >>> thread = api.slides_groupelements_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8045,15 +8045,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_groupelements_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_groupelements_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_groupelements_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_groupelements_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GroupElements: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GroupElements object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groupelements_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_groupelements_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8084,14 +8084,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_groupelements_get_get_id" % key
+                    " to method slides_groupelements_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_groupelements_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_groupelements_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -8130,13 +8130,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_groupelementtypes_get_get(self, **kwargs):  # noqa: E501
+    def slides_groupelementtypes_get(self, **kwargs):  # noqa: E501
         """GroupElementTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the GroupElementTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Slides object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groupelementtypes_get_get(async_req=True)
+        >>> thread = api.slides_groupelementtypes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8152,15 +8152,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_groupelementtypes_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.slides_groupelementtypes_get_with_http_info(**kwargs)  # noqa: E501
 
-    def slides_groupelementtypes_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def slides_groupelementtypes_get_with_http_info(self, **kwargs):  # noqa: E501
         """GroupElementTypes: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the GroupElementTypes type. Use the Id from oneof the returned elements on to make changes to elements in the Slides object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groupelementtypes_get_get_with_http_info(async_req=True)
+        >>> thread = api.slides_groupelementtypes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8190,7 +8190,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_groupelementtypes_get_get" % key
+                    " to method slides_groupelementtypes_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -8230,13 +8230,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_groupelementtypes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_groupelementtypes_get_id(self, id, **kwargs):  # noqa: E501
         """GroupElementTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GroupElementTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groupelementtypes_get_get_id(id, async_req=True)
+        >>> thread = api.slides_groupelementtypes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8253,15 +8253,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_groupelementtypes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_groupelementtypes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_groupelementtypes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_groupelementtypes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """GroupElementTypes: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a GroupElementTypes object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groupelementtypes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_groupelementtypes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8292,14 +8292,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_groupelementtypes_get_get_id" % key
+                    " to method slides_groupelementtypes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_groupelementtypes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_groupelementtypes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -8546,12 +8546,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_groups_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_groups_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groups_get_get_id(id, async_req=True)
+        >>> thread = api.slides_groups_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8568,14 +8568,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_groups_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_groups_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_groups_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_groups_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groups_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_groups_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -8606,14 +8606,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_groups_get_get_id" % key
+                    " to method slides_groups_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_groups_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_groups_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -9076,12 +9076,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_shapes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_shapes_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_shapes_get_get_id(id, async_req=True)
+        >>> thread = api.slides_shapes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9098,14 +9098,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_shapes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_shapes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_shapes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_shapes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_shapes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_shapes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9136,14 +9136,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_shapes_get_get_id" % key
+                    " to method slides_shapes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_shapes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_shapes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -9398,13 +9398,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_shapetrees_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_shapetrees_get_id(self, id, **kwargs):  # noqa: E501
         """ShapeTrees: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ShapeTrees object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_shapetrees_get_get_id(id, async_req=True)
+        >>> thread = api.slides_shapetrees_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9421,15 +9421,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_shapetrees_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_shapetrees_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_shapetrees_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_shapetrees_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """ShapeTrees: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a ShapeTrees object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_shapetrees_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_shapetrees_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9460,14 +9460,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_shapetrees_get_get_id" % key
+                    " to method slides_shapetrees_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_shapetrees_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_shapetrees_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -9506,13 +9506,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_slidemasters_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_slidemasters_get_id(self, id, **kwargs):  # noqa: E501
         """SlideMasters: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a SlideMasters object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_slidemasters_get_get_id(id, async_req=True)
+        >>> thread = api.slides_slidemasters_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9529,15 +9529,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_slidemasters_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_slidemasters_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_slidemasters_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_slidemasters_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """SlideMasters: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a SlideMasters object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_slidemasters_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_slidemasters_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9568,14 +9568,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_slidemasters_get_get_id" % key
+                    " to method slides_slidemasters_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_slidemasters_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_slidemasters_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -9822,12 +9822,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_slides_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_slides_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_slides_get_get_id(id, async_req=True)
+        >>> thread = api.slides_slides_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9844,14 +9844,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_slides_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_slides_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_slides_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_slides_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_slides_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_slides_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9882,14 +9882,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_slides_get_get_id" % key
+                    " to method slides_slides_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_slides_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_slides_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -10352,12 +10352,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_smartarts_get_get_id(self, id, **kwargs):  # noqa: E501
+    def slides_smartarts_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_smartarts_get_get_id(id, async_req=True)
+        >>> thread = api.slides_smartarts_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10374,14 +10374,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_smartarts_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_smartarts_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_smartarts_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def slides_smartarts_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_smartarts_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_smartarts_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10412,14 +10412,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_smartarts_get_get_id" % key
+                    " to method slides_smartarts_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_smartarts_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_smartarts_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -10674,13 +10674,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def tables_borders_get_get_id(self, id, **kwargs):  # noqa: E501
+    def tables_borders_get_id(self, id, **kwargs):  # noqa: E501
         """Borders: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Borders object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_borders_get_get_id(id, async_req=True)
+        >>> thread = api.tables_borders_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10697,15 +10697,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.tables_borders_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.tables_borders_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def tables_borders_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def tables_borders_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Borders: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Borders object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_borders_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.tables_borders_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10736,14 +10736,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method tables_borders_get_get_id" % key
+                    " to method tables_borders_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `tables_borders_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `tables_borders_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -10782,13 +10782,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def tables_cells_get_get_id(self, id, **kwargs):  # noqa: E501
+    def tables_cells_get_id(self, id, **kwargs):  # noqa: E501
         """Cells: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Cells object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_cells_get_get_id(id, async_req=True)
+        >>> thread = api.tables_cells_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10805,15 +10805,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.tables_cells_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.tables_cells_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def tables_cells_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def tables_cells_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Cells: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Cells object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_cells_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.tables_cells_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10844,14 +10844,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method tables_cells_get_get_id" % key
+                    " to method tables_cells_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `tables_cells_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `tables_cells_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -10890,13 +10890,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def tables_columns_get_get_id(self, id, **kwargs):  # noqa: E501
+    def tables_columns_get_id(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_columns_get_get_id(id, async_req=True)
+        >>> thread = api.tables_columns_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10913,15 +10913,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.tables_columns_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.tables_columns_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def tables_columns_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def tables_columns_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Columns: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Columns object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_columns_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.tables_columns_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10952,14 +10952,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method tables_columns_get_get_id" % key
+                    " to method tables_columns_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `tables_columns_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `tables_columns_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -10998,13 +10998,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def tables_rows_get_get_id(self, id, **kwargs):  # noqa: E501
+    def tables_rows_get_id(self, id, **kwargs):  # noqa: E501
         """Rows: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Rows object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_rows_get_get_id(id, async_req=True)
+        >>> thread = api.tables_rows_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11021,15 +11021,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.tables_rows_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.tables_rows_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def tables_rows_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def tables_rows_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Rows: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Rows object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_rows_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.tables_rows_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11060,14 +11060,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method tables_rows_get_get_id" % key
+                    " to method tables_rows_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `tables_rows_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `tables_rows_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -11320,13 +11320,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def tables_tables_get_get_id(self, id, **kwargs):  # noqa: E501
+    def tables_tables_get_id(self, id, **kwargs):  # noqa: E501
         """Tables: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Tables object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_tables_get_get_id(id, async_req=True)
+        >>> thread = api.tables_tables_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11343,15 +11343,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.tables_tables_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.tables_tables_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def tables_tables_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def tables_tables_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Tables: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Tables object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_tables_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.tables_tables_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11382,14 +11382,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method tables_tables_get_get_id" % key
+                    " to method tables_tables_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `tables_tables_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `tables_tables_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -11856,12 +11856,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def theme_themes_get_get_id(self, id, **kwargs):  # noqa: E501
+    def theme_themes_get_id(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.theme_themes_get_get_id(id, async_req=True)
+        >>> thread = api.theme_themes_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11878,14 +11878,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.theme_themes_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.theme_themes_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def theme_themes_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def theme_themes_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Gets  the base DTO object for the repository  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.theme_themes_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.theme_themes_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11916,14 +11916,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method theme_themes_get_get_id" % key
+                    " to method theme_themes_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `theme_themes_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `theme_themes_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12178,13 +12178,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_backgroundfills_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_backgroundfills_get_id(self, id, **kwargs):  # noqa: E501
         """BackgroundFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a BackgroundFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_backgroundfills_get_get_id(id, async_req=True)
+        >>> thread = api.themes_backgroundfills_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12201,15 +12201,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_backgroundfills_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_backgroundfills_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_backgroundfills_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_backgroundfills_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """BackgroundFills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a BackgroundFills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_backgroundfills_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_backgroundfills_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12240,14 +12240,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_backgroundfills_get_get_id" % key
+                    " to method themes_backgroundfills_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_backgroundfills_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_backgroundfills_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12286,13 +12286,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_colors_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_colors_get_id(self, id, **kwargs):  # noqa: E501
         """Colors: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Colors object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_colors_get_get_id(id, async_req=True)
+        >>> thread = api.themes_colors_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12309,15 +12309,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_colors_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_colors_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_colors_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_colors_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Colors: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Colors object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_colors_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_colors_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12348,14 +12348,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_colors_get_get_id" % key
+                    " to method themes_colors_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_colors_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_colors_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12394,13 +12394,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_customcolors_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_customcolors_get_id(self, id, **kwargs):  # noqa: E501
         """CustomColors: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a CustomColors object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_customcolors_get_get_id(id, async_req=True)
+        >>> thread = api.themes_customcolors_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12417,15 +12417,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_customcolors_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_customcolors_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_customcolors_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_customcolors_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """CustomColors: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a CustomColors object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_customcolors_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_customcolors_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12456,14 +12456,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_customcolors_get_get_id" % key
+                    " to method themes_customcolors_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_customcolors_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_customcolors_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12502,13 +12502,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_effectmap_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_effectmap_get_id(self, id, **kwargs):  # noqa: E501
         """EffectMap: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a EffectMap object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_effectmap_get_get_id(id, async_req=True)
+        >>> thread = api.themes_effectmap_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12525,15 +12525,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_effectmap_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_effectmap_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_effectmap_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_effectmap_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """EffectMap: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a EffectMap object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_effectmap_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_effectmap_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12564,14 +12564,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_effectmap_get_get_id" % key
+                    " to method themes_effectmap_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_effectmap_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_effectmap_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12610,13 +12610,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_fills_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_fills_get_id(self, id, **kwargs):  # noqa: E501
         """Fills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Fills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_fills_get_get_id(id, async_req=True)
+        >>> thread = api.themes_fills_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12633,15 +12633,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_fills_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_fills_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_fills_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_fills_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fills: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Fills object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_fills_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_fills_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12672,14 +12672,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_fills_get_get_id" % key
+                    " to method themes_fills_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_fills_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_fills_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12718,13 +12718,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_fonts_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_fonts_get_id(self, id, **kwargs):  # noqa: E501
         """Fonts: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Fonts object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_fonts_get_get_id(id, async_req=True)
+        >>> thread = api.themes_fonts_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12741,15 +12741,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_fonts_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_fonts_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_fonts_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_fonts_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Fonts: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Fonts object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_fonts_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_fonts_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12780,14 +12780,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_fonts_get_get_id" % key
+                    " to method themes_fonts_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_fonts_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_fonts_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12826,13 +12826,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_intensity_get_get(self, **kwargs):  # noqa: E501
+    def themes_intensity_get(self, **kwargs):  # noqa: E501
         """Intensity: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the Intensity type. Use the Id from oneof the returned elements on to make changes to elements in the Themes object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_intensity_get_get(async_req=True)
+        >>> thread = api.themes_intensity_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12848,15 +12848,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_intensity_get_get_with_http_info(**kwargs)  # noqa: E501
+        return self.themes_intensity_get_with_http_info(**kwargs)  # noqa: E501
 
-    def themes_intensity_get_get_with_http_info(self, **kwargs):  # noqa: E501
+    def themes_intensity_get_with_http_info(self, **kwargs):  # noqa: E501
         """Intensity: List All Possible Types  # noqa: E501
 
         List Types: Use this method to retreive a list of possible options for the Intensity type. Use the Id from oneof the returned elements on to make changes to elements in the Themes object space.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_intensity_get_get_with_http_info(async_req=True)
+        >>> thread = api.themes_intensity_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12886,7 +12886,7 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_intensity_get_get" % key
+                    " to method themes_intensity_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -12926,13 +12926,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_intensity_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_intensity_get_id(self, id, **kwargs):  # noqa: E501
         """Intensity: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Intensity object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_intensity_get_get_id(id, async_req=True)
+        >>> thread = api.themes_intensity_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12949,15 +12949,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_intensity_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_intensity_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_intensity_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_intensity_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Intensity: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a Intensity object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_intensity_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_intensity_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12988,14 +12988,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_intensity_get_get_id" % key
+                    " to method themes_intensity_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_intensity_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_intensity_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -13034,13 +13034,13 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def themes_linemap_get_get_id(self, id, **kwargs):  # noqa: E501
+    def themes_linemap_get_id(self, id, **kwargs):  # noqa: E501
         """LineMap: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a LineMap object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_linemap_get_get_id(id, async_req=True)
+        >>> thread = api.themes_linemap_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -13057,15 +13057,15 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.themes_linemap_get_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.themes_linemap_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def themes_linemap_get_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+    def themes_linemap_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """LineMap: Get by Id  # noqa: E501
 
         Get by Id: Use this method to retrieve a LineMap object by its primary key (id)  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.themes_linemap_get_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.themes_linemap_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -13096,14 +13096,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method themes_linemap_get_get_id" % key
+                    " to method themes_linemap_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `themes_linemap_get_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `themes_linemap_get_id`")  # noqa: E501
 
         collection_formats = {}
 
