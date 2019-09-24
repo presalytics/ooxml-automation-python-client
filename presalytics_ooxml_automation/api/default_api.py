@@ -2681,6 +2681,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
+        :param file file: The file to upload.  Must be of type .pptx, ppt
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2704,6 +2705,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
+        :param file file: The file to upload.  Must be of type .pptx, ppt
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2720,7 +2722,7 @@ class DefaultApi(object):
 
         local_var_params = locals()
 
-        all_params = []  # noqa: E501
+        all_params = ['file']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2745,11 +2747,17 @@ class DefaultApi(object):
 
         form_params = []
         local_var_files = {}
+        if 'file' in local_var_params:
+            local_var_files['file'] = local_var_params['file']  # noqa: E501
 
         body_params = None
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
 
         # Authentication setting
         auth_settings = []  # noqa: E501
