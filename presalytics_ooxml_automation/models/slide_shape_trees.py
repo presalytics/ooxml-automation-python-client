@@ -37,7 +37,7 @@ class SlideShapeTrees(object):
         'hidden': 'bool',
         'title': 'str',
         'ooxml_id': 'int',
-        'svg_blob_location': 'str',
+        'svg_blob_url': 'str',
         'base_element_blob_url': 'str',
         'changed_base_element_blob_url': 'str',
         'package_uri': 'str',
@@ -55,7 +55,7 @@ class SlideShapeTrees(object):
         'hidden': 'hidden',
         'title': 'title',
         'ooxml_id': 'ooxmlId',
-        'svg_blob_location': 'svgBlobLocation',
+        'svg_blob_url': 'svgBlobUrl',
         'base_element_blob_url': 'baseElementBlobUrl',
         'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
         'package_uri': 'packageUri',
@@ -66,7 +66,7 @@ class SlideShapeTrees(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, slide_id=None, group_element_id=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_location=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, slide_id=None, group_element_id=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_url=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideShapeTrees - a model defined in OpenAPI"""  # noqa: E501
 
         self._slide_id = None
@@ -75,7 +75,7 @@ class SlideShapeTrees(object):
         self._hidden = None
         self._title = None
         self._ooxml_id = None
-        self._svg_blob_location = None
+        self._svg_blob_url = None
         self._base_element_blob_url = None
         self._changed_base_element_blob_url = None
         self._package_uri = None
@@ -96,8 +96,8 @@ class SlideShapeTrees(object):
             self.title = title
         if ooxml_id is not None:
             self.ooxml_id = ooxml_id
-        if svg_blob_location is not None:
-            self.svg_blob_location = svg_blob_location
+        if svg_blob_url is not None:
+            self.svg_blob_url = svg_blob_url
         if base_element_blob_url is not None:
             self.base_element_blob_url = base_element_blob_url
         if changed_base_element_blob_url is not None:
@@ -242,25 +242,25 @@ class SlideShapeTrees(object):
         self._ooxml_id = ooxml_id
 
     @property
-    def svg_blob_location(self):
-        """Gets the svg_blob_location of this SlideShapeTrees.  # noqa: E501
+    def svg_blob_url(self):
+        """Gets the svg_blob_url of this SlideShapeTrees.  # noqa: E501
 
 
-        :return: The svg_blob_location of this SlideShapeTrees.  # noqa: E501
+        :return: The svg_blob_url of this SlideShapeTrees.  # noqa: E501
         :rtype: str
         """
-        return self._svg_blob_location
+        return self._svg_blob_url
 
-    @svg_blob_location.setter
-    def svg_blob_location(self, svg_blob_location):
-        """Sets the svg_blob_location of this SlideShapeTrees.
+    @svg_blob_url.setter
+    def svg_blob_url(self, svg_blob_url):
+        """Sets the svg_blob_url of this SlideShapeTrees.
 
 
-        :param svg_blob_location: The svg_blob_location of this SlideShapeTrees.  # noqa: E501
+        :param svg_blob_url: The svg_blob_url of this SlideShapeTrees.  # noqa: E501
         :type: str
         """
 
-        self._svg_blob_location = svg_blob_location
+        self._svg_blob_url = svg_blob_url
 
     @property
     def base_element_blob_url(self):
