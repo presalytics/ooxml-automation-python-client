@@ -2154,12 +2154,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def charts_charts_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """charts_charts_renderassvg_get_id  # noqa: E501
+    def charts_charts_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """charts_charts_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.charts_charts_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.charts_charts_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2176,14 +2176,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.charts_charts_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.charts_charts_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def charts_charts_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """charts_charts_renderassvg_get_id  # noqa: E501
+    def charts_charts_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """charts_charts_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.charts_charts_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.charts_charts_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -2214,14 +2214,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method charts_charts_renderassvg_get_id" % key
+                    " to method charts_charts_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `charts_charts_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `charts_charts_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2245,7 +2245,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Charts/RenderAsSvg/{Id}', 'GET',
+            '/Charts/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5450,12 +5450,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def shared_image_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """shared_image_renderassvg_get_id  # noqa: E501
+    def shared_image_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """shared_image_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_image_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.shared_image_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5472,14 +5472,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.shared_image_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.shared_image_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def shared_image_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """shared_image_renderassvg_get_id  # noqa: E501
+    def shared_image_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """shared_image_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.shared_image_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.shared_image_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -5510,14 +5510,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method shared_image_renderassvg_get_id" % key
+                    " to method shared_image_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `shared_image_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `shared_image_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -5541,7 +5541,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Image/RenderAsSvg/{Id}', 'GET',
+            '/Image/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7926,12 +7926,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_connectionshape_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """slides_connectionshape_renderassvg_get_id  # noqa: E501
+    def slides_connectionshape_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """slides_connectionshape_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_connectionshape_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.slides_connectionshape_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7948,14 +7948,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_connectionshape_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_connectionshape_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_connectionshape_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """slides_connectionshape_renderassvg_get_id  # noqa: E501
+    def slides_connectionshape_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """slides_connectionshape_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_connectionshape_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_connectionshape_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -7986,14 +7986,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_connectionshape_renderassvg_get_id" % key
+                    " to method slides_connectionshape_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_connectionshape_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_connectionshape_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -8017,7 +8017,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ConnectionShape/RenderAsSvg/{Id}', 'GET',
+            '/ConnectionShape/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9194,12 +9194,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_groups_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """slides_groups_renderassvg_get_id  # noqa: E501
+    def slides_groups_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """slides_groups_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groups_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.slides_groups_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9216,14 +9216,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_groups_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_groups_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_groups_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """slides_groups_renderassvg_get_id  # noqa: E501
+    def slides_groups_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """slides_groups_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_groups_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_groups_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9254,14 +9254,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_groups_renderassvg_get_id" % key
+                    " to method slides_groups_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_groups_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_groups_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -9285,7 +9285,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Groups/RenderAsSvg/{Id}', 'GET',
+            '/Groups/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9830,12 +9830,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_shapes_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """slides_shapes_renderassvg_get_id  # noqa: E501
+    def slides_shapes_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """slides_shapes_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_shapes_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.slides_shapes_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9852,14 +9852,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_shapes_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_shapes_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_shapes_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """slides_shapes_renderassvg_get_id  # noqa: E501
+    def slides_shapes_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """slides_shapes_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_shapes_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_shapes_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -9890,14 +9890,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_shapes_renderassvg_get_id" % key
+                    " to method slides_shapes_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_shapes_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_shapes_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -9921,7 +9921,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Shapes/RenderAsSvg/{Id}', 'GET',
+            '/Shapes/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10682,12 +10682,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_slides_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """slides_slides_renderassvg_get_id  # noqa: E501
+    def slides_slides_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """slides_slides_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_slides_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.slides_slides_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10704,14 +10704,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_slides_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_slides_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_slides_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """slides_slides_renderassvg_get_id  # noqa: E501
+    def slides_slides_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """slides_slides_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_slides_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_slides_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -10742,14 +10742,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_slides_renderassvg_get_id" % key
+                    " to method slides_slides_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_slides_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_slides_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -10773,7 +10773,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Slides/RenderAsSvg/{Id}', 'GET',
+            '/Slides/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11318,12 +11318,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def slides_smartarts_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """slides_smartarts_renderassvg_get_id  # noqa: E501
+    def slides_smartarts_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """slides_smartarts_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_smartarts_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.slides_smartarts_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11340,14 +11340,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.slides_smartarts_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.slides_smartarts_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def slides_smartarts_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """slides_smartarts_renderassvg_get_id  # noqa: E501
+    def slides_smartarts_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """slides_smartarts_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.slides_smartarts_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.slides_smartarts_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -11378,14 +11378,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method slides_smartarts_renderassvg_get_id" % key
+                    " to method slides_smartarts_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `slides_smartarts_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `slides_smartarts_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -11409,7 +11409,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/SmartArts/RenderAsSvg/{Id}', 'GET',
+            '/SmartArts/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12398,12 +12398,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def tables_tables_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """tables_tables_renderassvg_get_id  # noqa: E501
+    def tables_tables_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """tables_tables_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_tables_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.tables_tables_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12420,14 +12420,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.tables_tables_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.tables_tables_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def tables_tables_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """tables_tables_renderassvg_get_id  # noqa: E501
+    def tables_tables_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """tables_tables_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.tables_tables_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.tables_tables_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -12458,14 +12458,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method tables_tables_renderassvg_get_id" % key
+                    " to method tables_tables_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `tables_tables_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `tables_tables_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -12489,7 +12489,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Tables/RenderAsSvg/{Id}', 'GET',
+            '/Tables/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13034,12 +13034,12 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def theme_themes_renderassvg_get_id(self, id, **kwargs):  # noqa: E501
-        """theme_themes_renderassvg_get_id  # noqa: E501
+    def theme_themes_svg_get_id(self, id, **kwargs):  # noqa: E501
+        """theme_themes_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.theme_themes_renderassvg_get_id(id, async_req=True)
+        >>> thread = api.theme_themes_svg_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -13056,14 +13056,14 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.theme_themes_renderassvg_get_id_with_http_info(id, **kwargs)  # noqa: E501
+        return self.theme_themes_svg_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def theme_themes_renderassvg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
-        """theme_themes_renderassvg_get_id  # noqa: E501
+    def theme_themes_svg_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """theme_themes_svg_get_id  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.theme_themes_renderassvg_get_id_with_http_info(id, async_req=True)
+        >>> thread = api.theme_themes_svg_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
@@ -13094,14 +13094,14 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method theme_themes_renderassvg_get_id" % key
+                    " to method theme_themes_svg_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
         # verify the required parameter 'id' is set
         if ('id' not in local_var_params or
                 local_var_params['id'] is None):
-            raise ApiValueError("Missing the required parameter `id` when calling `theme_themes_renderassvg_get_id`")  # noqa: E501
+            raise ApiValueError("Missing the required parameter `id` when calling `theme_themes_svg_get_id`")  # noqa: E501
 
         collection_formats = {}
 
@@ -13125,7 +13125,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Themes/RenderAsSvg/{Id}', 'GET',
+            '/Themes/Svg/{Id}', 'GET',
             path_params,
             query_params,
             header_params,
