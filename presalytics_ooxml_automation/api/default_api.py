@@ -2788,7 +2788,7 @@ class DefaultApi(object):
 
         :param async_req bool: execute request asynchronously
         :param file file: The file to upload.  Must be of type .pptx, ppt
-        :param int story_id: The story_id of the document being uploaded.
+        :param str story_id: The story_id of the document being uploaded.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2813,7 +2813,7 @@ class DefaultApi(object):
 
         :param async_req bool: execute request asynchronously
         :param file file: The file to upload.  Must be of type .pptx, ppt
-        :param int story_id: The story_id of the document being uploaded.
+        :param str story_id: The story_id of the document being uploaded.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will

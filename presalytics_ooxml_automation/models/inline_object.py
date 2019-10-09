@@ -32,7 +32,7 @@ class InlineObject(object):
     """
     openapi_types = {
         'file': 'file',
-        'story_id': 'int'
+        'story_id': 'str'
     }
 
     attribute_map = {
@@ -82,7 +82,7 @@ class InlineObject(object):
         The story_id of the document being uploaded.  # noqa: E501
 
         :return: The story_id of this InlineObject.  # noqa: E501
-        :rtype: int
+        :rtype: str
         """
         return self._story_id
 
@@ -93,7 +93,7 @@ class InlineObject(object):
         The story_id of the document being uploaded.  # noqa: E501
 
         :param story_id: The story_id of this InlineObject.  # noqa: E501
-        :type: int
+        :type: str
         """
 
         self._story_id = story_id
