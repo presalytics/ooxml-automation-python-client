@@ -31,21 +31,26 @@ class InlineObject(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'file': 'file'
+        'file': 'file',
+        'story_id': 'int'
     }
 
     attribute_map = {
-        'file': 'file'
+        'file': 'file',
+        'story_id': 'storyId'
     }
 
-    def __init__(self, file=None):  # noqa: E501
+    def __init__(self, file=None, story_id=None):  # noqa: E501
         """InlineObject - a model defined in OpenAPI"""  # noqa: E501
 
         self._file = None
+        self._story_id = None
         self.discriminator = None
 
         if file is not None:
             self.file = file
+        if story_id is not None:
+            self.story_id = story_id
 
     @property
     def file(self):
@@ -69,6 +74,29 @@ class InlineObject(object):
         """
 
         self._file = file
+
+    @property
+    def story_id(self):
+        """Gets the story_id of this InlineObject.  # noqa: E501
+
+        The story_id of the document being uploaded.  # noqa: E501
+
+        :return: The story_id of this InlineObject.  # noqa: E501
+        :rtype: int
+        """
+        return self._story_id
+
+    @story_id.setter
+    def story_id(self, story_id):
+        """Sets the story_id of this InlineObject.
+
+        The story_id of the document being uploaded.  # noqa: E501
+
+        :param story_id: The story_id of this InlineObject.  # noqa: E501
+        :type: int
+        """
+
+        self._story_id = story_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,11 +31,13 @@ class Document(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'story_id': 'str',
         'filename': 'str',
         'owner_guid': 'str',
         'document_type_id': 'int',
         'blob_location': 'str',
         'table_styles_xml_blob_url': 'str',
+        'title': 'str',
         'base_element_blob_url': 'str',
         'changed_base_element_blob_url': 'str',
         'package_uri': 'str',
@@ -47,11 +49,13 @@ class Document(object):
     }
 
     attribute_map = {
+        'story_id': 'storyId',
         'filename': 'filename',
         'owner_guid': 'ownerGuid',
         'document_type_id': 'documentTypeId',
         'blob_location': 'blobLocation',
         'table_styles_xml_blob_url': 'tableStylesXmlBlobUrl',
+        'title': 'title',
         'base_element_blob_url': 'baseElementBlobUrl',
         'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
         'package_uri': 'packageUri',
@@ -62,14 +66,16 @@ class Document(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, story_id=None, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, title=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """Document - a model defined in OpenAPI"""  # noqa: E501
 
+        self._story_id = None
         self._filename = None
         self._owner_guid = None
         self._document_type_id = None
         self._blob_location = None
         self._table_styles_xml_blob_url = None
+        self._title = None
         self._base_element_blob_url = None
         self._changed_base_element_blob_url = None
         self._package_uri = None
@@ -80,6 +86,8 @@ class Document(object):
         self._user_modified = None
         self.discriminator = None
 
+        if story_id is not None:
+            self.story_id = story_id
         if filename is not None:
             self.filename = filename
         if owner_guid is not None:
@@ -90,6 +98,8 @@ class Document(object):
             self.blob_location = blob_location
         if table_styles_xml_blob_url is not None:
             self.table_styles_xml_blob_url = table_styles_xml_blob_url
+        if title is not None:
+            self.title = title
         if base_element_blob_url is not None:
             self.base_element_blob_url = base_element_blob_url
         if changed_base_element_blob_url is not None:
@@ -106,6 +116,27 @@ class Document(object):
             self.date_modified = date_modified
         if user_modified is not None:
             self.user_modified = user_modified
+
+    @property
+    def story_id(self):
+        """Gets the story_id of this Document.  # noqa: E501
+
+
+        :return: The story_id of this Document.  # noqa: E501
+        :rtype: str
+        """
+        return self._story_id
+
+    @story_id.setter
+    def story_id(self, story_id):
+        """Sets the story_id of this Document.
+
+
+        :param story_id: The story_id of this Document.  # noqa: E501
+        :type: str
+        """
+
+        self._story_id = story_id
 
     @property
     def filename(self):
@@ -211,6 +242,27 @@ class Document(object):
         """
 
         self._table_styles_xml_blob_url = table_styles_xml_blob_url
+
+    @property
+    def title(self):
+        """Gets the title of this Document.  # noqa: E501
+
+
+        :return: The title of this Document.  # noqa: E501
+        :rtype: str
+        """
+        return self._title
+
+    @title.setter
+    def title(self, title):
+        """Sets the title of this Document.
+
+
+        :param title: The title of this Document.  # noqa: E501
+        :type: str
+        """
+
+        self._title = title
 
     @property
     def base_element_blob_url(self):
