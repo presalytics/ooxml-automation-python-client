@@ -129,7 +129,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/Axes/{id}', 'GET',
+            '/Charts/Axes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -229,7 +229,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/AxisDataTypes', 'GET',
+            '/Charts/AxisDataTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -337,7 +337,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/AxisDataTypes/{id}', 'GET',
+            '/Charts/AxisDataTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -445,7 +445,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/ChartData/{id}', 'GET',
+            '/Charts/ChartData/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -553,7 +553,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/ColumnCollections/{id}', 'GET',
+            '/Charts/ColumnCollections/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -661,7 +661,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/Columns/{id}', 'GET',
+            '/Charts/Columns/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -769,7 +769,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/DataPoints/{id}', 'GET',
+            '/Charts/DataPoints/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -869,7 +869,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/PlotType', 'GET',
+            '/Charts/PlotType', 'GET',
             path_params,
             query_params,
             header_params,
@@ -977,7 +977,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/PlotType/{id}', 'GET',
+            '/Charts/PlotType/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1077,7 +1077,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/RowCol', 'GET',
+            '/Charts/RowCol', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1185,7 +1185,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/RowCol/{id}', 'GET',
+            '/Charts/RowCol/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1293,7 +1293,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/RowCollections/{id}', 'GET',
+            '/Charts/RowCollections/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1393,7 +1393,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/RowNameFormatTypes', 'GET',
+            '/Charts/RowNameFormatTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1501,7 +1501,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/RowNameFormatTypes/{id}', 'GET',
+            '/Charts/RowNameFormatTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1609,7 +1609,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/charts/Rows/{id}', 'GET',
+            '/Charts/Rows/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1715,7 +1715,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Charts/ChildObjects/{Id}', 'GET',
+            '/Charts/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1817,7 +1817,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Charts/Details/{Id}', 'GET',
+            '/Charts/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -1919,7 +1919,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Charts/{Id}', 'GET',
+            '/Charts/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2025,7 +2025,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Charts/OpenOfficeXml/{Id}', 'GET',
+            '/Charts/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2115,7 +2115,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -2139,7 +2139,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Charts/OpenOfficeXml/{Id}', 'PUT',
+            '/Charts/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -2245,7 +2245,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Charts/Svg/{Id}', 'GET',
+            '/Charts/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2351,7 +2351,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Documents/ChildObjects/{Id}', 'GET',
+            '/Documents/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2359,6 +2359,108 @@ class DefaultApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='list[ChildObjectsDTO]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def documents_delete_id(self, id, **kwargs):  # noqa: E501
+        """documents_delete_id  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.documents_delete_id(id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str id: (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.documents_delete_id_with_http_info(id, **kwargs)  # noqa: E501
+
+    def documents_delete_id_with_http_info(self, id, **kwargs):  # noqa: E501
+        """documents_delete_id  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.documents_delete_id_with_http_info(id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str id: (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = ['id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method documents_delete_id" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in local_var_params or
+                local_var_params['id'] is None):
+            raise ApiValueError("Missing the required parameter `id` when calling `documents_delete_id`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['Id'] = local_var_params['id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/Documents/{id}', 'DELETE',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -2451,7 +2553,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/documents/DocumentType', 'GET',
+            '/Documents/DocumentType', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2559,7 +2661,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/documents/DocumentType/{id}', 'GET',
+            '/Documents/DocumentType/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2574,16 +2676,16 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_download_get_documentid(self, document_id, **kwargs):  # noqa: E501
+    def documents_download_get_id(self, id, **kwargs):  # noqa: E501
         """Link to download a user's document. Can only be accessed by the users who owns the document  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_download_get_documentid(document_id, async_req=True)
+        >>> thread = api.documents_download_get_id(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str document_id: (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2596,18 +2698,18 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_download_get_documentid_with_http_info(document_id, **kwargs)  # noqa: E501
+        return self.documents_download_get_id_with_http_info(id, **kwargs)  # noqa: E501
 
-    def documents_download_get_documentid_with_http_info(self, document_id, **kwargs):  # noqa: E501
+    def documents_download_get_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Link to download a user's document. Can only be accessed by the users who owns the document  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_download_get_documentid_with_http_info(document_id, async_req=True)
+        >>> thread = api.documents_download_get_id_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str document_id: (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2624,7 +2726,7 @@ class DefaultApi(object):
 
         local_var_params = locals()
 
-        all_params = ['document_id']  # noqa: E501
+        all_params = ['id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2634,20 +2736,20 @@ class DefaultApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method documents_download_get_documentid" % key
+                    " to method documents_download_get_id" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'document_id' is set
-        if ('document_id' not in local_var_params or
-                local_var_params['document_id'] is None):
-            raise ApiValueError("Missing the required parameter `document_id` when calling `documents_download_get_documentid`")  # noqa: E501
+        # verify the required parameter 'id' is set
+        if ('id' not in local_var_params or
+                local_var_params['id'] is None):
+            raise ApiValueError("Missing the required parameter `id` when calling `documents_download_get_id`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
-        if 'document_id' in local_var_params:
-            path_params['DocumentId'] = local_var_params['document_id']  # noqa: E501
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -2661,7 +2763,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Documents/download/{DocumentId}', 'GET',
+            '/Documents/Download/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2898,7 +3000,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the ColorTransformationAttributes object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2923,7 +3025,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the ColorTransformationAttributes object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2963,7 +3065,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -2981,7 +3083,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/ColorTransformationAttributes/{id}', 'GET',
+            '/Shared/ColorTransformationAttributes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3093,7 +3195,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/ColorTransformationAttributes/{id}', 'PUT',
+            '/Shared/ColorTransformationAttributes/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -3201,7 +3303,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/ColorTransformations/{id}', 'GET',
+            '/Shared/ColorTransformations/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3301,7 +3403,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/ColorTypes', 'GET',
+            '/Shared/ColorTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3409,7 +3511,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/ColorTypes/{id}', 'GET',
+            '/Shared/ColorTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3509,7 +3611,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/DashTypes', 'GET',
+            '/Shared/DashTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3617,7 +3719,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/DashTypes/{id}', 'GET',
+            '/Shared/DashTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3642,7 +3744,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the EffectAttributes object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3667,7 +3769,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the EffectAttributes object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -3707,7 +3809,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -3725,7 +3827,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/EffectAttributes/{id}', 'GET',
+            '/Shared/EffectAttributes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3837,7 +3939,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/EffectAttributes/{id}', 'PUT',
+            '/Shared/EffectAttributes/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -3945,7 +4047,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Effects/{id}', 'GET',
+            '/Shared/Effects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4045,7 +4147,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/EffectTypes', 'GET',
+            '/Shared/EffectTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4153,7 +4255,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/EffectTypes/{id}', 'GET',
+            '/Shared/EffectTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4261,7 +4363,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/FillMap/{id}', 'GET',
+            '/Shared/FillMap/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4361,7 +4463,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/FillTypes', 'GET',
+            '/Shared/FillTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4469,7 +4571,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/FillTypes/{id}', 'GET',
+            '/Shared/FillTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4494,7 +4596,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the GradientFills object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4519,7 +4621,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the GradientFills object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4559,7 +4661,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -4577,7 +4679,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/GradientFills/{id}', 'GET',
+            '/Shared/GradientFills/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4689,7 +4791,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/GradientFills/{id}', 'PUT',
+            '/Shared/GradientFills/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -4714,7 +4816,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the GradientStops object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4739,7 +4841,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the GradientStops object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4779,7 +4881,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -4797,7 +4899,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/GradientStops/{id}', 'GET',
+            '/Shared/GradientStops/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -4909,7 +5011,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/GradientStops/{id}', 'PUT',
+            '/Shared/GradientStops/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -5015,7 +5117,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Image/ChildObjects/{Id}', 'GET',
+            '/Image/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5117,7 +5219,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Image/Details/{Id}', 'GET',
+            '/Image/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5219,7 +5321,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Image/{Id}', 'GET',
+            '/Image/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5325,7 +5427,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Image/OpenOfficeXml/{Id}', 'GET',
+            '/Image/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5415,7 +5517,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -5439,7 +5541,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Image/OpenOfficeXml/{Id}', 'PUT',
+            '/Image/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -5545,7 +5647,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Image/Svg/{Id}', 'GET',
+            '/Image/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5570,7 +5672,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the ImageFills object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -5595,7 +5697,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the ImageFills object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -5635,7 +5737,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -5653,7 +5755,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/ImageFills/{id}', 'GET',
+            '/Shared/ImageFills/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5765,7 +5867,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/ImageFills/{id}', 'PUT',
+            '/Shared/ImageFills/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -5865,7 +5967,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/LineEndSizes', 'GET',
+            '/Shared/LineEndSizes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -5973,7 +6075,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/LineEndSizes/{id}', 'GET',
+            '/Shared/LineEndSizes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -6073,7 +6175,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/LineEndTypes', 'GET',
+            '/Shared/LineEndTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -6181,7 +6283,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/LineEndTypes/{id}', 'GET',
+            '/Shared/LineEndTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -6206,7 +6308,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the Lines object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -6231,7 +6333,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the Lines object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -6271,7 +6373,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -6289,7 +6391,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Lines/{id}', 'GET',
+            '/Shared/Lines/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -6401,7 +6503,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Lines/{id}', 'PUT',
+            '/Shared/Lines/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -6509,7 +6611,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Paragraph/{id}', 'GET',
+            '/Shared/Paragraph/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -6534,7 +6636,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the Pictures object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -6559,7 +6661,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the Pictures object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -6599,7 +6701,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -6617,7 +6719,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Pictures/{id}', 'GET',
+            '/Shared/Pictures/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -6729,7 +6831,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Pictures/{id}', 'PUT',
+            '/Shared/Pictures/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -6754,7 +6856,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the SolidFills object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -6779,7 +6881,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the SolidFills object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -6819,7 +6921,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -6837,7 +6939,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/SolidFills/{id}', 'GET',
+            '/Shared/SolidFills/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -6949,7 +7051,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/SolidFills/{id}', 'PUT',
+            '/Shared/SolidFills/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -6974,7 +7076,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the Text object (required)
+        :param str id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -6999,7 +7101,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str id: The primary key (Id) of the Text object (required)
+        :param str id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -7039,7 +7141,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -7057,7 +7159,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Text/{id}', 'GET',
+            '/Shared/Text/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7169,7 +7271,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/Text/{id}', 'PUT',
+            '/Shared/Text/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -7277,7 +7379,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/shared/TextContainer/{id}', 'GET',
+            '/Shared/TextContainer/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7385,7 +7487,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/ColorMaps/{id}', 'GET',
+            '/Slides/ColorMaps/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7491,7 +7593,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ConnectionShape/ChildObjects/{Id}', 'GET',
+            '/ConnectionShape/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7593,7 +7695,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ConnectionShape/Details/{Id}', 'GET',
+            '/ConnectionShape/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7695,7 +7797,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ConnectionShape/{Id}', 'GET',
+            '/ConnectionShape/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7801,7 +7903,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ConnectionShape/OpenOfficeXml/{Id}', 'GET',
+            '/ConnectionShape/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7891,7 +7993,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -7915,7 +8017,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ConnectionShape/OpenOfficeXml/{Id}', 'PUT',
+            '/ConnectionShape/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -8021,7 +8123,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ConnectionShape/Svg/{Id}', 'GET',
+            '/ConnectionShape/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8129,7 +8231,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/Graphics/{id}', 'GET',
+            '/Slides/Graphics/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8229,7 +8331,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/GraphicTypes', 'GET',
+            '/Slides/GraphicTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8337,7 +8439,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/GraphicTypes/{id}', 'GET',
+            '/Slides/GraphicTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8445,7 +8547,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/GroupElements/{id}', 'GET',
+            '/Slides/GroupElements/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8545,7 +8647,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/GroupElementTypes', 'GET',
+            '/Slides/GroupElementTypes', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8653,7 +8755,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/GroupElementTypes/{id}', 'GET',
+            '/Slides/GroupElementTypes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8759,7 +8861,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Groups/ChildObjects/{Id}', 'GET',
+            '/Groups/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8861,7 +8963,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Groups/Details/{Id}', 'GET',
+            '/Groups/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -8963,7 +9065,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Groups/{Id}', 'GET',
+            '/Groups/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9069,7 +9171,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Groups/OpenOfficeXml/{Id}', 'GET',
+            '/Groups/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9159,7 +9261,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -9183,7 +9285,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Groups/OpenOfficeXml/{Id}', 'PUT',
+            '/Groups/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -9289,7 +9391,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Groups/Svg/{Id}', 'GET',
+            '/Groups/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9395,7 +9497,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Shapes/ChildObjects/{Id}', 'GET',
+            '/Shapes/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9497,7 +9599,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Shapes/Details/{Id}', 'GET',
+            '/Shapes/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9599,7 +9701,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Shapes/{Id}', 'GET',
+            '/Shapes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9705,7 +9807,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Shapes/OpenOfficeXml/{Id}', 'GET',
+            '/Shapes/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -9795,7 +9897,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -9819,7 +9921,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Shapes/OpenOfficeXml/{Id}', 'PUT',
+            '/Shapes/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -9925,7 +10027,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Shapes/Svg/{Id}', 'GET',
+            '/Shapes/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10031,7 +10133,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ShapeTree/ChildObjects/{Id}', 'GET',
+            '/ShapeTree/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10133,7 +10235,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ShapeTree/Details/{Id}', 'GET',
+            '/ShapeTree/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10235,7 +10337,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ShapeTree/{Id}', 'GET',
+            '/ShapeTree/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10341,7 +10443,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ShapeTree/OpenOfficeXml/{Id}', 'GET',
+            '/ShapeTree/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10431,7 +10533,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -10455,7 +10557,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ShapeTree/OpenOfficeXml/{Id}', 'PUT',
+            '/ShapeTree/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -10561,7 +10663,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/ShapeTree/Svg/{Id}', 'GET',
+            '/ShapeTree/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10669,7 +10771,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/ShapeTrees/{id}', 'GET',
+            '/Slides/ShapeTrees/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10777,7 +10879,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/slides/SlideMasters/{id}', 'GET',
+            '/Slides/SlideMasters/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10883,7 +10985,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Slides/ChildObjects/{Id}', 'GET',
+            '/Slides/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -10985,7 +11087,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Slides/Details/{Id}', 'GET',
+            '/Slides/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11087,7 +11189,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Slides/{Id}', 'GET',
+            '/Slides/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11193,7 +11295,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Slides/OpenOfficeXml/{Id}', 'GET',
+            '/Slides/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11283,7 +11385,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -11307,7 +11409,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Slides/OpenOfficeXml/{Id}', 'PUT',
+            '/Slides/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -11413,7 +11515,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Slides/Svg/{Id}', 'GET',
+            '/Slides/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11519,7 +11621,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/SmartArts/ChildObjects/{Id}', 'GET',
+            '/SmartArts/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11621,7 +11723,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/SmartArts/Details/{Id}', 'GET',
+            '/SmartArts/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11723,7 +11825,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/SmartArts/{Id}', 'GET',
+            '/SmartArts/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11829,7 +11931,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/SmartArts/OpenOfficeXml/{Id}', 'GET',
+            '/SmartArts/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -11919,7 +12021,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -11943,7 +12045,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/SmartArts/OpenOfficeXml/{Id}', 'PUT',
+            '/SmartArts/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -12049,7 +12151,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/SmartArts/Svg/{Id}', 'GET',
+            '/SmartArts/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12157,7 +12259,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/tables/Borders/{id}', 'GET',
+            '/Tables/Borders/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12265,7 +12367,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/tables/Cells/{id}', 'GET',
+            '/Tables/Cells/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12373,7 +12475,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/tables/Columns/{id}', 'GET',
+            '/Tables/Columns/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12481,7 +12583,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/tables/Rows/{id}', 'GET',
+            '/Tables/Rows/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12587,7 +12689,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Tables/ChildObjects/{Id}', 'GET',
+            '/Tables/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12695,7 +12797,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Tables/Details/{Id}', 'GET',
+            '/Tables/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12803,7 +12905,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Tables/{Id}', 'GET',
+            '/Tables/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12909,7 +13011,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Tables/OpenOfficeXml/{Id}', 'GET',
+            '/Tables/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -12999,7 +13101,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -13023,7 +13125,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Tables/OpenOfficeXml/{Id}', 'PUT',
+            '/Tables/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -13129,7 +13231,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Tables/Svg/{Id}', 'GET',
+            '/Tables/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13235,7 +13337,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Themes/ChildObjects/{Id}', 'GET',
+            '/Themes/ChildObjects/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13337,7 +13439,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Themes/Details/{Id}', 'GET',
+            '/Themes/Details/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13439,7 +13541,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Themes/{Id}', 'GET',
+            '/Themes/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13545,7 +13647,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Themes/OpenOfficeXml/{Id}', 'GET',
+            '/Themes/OpenOfficeXml/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13635,7 +13737,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -13659,7 +13761,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Themes/OpenOfficeXml/{Id}', 'PUT',
+            '/Themes/OpenOfficeXml/{id}', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -13765,7 +13867,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/Themes/Svg/{Id}', 'GET',
+            '/Themes/Svg/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13873,7 +13975,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/BackgroundFills/{id}', 'GET',
+            '/Themes/BackgroundFills/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -13981,7 +14083,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/Colors/{id}', 'GET',
+            '/Themes/Colors/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -14089,7 +14191,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/CustomColors/{id}', 'GET',
+            '/Themes/CustomColors/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -14197,7 +14299,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/EffectMap/{id}', 'GET',
+            '/Themes/EffectMap/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -14305,7 +14407,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/Fills/{id}', 'GET',
+            '/Themes/Fills/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -14413,7 +14515,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/Fonts/{id}', 'GET',
+            '/Themes/Fonts/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -14513,7 +14615,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/Intensity', 'GET',
+            '/Themes/Intensity', 'GET',
             path_params,
             query_params,
             header_params,
@@ -14621,7 +14723,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/Intensity/{id}', 'GET',
+            '/Themes/Intensity/{id}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -14729,7 +14831,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/themes/LineMap/{id}', 'GET',
+            '/Themes/LineMap/{id}', 'GET',
             path_params,
             query_params,
             header_params,
