@@ -46,7 +46,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Axes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -71,7 +71,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Axes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -111,7 +111,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -254,7 +254,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the AxisDataTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -279,7 +279,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the AxisDataTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -319,7 +319,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -362,7 +362,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ChartData object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -387,7 +387,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ChartData object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -427,7 +427,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -470,7 +470,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColumnCollections object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -495,7 +495,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColumnCollections object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -535,7 +535,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -578,7 +578,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Columns object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -603,7 +603,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Columns object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -643,7 +643,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -686,7 +686,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the DataPoints object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -711,7 +711,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the DataPoints object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -751,7 +751,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -894,7 +894,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the PlotType object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -919,7 +919,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the PlotType object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -959,7 +959,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -1102,7 +1102,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the RowCol object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1127,7 +1127,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the RowCol object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1167,7 +1167,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -1210,7 +1210,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the RowCollections object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1235,7 +1235,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the RowCollections object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1275,7 +1275,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -1418,7 +1418,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the RowNameFormatTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1443,7 +1443,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the RowNameFormatTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1483,7 +1483,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -1526,7 +1526,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Rows object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1551,7 +1551,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Rows object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1591,7 +1591,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -2333,7 +2333,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -2439,7 +2439,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -2578,7 +2578,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the DocumentType object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2603,7 +2603,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the DocumentType object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2643,7 +2643,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -3175,7 +3175,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -3220,7 +3220,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorTransformations object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3245,7 +3245,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorTransformations object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -3285,7 +3285,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -3428,7 +3428,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3453,7 +3453,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -3493,7 +3493,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -3636,7 +3636,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the DashTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3661,7 +3661,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the DashTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -3701,7 +3701,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -3919,7 +3919,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -3964,7 +3964,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Effects object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3989,7 +3989,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Effects object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4029,7 +4029,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -4172,7 +4172,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the EffectTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4197,7 +4197,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the EffectTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4237,7 +4237,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -4280,7 +4280,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the FillMap object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4305,7 +4305,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the FillMap object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4345,7 +4345,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -4488,7 +4488,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the FillTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4513,7 +4513,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the FillTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4553,7 +4553,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -4771,7 +4771,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -4991,7 +4991,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -5847,7 +5847,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -5992,7 +5992,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the LineEndSizes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -6017,7 +6017,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the LineEndSizes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -6057,7 +6057,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -6200,7 +6200,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the LineEndTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -6225,7 +6225,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the LineEndTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -6265,7 +6265,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -6483,7 +6483,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -6528,7 +6528,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Paragraph object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -6553,7 +6553,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Paragraph object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -6593,7 +6593,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -6811,7 +6811,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -7031,7 +7031,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -7251,7 +7251,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -7296,7 +7296,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the TextContainer object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -7321,7 +7321,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the TextContainer object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -7361,7 +7361,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -7404,7 +7404,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorMaps object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -7429,7 +7429,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ColorMaps object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -7469,7 +7469,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -8148,7 +8148,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Graphics object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -8173,7 +8173,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Graphics object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -8213,7 +8213,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -8356,7 +8356,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GraphicTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -8381,7 +8381,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GraphicTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -8421,7 +8421,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -8464,7 +8464,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GroupElements object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -8489,7 +8489,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GroupElements object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -8529,7 +8529,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -8672,7 +8672,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GroupElementTypes object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -8697,7 +8697,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the GroupElementTypes object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -8737,7 +8737,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -10688,7 +10688,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ShapeTrees object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -10713,7 +10713,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the ShapeTrees object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -10753,7 +10753,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -10796,7 +10796,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the SlideMasters object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -10821,7 +10821,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the SlideMasters object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -10861,7 +10861,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -12176,7 +12176,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Borders object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -12201,7 +12201,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Borders object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -12241,7 +12241,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -12284,7 +12284,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Cells object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -12309,7 +12309,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Cells object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -12349,7 +12349,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -12392,7 +12392,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Columns object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -12417,7 +12417,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Columns object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -12457,7 +12457,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -12500,7 +12500,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Rows object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -12525,7 +12525,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Rows object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -12565,7 +12565,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -13892,7 +13892,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the BackgroundFills object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -13917,7 +13917,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the BackgroundFills object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -13957,7 +13957,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -14000,7 +14000,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Colors object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -14025,7 +14025,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Colors object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -14065,7 +14065,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -14108,7 +14108,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the CustomColors object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -14133,7 +14133,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the CustomColors object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -14173,7 +14173,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -14216,7 +14216,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the EffectMap object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -14241,7 +14241,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the EffectMap object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -14281,7 +14281,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -14324,7 +14324,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Fills object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -14349,7 +14349,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Fills object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -14389,7 +14389,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -14432,7 +14432,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Fonts object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -14457,7 +14457,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Fonts object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -14497,7 +14497,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -14640,7 +14640,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Intensity object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -14665,7 +14665,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the Intensity object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -14705,7 +14705,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -14748,7 +14748,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the LineMap object (required)
+        :param int id: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -14773,7 +14773,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int id: The primary key (Id) of the LineMap object (required)
+        :param int id: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -14813,7 +14813,7 @@ class DefaultApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
