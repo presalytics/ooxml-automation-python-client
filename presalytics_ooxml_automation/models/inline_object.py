@@ -47,10 +47,8 @@ class InlineObject(object):
         self._story_id = None
         self.discriminator = None
 
-        if file is not None:
-            self.file = file
-        if story_id is not None:
-            self.story_id = story_id
+        self.file = file
+        self.story_id = story_id
 
     @property
     def file(self):
@@ -72,6 +70,8 @@ class InlineObject(object):
         :param file: The file of this InlineObject.  # noqa: E501
         :type: file
         """
+        if file is None:
+            raise ValueError("Invalid value for `file`, must not be `None`")  # noqa: E501
 
         self._file = file
 
@@ -95,6 +95,8 @@ class InlineObject(object):
         :param story_id: The story_id of this InlineObject.  # noqa: E501
         :type: str
         """
+        if story_id is None:
+            raise ValueError("Invalid value for `story_id`, must not be `None`")  # noqa: E501
 
         self._story_id = story_id
 

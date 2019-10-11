@@ -2880,17 +2880,17 @@ class DefaultApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def documents_post(self, **kwargs):  # noqa: E501
+    def documents_post(self, file, story_id, **kwargs):  # noqa: E501
         """Upload an Open Office XML file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_post(async_req=True)
+        >>> thread = api.documents_post(file, story_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param file file: The file to upload.  Must be of type .pptx, ppt
-        :param str story_id: The story_id of the document being uploaded.
+        :param file file: The file to upload.  Must be of type .pptx, ppt (required)
+        :param str story_id: The story_id of the document being uploaded. (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2903,19 +2903,19 @@ class DefaultApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.documents_post_with_http_info(**kwargs)  # noqa: E501
+        return self.documents_post_with_http_info(file, story_id, **kwargs)  # noqa: E501
 
-    def documents_post_with_http_info(self, **kwargs):  # noqa: E501
+    def documents_post_with_http_info(self, file, story_id, **kwargs):  # noqa: E501
         """Upload an Open Office XML file  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.documents_post_with_http_info(async_req=True)
+        >>> thread = api.documents_post_with_http_info(file, story_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param file file: The file to upload.  Must be of type .pptx, ppt
-        :param str story_id: The story_id of the document being uploaded.
+        :param file file: The file to upload.  Must be of type .pptx, ppt (required)
+        :param str story_id: The story_id of the document being uploaded. (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2946,6 +2946,14 @@ class DefaultApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
+        # verify the required parameter 'file' is set
+        if ('file' not in local_var_params or
+                local_var_params['file'] is None):
+            raise ApiValueError("Missing the required parameter `file` when calling `documents_post`")  # noqa: E501
+        # verify the required parameter 'story_id' is set
+        if ('story_id' not in local_var_params or
+                local_var_params['story_id'] is None):
+            raise ApiValueError("Missing the required parameter `story_id` when calling `documents_post`")  # noqa: E501
 
         collection_formats = {}
 
