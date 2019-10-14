@@ -32,8 +32,9 @@ class TableColumns(object):
     """
     openapi_types = {
         'index': 'int',
-        'width': 'str',
+        'width': 'int',
         'table_id': 'str',
+        'table': 'TableTables',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -45,6 +46,7 @@ class TableColumns(object):
         'index': 'index',
         'width': 'width',
         'table_id': 'tableId',
+        'table': 'table',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -52,12 +54,13 @@ class TableColumns(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, index=None, width=None, table_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, index=None, width=None, table_id=None, table=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableColumns - a model defined in OpenAPI"""  # noqa: E501
 
         self._index = None
         self._width = None
         self._table_id = None
+        self._table = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -70,6 +73,8 @@ class TableColumns(object):
         if width is not None:
             self.width = width
         self.table_id = table_id
+        if table is not None:
+            self.table = table
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -108,7 +113,7 @@ class TableColumns(object):
 
 
         :return: The width of this TableColumns.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._width
 
@@ -118,7 +123,7 @@ class TableColumns(object):
 
 
         :param width: The width of this TableColumns.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._width = width
@@ -143,6 +148,27 @@ class TableColumns(object):
         """
 
         self._table_id = table_id
+
+    @property
+    def table(self):
+        """Gets the table of this TableColumns.  # noqa: E501
+
+
+        :return: The table of this TableColumns.  # noqa: E501
+        :rtype: TableTables
+        """
+        return self._table
+
+    @table.setter
+    def table(self, table):
+        """Sets the table of this TableColumns.
+
+
+        :param table: The table of this TableColumns.  # noqa: E501
+        :type: TableTables
+        """
+
+        self._table = table
 
     @property
     def id(self):

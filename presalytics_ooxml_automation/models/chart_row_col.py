@@ -73,14 +73,10 @@ class ChartRowCol(object):
 
         if type_id is not None:
             self.type_id = type_id
-        if row_name is not None:
-            self.row_name = row_name
-        if row_qualifed_assy is not None:
-            self.row_qualifed_assy = row_qualifed_assy
-        if col_name is not None:
-            self.col_name = col_name
-        if col_qualified_assy is not None:
-            self.col_qualified_assy = col_qualified_assy
+        self.row_name = row_name
+        self.row_qualifed_assy = row_qualifed_assy
+        self.col_name = col_name
+        self.col_qualified_assy = col_qualified_assy
         if id is not None:
             self.id = id
         if date_created is not None:

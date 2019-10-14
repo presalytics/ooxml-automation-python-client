@@ -32,6 +32,7 @@ class SlideColorMaps(object):
     """
     openapi_types = {
         'slide_master_id': 'str',
+        'slide_master': 'SlideSlideMasters',
         'accent1': 'int',
         'accent2': 'int',
         'accent3': 'int',
@@ -53,6 +54,7 @@ class SlideColorMaps(object):
 
     attribute_map = {
         'slide_master_id': 'slideMasterId',
+        'slide_master': 'slideMaster',
         'accent1': 'accent1',
         'accent2': 'accent2',
         'accent3': 'accent3',
@@ -72,10 +74,11 @@ class SlideColorMaps(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, slide_master_id=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, text1=None, text2=None, background1=None, background2=None, hyperlink=None, followed_hyperlink=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, slide_master_id=None, slide_master=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, text1=None, text2=None, background1=None, background2=None, hyperlink=None, followed_hyperlink=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideColorMaps - a model defined in OpenAPI"""  # noqa: E501
 
         self._slide_master_id = None
+        self._slide_master = None
         self._accent1 = None
         self._accent2 = None
         self._accent3 = None
@@ -96,6 +99,8 @@ class SlideColorMaps(object):
         self.discriminator = None
 
         self.slide_master_id = slide_master_id
+        if slide_master is not None:
+            self.slide_master = slide_master
         if accent1 is not None:
             self.accent1 = accent1
         if accent2 is not None:
@@ -151,6 +156,27 @@ class SlideColorMaps(object):
         """
 
         self._slide_master_id = slide_master_id
+
+    @property
+    def slide_master(self):
+        """Gets the slide_master of this SlideColorMaps.  # noqa: E501
+
+
+        :return: The slide_master of this SlideColorMaps.  # noqa: E501
+        :rtype: SlideSlideMasters
+        """
+        return self._slide_master
+
+    @slide_master.setter
+    def slide_master(self, slide_master):
+        """Sets the slide_master of this SlideColorMaps.
+
+
+        :param slide_master: The slide_master of this SlideColorMaps.  # noqa: E501
+        :type: SlideSlideMasters
+        """
+
+        self._slide_master = slide_master
 
     @property
     def accent1(self):

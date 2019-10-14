@@ -32,6 +32,7 @@ class SharedColorTransformationAttributes(object):
     """
     openapi_types = {
         'color_transformations_id': 'str',
+        'color_transformation': 'SharedColorTransformations',
         'name': 'str',
         'value': 'str',
         'id': 'str',
@@ -43,6 +44,7 @@ class SharedColorTransformationAttributes(object):
 
     attribute_map = {
         'color_transformations_id': 'colorTransformationsId',
+        'color_transformation': 'colorTransformation',
         'name': 'name',
         'value': 'value',
         'id': 'id',
@@ -52,10 +54,11 @@ class SharedColorTransformationAttributes(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, color_transformations_id=None, name=None, value=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, color_transformations_id=None, color_transformation=None, name=None, value=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedColorTransformationAttributes - a model defined in OpenAPI"""  # noqa: E501
 
         self._color_transformations_id = None
+        self._color_transformation = None
         self._name = None
         self._value = None
         self._id = None
@@ -66,10 +69,10 @@ class SharedColorTransformationAttributes(object):
         self.discriminator = None
 
         self.color_transformations_id = color_transformations_id
-        if name is not None:
-            self.name = name
-        if value is not None:
-            self.value = value
+        if color_transformation is not None:
+            self.color_transformation = color_transformation
+        self.name = name
+        self.value = value
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -101,6 +104,27 @@ class SharedColorTransformationAttributes(object):
         """
 
         self._color_transformations_id = color_transformations_id
+
+    @property
+    def color_transformation(self):
+        """Gets the color_transformation of this SharedColorTransformationAttributes.  # noqa: E501
+
+
+        :return: The color_transformation of this SharedColorTransformationAttributes.  # noqa: E501
+        :rtype: SharedColorTransformations
+        """
+        return self._color_transformation
+
+    @color_transformation.setter
+    def color_transformation(self, color_transformation):
+        """Sets the color_transformation of this SharedColorTransformationAttributes.
+
+
+        :param color_transformation: The color_transformation of this SharedColorTransformationAttributes.  # noqa: E501
+        :type: SharedColorTransformations
+        """
+
+        self._color_transformation = color_transformation
 
     @property
     def name(self):

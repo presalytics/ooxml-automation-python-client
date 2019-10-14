@@ -59,8 +59,7 @@ class SharedColorTransformations(object):
         self._user_modified = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if id is not None:
             self.id = id
         if date_created is not None:

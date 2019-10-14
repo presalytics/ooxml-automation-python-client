@@ -32,8 +32,9 @@ class SharedTextContainer(object):
     """
     openapi_types = {
         'shape_id': 'str',
+        'parent_shape': 'SlideShape',
         'outer_xml': 'str',
-        'paragraphs': 'str',
+        'paragraphs': 'list[SharedParagraph]',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -43,6 +44,7 @@ class SharedTextContainer(object):
 
     attribute_map = {
         'shape_id': 'shapeId',
+        'parent_shape': 'parentShape',
         'outer_xml': 'outerXml',
         'paragraphs': 'paragraphs',
         'id': 'id',
@@ -52,10 +54,11 @@ class SharedTextContainer(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, shape_id=None, outer_xml=None, paragraphs=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, shape_id=None, parent_shape=None, outer_xml=None, paragraphs=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedTextContainer - a model defined in OpenAPI"""  # noqa: E501
 
         self._shape_id = None
+        self._parent_shape = None
         self._outer_xml = None
         self._paragraphs = None
         self._id = None
@@ -66,10 +69,10 @@ class SharedTextContainer(object):
         self.discriminator = None
 
         self.shape_id = shape_id
-        if outer_xml is not None:
-            self.outer_xml = outer_xml
-        if paragraphs is not None:
-            self.paragraphs = paragraphs
+        if parent_shape is not None:
+            self.parent_shape = parent_shape
+        self.outer_xml = outer_xml
+        self.paragraphs = paragraphs
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -103,6 +106,27 @@ class SharedTextContainer(object):
         self._shape_id = shape_id
 
     @property
+    def parent_shape(self):
+        """Gets the parent_shape of this SharedTextContainer.  # noqa: E501
+
+
+        :return: The parent_shape of this SharedTextContainer.  # noqa: E501
+        :rtype: SlideShape
+        """
+        return self._parent_shape
+
+    @parent_shape.setter
+    def parent_shape(self, parent_shape):
+        """Sets the parent_shape of this SharedTextContainer.
+
+
+        :param parent_shape: The parent_shape of this SharedTextContainer.  # noqa: E501
+        :type: SlideShape
+        """
+
+        self._parent_shape = parent_shape
+
+    @property
     def outer_xml(self):
         """Gets the outer_xml of this SharedTextContainer.  # noqa: E501
 
@@ -129,7 +153,7 @@ class SharedTextContainer(object):
 
 
         :return: The paragraphs of this SharedTextContainer.  # noqa: E501
-        :rtype: str
+        :rtype: list[SharedParagraph]
         """
         return self._paragraphs
 
@@ -139,7 +163,7 @@ class SharedTextContainer(object):
 
 
         :param paragraphs: The paragraphs of this SharedTextContainer.  # noqa: E501
-        :type: str
+        :type: list[SharedParagraph]
         """
 
         self._paragraphs = paragraphs

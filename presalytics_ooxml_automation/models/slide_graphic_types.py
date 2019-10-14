@@ -67,10 +67,8 @@ class SlideGraphicTypes(object):
 
         if type_id is not None:
             self.type_id = type_id
-        if name is not None:
-            self.name = name
-        if description is not None:
-            self.description = description
+        self.name = name
+        self.description = description
         if id is not None:
             self.id = id
         if date_created is not None:

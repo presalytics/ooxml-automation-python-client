@@ -34,6 +34,7 @@ class ThemeFonts(object):
         'heading_font': 'str',
         'body_font': 'str',
         'theme_id': 'str',
+        'theme': 'ThemeThemes',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -45,6 +46,7 @@ class ThemeFonts(object):
         'heading_font': 'headingFont',
         'body_font': 'bodyFont',
         'theme_id': 'themeId',
+        'theme': 'theme',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -52,12 +54,13 @@ class ThemeFonts(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, heading_font=None, body_font=None, theme_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, heading_font=None, body_font=None, theme_id=None, theme=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeFonts - a model defined in OpenAPI"""  # noqa: E501
 
         self._heading_font = None
         self._body_font = None
         self._theme_id = None
+        self._theme = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -65,11 +68,11 @@ class ThemeFonts(object):
         self._user_modified = None
         self.discriminator = None
 
-        if heading_font is not None:
-            self.heading_font = heading_font
-        if body_font is not None:
-            self.body_font = body_font
+        self.heading_font = heading_font
+        self.body_font = body_font
         self.theme_id = theme_id
+        if theme is not None:
+            self.theme = theme
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -143,6 +146,27 @@ class ThemeFonts(object):
         """
 
         self._theme_id = theme_id
+
+    @property
+    def theme(self):
+        """Gets the theme of this ThemeFonts.  # noqa: E501
+
+
+        :return: The theme of this ThemeFonts.  # noqa: E501
+        :rtype: ThemeThemes
+        """
+        return self._theme
+
+    @theme.setter
+    def theme(self, theme):
+        """Sets the theme of this ThemeFonts.
+
+
+        :param theme: The theme of this ThemeFonts.  # noqa: E501
+        :type: ThemeThemes
+        """
+
+        self._theme = theme
 
     @property
     def id(self):

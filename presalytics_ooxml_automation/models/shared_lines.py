@@ -32,6 +32,7 @@ class SharedLines(object):
     """
     openapi_types = {
         'solid_fills_id': 'str',
+        'line_color_solid_fill': 'SharedSolidFills',
         'dash_type_id': 'int',
         'head_end_type_id': 'int',
         'tail_end_type_id': 'int',
@@ -49,6 +50,7 @@ class SharedLines(object):
 
     attribute_map = {
         'solid_fills_id': 'solidFillsId',
+        'line_color_solid_fill': 'lineColorSolidFill',
         'dash_type_id': 'dashTypeId',
         'head_end_type_id': 'headEndTypeId',
         'tail_end_type_id': 'tailEndTypeId',
@@ -64,10 +66,11 @@ class SharedLines(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, solid_fills_id=None, dash_type_id=None, head_end_type_id=None, tail_end_type_id=None, weight=None, head_end_height_id=None, head_end_width_id=None, tail_end_height_id=None, tail_end_width_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, solid_fills_id=None, line_color_solid_fill=None, dash_type_id=None, head_end_type_id=None, tail_end_type_id=None, weight=None, head_end_height_id=None, head_end_width_id=None, tail_end_height_id=None, tail_end_width_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedLines - a model defined in OpenAPI"""  # noqa: E501
 
         self._solid_fills_id = None
+        self._line_color_solid_fill = None
         self._dash_type_id = None
         self._head_end_type_id = None
         self._tail_end_type_id = None
@@ -84,6 +87,8 @@ class SharedLines(object):
         self.discriminator = None
 
         self.solid_fills_id = solid_fills_id
+        if line_color_solid_fill is not None:
+            self.line_color_solid_fill = line_color_solid_fill
         if dash_type_id is not None:
             self.dash_type_id = dash_type_id
         if head_end_type_id is not None:
@@ -131,6 +136,27 @@ class SharedLines(object):
         """
 
         self._solid_fills_id = solid_fills_id
+
+    @property
+    def line_color_solid_fill(self):
+        """Gets the line_color_solid_fill of this SharedLines.  # noqa: E501
+
+
+        :return: The line_color_solid_fill of this SharedLines.  # noqa: E501
+        :rtype: SharedSolidFills
+        """
+        return self._line_color_solid_fill
+
+    @line_color_solid_fill.setter
+    def line_color_solid_fill(self, line_color_solid_fill):
+        """Sets the line_color_solid_fill of this SharedLines.
+
+
+        :param line_color_solid_fill: The line_color_solid_fill of this SharedLines.  # noqa: E501
+        :type: SharedSolidFills
+        """
+
+        self._line_color_solid_fill = line_color_solid_fill
 
     @property
     def dash_type_id(self):

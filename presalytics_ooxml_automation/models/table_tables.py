@@ -36,9 +36,10 @@ class TableTables(object):
         'has_style_part': 'bool',
         'style_part_outer_xml': 'str',
         'parent_graphic_id': 'str',
-        'rows': 'str',
-        'columns': 'str',
-        'cells': 'str',
+        'parent_graphic': 'SlideGraphics',
+        'rows': 'list[TableRows]',
+        'columns': 'list[TableColumns]',
+        'cells': 'list[TableCells]',
         'base_element_blob_url': 'str',
         'changed_base_element_blob_url': 'str',
         'package_uri': 'str',
@@ -55,6 +56,7 @@ class TableTables(object):
         'has_style_part': 'hasStylePart',
         'style_part_outer_xml': 'stylePartOuterXml',
         'parent_graphic_id': 'parentGraphicId',
+        'parent_graphic': 'parentGraphic',
         'rows': 'rows',
         'columns': 'columns',
         'cells': 'cells',
@@ -68,7 +70,7 @@ class TableTables(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name=None, svg_blob_url=None, has_style_part=None, style_part_outer_xml=None, parent_graphic_id=None, rows=None, columns=None, cells=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, svg_blob_url=None, has_style_part=None, style_part_outer_xml=None, parent_graphic_id=None, parent_graphic=None, rows=None, columns=None, cells=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableTables - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
@@ -76,6 +78,7 @@ class TableTables(object):
         self._has_style_part = None
         self._style_part_outer_xml = None
         self._parent_graphic_id = None
+        self._parent_graphic = None
         self._rows = None
         self._columns = None
         self._cells = None
@@ -89,27 +92,20 @@ class TableTables(object):
         self._user_modified = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if svg_blob_url is not None:
-            self.svg_blob_url = svg_blob_url
+        self.name = name
+        self.svg_blob_url = svg_blob_url
         if has_style_part is not None:
             self.has_style_part = has_style_part
-        if style_part_outer_xml is not None:
-            self.style_part_outer_xml = style_part_outer_xml
+        self.style_part_outer_xml = style_part_outer_xml
         self.parent_graphic_id = parent_graphic_id
-        if rows is not None:
-            self.rows = rows
-        if columns is not None:
-            self.columns = columns
-        if cells is not None:
-            self.cells = cells
-        if base_element_blob_url is not None:
-            self.base_element_blob_url = base_element_blob_url
-        if changed_base_element_blob_url is not None:
-            self.changed_base_element_blob_url = changed_base_element_blob_url
-        if package_uri is not None:
-            self.package_uri = package_uri
+        if parent_graphic is not None:
+            self.parent_graphic = parent_graphic
+        self.rows = rows
+        self.columns = columns
+        self.cells = cells
+        self.base_element_blob_url = base_element_blob_url
+        self.changed_base_element_blob_url = changed_base_element_blob_url
+        self.package_uri = package_uri
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -227,12 +223,33 @@ class TableTables(object):
         self._parent_graphic_id = parent_graphic_id
 
     @property
+    def parent_graphic(self):
+        """Gets the parent_graphic of this TableTables.  # noqa: E501
+
+
+        :return: The parent_graphic of this TableTables.  # noqa: E501
+        :rtype: SlideGraphics
+        """
+        return self._parent_graphic
+
+    @parent_graphic.setter
+    def parent_graphic(self, parent_graphic):
+        """Sets the parent_graphic of this TableTables.
+
+
+        :param parent_graphic: The parent_graphic of this TableTables.  # noqa: E501
+        :type: SlideGraphics
+        """
+
+        self._parent_graphic = parent_graphic
+
+    @property
     def rows(self):
         """Gets the rows of this TableTables.  # noqa: E501
 
 
         :return: The rows of this TableTables.  # noqa: E501
-        :rtype: str
+        :rtype: list[TableRows]
         """
         return self._rows
 
@@ -242,7 +259,7 @@ class TableTables(object):
 
 
         :param rows: The rows of this TableTables.  # noqa: E501
-        :type: str
+        :type: list[TableRows]
         """
 
         self._rows = rows
@@ -253,7 +270,7 @@ class TableTables(object):
 
 
         :return: The columns of this TableTables.  # noqa: E501
-        :rtype: str
+        :rtype: list[TableColumns]
         """
         return self._columns
 
@@ -263,7 +280,7 @@ class TableTables(object):
 
 
         :param columns: The columns of this TableTables.  # noqa: E501
-        :type: str
+        :type: list[TableColumns]
         """
 
         self._columns = columns
@@ -274,7 +291,7 @@ class TableTables(object):
 
 
         :return: The cells of this TableTables.  # noqa: E501
-        :rtype: str
+        :rtype: list[TableCells]
         """
         return self._cells
 
@@ -284,7 +301,7 @@ class TableTables(object):
 
 
         :param cells: The cells of this TableTables.  # noqa: E501
-        :type: str
+        :type: list[TableCells]
         """
 
         self._cells = cells

@@ -32,7 +32,9 @@ class ChartAxes(object):
     """
     openapi_types = {
         'charts_id': 'str',
+        'chart': 'ChartCharts',
         'title_text_container_id': 'str',
+        'title_text_container': 'SharedTextContainer',
         'ooxml_id': 'int',
         'axis_data_type_id': 'int',
         'id': 'str',
@@ -44,7 +46,9 @@ class ChartAxes(object):
 
     attribute_map = {
         'charts_id': 'chartsId',
+        'chart': 'chart',
         'title_text_container_id': 'titleTextContainerId',
+        'title_text_container': 'titleTextContainer',
         'ooxml_id': 'ooxmlId',
         'axis_data_type_id': 'axisDataTypeId',
         'id': 'id',
@@ -54,11 +58,13 @@ class ChartAxes(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, charts_id=None, title_text_container_id=None, ooxml_id=None, axis_data_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, charts_id=None, chart=None, title_text_container_id=None, title_text_container=None, ooxml_id=None, axis_data_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartAxes - a model defined in OpenAPI"""  # noqa: E501
 
         self._charts_id = None
+        self._chart = None
         self._title_text_container_id = None
+        self._title_text_container = None
         self._ooxml_id = None
         self._axis_data_type_id = None
         self._id = None
@@ -70,7 +76,11 @@ class ChartAxes(object):
 
         if charts_id is not None:
             self.charts_id = charts_id
+        if chart is not None:
+            self.chart = chart
         self.title_text_container_id = title_text_container_id
+        if title_text_container is not None:
+            self.title_text_container = title_text_container
         if ooxml_id is not None:
             self.ooxml_id = ooxml_id
         if axis_data_type_id is not None:
@@ -108,6 +118,27 @@ class ChartAxes(object):
         self._charts_id = charts_id
 
     @property
+    def chart(self):
+        """Gets the chart of this ChartAxes.  # noqa: E501
+
+
+        :return: The chart of this ChartAxes.  # noqa: E501
+        :rtype: ChartCharts
+        """
+        return self._chart
+
+    @chart.setter
+    def chart(self, chart):
+        """Sets the chart of this ChartAxes.
+
+
+        :param chart: The chart of this ChartAxes.  # noqa: E501
+        :type: ChartCharts
+        """
+
+        self._chart = chart
+
+    @property
     def title_text_container_id(self):
         """Gets the title_text_container_id of this ChartAxes.  # noqa: E501
 
@@ -127,6 +158,27 @@ class ChartAxes(object):
         """
 
         self._title_text_container_id = title_text_container_id
+
+    @property
+    def title_text_container(self):
+        """Gets the title_text_container of this ChartAxes.  # noqa: E501
+
+
+        :return: The title_text_container of this ChartAxes.  # noqa: E501
+        :rtype: SharedTextContainer
+        """
+        return self._title_text_container
+
+    @title_text_container.setter
+    def title_text_container(self, title_text_container):
+        """Sets the title_text_container of this ChartAxes.
+
+
+        :param title_text_container: The title_text_container of this ChartAxes.  # noqa: E501
+        :type: SharedTextContainer
+        """
+
+        self._title_text_container = title_text_container
 
     @property
     def ooxml_id(self):

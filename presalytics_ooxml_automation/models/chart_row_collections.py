@@ -33,8 +33,10 @@ class ChartRowCollections(object):
     openapi_types = {
         'name_format_type': 'int',
         'axis_id': 'str',
+        'axis': 'ChartAxes',
         'chart_data_id': 'str',
-        'rows': 'str',
+        'chart_data': 'ChartChartData',
+        'rows': 'list[ChartRows]',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -45,7 +47,9 @@ class ChartRowCollections(object):
     attribute_map = {
         'name_format_type': 'nameFormatType',
         'axis_id': 'axisId',
+        'axis': 'axis',
         'chart_data_id': 'chartDataId',
+        'chart_data': 'chartData',
         'rows': 'rows',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -54,12 +58,14 @@ class ChartRowCollections(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name_format_type=None, axis_id=None, chart_data_id=None, rows=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name_format_type=None, axis_id=None, axis=None, chart_data_id=None, chart_data=None, rows=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartRowCollections - a model defined in OpenAPI"""  # noqa: E501
 
         self._name_format_type = None
         self._axis_id = None
+        self._axis = None
         self._chart_data_id = None
+        self._chart_data = None
         self._rows = None
         self._id = None
         self._date_created = None
@@ -71,9 +77,12 @@ class ChartRowCollections(object):
         if name_format_type is not None:
             self.name_format_type = name_format_type
         self.axis_id = axis_id
+        if axis is not None:
+            self.axis = axis
         self.chart_data_id = chart_data_id
-        if rows is not None:
-            self.rows = rows
+        if chart_data is not None:
+            self.chart_data = chart_data
+        self.rows = rows
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -128,6 +137,27 @@ class ChartRowCollections(object):
         self._axis_id = axis_id
 
     @property
+    def axis(self):
+        """Gets the axis of this ChartRowCollections.  # noqa: E501
+
+
+        :return: The axis of this ChartRowCollections.  # noqa: E501
+        :rtype: ChartAxes
+        """
+        return self._axis
+
+    @axis.setter
+    def axis(self, axis):
+        """Sets the axis of this ChartRowCollections.
+
+
+        :param axis: The axis of this ChartRowCollections.  # noqa: E501
+        :type: ChartAxes
+        """
+
+        self._axis = axis
+
+    @property
     def chart_data_id(self):
         """Gets the chart_data_id of this ChartRowCollections.  # noqa: E501
 
@@ -149,12 +179,33 @@ class ChartRowCollections(object):
         self._chart_data_id = chart_data_id
 
     @property
+    def chart_data(self):
+        """Gets the chart_data of this ChartRowCollections.  # noqa: E501
+
+
+        :return: The chart_data of this ChartRowCollections.  # noqa: E501
+        :rtype: ChartChartData
+        """
+        return self._chart_data
+
+    @chart_data.setter
+    def chart_data(self, chart_data):
+        """Sets the chart_data of this ChartRowCollections.
+
+
+        :param chart_data: The chart_data of this ChartRowCollections.  # noqa: E501
+        :type: ChartChartData
+        """
+
+        self._chart_data = chart_data
+
+    @property
     def rows(self):
         """Gets the rows of this ChartRowCollections.  # noqa: E501
 
 
         :return: The rows of this ChartRowCollections.  # noqa: E501
-        :rtype: str
+        :rtype: list[ChartRows]
         """
         return self._rows
 
@@ -164,7 +215,7 @@ class ChartRowCollections(object):
 
 
         :param rows: The rows of this ChartRowCollections.  # noqa: E501
-        :type: str
+        :type: list[ChartRows]
         """
 
         self._rows = rows

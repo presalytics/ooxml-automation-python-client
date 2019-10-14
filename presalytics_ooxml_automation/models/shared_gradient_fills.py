@@ -32,6 +32,7 @@ class SharedGradientFills(object):
     """
     openapi_types = {
         'fill_map_id': 'str',
+        'fill_map': 'SharedFillMap',
         'angle': 'int',
         'rotate_with_shape': 'bool',
         'is_path': 'bool',
@@ -45,6 +46,7 @@ class SharedGradientFills(object):
 
     attribute_map = {
         'fill_map_id': 'fillMapId',
+        'fill_map': 'fillMap',
         'angle': 'angle',
         'rotate_with_shape': 'rotateWithShape',
         'is_path': 'isPath',
@@ -56,10 +58,11 @@ class SharedGradientFills(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, fill_map_id=None, angle=None, rotate_with_shape=None, is_path=None, path_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_map_id=None, fill_map=None, angle=None, rotate_with_shape=None, is_path=None, path_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedGradientFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_map_id = None
+        self._fill_map = None
         self._angle = None
         self._rotate_with_shape = None
         self._is_path = None
@@ -72,13 +75,14 @@ class SharedGradientFills(object):
         self.discriminator = None
 
         self.fill_map_id = fill_map_id
+        if fill_map is not None:
+            self.fill_map = fill_map
         self.angle = angle
         if rotate_with_shape is not None:
             self.rotate_with_shape = rotate_with_shape
         if is_path is not None:
             self.is_path = is_path
-        if path_type is not None:
-            self.path_type = path_type
+        self.path_type = path_type
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -110,6 +114,27 @@ class SharedGradientFills(object):
         """
 
         self._fill_map_id = fill_map_id
+
+    @property
+    def fill_map(self):
+        """Gets the fill_map of this SharedGradientFills.  # noqa: E501
+
+
+        :return: The fill_map of this SharedGradientFills.  # noqa: E501
+        :rtype: SharedFillMap
+        """
+        return self._fill_map
+
+    @fill_map.setter
+    def fill_map(self, fill_map):
+        """Sets the fill_map of this SharedGradientFills.
+
+
+        :param fill_map: The fill_map of this SharedGradientFills.  # noqa: E501
+        :type: SharedFillMap
+        """
+
+        self._fill_map = fill_map
 
     @property
     def angle(self):

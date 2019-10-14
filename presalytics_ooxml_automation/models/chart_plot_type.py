@@ -70,10 +70,8 @@ class ChartPlotType(object):
 
         if type_id is not None:
             self.type_id = type_id
-        if plot_type_name is not None:
-            self.plot_type_name = plot_type_name
-        if plot_qualifed_assy is not None:
-            self.plot_qualifed_assy = plot_qualifed_assy
+        self.plot_type_name = plot_type_name
+        self.plot_qualifed_assy = plot_qualifed_assy
         if row_col_type_id is not None:
             self.row_col_type_id = row_col_type_id
         if id is not None:

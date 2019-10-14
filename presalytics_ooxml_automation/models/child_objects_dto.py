@@ -54,11 +54,9 @@ class ChildObjectsDTO(object):
         self.discriminator = None
 
         self.entity_id = entity_id
-        if object_type_name is not None:
-            self.object_type_name = object_type_name
+        self.object_type_name = object_type_name
         self.parent_entity_id = parent_entity_id
-        if parent_object_type_name is not None:
-            self.parent_object_type_name = parent_object_type_name
+        self.parent_object_type_name = parent_object_type_name
 
     @property
     def entity_id(self):

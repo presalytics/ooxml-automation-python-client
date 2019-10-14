@@ -33,6 +33,7 @@ class ThemeColors(object):
     openapi_types = {
         'name': 'str',
         'theme_id': 'str',
+        'theme': 'ThemeThemes',
         'accent1': 'str',
         'accent2': 'str',
         'accent3': 'str',
@@ -55,6 +56,7 @@ class ThemeColors(object):
     attribute_map = {
         'name': 'name',
         'theme_id': 'themeId',
+        'theme': 'theme',
         'accent1': 'accent1',
         'accent2': 'accent2',
         'accent3': 'accent3',
@@ -74,11 +76,12 @@ class ThemeColors(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name=None, theme_id=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, light1=None, light2=None, dark1=None, dark2=None, hyperlink=None, followed_hyperlink=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, theme_id=None, theme=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, light1=None, light2=None, dark1=None, dark2=None, hyperlink=None, followed_hyperlink=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeColors - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
         self._theme_id = None
+        self._theme = None
         self._accent1 = None
         self._accent2 = None
         self._accent3 = None
@@ -98,33 +101,22 @@ class ThemeColors(object):
         self._user_modified = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         self.theme_id = theme_id
-        if accent1 is not None:
-            self.accent1 = accent1
-        if accent2 is not None:
-            self.accent2 = accent2
-        if accent3 is not None:
-            self.accent3 = accent3
-        if accent4 is not None:
-            self.accent4 = accent4
-        if accent5 is not None:
-            self.accent5 = accent5
-        if accent6 is not None:
-            self.accent6 = accent6
-        if light1 is not None:
-            self.light1 = light1
-        if light2 is not None:
-            self.light2 = light2
-        if dark1 is not None:
-            self.dark1 = dark1
-        if dark2 is not None:
-            self.dark2 = dark2
-        if hyperlink is not None:
-            self.hyperlink = hyperlink
-        if followed_hyperlink is not None:
-            self.followed_hyperlink = followed_hyperlink
+        if theme is not None:
+            self.theme = theme
+        self.accent1 = accent1
+        self.accent2 = accent2
+        self.accent3 = accent3
+        self.accent4 = accent4
+        self.accent5 = accent5
+        self.accent6 = accent6
+        self.light1 = light1
+        self.light2 = light2
+        self.dark1 = dark1
+        self.dark2 = dark2
+        self.hyperlink = hyperlink
+        self.followed_hyperlink = followed_hyperlink
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -177,6 +169,27 @@ class ThemeColors(object):
         """
 
         self._theme_id = theme_id
+
+    @property
+    def theme(self):
+        """Gets the theme of this ThemeColors.  # noqa: E501
+
+
+        :return: The theme of this ThemeColors.  # noqa: E501
+        :rtype: ThemeThemes
+        """
+        return self._theme
+
+    @theme.setter
+    def theme(self, theme):
+        """Sets the theme of this ThemeColors.
+
+
+        :param theme: The theme of this ThemeColors.  # noqa: E501
+        :type: ThemeThemes
+        """
+
+        self._theme = theme
 
     @property
     def accent1(self):

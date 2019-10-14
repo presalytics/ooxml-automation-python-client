@@ -70,12 +70,9 @@ class SharedDashTypes(object):
 
         if type_id is not None:
             self.type_id = type_id
-        if name is not None:
-            self.name = name
-        if description is not None:
-            self.description = description
-        if serialized_as is not None:
-            self.serialized_as = serialized_as
+        self.name = name
+        self.description = description
+        self.serialized_as = serialized_as
         if id is not None:
             self.id = id
         if date_created is not None:

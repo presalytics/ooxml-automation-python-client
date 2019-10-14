@@ -70,12 +70,9 @@ class ChartAxisDataTypes(object):
 
         if type_id is not None:
             self.type_id = type_id
-        if name is not None:
-            self.name = name
-        if description is not None:
-            self.description = description
-        if ooxml_name is not None:
-            self.ooxml_name = ooxml_name
+        self.name = name
+        self.description = description
+        self.ooxml_name = ooxml_name
         if id is not None:
             self.id = id
         if date_created is not None:

@@ -32,12 +32,14 @@ class SharedImageFills(object):
     """
     openapi_types = {
         'fill_map_id': 'str',
+        'fill_map': 'SharedFillMap',
+        'picture': 'SharedPictures',
         'compression_state': 'str',
         'stretch': 'bool',
         'tile': 'str',
         'rotate_with_shape': 'bool',
         'source_rectangle': 'str',
-        'd_pi': 'int',
+        'dpi': 'int',
         'effects_json': 'str',
         'id': 'str',
         'date_created': 'datetime',
@@ -48,12 +50,14 @@ class SharedImageFills(object):
 
     attribute_map = {
         'fill_map_id': 'fillMapId',
+        'fill_map': 'fillMap',
+        'picture': 'picture',
         'compression_state': 'compressionState',
         'stretch': 'stretch',
         'tile': 'tile',
         'rotate_with_shape': 'rotateWithShape',
         'source_rectangle': 'sourceRectangle',
-        'd_pi': 'dPI',
+        'dpi': 'dpi',
         'effects_json': 'effectsJson',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -62,16 +66,18 @@ class SharedImageFills(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, fill_map_id=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, d_pi=None, effects_json=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_map_id=None, fill_map=None, picture=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, dpi=None, effects_json=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedImageFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_map_id = None
+        self._fill_map = None
+        self._picture = None
         self._compression_state = None
         self._stretch = None
         self._tile = None
         self._rotate_with_shape = None
         self._source_rectangle = None
-        self._d_pi = None
+        self._dpi = None
         self._effects_json = None
         self._id = None
         self._date_created = None
@@ -81,19 +87,19 @@ class SharedImageFills(object):
         self.discriminator = None
 
         self.fill_map_id = fill_map_id
-        if compression_state is not None:
-            self.compression_state = compression_state
+        if fill_map is not None:
+            self.fill_map = fill_map
+        if picture is not None:
+            self.picture = picture
+        self.compression_state = compression_state
         if stretch is not None:
             self.stretch = stretch
-        if tile is not None:
-            self.tile = tile
+        self.tile = tile
         if rotate_with_shape is not None:
             self.rotate_with_shape = rotate_with_shape
-        if source_rectangle is not None:
-            self.source_rectangle = source_rectangle
-        self.d_pi = d_pi
-        if effects_json is not None:
-            self.effects_json = effects_json
+        self.source_rectangle = source_rectangle
+        self.dpi = dpi
+        self.effects_json = effects_json
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -125,6 +131,48 @@ class SharedImageFills(object):
         """
 
         self._fill_map_id = fill_map_id
+
+    @property
+    def fill_map(self):
+        """Gets the fill_map of this SharedImageFills.  # noqa: E501
+
+
+        :return: The fill_map of this SharedImageFills.  # noqa: E501
+        :rtype: SharedFillMap
+        """
+        return self._fill_map
+
+    @fill_map.setter
+    def fill_map(self, fill_map):
+        """Sets the fill_map of this SharedImageFills.
+
+
+        :param fill_map: The fill_map of this SharedImageFills.  # noqa: E501
+        :type: SharedFillMap
+        """
+
+        self._fill_map = fill_map
+
+    @property
+    def picture(self):
+        """Gets the picture of this SharedImageFills.  # noqa: E501
+
+
+        :return: The picture of this SharedImageFills.  # noqa: E501
+        :rtype: SharedPictures
+        """
+        return self._picture
+
+    @picture.setter
+    def picture(self, picture):
+        """Sets the picture of this SharedImageFills.
+
+
+        :param picture: The picture of this SharedImageFills.  # noqa: E501
+        :type: SharedPictures
+        """
+
+        self._picture = picture
 
     @property
     def compression_state(self):
@@ -232,25 +280,25 @@ class SharedImageFills(object):
         self._source_rectangle = source_rectangle
 
     @property
-    def d_pi(self):
-        """Gets the d_pi of this SharedImageFills.  # noqa: E501
+    def dpi(self):
+        """Gets the dpi of this SharedImageFills.  # noqa: E501
 
 
-        :return: The d_pi of this SharedImageFills.  # noqa: E501
+        :return: The dpi of this SharedImageFills.  # noqa: E501
         :rtype: int
         """
-        return self._d_pi
+        return self._dpi
 
-    @d_pi.setter
-    def d_pi(self, d_pi):
-        """Sets the d_pi of this SharedImageFills.
+    @dpi.setter
+    def dpi(self, dpi):
+        """Sets the dpi of this SharedImageFills.
 
 
-        :param d_pi: The d_pi of this SharedImageFills.  # noqa: E501
+        :param dpi: The dpi of this SharedImageFills.  # noqa: E501
         :type: int
         """
 
-        self._d_pi = d_pi
+        self._dpi = dpi
 
     @property
     def effects_json(self):

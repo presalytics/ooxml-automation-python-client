@@ -32,6 +32,9 @@ class SharedFillMap(object):
     """
     openapi_types = {
         'fill_type_id': 'int',
+        'solid_fill': 'SharedSolidFills',
+        'gradient_fill': 'SharedGradientFills',
+        'image_fill': 'SharedImageFills',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -41,6 +44,9 @@ class SharedFillMap(object):
 
     attribute_map = {
         'fill_type_id': 'fillTypeId',
+        'solid_fill': 'solidFill',
+        'gradient_fill': 'gradientFill',
+        'image_fill': 'imageFill',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -48,10 +54,13 @@ class SharedFillMap(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, fill_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_type_id=None, solid_fill=None, gradient_fill=None, image_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedFillMap - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_type_id = None
+        self._solid_fill = None
+        self._gradient_fill = None
+        self._image_fill = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -61,6 +70,12 @@ class SharedFillMap(object):
 
         if fill_type_id is not None:
             self.fill_type_id = fill_type_id
+        if solid_fill is not None:
+            self.solid_fill = solid_fill
+        if gradient_fill is not None:
+            self.gradient_fill = gradient_fill
+        if image_fill is not None:
+            self.image_fill = image_fill
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -92,6 +107,69 @@ class SharedFillMap(object):
         """
 
         self._fill_type_id = fill_type_id
+
+    @property
+    def solid_fill(self):
+        """Gets the solid_fill of this SharedFillMap.  # noqa: E501
+
+
+        :return: The solid_fill of this SharedFillMap.  # noqa: E501
+        :rtype: SharedSolidFills
+        """
+        return self._solid_fill
+
+    @solid_fill.setter
+    def solid_fill(self, solid_fill):
+        """Sets the solid_fill of this SharedFillMap.
+
+
+        :param solid_fill: The solid_fill of this SharedFillMap.  # noqa: E501
+        :type: SharedSolidFills
+        """
+
+        self._solid_fill = solid_fill
+
+    @property
+    def gradient_fill(self):
+        """Gets the gradient_fill of this SharedFillMap.  # noqa: E501
+
+
+        :return: The gradient_fill of this SharedFillMap.  # noqa: E501
+        :rtype: SharedGradientFills
+        """
+        return self._gradient_fill
+
+    @gradient_fill.setter
+    def gradient_fill(self, gradient_fill):
+        """Sets the gradient_fill of this SharedFillMap.
+
+
+        :param gradient_fill: The gradient_fill of this SharedFillMap.  # noqa: E501
+        :type: SharedGradientFills
+        """
+
+        self._gradient_fill = gradient_fill
+
+    @property
+    def image_fill(self):
+        """Gets the image_fill of this SharedFillMap.  # noqa: E501
+
+
+        :return: The image_fill of this SharedFillMap.  # noqa: E501
+        :rtype: SharedImageFills
+        """
+        return self._image_fill
+
+    @image_fill.setter
+    def image_fill(self, image_fill):
+        """Sets the image_fill of this SharedFillMap.
+
+
+        :param image_fill: The image_fill of this SharedFillMap.  # noqa: E501
+        :type: SharedImageFills
+        """
+
+        self._image_fill = image_fill
 
     @property
     def id(self):

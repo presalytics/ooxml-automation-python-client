@@ -32,11 +32,17 @@ class TableBorders(object):
     """
     openapi_types = {
         'top_id': 'str',
+        'top': 'SharedLines',
         'bottom_id': 'str',
+        'bottom': 'SharedLines',
         'right_id': 'str',
+        'right': 'SharedLines',
         'left_id': 'str',
+        'left': 'SharedLines',
         't_lto_br_id': 'str',
+        't_lto_br': 'SharedLines',
         'b_lto_tr_id': 'str',
+        'b_lto_tr': 'SharedLines',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -46,11 +52,17 @@ class TableBorders(object):
 
     attribute_map = {
         'top_id': 'topId',
+        'top': 'top',
         'bottom_id': 'bottomId',
+        'bottom': 'bottom',
         'right_id': 'rightId',
+        'right': 'right',
         'left_id': 'leftId',
+        'left': 'left',
         't_lto_br_id': 'tLtoBRId',
+        't_lto_br': 'tLtoBR',
         'b_lto_tr_id': 'bLtoTRId',
+        'b_lto_tr': 'bLtoTR',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -58,15 +70,21 @@ class TableBorders(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, top_id=None, bottom_id=None, right_id=None, left_id=None, t_lto_br_id=None, b_lto_tr_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, top_id=None, top=None, bottom_id=None, bottom=None, right_id=None, right=None, left_id=None, left=None, t_lto_br_id=None, t_lto_br=None, b_lto_tr_id=None, b_lto_tr=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableBorders - a model defined in OpenAPI"""  # noqa: E501
 
         self._top_id = None
+        self._top = None
         self._bottom_id = None
+        self._bottom = None
         self._right_id = None
+        self._right = None
         self._left_id = None
+        self._left = None
         self._t_lto_br_id = None
+        self._t_lto_br = None
         self._b_lto_tr_id = None
+        self._b_lto_tr = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -75,11 +93,23 @@ class TableBorders(object):
         self.discriminator = None
 
         self.top_id = top_id
+        if top is not None:
+            self.top = top
         self.bottom_id = bottom_id
+        if bottom is not None:
+            self.bottom = bottom
         self.right_id = right_id
+        if right is not None:
+            self.right = right
         self.left_id = left_id
+        if left is not None:
+            self.left = left
         self.t_lto_br_id = t_lto_br_id
+        if t_lto_br is not None:
+            self.t_lto_br = t_lto_br
         self.b_lto_tr_id = b_lto_tr_id
+        if b_lto_tr is not None:
+            self.b_lto_tr = b_lto_tr
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -113,6 +143,27 @@ class TableBorders(object):
         self._top_id = top_id
 
     @property
+    def top(self):
+        """Gets the top of this TableBorders.  # noqa: E501
+
+
+        :return: The top of this TableBorders.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._top
+
+    @top.setter
+    def top(self, top):
+        """Sets the top of this TableBorders.
+
+
+        :param top: The top of this TableBorders.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._top = top
+
+    @property
     def bottom_id(self):
         """Gets the bottom_id of this TableBorders.  # noqa: E501
 
@@ -132,6 +183,27 @@ class TableBorders(object):
         """
 
         self._bottom_id = bottom_id
+
+    @property
+    def bottom(self):
+        """Gets the bottom of this TableBorders.  # noqa: E501
+
+
+        :return: The bottom of this TableBorders.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._bottom
+
+    @bottom.setter
+    def bottom(self, bottom):
+        """Sets the bottom of this TableBorders.
+
+
+        :param bottom: The bottom of this TableBorders.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._bottom = bottom
 
     @property
     def right_id(self):
@@ -155,6 +227,27 @@ class TableBorders(object):
         self._right_id = right_id
 
     @property
+    def right(self):
+        """Gets the right of this TableBorders.  # noqa: E501
+
+
+        :return: The right of this TableBorders.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._right
+
+    @right.setter
+    def right(self, right):
+        """Sets the right of this TableBorders.
+
+
+        :param right: The right of this TableBorders.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._right = right
+
+    @property
     def left_id(self):
         """Gets the left_id of this TableBorders.  # noqa: E501
 
@@ -174,6 +267,27 @@ class TableBorders(object):
         """
 
         self._left_id = left_id
+
+    @property
+    def left(self):
+        """Gets the left of this TableBorders.  # noqa: E501
+
+
+        :return: The left of this TableBorders.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._left
+
+    @left.setter
+    def left(self, left):
+        """Sets the left of this TableBorders.
+
+
+        :param left: The left of this TableBorders.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._left = left
 
     @property
     def t_lto_br_id(self):
@@ -197,6 +311,27 @@ class TableBorders(object):
         self._t_lto_br_id = t_lto_br_id
 
     @property
+    def t_lto_br(self):
+        """Gets the t_lto_br of this TableBorders.  # noqa: E501
+
+
+        :return: The t_lto_br of this TableBorders.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._t_lto_br
+
+    @t_lto_br.setter
+    def t_lto_br(self, t_lto_br):
+        """Sets the t_lto_br of this TableBorders.
+
+
+        :param t_lto_br: The t_lto_br of this TableBorders.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._t_lto_br = t_lto_br
+
+    @property
     def b_lto_tr_id(self):
         """Gets the b_lto_tr_id of this TableBorders.  # noqa: E501
 
@@ -216,6 +351,27 @@ class TableBorders(object):
         """
 
         self._b_lto_tr_id = b_lto_tr_id
+
+    @property
+    def b_lto_tr(self):
+        """Gets the b_lto_tr of this TableBorders.  # noqa: E501
+
+
+        :return: The b_lto_tr of this TableBorders.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._b_lto_tr
+
+    @b_lto_tr.setter
+    def b_lto_tr(self, b_lto_tr):
+        """Sets the b_lto_tr of this TableBorders.
+
+
+        :param b_lto_tr: The b_lto_tr of this TableBorders.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._b_lto_tr = b_lto_tr
 
     @property
     def id(self):

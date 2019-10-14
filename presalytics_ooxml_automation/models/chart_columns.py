@@ -34,7 +34,9 @@ class ChartColumns(object):
         'name': 'str',
         'index': 'int',
         'axis_id': 'str',
+        'axis': 'ChartAxes',
         'column_collection_id': 'str',
+        'column_collection': 'ChartColumnCollections',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -46,7 +48,9 @@ class ChartColumns(object):
         'name': 'name',
         'index': 'index',
         'axis_id': 'axisId',
+        'axis': 'axis',
         'column_collection_id': 'columnCollectionId',
+        'column_collection': 'columnCollection',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -54,13 +58,15 @@ class ChartColumns(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name=None, index=None, axis_id=None, column_collection_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, index=None, axis_id=None, axis=None, column_collection_id=None, column_collection=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartColumns - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
         self._index = None
         self._axis_id = None
+        self._axis = None
         self._column_collection_id = None
+        self._column_collection = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -68,12 +74,15 @@ class ChartColumns(object):
         self._user_modified = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if index is not None:
             self.index = index
         self.axis_id = axis_id
+        if axis is not None:
+            self.axis = axis
         self.column_collection_id = column_collection_id
+        if column_collection is not None:
+            self.column_collection = column_collection
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -149,6 +158,27 @@ class ChartColumns(object):
         self._axis_id = axis_id
 
     @property
+    def axis(self):
+        """Gets the axis of this ChartColumns.  # noqa: E501
+
+
+        :return: The axis of this ChartColumns.  # noqa: E501
+        :rtype: ChartAxes
+        """
+        return self._axis
+
+    @axis.setter
+    def axis(self, axis):
+        """Sets the axis of this ChartColumns.
+
+
+        :param axis: The axis of this ChartColumns.  # noqa: E501
+        :type: ChartAxes
+        """
+
+        self._axis = axis
+
+    @property
     def column_collection_id(self):
         """Gets the column_collection_id of this ChartColumns.  # noqa: E501
 
@@ -168,6 +198,27 @@ class ChartColumns(object):
         """
 
         self._column_collection_id = column_collection_id
+
+    @property
+    def column_collection(self):
+        """Gets the column_collection of this ChartColumns.  # noqa: E501
+
+
+        :return: The column_collection of this ChartColumns.  # noqa: E501
+        :rtype: ChartColumnCollections
+        """
+        return self._column_collection
+
+    @column_collection.setter
+    def column_collection(self, column_collection):
+        """Sets the column_collection of this ChartColumns.
+
+
+        :param column_collection: The column_collection of this ChartColumns.  # noqa: E501
+        :type: ChartColumnCollections
+        """
+
+        self._column_collection = column_collection
 
     @property
     def id(self):

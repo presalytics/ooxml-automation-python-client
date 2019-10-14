@@ -32,6 +32,7 @@ class ThemeCustomColors(object):
     """
     openapi_types = {
         'theme_id': 'str',
+        'theme': 'ThemeThemes',
         'name': 'str',
         'hex_value': 'str',
         'id': 'str',
@@ -43,6 +44,7 @@ class ThemeCustomColors(object):
 
     attribute_map = {
         'theme_id': 'themeId',
+        'theme': 'theme',
         'name': 'name',
         'hex_value': 'hexValue',
         'id': 'id',
@@ -52,10 +54,11 @@ class ThemeCustomColors(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, theme_id=None, name=None, hex_value=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, theme_id=None, theme=None, name=None, hex_value=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeCustomColors - a model defined in OpenAPI"""  # noqa: E501
 
         self._theme_id = None
+        self._theme = None
         self._name = None
         self._hex_value = None
         self._id = None
@@ -66,10 +69,10 @@ class ThemeCustomColors(object):
         self.discriminator = None
 
         self.theme_id = theme_id
-        if name is not None:
-            self.name = name
-        if hex_value is not None:
-            self.hex_value = hex_value
+        if theme is not None:
+            self.theme = theme
+        self.name = name
+        self.hex_value = hex_value
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -101,6 +104,27 @@ class ThemeCustomColors(object):
         """
 
         self._theme_id = theme_id
+
+    @property
+    def theme(self):
+        """Gets the theme of this ThemeCustomColors.  # noqa: E501
+
+
+        :return: The theme of this ThemeCustomColors.  # noqa: E501
+        :rtype: ThemeThemes
+        """
+        return self._theme
+
+    @theme.setter
+    def theme(self, theme):
+        """Sets the theme of this ThemeCustomColors.
+
+
+        :param theme: The theme of this ThemeCustomColors.  # noqa: E501
+        :type: ThemeThemes
+        """
+
+        self._theme = theme
 
     @property
     def name(self):

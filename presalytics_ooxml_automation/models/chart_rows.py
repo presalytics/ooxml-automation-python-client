@@ -34,6 +34,7 @@ class ChartRows(object):
         'name': 'str',
         'index': 'int',
         'row_name_collection_id': 'str',
+        'row_name_collection': 'ChartRowCollections',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -45,6 +46,7 @@ class ChartRows(object):
         'name': 'name',
         'index': 'index',
         'row_name_collection_id': 'rowNameCollectionId',
+        'row_name_collection': 'rowNameCollection',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -52,12 +54,13 @@ class ChartRows(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name=None, index=None, row_name_collection_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, index=None, row_name_collection_id=None, row_name_collection=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartRows - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
         self._index = None
         self._row_name_collection_id = None
+        self._row_name_collection = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -65,11 +68,12 @@ class ChartRows(object):
         self._user_modified = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if index is not None:
             self.index = index
         self.row_name_collection_id = row_name_collection_id
+        if row_name_collection is not None:
+            self.row_name_collection = row_name_collection
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -143,6 +147,27 @@ class ChartRows(object):
         """
 
         self._row_name_collection_id = row_name_collection_id
+
+    @property
+    def row_name_collection(self):
+        """Gets the row_name_collection of this ChartRows.  # noqa: E501
+
+
+        :return: The row_name_collection of this ChartRows.  # noqa: E501
+        :rtype: ChartRowCollections
+        """
+        return self._row_name_collection
+
+    @row_name_collection.setter
+    def row_name_collection(self, row_name_collection):
+        """Sets the row_name_collection of this ChartRows.
+
+
+        :param row_name_collection: The row_name_collection of this ChartRows.  # noqa: E501
+        :type: ChartRowCollections
+        """
+
+        self._row_name_collection = row_name_collection
 
     @property
     def id(self):

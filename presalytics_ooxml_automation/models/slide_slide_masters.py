@@ -31,6 +31,7 @@ class SlideSlideMasters(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'color_map': 'SlideColorMaps',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -39,6 +40,7 @@ class SlideSlideMasters(object):
     }
 
     attribute_map = {
+        'color_map': 'colorMap',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -46,9 +48,10 @@ class SlideSlideMasters(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, color_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideSlideMasters - a model defined in OpenAPI"""  # noqa: E501
 
+        self._color_map = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -56,6 +59,8 @@ class SlideSlideMasters(object):
         self._user_modified = None
         self.discriminator = None
 
+        if color_map is not None:
+            self.color_map = color_map
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -66,6 +71,27 @@ class SlideSlideMasters(object):
             self.date_modified = date_modified
         if user_modified is not None:
             self.user_modified = user_modified
+
+    @property
+    def color_map(self):
+        """Gets the color_map of this SlideSlideMasters.  # noqa: E501
+
+
+        :return: The color_map of this SlideSlideMasters.  # noqa: E501
+        :rtype: SlideColorMaps
+        """
+        return self._color_map
+
+    @color_map.setter
+    def color_map(self, color_map):
+        """Sets the color_map of this SlideSlideMasters.
+
+
+        :param color_map: The color_map of this SlideSlideMasters.  # noqa: E501
+        :type: SlideColorMaps
+        """
+
+        self._color_map = color_map
 
     @property
     def id(self):

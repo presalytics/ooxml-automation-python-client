@@ -35,7 +35,9 @@ class SharedSolidFills(object):
         'is_user_color': 'bool',
         'color_type_id': 'int',
         'theme_fill_map_id': 'str',
+        'theme_fill_map': 'SharedFillMap',
         'color_transformations_id': 'str',
+        'color_transformations': 'SharedColorTransformations',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -48,7 +50,9 @@ class SharedSolidFills(object):
         'is_user_color': 'isUserColor',
         'color_type_id': 'colorTypeId',
         'theme_fill_map_id': 'themeFillMapId',
+        'theme_fill_map': 'themeFillMap',
         'color_transformations_id': 'colorTransformationsId',
+        'color_transformations': 'colorTransformations',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -56,14 +60,16 @@ class SharedSolidFills(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, hex_value=None, is_user_color=None, color_type_id=None, theme_fill_map_id=None, color_transformations_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, hex_value=None, is_user_color=None, color_type_id=None, theme_fill_map_id=None, theme_fill_map=None, color_transformations_id=None, color_transformations=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedSolidFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._hex_value = None
         self._is_user_color = None
         self._color_type_id = None
         self._theme_fill_map_id = None
+        self._theme_fill_map = None
         self._color_transformations_id = None
+        self._color_transformations = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -71,13 +77,16 @@ class SharedSolidFills(object):
         self._user_modified = None
         self.discriminator = None
 
-        if hex_value is not None:
-            self.hex_value = hex_value
+        self.hex_value = hex_value
         if is_user_color is not None:
             self.is_user_color = is_user_color
         self.color_type_id = color_type_id
         self.theme_fill_map_id = theme_fill_map_id
+        if theme_fill_map is not None:
+            self.theme_fill_map = theme_fill_map
         self.color_transformations_id = color_transformations_id
+        if color_transformations is not None:
+            self.color_transformations = color_transformations
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -174,6 +183,27 @@ class SharedSolidFills(object):
         self._theme_fill_map_id = theme_fill_map_id
 
     @property
+    def theme_fill_map(self):
+        """Gets the theme_fill_map of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The theme_fill_map of this SharedSolidFills.  # noqa: E501
+        :rtype: SharedFillMap
+        """
+        return self._theme_fill_map
+
+    @theme_fill_map.setter
+    def theme_fill_map(self, theme_fill_map):
+        """Sets the theme_fill_map of this SharedSolidFills.
+
+
+        :param theme_fill_map: The theme_fill_map of this SharedSolidFills.  # noqa: E501
+        :type: SharedFillMap
+        """
+
+        self._theme_fill_map = theme_fill_map
+
+    @property
     def color_transformations_id(self):
         """Gets the color_transformations_id of this SharedSolidFills.  # noqa: E501
 
@@ -193,6 +223,27 @@ class SharedSolidFills(object):
         """
 
         self._color_transformations_id = color_transformations_id
+
+    @property
+    def color_transformations(self):
+        """Gets the color_transformations of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The color_transformations of this SharedSolidFills.  # noqa: E501
+        :rtype: SharedColorTransformations
+        """
+        return self._color_transformations
+
+    @color_transformations.setter
+    def color_transformations(self, color_transformations):
+        """Sets the color_transformations of this SharedSolidFills.
+
+
+        :param color_transformations: The color_transformations of this SharedSolidFills.  # noqa: E501
+        :type: SharedColorTransformations
+        """
+
+        self._color_transformations = color_transformations
 
     @property
     def id(self):

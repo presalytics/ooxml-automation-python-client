@@ -32,9 +32,11 @@ class SharedText(object):
     """
     openapi_types = {
         'paragraph_id': 'str',
+        'paragraph': 'SharedParagraph',
         'sequence': 'int',
         'raw_text': 'str',
         'color_solid_fills_id': 'str',
+        'color_solid_fill': 'SharedSolidFills',
         'is_bold': 'bool',
         'is_italic': 'bool',
         'is_underline': 'bool',
@@ -50,9 +52,11 @@ class SharedText(object):
 
     attribute_map = {
         'paragraph_id': 'paragraphId',
+        'paragraph': 'paragraph',
         'sequence': 'sequence',
         'raw_text': 'rawText',
         'color_solid_fills_id': 'colorSolidFillsId',
+        'color_solid_fill': 'colorSolidFill',
         'is_bold': 'isBold',
         'is_italic': 'isItalic',
         'is_underline': 'isUnderline',
@@ -66,13 +70,15 @@ class SharedText(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, paragraph_id=None, sequence=None, raw_text=None, color_solid_fills_id=None, is_bold=None, is_italic=None, is_underline=None, font_size=None, font=None, is_theme_font=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, paragraph_id=None, paragraph=None, sequence=None, raw_text=None, color_solid_fills_id=None, color_solid_fill=None, is_bold=None, is_italic=None, is_underline=None, font_size=None, font=None, is_theme_font=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedText - a model defined in OpenAPI"""  # noqa: E501
 
         self._paragraph_id = None
+        self._paragraph = None
         self._sequence = None
         self._raw_text = None
         self._color_solid_fills_id = None
+        self._color_solid_fill = None
         self._is_bold = None
         self._is_italic = None
         self._is_underline = None
@@ -87,11 +93,14 @@ class SharedText(object):
         self.discriminator = None
 
         self.paragraph_id = paragraph_id
+        if paragraph is not None:
+            self.paragraph = paragraph
         if sequence is not None:
             self.sequence = sequence
-        if raw_text is not None:
-            self.raw_text = raw_text
+        self.raw_text = raw_text
         self.color_solid_fills_id = color_solid_fills_id
+        if color_solid_fill is not None:
+            self.color_solid_fill = color_solid_fill
         if is_bold is not None:
             self.is_bold = is_bold
         if is_italic is not None:
@@ -99,8 +108,7 @@ class SharedText(object):
         if is_underline is not None:
             self.is_underline = is_underline
         self.font_size = font_size
-        if font is not None:
-            self.font = font
+        self.font = font
         if is_theme_font is not None:
             self.is_theme_font = is_theme_font
         if id is not None:
@@ -134,6 +142,27 @@ class SharedText(object):
         """
 
         self._paragraph_id = paragraph_id
+
+    @property
+    def paragraph(self):
+        """Gets the paragraph of this SharedText.  # noqa: E501
+
+
+        :return: The paragraph of this SharedText.  # noqa: E501
+        :rtype: SharedParagraph
+        """
+        return self._paragraph
+
+    @paragraph.setter
+    def paragraph(self, paragraph):
+        """Sets the paragraph of this SharedText.
+
+
+        :param paragraph: The paragraph of this SharedText.  # noqa: E501
+        :type: SharedParagraph
+        """
+
+        self._paragraph = paragraph
 
     @property
     def sequence(self):
@@ -197,6 +226,27 @@ class SharedText(object):
         """
 
         self._color_solid_fills_id = color_solid_fills_id
+
+    @property
+    def color_solid_fill(self):
+        """Gets the color_solid_fill of this SharedText.  # noqa: E501
+
+
+        :return: The color_solid_fill of this SharedText.  # noqa: E501
+        :rtype: SharedSolidFills
+        """
+        return self._color_solid_fill
+
+    @color_solid_fill.setter
+    def color_solid_fill(self, color_solid_fill):
+        """Sets the color_solid_fill of this SharedText.
+
+
+        :param color_solid_fill: The color_solid_fill of this SharedText.  # noqa: E501
+        :type: SharedSolidFills
+        """
+
+        self._color_solid_fill = color_solid_fill
 
     @property
     def is_bold(self):

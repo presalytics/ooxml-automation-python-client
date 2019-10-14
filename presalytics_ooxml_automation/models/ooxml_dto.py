@@ -50,11 +50,9 @@ class OoxmlDTO(object):
         self._open_office_xml = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        self.type = type
         self.id = id
-        if open_office_xml is not None:
-            self.open_office_xml = open_office_xml
+        self.open_office_xml = open_office_xml
 
     @property
     def type(self):

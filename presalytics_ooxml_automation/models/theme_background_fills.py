@@ -32,8 +32,10 @@ class ThemeBackgroundFills(object):
     """
     openapi_types = {
         'theme_id': 'str',
+        'theme': 'ThemeThemes',
         'intensity_id': 'int',
         'fill_maps_id': 'str',
+        'fill_map': 'SharedFillMap',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -43,8 +45,10 @@ class ThemeBackgroundFills(object):
 
     attribute_map = {
         'theme_id': 'themeId',
+        'theme': 'theme',
         'intensity_id': 'intensityId',
         'fill_maps_id': 'fillMapsId',
+        'fill_map': 'fillMap',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -52,12 +56,14 @@ class ThemeBackgroundFills(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, theme_id=None, intensity_id=None, fill_maps_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, theme_id=None, theme=None, intensity_id=None, fill_maps_id=None, fill_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeBackgroundFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._theme_id = None
+        self._theme = None
         self._intensity_id = None
         self._fill_maps_id = None
+        self._fill_map = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -66,9 +72,13 @@ class ThemeBackgroundFills(object):
         self.discriminator = None
 
         self.theme_id = theme_id
+        if theme is not None:
+            self.theme = theme
         if intensity_id is not None:
             self.intensity_id = intensity_id
         self.fill_maps_id = fill_maps_id
+        if fill_map is not None:
+            self.fill_map = fill_map
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -100,6 +110,27 @@ class ThemeBackgroundFills(object):
         """
 
         self._theme_id = theme_id
+
+    @property
+    def theme(self):
+        """Gets the theme of this ThemeBackgroundFills.  # noqa: E501
+
+
+        :return: The theme of this ThemeBackgroundFills.  # noqa: E501
+        :rtype: ThemeThemes
+        """
+        return self._theme
+
+    @theme.setter
+    def theme(self, theme):
+        """Sets the theme of this ThemeBackgroundFills.
+
+
+        :param theme: The theme of this ThemeBackgroundFills.  # noqa: E501
+        :type: ThemeThemes
+        """
+
+        self._theme = theme
 
     @property
     def intensity_id(self):
@@ -142,6 +173,27 @@ class ThemeBackgroundFills(object):
         """
 
         self._fill_maps_id = fill_maps_id
+
+    @property
+    def fill_map(self):
+        """Gets the fill_map of this ThemeBackgroundFills.  # noqa: E501
+
+
+        :return: The fill_map of this ThemeBackgroundFills.  # noqa: E501
+        :rtype: SharedFillMap
+        """
+        return self._fill_map
+
+    @fill_map.setter
+    def fill_map(self, fill_map):
+        """Sets the fill_map of this ThemeBackgroundFills.
+
+
+        :param fill_map: The fill_map of this ThemeBackgroundFills.  # noqa: E501
+        :type: SharedFillMap
+        """
+
+        self._fill_map = fill_map
 
     @property
     def id(self):

@@ -32,14 +32,19 @@ class TableCells(object):
     """
     openapi_types = {
         'row_id': 'str',
+        'row': 'TableRows',
         'column_id': 'str',
+        'column': 'TableColumns',
         'row_span': 'int',
         'column_span': 'int',
         'is_merged_vertical': 'bool',
         'is_merged_horozontal': 'bool',
         'fill_map_id': 'str',
+        'fill_map': 'SharedFillMap',
         'text_container_id': 'str',
+        'text_container': 'SharedTextContainer',
         'border_id': 'str',
+        'border': 'TableBorders',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -49,14 +54,19 @@ class TableCells(object):
 
     attribute_map = {
         'row_id': 'rowId',
+        'row': 'row',
         'column_id': 'columnId',
+        'column': 'column',
         'row_span': 'rowSpan',
         'column_span': 'columnSpan',
         'is_merged_vertical': 'isMergedVertical',
         'is_merged_horozontal': 'isMergedHorozontal',
         'fill_map_id': 'fillMapId',
+        'fill_map': 'fillMap',
         'text_container_id': 'textContainerId',
+        'text_container': 'textContainer',
         'border_id': 'borderId',
+        'border': 'border',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -64,18 +74,23 @@ class TableCells(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, row_id=None, column_id=None, row_span=None, column_span=None, is_merged_vertical=None, is_merged_horozontal=None, fill_map_id=None, text_container_id=None, border_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, row_id=None, row=None, column_id=None, column=None, row_span=None, column_span=None, is_merged_vertical=None, is_merged_horozontal=None, fill_map_id=None, fill_map=None, text_container_id=None, text_container=None, border_id=None, border=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableCells - a model defined in OpenAPI"""  # noqa: E501
 
         self._row_id = None
+        self._row = None
         self._column_id = None
+        self._column = None
         self._row_span = None
         self._column_span = None
         self._is_merged_vertical = None
         self._is_merged_horozontal = None
         self._fill_map_id = None
+        self._fill_map = None
         self._text_container_id = None
+        self._text_container = None
         self._border_id = None
+        self._border = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -84,7 +99,11 @@ class TableCells(object):
         self.discriminator = None
 
         self.row_id = row_id
+        if row is not None:
+            self.row = row
         self.column_id = column_id
+        if column is not None:
+            self.column = column
         if row_span is not None:
             self.row_span = row_span
         if column_span is not None:
@@ -94,8 +113,14 @@ class TableCells(object):
         if is_merged_horozontal is not None:
             self.is_merged_horozontal = is_merged_horozontal
         self.fill_map_id = fill_map_id
+        if fill_map is not None:
+            self.fill_map = fill_map
         self.text_container_id = text_container_id
+        if text_container is not None:
+            self.text_container = text_container
         self.border_id = border_id
+        if border is not None:
+            self.border = border
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -129,6 +154,27 @@ class TableCells(object):
         self._row_id = row_id
 
     @property
+    def row(self):
+        """Gets the row of this TableCells.  # noqa: E501
+
+
+        :return: The row of this TableCells.  # noqa: E501
+        :rtype: TableRows
+        """
+        return self._row
+
+    @row.setter
+    def row(self, row):
+        """Sets the row of this TableCells.
+
+
+        :param row: The row of this TableCells.  # noqa: E501
+        :type: TableRows
+        """
+
+        self._row = row
+
+    @property
     def column_id(self):
         """Gets the column_id of this TableCells.  # noqa: E501
 
@@ -148,6 +194,27 @@ class TableCells(object):
         """
 
         self._column_id = column_id
+
+    @property
+    def column(self):
+        """Gets the column of this TableCells.  # noqa: E501
+
+
+        :return: The column of this TableCells.  # noqa: E501
+        :rtype: TableColumns
+        """
+        return self._column
+
+    @column.setter
+    def column(self, column):
+        """Sets the column of this TableCells.
+
+
+        :param column: The column of this TableCells.  # noqa: E501
+        :type: TableColumns
+        """
+
+        self._column = column
 
     @property
     def row_span(self):
@@ -255,6 +322,27 @@ class TableCells(object):
         self._fill_map_id = fill_map_id
 
     @property
+    def fill_map(self):
+        """Gets the fill_map of this TableCells.  # noqa: E501
+
+
+        :return: The fill_map of this TableCells.  # noqa: E501
+        :rtype: SharedFillMap
+        """
+        return self._fill_map
+
+    @fill_map.setter
+    def fill_map(self, fill_map):
+        """Sets the fill_map of this TableCells.
+
+
+        :param fill_map: The fill_map of this TableCells.  # noqa: E501
+        :type: SharedFillMap
+        """
+
+        self._fill_map = fill_map
+
+    @property
     def text_container_id(self):
         """Gets the text_container_id of this TableCells.  # noqa: E501
 
@@ -276,6 +364,27 @@ class TableCells(object):
         self._text_container_id = text_container_id
 
     @property
+    def text_container(self):
+        """Gets the text_container of this TableCells.  # noqa: E501
+
+
+        :return: The text_container of this TableCells.  # noqa: E501
+        :rtype: SharedTextContainer
+        """
+        return self._text_container
+
+    @text_container.setter
+    def text_container(self, text_container):
+        """Sets the text_container of this TableCells.
+
+
+        :param text_container: The text_container of this TableCells.  # noqa: E501
+        :type: SharedTextContainer
+        """
+
+        self._text_container = text_container
+
+    @property
     def border_id(self):
         """Gets the border_id of this TableCells.  # noqa: E501
 
@@ -295,6 +404,27 @@ class TableCells(object):
         """
 
         self._border_id = border_id
+
+    @property
+    def border(self):
+        """Gets the border of this TableCells.  # noqa: E501
+
+
+        :return: The border of this TableCells.  # noqa: E501
+        :rtype: TableBorders
+        """
+        return self._border
+
+    @border.setter
+    def border(self, border):
+        """Sets the border of this TableCells.
+
+
+        :param border: The border of this TableCells.  # noqa: E501
+        :type: TableBorders
+        """
+
+        self._border = border
 
     @property
     def id(self):

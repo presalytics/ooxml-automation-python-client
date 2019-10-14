@@ -32,8 +32,10 @@ class ThemeLineMap(object):
     """
     openapi_types = {
         'theme_id': 'str',
+        'theme': 'ThemeThemes',
         'intensity_id': 'int',
         'line_id': 'str',
+        'line': 'SharedLines',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -43,8 +45,10 @@ class ThemeLineMap(object):
 
     attribute_map = {
         'theme_id': 'themeId',
+        'theme': 'theme',
         'intensity_id': 'intensityId',
         'line_id': 'lineId',
+        'line': 'line',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -52,12 +56,14 @@ class ThemeLineMap(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, theme_id=None, intensity_id=None, line_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, theme_id=None, theme=None, intensity_id=None, line_id=None, line=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeLineMap - a model defined in OpenAPI"""  # noqa: E501
 
         self._theme_id = None
+        self._theme = None
         self._intensity_id = None
         self._line_id = None
+        self._line = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -66,9 +72,13 @@ class ThemeLineMap(object):
         self.discriminator = None
 
         self.theme_id = theme_id
+        if theme is not None:
+            self.theme = theme
         if intensity_id is not None:
             self.intensity_id = intensity_id
         self.line_id = line_id
+        if line is not None:
+            self.line = line
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -100,6 +110,27 @@ class ThemeLineMap(object):
         """
 
         self._theme_id = theme_id
+
+    @property
+    def theme(self):
+        """Gets the theme of this ThemeLineMap.  # noqa: E501
+
+
+        :return: The theme of this ThemeLineMap.  # noqa: E501
+        :rtype: ThemeThemes
+        """
+        return self._theme
+
+    @theme.setter
+    def theme(self, theme):
+        """Sets the theme of this ThemeLineMap.
+
+
+        :param theme: The theme of this ThemeLineMap.  # noqa: E501
+        :type: ThemeThemes
+        """
+
+        self._theme = theme
 
     @property
     def intensity_id(self):
@@ -142,6 +173,27 @@ class ThemeLineMap(object):
         """
 
         self._line_id = line_id
+
+    @property
+    def line(self):
+        """Gets the line of this ThemeLineMap.  # noqa: E501
+
+
+        :return: The line of this ThemeLineMap.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._line
+
+    @line.setter
+    def line(self, line):
+        """Sets the line of this ThemeLineMap.
+
+
+        :param line: The line of this ThemeLineMap.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._line = line
 
     @property
     def id(self):

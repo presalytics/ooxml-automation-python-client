@@ -32,8 +32,9 @@ class TableRows(object):
     """
     openapi_types = {
         'index': 'int',
-        'height': 'str',
+        'height': 'int',
         'table_id': 'str',
+        'table': 'TableTables',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -45,6 +46,7 @@ class TableRows(object):
         'index': 'index',
         'height': 'height',
         'table_id': 'tableId',
+        'table': 'table',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -52,12 +54,13 @@ class TableRows(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, index=None, height=None, table_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, index=None, height=None, table_id=None, table=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableRows - a model defined in OpenAPI"""  # noqa: E501
 
         self._index = None
         self._height = None
         self._table_id = None
+        self._table = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -70,6 +73,8 @@ class TableRows(object):
         if height is not None:
             self.height = height
         self.table_id = table_id
+        if table is not None:
+            self.table = table
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -108,7 +113,7 @@ class TableRows(object):
 
 
         :return: The height of this TableRows.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._height
 
@@ -118,7 +123,7 @@ class TableRows(object):
 
 
         :param height: The height of this TableRows.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._height = height
@@ -143,6 +148,27 @@ class TableRows(object):
         """
 
         self._table_id = table_id
+
+    @property
+    def table(self):
+        """Gets the table of this TableRows.  # noqa: E501
+
+
+        :return: The table of this TableRows.  # noqa: E501
+        :rtype: TableTables
+        """
+        return self._table
+
+    @table.setter
+    def table(self, table):
+        """Sets the table of this TableRows.
+
+
+        :param table: The table of this TableRows.  # noqa: E501
+        :type: TableTables
+        """
+
+        self._table = table
 
     @property
     def id(self):

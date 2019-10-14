@@ -32,8 +32,9 @@ class SharedParagraph(object):
     """
     openapi_types = {
         'text_container_id': 'str',
+        'text_container': 'SharedTextContainer',
         'number': 'int',
-        'text': 'str',
+        'text': 'list[SharedText]',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -43,6 +44,7 @@ class SharedParagraph(object):
 
     attribute_map = {
         'text_container_id': 'textContainerId',
+        'text_container': 'textContainer',
         'number': 'number',
         'text': 'text',
         'id': 'id',
@@ -52,10 +54,11 @@ class SharedParagraph(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, text_container_id=None, number=None, text=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, text_container_id=None, text_container=None, number=None, text=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedParagraph - a model defined in OpenAPI"""  # noqa: E501
 
         self._text_container_id = None
+        self._text_container = None
         self._number = None
         self._text = None
         self._id = None
@@ -66,10 +69,11 @@ class SharedParagraph(object):
         self.discriminator = None
 
         self.text_container_id = text_container_id
+        if text_container is not None:
+            self.text_container = text_container
         if number is not None:
             self.number = number
-        if text is not None:
-            self.text = text
+        self.text = text
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -103,6 +107,27 @@ class SharedParagraph(object):
         self._text_container_id = text_container_id
 
     @property
+    def text_container(self):
+        """Gets the text_container of this SharedParagraph.  # noqa: E501
+
+
+        :return: The text_container of this SharedParagraph.  # noqa: E501
+        :rtype: SharedTextContainer
+        """
+        return self._text_container
+
+    @text_container.setter
+    def text_container(self, text_container):
+        """Sets the text_container of this SharedParagraph.
+
+
+        :param text_container: The text_container of this SharedParagraph.  # noqa: E501
+        :type: SharedTextContainer
+        """
+
+        self._text_container = text_container
+
+    @property
     def number(self):
         """Gets the number of this SharedParagraph.  # noqa: E501
 
@@ -129,7 +154,7 @@ class SharedParagraph(object):
 
 
         :return: The text of this SharedParagraph.  # noqa: E501
-        :rtype: str
+        :rtype: list[SharedText]
         """
         return self._text
 
@@ -139,7 +164,7 @@ class SharedParagraph(object):
 
 
         :param text: The text of this SharedParagraph.  # noqa: E501
-        :type: str
+        :type: list[SharedText]
         """
 
         self._text = text

@@ -14,7 +14,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "0.2.44"
+__version__ = "0.2.45"
 
 # import apis into sdk package
 from presalytics_ooxml_automation.api.default_api import DefaultApi
@@ -28,10 +28,10 @@ from presalytics_ooxml_automation.exceptions import ApiValueError
 from presalytics_ooxml_automation.exceptions import ApiKeyError
 from presalytics_ooxml_automation.exceptions import ApiException
 # import models into sdk package
-from presalytics_ooxml_automation.models.bad_request import BadRequest
 from presalytics_ooxml_automation.models.chart_axes import ChartAxes
 from presalytics_ooxml_automation.models.chart_axis_data_types import ChartAxisDataTypes
 from presalytics_ooxml_automation.models.chart_chart_data import ChartChartData
+from presalytics_ooxml_automation.models.chart_charts import ChartCharts
 from presalytics_ooxml_automation.models.chart_column_collections import ChartColumnCollections
 from presalytics_ooxml_automation.models.chart_columns import ChartColumns
 from presalytics_ooxml_automation.models.chart_data_points import ChartDataPoints
@@ -67,12 +67,17 @@ from presalytics_ooxml_automation.models.shared_solid_fills import SharedSolidFi
 from presalytics_ooxml_automation.models.shared_text import SharedText
 from presalytics_ooxml_automation.models.shared_text_container import SharedTextContainer
 from presalytics_ooxml_automation.models.slide_color_maps import SlideColorMaps
+from presalytics_ooxml_automation.models.slide_connector import SlideConnector
 from presalytics_ooxml_automation.models.slide_graphic_types import SlideGraphicTypes
 from presalytics_ooxml_automation.models.slide_graphics import SlideGraphics
 from presalytics_ooxml_automation.models.slide_group_element_types import SlideGroupElementTypes
 from presalytics_ooxml_automation.models.slide_group_elements import SlideGroupElements
+from presalytics_ooxml_automation.models.slide_groups import SlideGroups
+from presalytics_ooxml_automation.models.slide_shape import SlideShape
 from presalytics_ooxml_automation.models.slide_shape_trees import SlideShapeTrees
 from presalytics_ooxml_automation.models.slide_slide_masters import SlideSlideMasters
+from presalytics_ooxml_automation.models.slide_slides import SlideSlides
+from presalytics_ooxml_automation.models.slide_smart_arts import SlideSmartArts
 from presalytics_ooxml_automation.models.table_borders import TableBorders
 from presalytics_ooxml_automation.models.table_cells import TableCells
 from presalytics_ooxml_automation.models.table_columns import TableColumns
@@ -86,4 +91,5 @@ from presalytics_ooxml_automation.models.theme_fills import ThemeFills
 from presalytics_ooxml_automation.models.theme_fonts import ThemeFonts
 from presalytics_ooxml_automation.models.theme_intensity import ThemeIntensity
 from presalytics_ooxml_automation.models.theme_line_map import ThemeLineMap
+from presalytics_ooxml_automation.models.theme_themes import ThemeThemes
 

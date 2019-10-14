@@ -38,6 +38,7 @@ class Document(object):
         'blob_location': 'str',
         'table_styles_xml_blob_url': 'str',
         'title': 'str',
+        'slides': 'list[SlideSlides]',
         'base_element_blob_url': 'str',
         'changed_base_element_blob_url': 'str',
         'package_uri': 'str',
@@ -56,6 +57,7 @@ class Document(object):
         'blob_location': 'blobLocation',
         'table_styles_xml_blob_url': 'tableStylesXmlBlobUrl',
         'title': 'title',
+        'slides': 'slides',
         'base_element_blob_url': 'baseElementBlobUrl',
         'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
         'package_uri': 'packageUri',
@@ -66,7 +68,7 @@ class Document(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, story_id=None, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, title=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, story_id=None, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, title=None, slides=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """Document - a model defined in OpenAPI"""  # noqa: E501
 
         self._story_id = None
@@ -76,6 +78,7 @@ class Document(object):
         self._blob_location = None
         self._table_styles_xml_blob_url = None
         self._title = None
+        self._slides = None
         self._base_element_blob_url = None
         self._changed_base_element_blob_url = None
         self._package_uri = None
@@ -88,24 +91,18 @@ class Document(object):
 
         if story_id is not None:
             self.story_id = story_id
-        if filename is not None:
-            self.filename = filename
+        self.filename = filename
         if owner_guid is not None:
             self.owner_guid = owner_guid
         if document_type_id is not None:
             self.document_type_id = document_type_id
-        if blob_location is not None:
-            self.blob_location = blob_location
-        if table_styles_xml_blob_url is not None:
-            self.table_styles_xml_blob_url = table_styles_xml_blob_url
-        if title is not None:
-            self.title = title
-        if base_element_blob_url is not None:
-            self.base_element_blob_url = base_element_blob_url
-        if changed_base_element_blob_url is not None:
-            self.changed_base_element_blob_url = changed_base_element_blob_url
-        if package_uri is not None:
-            self.package_uri = package_uri
+        self.blob_location = blob_location
+        self.table_styles_xml_blob_url = table_styles_xml_blob_url
+        self.title = title
+        self.slides = slides
+        self.base_element_blob_url = base_element_blob_url
+        self.changed_base_element_blob_url = changed_base_element_blob_url
+        self.package_uri = package_uri
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -263,6 +260,27 @@ class Document(object):
         """
 
         self._title = title
+
+    @property
+    def slides(self):
+        """Gets the slides of this Document.  # noqa: E501
+
+
+        :return: The slides of this Document.  # noqa: E501
+        :rtype: list[SlideSlides]
+        """
+        return self._slides
+
+    @slides.setter
+    def slides(self, slides):
+        """Sets the slides of this Document.
+
+
+        :param slides: The slides of this Document.  # noqa: E501
+        :type: list[SlideSlides]
+        """
+
+        self._slides = slides
 
     @property
     def base_element_blob_url(self):

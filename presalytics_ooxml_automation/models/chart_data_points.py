@@ -33,8 +33,11 @@ class ChartDataPoints(object):
     openapi_types = {
         'value': 'float',
         'column_id': 'str',
+        'column': 'ChartColumns',
         'row_id': 'str',
+        'row': 'ChartRows',
         'chart_data_id': 'str',
+        'chart_data': 'ChartChartData',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -45,8 +48,11 @@ class ChartDataPoints(object):
     attribute_map = {
         'value': 'value',
         'column_id': 'columnId',
+        'column': 'column',
         'row_id': 'rowId',
+        'row': 'row',
         'chart_data_id': 'chartDataId',
+        'chart_data': 'chartData',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -54,13 +60,16 @@ class ChartDataPoints(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, value=None, column_id=None, row_id=None, chart_data_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, value=None, column_id=None, column=None, row_id=None, row=None, chart_data_id=None, chart_data=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartDataPoints - a model defined in OpenAPI"""  # noqa: E501
 
         self._value = None
         self._column_id = None
+        self._column = None
         self._row_id = None
+        self._row = None
         self._chart_data_id = None
+        self._chart_data = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -71,8 +80,14 @@ class ChartDataPoints(object):
         if value is not None:
             self.value = value
         self.column_id = column_id
+        if column is not None:
+            self.column = column
         self.row_id = row_id
+        if row is not None:
+            self.row = row
         self.chart_data_id = chart_data_id
+        if chart_data is not None:
+            self.chart_data = chart_data
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -127,6 +142,27 @@ class ChartDataPoints(object):
         self._column_id = column_id
 
     @property
+    def column(self):
+        """Gets the column of this ChartDataPoints.  # noqa: E501
+
+
+        :return: The column of this ChartDataPoints.  # noqa: E501
+        :rtype: ChartColumns
+        """
+        return self._column
+
+    @column.setter
+    def column(self, column):
+        """Sets the column of this ChartDataPoints.
+
+
+        :param column: The column of this ChartDataPoints.  # noqa: E501
+        :type: ChartColumns
+        """
+
+        self._column = column
+
+    @property
     def row_id(self):
         """Gets the row_id of this ChartDataPoints.  # noqa: E501
 
@@ -148,6 +184,27 @@ class ChartDataPoints(object):
         self._row_id = row_id
 
     @property
+    def row(self):
+        """Gets the row of this ChartDataPoints.  # noqa: E501
+
+
+        :return: The row of this ChartDataPoints.  # noqa: E501
+        :rtype: ChartRows
+        """
+        return self._row
+
+    @row.setter
+    def row(self, row):
+        """Sets the row of this ChartDataPoints.
+
+
+        :param row: The row of this ChartDataPoints.  # noqa: E501
+        :type: ChartRows
+        """
+
+        self._row = row
+
+    @property
     def chart_data_id(self):
         """Gets the chart_data_id of this ChartDataPoints.  # noqa: E501
 
@@ -167,6 +224,27 @@ class ChartDataPoints(object):
         """
 
         self._chart_data_id = chart_data_id
+
+    @property
+    def chart_data(self):
+        """Gets the chart_data of this ChartDataPoints.  # noqa: E501
+
+
+        :return: The chart_data of this ChartDataPoints.  # noqa: E501
+        :rtype: ChartChartData
+        """
+        return self._chart_data
+
+    @chart_data.setter
+    def chart_data(self, chart_data):
+        """Sets the chart_data of this ChartDataPoints.
+
+
+        :param chart_data: The chart_data of this ChartDataPoints.  # noqa: E501
+        :type: ChartChartData
+        """
+
+        self._chart_data = chart_data
 
     @property
     def id(self):

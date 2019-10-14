@@ -69,8 +69,7 @@ class ChartRowNameFormatTypes(object):
             self.type_id = type_id
         if power_tools_id is not None:
             self.power_tools_id = power_tools_id
-        if format_code is not None:
-            self.format_code = format_code
+        self.format_code = format_code
         if id is not None:
             self.id = id
         if date_created is not None:

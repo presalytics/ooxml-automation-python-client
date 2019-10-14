@@ -32,7 +32,8 @@ class ChartColumnCollections(object):
     """
     openapi_types = {
         'chart_data_id': 'str',
-        'columns': 'str',
+        'chart_data': 'ChartChartData',
+        'columns': 'list[ChartColumns]',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -42,6 +43,7 @@ class ChartColumnCollections(object):
 
     attribute_map = {
         'chart_data_id': 'chartDataId',
+        'chart_data': 'chartData',
         'columns': 'columns',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -50,10 +52,11 @@ class ChartColumnCollections(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, chart_data_id=None, columns=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, chart_data_id=None, chart_data=None, columns=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartColumnCollections - a model defined in OpenAPI"""  # noqa: E501
 
         self._chart_data_id = None
+        self._chart_data = None
         self._columns = None
         self._id = None
         self._date_created = None
@@ -63,8 +66,9 @@ class ChartColumnCollections(object):
         self.discriminator = None
 
         self.chart_data_id = chart_data_id
-        if columns is not None:
-            self.columns = columns
+        if chart_data is not None:
+            self.chart_data = chart_data
+        self.columns = columns
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -98,12 +102,33 @@ class ChartColumnCollections(object):
         self._chart_data_id = chart_data_id
 
     @property
+    def chart_data(self):
+        """Gets the chart_data of this ChartColumnCollections.  # noqa: E501
+
+
+        :return: The chart_data of this ChartColumnCollections.  # noqa: E501
+        :rtype: ChartChartData
+        """
+        return self._chart_data
+
+    @chart_data.setter
+    def chart_data(self, chart_data):
+        """Sets the chart_data of this ChartColumnCollections.
+
+
+        :param chart_data: The chart_data of this ChartColumnCollections.  # noqa: E501
+        :type: ChartChartData
+        """
+
+        self._chart_data = chart_data
+
+    @property
     def columns(self):
         """Gets the columns of this ChartColumnCollections.  # noqa: E501
 
 
         :return: The columns of this ChartColumnCollections.  # noqa: E501
-        :rtype: str
+        :rtype: list[ChartColumns]
         """
         return self._columns
 
@@ -113,7 +138,7 @@ class ChartColumnCollections(object):
 
 
         :param columns: The columns of this ChartColumnCollections.  # noqa: E501
-        :type: str
+        :type: list[ChartColumns]
         """
 
         self._columns = columns
