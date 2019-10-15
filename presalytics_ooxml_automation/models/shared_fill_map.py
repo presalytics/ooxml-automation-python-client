@@ -35,6 +35,18 @@ class SharedFillMap(object):
         'solid_fill': 'SharedSolidFills',
         'gradient_fill': 'SharedGradientFills',
         'image_fill': 'SharedImageFills',
+        'shape': 'SlideShape',
+        'shape_id': 'str',
+        'connector': 'SlideConnector',
+        'connector_id': 'str',
+        'effect_attribute_id': 'str',
+        'effect_attribute': 'SharedEffectAttributes',
+        'table_cell_id': 'str',
+        'table_cell': 'TableCells',
+        'theme_background_fill_id': 'str',
+        'theme_background_fill': 'ThemeBackgroundFills',
+        'theme_fill_id': 'str',
+        'theme_fill': 'ThemeFills',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -47,6 +59,18 @@ class SharedFillMap(object):
         'solid_fill': 'solidFill',
         'gradient_fill': 'gradientFill',
         'image_fill': 'imageFill',
+        'shape': 'shape',
+        'shape_id': 'shapeId',
+        'connector': 'connector',
+        'connector_id': 'connectorId',
+        'effect_attribute_id': 'effectAttributeId',
+        'effect_attribute': 'effectAttribute',
+        'table_cell_id': 'tableCellId',
+        'table_cell': 'tableCell',
+        'theme_background_fill_id': 'themeBackgroundFillId',
+        'theme_background_fill': 'themeBackgroundFill',
+        'theme_fill_id': 'themeFillId',
+        'theme_fill': 'themeFill',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -54,13 +78,25 @@ class SharedFillMap(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, fill_type_id=None, solid_fill=None, gradient_fill=None, image_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_type_id=None, solid_fill=None, gradient_fill=None, image_fill=None, shape=None, shape_id=None, connector=None, connector_id=None, effect_attribute_id=None, effect_attribute=None, table_cell_id=None, table_cell=None, theme_background_fill_id=None, theme_background_fill=None, theme_fill_id=None, theme_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedFillMap - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_type_id = None
         self._solid_fill = None
         self._gradient_fill = None
         self._image_fill = None
+        self._shape = None
+        self._shape_id = None
+        self._connector = None
+        self._connector_id = None
+        self._effect_attribute_id = None
+        self._effect_attribute = None
+        self._table_cell_id = None
+        self._table_cell = None
+        self._theme_background_fill_id = None
+        self._theme_background_fill = None
+        self._theme_fill_id = None
+        self._theme_fill = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -76,6 +112,24 @@ class SharedFillMap(object):
             self.gradient_fill = gradient_fill
         if image_fill is not None:
             self.image_fill = image_fill
+        if shape is not None:
+            self.shape = shape
+        self.shape_id = shape_id
+        if connector is not None:
+            self.connector = connector
+        self.connector_id = connector_id
+        self.effect_attribute_id = effect_attribute_id
+        if effect_attribute is not None:
+            self.effect_attribute = effect_attribute
+        self.table_cell_id = table_cell_id
+        if table_cell is not None:
+            self.table_cell = table_cell
+        self.theme_background_fill_id = theme_background_fill_id
+        if theme_background_fill is not None:
+            self.theme_background_fill = theme_background_fill
+        self.theme_fill_id = theme_fill_id
+        if theme_fill is not None:
+            self.theme_fill = theme_fill
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -170,6 +224,258 @@ class SharedFillMap(object):
         """
 
         self._image_fill = image_fill
+
+    @property
+    def shape(self):
+        """Gets the shape of this SharedFillMap.  # noqa: E501
+
+
+        :return: The shape of this SharedFillMap.  # noqa: E501
+        :rtype: SlideShape
+        """
+        return self._shape
+
+    @shape.setter
+    def shape(self, shape):
+        """Sets the shape of this SharedFillMap.
+
+
+        :param shape: The shape of this SharedFillMap.  # noqa: E501
+        :type: SlideShape
+        """
+
+        self._shape = shape
+
+    @property
+    def shape_id(self):
+        """Gets the shape_id of this SharedFillMap.  # noqa: E501
+
+
+        :return: The shape_id of this SharedFillMap.  # noqa: E501
+        :rtype: str
+        """
+        return self._shape_id
+
+    @shape_id.setter
+    def shape_id(self, shape_id):
+        """Sets the shape_id of this SharedFillMap.
+
+
+        :param shape_id: The shape_id of this SharedFillMap.  # noqa: E501
+        :type: str
+        """
+
+        self._shape_id = shape_id
+
+    @property
+    def connector(self):
+        """Gets the connector of this SharedFillMap.  # noqa: E501
+
+
+        :return: The connector of this SharedFillMap.  # noqa: E501
+        :rtype: SlideConnector
+        """
+        return self._connector
+
+    @connector.setter
+    def connector(self, connector):
+        """Sets the connector of this SharedFillMap.
+
+
+        :param connector: The connector of this SharedFillMap.  # noqa: E501
+        :type: SlideConnector
+        """
+
+        self._connector = connector
+
+    @property
+    def connector_id(self):
+        """Gets the connector_id of this SharedFillMap.  # noqa: E501
+
+
+        :return: The connector_id of this SharedFillMap.  # noqa: E501
+        :rtype: str
+        """
+        return self._connector_id
+
+    @connector_id.setter
+    def connector_id(self, connector_id):
+        """Sets the connector_id of this SharedFillMap.
+
+
+        :param connector_id: The connector_id of this SharedFillMap.  # noqa: E501
+        :type: str
+        """
+
+        self._connector_id = connector_id
+
+    @property
+    def effect_attribute_id(self):
+        """Gets the effect_attribute_id of this SharedFillMap.  # noqa: E501
+
+
+        :return: The effect_attribute_id of this SharedFillMap.  # noqa: E501
+        :rtype: str
+        """
+        return self._effect_attribute_id
+
+    @effect_attribute_id.setter
+    def effect_attribute_id(self, effect_attribute_id):
+        """Sets the effect_attribute_id of this SharedFillMap.
+
+
+        :param effect_attribute_id: The effect_attribute_id of this SharedFillMap.  # noqa: E501
+        :type: str
+        """
+
+        self._effect_attribute_id = effect_attribute_id
+
+    @property
+    def effect_attribute(self):
+        """Gets the effect_attribute of this SharedFillMap.  # noqa: E501
+
+
+        :return: The effect_attribute of this SharedFillMap.  # noqa: E501
+        :rtype: SharedEffectAttributes
+        """
+        return self._effect_attribute
+
+    @effect_attribute.setter
+    def effect_attribute(self, effect_attribute):
+        """Sets the effect_attribute of this SharedFillMap.
+
+
+        :param effect_attribute: The effect_attribute of this SharedFillMap.  # noqa: E501
+        :type: SharedEffectAttributes
+        """
+
+        self._effect_attribute = effect_attribute
+
+    @property
+    def table_cell_id(self):
+        """Gets the table_cell_id of this SharedFillMap.  # noqa: E501
+
+
+        :return: The table_cell_id of this SharedFillMap.  # noqa: E501
+        :rtype: str
+        """
+        return self._table_cell_id
+
+    @table_cell_id.setter
+    def table_cell_id(self, table_cell_id):
+        """Sets the table_cell_id of this SharedFillMap.
+
+
+        :param table_cell_id: The table_cell_id of this SharedFillMap.  # noqa: E501
+        :type: str
+        """
+
+        self._table_cell_id = table_cell_id
+
+    @property
+    def table_cell(self):
+        """Gets the table_cell of this SharedFillMap.  # noqa: E501
+
+
+        :return: The table_cell of this SharedFillMap.  # noqa: E501
+        :rtype: TableCells
+        """
+        return self._table_cell
+
+    @table_cell.setter
+    def table_cell(self, table_cell):
+        """Sets the table_cell of this SharedFillMap.
+
+
+        :param table_cell: The table_cell of this SharedFillMap.  # noqa: E501
+        :type: TableCells
+        """
+
+        self._table_cell = table_cell
+
+    @property
+    def theme_background_fill_id(self):
+        """Gets the theme_background_fill_id of this SharedFillMap.  # noqa: E501
+
+
+        :return: The theme_background_fill_id of this SharedFillMap.  # noqa: E501
+        :rtype: str
+        """
+        return self._theme_background_fill_id
+
+    @theme_background_fill_id.setter
+    def theme_background_fill_id(self, theme_background_fill_id):
+        """Sets the theme_background_fill_id of this SharedFillMap.
+
+
+        :param theme_background_fill_id: The theme_background_fill_id of this SharedFillMap.  # noqa: E501
+        :type: str
+        """
+
+        self._theme_background_fill_id = theme_background_fill_id
+
+    @property
+    def theme_background_fill(self):
+        """Gets the theme_background_fill of this SharedFillMap.  # noqa: E501
+
+
+        :return: The theme_background_fill of this SharedFillMap.  # noqa: E501
+        :rtype: ThemeBackgroundFills
+        """
+        return self._theme_background_fill
+
+    @theme_background_fill.setter
+    def theme_background_fill(self, theme_background_fill):
+        """Sets the theme_background_fill of this SharedFillMap.
+
+
+        :param theme_background_fill: The theme_background_fill of this SharedFillMap.  # noqa: E501
+        :type: ThemeBackgroundFills
+        """
+
+        self._theme_background_fill = theme_background_fill
+
+    @property
+    def theme_fill_id(self):
+        """Gets the theme_fill_id of this SharedFillMap.  # noqa: E501
+
+
+        :return: The theme_fill_id of this SharedFillMap.  # noqa: E501
+        :rtype: str
+        """
+        return self._theme_fill_id
+
+    @theme_fill_id.setter
+    def theme_fill_id(self, theme_fill_id):
+        """Sets the theme_fill_id of this SharedFillMap.
+
+
+        :param theme_fill_id: The theme_fill_id of this SharedFillMap.  # noqa: E501
+        :type: str
+        """
+
+        self._theme_fill_id = theme_fill_id
+
+    @property
+    def theme_fill(self):
+        """Gets the theme_fill of this SharedFillMap.  # noqa: E501
+
+
+        :return: The theme_fill of this SharedFillMap.  # noqa: E501
+        :rtype: ThemeFills
+        """
+        return self._theme_fill
+
+    @theme_fill.setter
+    def theme_fill(self, theme_fill):
+        """Sets the theme_fill of this SharedFillMap.
+
+
+        :param theme_fill: The theme_fill of this SharedFillMap.  # noqa: E501
+        :type: ThemeFills
+        """
+
+        self._theme_fill = theme_fill
 
     @property
     def id(self):

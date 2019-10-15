@@ -34,7 +34,6 @@ class SharedGradientStops(object):
         'gradient_fills_id': 'str',
         'gradient_fill': 'SharedGradientFills',
         'position': 'int',
-        'solid_fills_id': 'str',
         'solid_fill': 'SharedSolidFills',
         'id': 'str',
         'date_created': 'datetime',
@@ -47,7 +46,6 @@ class SharedGradientStops(object):
         'gradient_fills_id': 'gradientFillsId',
         'gradient_fill': 'gradientFill',
         'position': 'position',
-        'solid_fills_id': 'solidFillsId',
         'solid_fill': 'solidFill',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -56,13 +54,12 @@ class SharedGradientStops(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, gradient_fills_id=None, gradient_fill=None, position=None, solid_fills_id=None, solid_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, gradient_fills_id=None, gradient_fill=None, position=None, solid_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedGradientStops - a model defined in OpenAPI"""  # noqa: E501
 
         self._gradient_fills_id = None
         self._gradient_fill = None
         self._position = None
-        self._solid_fills_id = None
         self._solid_fill = None
         self._id = None
         self._date_created = None
@@ -76,7 +73,6 @@ class SharedGradientStops(object):
             self.gradient_fill = gradient_fill
         if position is not None:
             self.position = position
-        self.solid_fills_id = solid_fills_id
         if solid_fill is not None:
             self.solid_fill = solid_fill
         if id is not None:
@@ -152,27 +148,6 @@ class SharedGradientStops(object):
         """
 
         self._position = position
-
-    @property
-    def solid_fills_id(self):
-        """Gets the solid_fills_id of this SharedGradientStops.  # noqa: E501
-
-
-        :return: The solid_fills_id of this SharedGradientStops.  # noqa: E501
-        :rtype: str
-        """
-        return self._solid_fills_id
-
-    @solid_fills_id.setter
-    def solid_fills_id(self, solid_fills_id):
-        """Sets the solid_fills_id of this SharedGradientStops.
-
-
-        :param solid_fills_id: The solid_fills_id of this SharedGradientStops.  # noqa: E501
-        :type: str
-        """
-
-        self._solid_fills_id = solid_fills_id
 
     @property
     def solid_fill(self):

@@ -34,7 +34,6 @@ class ChartCharts(object):
         'parent_graphic_id': 'str',
         'parent_graphic': 'SlideGraphics',
         'svg_blob_url': 'str',
-        'title_text_container_id': 'str',
         'title_text_container': 'SharedTextContainer',
         'chart_data': 'ChartChartData',
         'axes': 'list[ChartAxes]',
@@ -52,7 +51,6 @@ class ChartCharts(object):
         'parent_graphic_id': 'parentGraphicId',
         'parent_graphic': 'parentGraphic',
         'svg_blob_url': 'svgBlobUrl',
-        'title_text_container_id': 'titleTextContainerId',
         'title_text_container': 'titleTextContainer',
         'chart_data': 'chartData',
         'axes': 'axes',
@@ -66,13 +64,12 @@ class ChartCharts(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, parent_graphic_id=None, parent_graphic=None, svg_blob_url=None, title_text_container_id=None, title_text_container=None, chart_data=None, axes=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, parent_graphic_id=None, parent_graphic=None, svg_blob_url=None, title_text_container=None, chart_data=None, axes=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartCharts - a model defined in OpenAPI"""  # noqa: E501
 
         self._parent_graphic_id = None
         self._parent_graphic = None
         self._svg_blob_url = None
-        self._title_text_container_id = None
         self._title_text_container = None
         self._chart_data = None
         self._axes = None
@@ -90,7 +87,6 @@ class ChartCharts(object):
         if parent_graphic is not None:
             self.parent_graphic = parent_graphic
         self.svg_blob_url = svg_blob_url
-        self.title_text_container_id = title_text_container_id
         if title_text_container is not None:
             self.title_text_container = title_text_container
         if chart_data is not None:
@@ -172,27 +168,6 @@ class ChartCharts(object):
         """
 
         self._svg_blob_url = svg_blob_url
-
-    @property
-    def title_text_container_id(self):
-        """Gets the title_text_container_id of this ChartCharts.  # noqa: E501
-
-
-        :return: The title_text_container_id of this ChartCharts.  # noqa: E501
-        :rtype: str
-        """
-        return self._title_text_container_id
-
-    @title_text_container_id.setter
-    def title_text_container_id(self, title_text_container_id):
-        """Sets the title_text_container_id of this ChartCharts.
-
-
-        :param title_text_container_id: The title_text_container_id of this ChartCharts.  # noqa: E501
-        :type: str
-        """
-
-        self._title_text_container_id = title_text_container_id
 
     @property
     def title_text_container(self):

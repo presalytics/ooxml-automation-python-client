@@ -35,6 +35,7 @@ class TableColumns(object):
         'width': 'int',
         'table_id': 'str',
         'table': 'TableTables',
+        'cells': 'list[TableCells]',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -47,6 +48,7 @@ class TableColumns(object):
         'width': 'width',
         'table_id': 'tableId',
         'table': 'table',
+        'cells': 'cells',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -54,13 +56,14 @@ class TableColumns(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, index=None, width=None, table_id=None, table=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, index=None, width=None, table_id=None, table=None, cells=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableColumns - a model defined in OpenAPI"""  # noqa: E501
 
         self._index = None
         self._width = None
         self._table_id = None
         self._table = None
+        self._cells = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -75,6 +78,7 @@ class TableColumns(object):
         self.table_id = table_id
         if table is not None:
             self.table = table
+        self.cells = cells
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -169,6 +173,27 @@ class TableColumns(object):
         """
 
         self._table = table
+
+    @property
+    def cells(self):
+        """Gets the cells of this TableColumns.  # noqa: E501
+
+
+        :return: The cells of this TableColumns.  # noqa: E501
+        :rtype: list[TableCells]
+        """
+        return self._cells
+
+    @cells.setter
+    def cells(self, cells):
+        """Sets the cells of this TableColumns.
+
+
+        :param cells: The cells of this TableColumns.  # noqa: E501
+        :type: list[TableCells]
+        """
+
+        self._cells = cells
 
     @property
     def id(self):

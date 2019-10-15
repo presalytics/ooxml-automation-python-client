@@ -31,17 +31,13 @@ class TableBorders(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'top_id': 'str',
+        'cell_id': 'str',
+        'cell': 'TableCells',
         'top': 'SharedLines',
-        'bottom_id': 'str',
         'bottom': 'SharedLines',
-        'right_id': 'str',
         'right': 'SharedLines',
-        'left_id': 'str',
         'left': 'SharedLines',
-        't_lto_br_id': 'str',
         't_lto_br': 'SharedLines',
-        'b_lto_tr_id': 'str',
         'b_lto_tr': 'SharedLines',
         'id': 'str',
         'date_created': 'datetime',
@@ -51,17 +47,13 @@ class TableBorders(object):
     }
 
     attribute_map = {
-        'top_id': 'topId',
+        'cell_id': 'cellId',
+        'cell': 'cell',
         'top': 'top',
-        'bottom_id': 'bottomId',
         'bottom': 'bottom',
-        'right_id': 'rightId',
         'right': 'right',
-        'left_id': 'leftId',
         'left': 'left',
-        't_lto_br_id': 'tLtoBRId',
         't_lto_br': 'tLtoBR',
-        'b_lto_tr_id': 'bLtoTRId',
         'b_lto_tr': 'bLtoTR',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -70,20 +62,16 @@ class TableBorders(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, top_id=None, top=None, bottom_id=None, bottom=None, right_id=None, right=None, left_id=None, left=None, t_lto_br_id=None, t_lto_br=None, b_lto_tr_id=None, b_lto_tr=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, cell_id=None, cell=None, top=None, bottom=None, right=None, left=None, t_lto_br=None, b_lto_tr=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableBorders - a model defined in OpenAPI"""  # noqa: E501
 
-        self._top_id = None
+        self._cell_id = None
+        self._cell = None
         self._top = None
-        self._bottom_id = None
         self._bottom = None
-        self._right_id = None
         self._right = None
-        self._left_id = None
         self._left = None
-        self._t_lto_br_id = None
         self._t_lto_br = None
-        self._b_lto_tr_id = None
         self._b_lto_tr = None
         self._id = None
         self._date_created = None
@@ -92,22 +80,19 @@ class TableBorders(object):
         self._user_modified = None
         self.discriminator = None
 
-        self.top_id = top_id
+        self.cell_id = cell_id
+        if cell is not None:
+            self.cell = cell
         if top is not None:
             self.top = top
-        self.bottom_id = bottom_id
         if bottom is not None:
             self.bottom = bottom
-        self.right_id = right_id
         if right is not None:
             self.right = right
-        self.left_id = left_id
         if left is not None:
             self.left = left
-        self.t_lto_br_id = t_lto_br_id
         if t_lto_br is not None:
             self.t_lto_br = t_lto_br
-        self.b_lto_tr_id = b_lto_tr_id
         if b_lto_tr is not None:
             self.b_lto_tr = b_lto_tr
         if id is not None:
@@ -122,25 +107,46 @@ class TableBorders(object):
             self.user_modified = user_modified
 
     @property
-    def top_id(self):
-        """Gets the top_id of this TableBorders.  # noqa: E501
+    def cell_id(self):
+        """Gets the cell_id of this TableBorders.  # noqa: E501
 
 
-        :return: The top_id of this TableBorders.  # noqa: E501
+        :return: The cell_id of this TableBorders.  # noqa: E501
         :rtype: str
         """
-        return self._top_id
+        return self._cell_id
 
-    @top_id.setter
-    def top_id(self, top_id):
-        """Sets the top_id of this TableBorders.
+    @cell_id.setter
+    def cell_id(self, cell_id):
+        """Sets the cell_id of this TableBorders.
 
 
-        :param top_id: The top_id of this TableBorders.  # noqa: E501
+        :param cell_id: The cell_id of this TableBorders.  # noqa: E501
         :type: str
         """
 
-        self._top_id = top_id
+        self._cell_id = cell_id
+
+    @property
+    def cell(self):
+        """Gets the cell of this TableBorders.  # noqa: E501
+
+
+        :return: The cell of this TableBorders.  # noqa: E501
+        :rtype: TableCells
+        """
+        return self._cell
+
+    @cell.setter
+    def cell(self, cell):
+        """Sets the cell of this TableBorders.
+
+
+        :param cell: The cell of this TableBorders.  # noqa: E501
+        :type: TableCells
+        """
+
+        self._cell = cell
 
     @property
     def top(self):
@@ -164,27 +170,6 @@ class TableBorders(object):
         self._top = top
 
     @property
-    def bottom_id(self):
-        """Gets the bottom_id of this TableBorders.  # noqa: E501
-
-
-        :return: The bottom_id of this TableBorders.  # noqa: E501
-        :rtype: str
-        """
-        return self._bottom_id
-
-    @bottom_id.setter
-    def bottom_id(self, bottom_id):
-        """Sets the bottom_id of this TableBorders.
-
-
-        :param bottom_id: The bottom_id of this TableBorders.  # noqa: E501
-        :type: str
-        """
-
-        self._bottom_id = bottom_id
-
-    @property
     def bottom(self):
         """Gets the bottom of this TableBorders.  # noqa: E501
 
@@ -204,27 +189,6 @@ class TableBorders(object):
         """
 
         self._bottom = bottom
-
-    @property
-    def right_id(self):
-        """Gets the right_id of this TableBorders.  # noqa: E501
-
-
-        :return: The right_id of this TableBorders.  # noqa: E501
-        :rtype: str
-        """
-        return self._right_id
-
-    @right_id.setter
-    def right_id(self, right_id):
-        """Sets the right_id of this TableBorders.
-
-
-        :param right_id: The right_id of this TableBorders.  # noqa: E501
-        :type: str
-        """
-
-        self._right_id = right_id
 
     @property
     def right(self):
@@ -248,27 +212,6 @@ class TableBorders(object):
         self._right = right
 
     @property
-    def left_id(self):
-        """Gets the left_id of this TableBorders.  # noqa: E501
-
-
-        :return: The left_id of this TableBorders.  # noqa: E501
-        :rtype: str
-        """
-        return self._left_id
-
-    @left_id.setter
-    def left_id(self, left_id):
-        """Sets the left_id of this TableBorders.
-
-
-        :param left_id: The left_id of this TableBorders.  # noqa: E501
-        :type: str
-        """
-
-        self._left_id = left_id
-
-    @property
     def left(self):
         """Gets the left of this TableBorders.  # noqa: E501
 
@@ -290,27 +233,6 @@ class TableBorders(object):
         self._left = left
 
     @property
-    def t_lto_br_id(self):
-        """Gets the t_lto_br_id of this TableBorders.  # noqa: E501
-
-
-        :return: The t_lto_br_id of this TableBorders.  # noqa: E501
-        :rtype: str
-        """
-        return self._t_lto_br_id
-
-    @t_lto_br_id.setter
-    def t_lto_br_id(self, t_lto_br_id):
-        """Sets the t_lto_br_id of this TableBorders.
-
-
-        :param t_lto_br_id: The t_lto_br_id of this TableBorders.  # noqa: E501
-        :type: str
-        """
-
-        self._t_lto_br_id = t_lto_br_id
-
-    @property
     def t_lto_br(self):
         """Gets the t_lto_br of this TableBorders.  # noqa: E501
 
@@ -330,27 +252,6 @@ class TableBorders(object):
         """
 
         self._t_lto_br = t_lto_br
-
-    @property
-    def b_lto_tr_id(self):
-        """Gets the b_lto_tr_id of this TableBorders.  # noqa: E501
-
-
-        :return: The b_lto_tr_id of this TableBorders.  # noqa: E501
-        :rtype: str
-        """
-        return self._b_lto_tr_id
-
-    @b_lto_tr_id.setter
-    def b_lto_tr_id(self, b_lto_tr_id):
-        """Sets the b_lto_tr_id of this TableBorders.
-
-
-        :param b_lto_tr_id: The b_lto_tr_id of this TableBorders.  # noqa: E501
-        :type: str
-        """
-
-        self._b_lto_tr_id = b_lto_tr_id
 
     @property
     def b_lto_tr(self):

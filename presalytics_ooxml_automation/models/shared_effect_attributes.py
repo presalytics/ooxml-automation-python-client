@@ -35,7 +35,6 @@ class SharedEffectAttributes(object):
         'attributes_json': 'str',
         'effect_id': 'str',
         'effect': 'SharedEffects',
-        'fill_map_id': 'str',
         'fill_map': 'SharedFillMap',
         'id': 'str',
         'date_created': 'datetime',
@@ -49,7 +48,6 @@ class SharedEffectAttributes(object):
         'attributes_json': 'attributesJson',
         'effect_id': 'effectId',
         'effect': 'effect',
-        'fill_map_id': 'fillMapId',
         'fill_map': 'fillMap',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -58,14 +56,13 @@ class SharedEffectAttributes(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, effect_type_id=None, attributes_json=None, effect_id=None, effect=None, fill_map_id=None, fill_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, effect_type_id=None, attributes_json=None, effect_id=None, effect=None, fill_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedEffectAttributes - a model defined in OpenAPI"""  # noqa: E501
 
         self._effect_type_id = None
         self._attributes_json = None
         self._effect_id = None
         self._effect = None
-        self._fill_map_id = None
         self._fill_map = None
         self._id = None
         self._date_created = None
@@ -80,7 +77,6 @@ class SharedEffectAttributes(object):
         self.effect_id = effect_id
         if effect is not None:
             self.effect = effect
-        self.fill_map_id = fill_map_id
         if fill_map is not None:
             self.fill_map = fill_map
         if id is not None:
@@ -177,27 +173,6 @@ class SharedEffectAttributes(object):
         """
 
         self._effect = effect
-
-    @property
-    def fill_map_id(self):
-        """Gets the fill_map_id of this SharedEffectAttributes.  # noqa: E501
-
-
-        :return: The fill_map_id of this SharedEffectAttributes.  # noqa: E501
-        :rtype: str
-        """
-        return self._fill_map_id
-
-    @fill_map_id.setter
-    def fill_map_id(self, fill_map_id):
-        """Sets the fill_map_id of this SharedEffectAttributes.
-
-
-        :param fill_map_id: The fill_map_id of this SharedEffectAttributes.  # noqa: E501
-        :type: str
-        """
-
-        self._fill_map_id = fill_map_id
 
     @property
     def fill_map(self):

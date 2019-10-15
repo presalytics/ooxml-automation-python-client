@@ -37,6 +37,7 @@ class SharedGradientFills(object):
         'rotate_with_shape': 'bool',
         'is_path': 'bool',
         'path_type': 'str',
+        'gradient_stops': 'list[SharedGradientStops]',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -51,6 +52,7 @@ class SharedGradientFills(object):
         'rotate_with_shape': 'rotateWithShape',
         'is_path': 'isPath',
         'path_type': 'pathType',
+        'gradient_stops': 'gradientStops',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -58,7 +60,7 @@ class SharedGradientFills(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, fill_map_id=None, fill_map=None, angle=None, rotate_with_shape=None, is_path=None, path_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, fill_map_id=None, fill_map=None, angle=None, rotate_with_shape=None, is_path=None, path_type=None, gradient_stops=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedGradientFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._fill_map_id = None
@@ -67,6 +69,7 @@ class SharedGradientFills(object):
         self._rotate_with_shape = None
         self._is_path = None
         self._path_type = None
+        self._gradient_stops = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -83,6 +86,7 @@ class SharedGradientFills(object):
         if is_path is not None:
             self.is_path = is_path
         self.path_type = path_type
+        self.gradient_stops = gradient_stops
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -219,6 +223,27 @@ class SharedGradientFills(object):
         """
 
         self._path_type = path_type
+
+    @property
+    def gradient_stops(self):
+        """Gets the gradient_stops of this SharedGradientFills.  # noqa: E501
+
+
+        :return: The gradient_stops of this SharedGradientFills.  # noqa: E501
+        :rtype: list[SharedGradientStops]
+        """
+        return self._gradient_stops
+
+    @gradient_stops.setter
+    def gradient_stops(self, gradient_stops):
+        """Sets the gradient_stops of this SharedGradientFills.
+
+
+        :param gradient_stops: The gradient_stops of this SharedGradientFills.  # noqa: E501
+        :type: list[SharedGradientStops]
+        """
+
+        self._gradient_stops = gradient_stops
 
     @property
     def id(self):

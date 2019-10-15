@@ -43,13 +43,10 @@ class SlideShape(object):
         'svg_blob_url': 'str',
         'preset_type_id': 'str',
         'free_form_path_xml': 'str',
-        'fill_map_id': 'str',
         'fill_map': 'SharedFillMap',
         'is_theme_fill': 'bool',
-        'effects_id': 'str',
         'effect': 'SharedEffects',
         'is_theme_effect': 'bool',
-        'line_id': 'str',
         'line': 'SharedLines',
         'is_theme_line': 'bool',
         'flip_horizontal': 'bool',
@@ -79,13 +76,10 @@ class SlideShape(object):
         'svg_blob_url': 'svgBlobUrl',
         'preset_type_id': 'presetTypeId',
         'free_form_path_xml': 'freeFormPathXml',
-        'fill_map_id': 'fillMapId',
         'fill_map': 'fillMap',
         'is_theme_fill': 'isThemeFill',
-        'effects_id': 'effectsId',
         'effect': 'effect',
         'is_theme_effect': 'isThemeEffect',
-        'line_id': 'lineId',
         'line': 'line',
         'is_theme_line': 'isThemeLine',
         'flip_horizontal': 'flipHorizontal',
@@ -102,7 +96,7 @@ class SlideShape(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, height=None, width=None, x_offset=None, y_offset=None, text_container=None, group_elements_id=None, group_element=None, name=None, ooxml_id=None, svg_blob_url=None, preset_type_id=None, free_form_path_xml=None, fill_map_id=None, fill_map=None, is_theme_fill=None, effects_id=None, effect=None, is_theme_effect=None, line_id=None, line=None, is_theme_line=None, flip_horizontal=None, flip_vertical=None, rotation=None, hidden=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, height=None, width=None, x_offset=None, y_offset=None, text_container=None, group_elements_id=None, group_element=None, name=None, ooxml_id=None, svg_blob_url=None, preset_type_id=None, free_form_path_xml=None, fill_map=None, is_theme_fill=None, effect=None, is_theme_effect=None, line=None, is_theme_line=None, flip_horizontal=None, flip_vertical=None, rotation=None, hidden=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideShape - a model defined in OpenAPI"""  # noqa: E501
 
         self._height = None
@@ -117,13 +111,10 @@ class SlideShape(object):
         self._svg_blob_url = None
         self._preset_type_id = None
         self._free_form_path_xml = None
-        self._fill_map_id = None
         self._fill_map = None
         self._is_theme_fill = None
-        self._effects_id = None
         self._effect = None
         self._is_theme_effect = None
-        self._line_id = None
         self._line = None
         self._is_theme_line = None
         self._flip_horizontal = None
@@ -159,17 +150,14 @@ class SlideShape(object):
         self.svg_blob_url = svg_blob_url
         self.preset_type_id = preset_type_id
         self.free_form_path_xml = free_form_path_xml
-        self.fill_map_id = fill_map_id
         if fill_map is not None:
             self.fill_map = fill_map
         if is_theme_fill is not None:
             self.is_theme_fill = is_theme_fill
-        self.effects_id = effects_id
         if effect is not None:
             self.effect = effect
         if is_theme_effect is not None:
             self.is_theme_effect = is_theme_effect
-        self.line_id = line_id
         if line is not None:
             self.line = line
         if is_theme_line is not None:
@@ -449,27 +437,6 @@ class SlideShape(object):
         self._free_form_path_xml = free_form_path_xml
 
     @property
-    def fill_map_id(self):
-        """Gets the fill_map_id of this SlideShape.  # noqa: E501
-
-
-        :return: The fill_map_id of this SlideShape.  # noqa: E501
-        :rtype: str
-        """
-        return self._fill_map_id
-
-    @fill_map_id.setter
-    def fill_map_id(self, fill_map_id):
-        """Sets the fill_map_id of this SlideShape.
-
-
-        :param fill_map_id: The fill_map_id of this SlideShape.  # noqa: E501
-        :type: str
-        """
-
-        self._fill_map_id = fill_map_id
-
-    @property
     def fill_map(self):
         """Gets the fill_map of this SlideShape.  # noqa: E501
 
@@ -512,27 +479,6 @@ class SlideShape(object):
         self._is_theme_fill = is_theme_fill
 
     @property
-    def effects_id(self):
-        """Gets the effects_id of this SlideShape.  # noqa: E501
-
-
-        :return: The effects_id of this SlideShape.  # noqa: E501
-        :rtype: str
-        """
-        return self._effects_id
-
-    @effects_id.setter
-    def effects_id(self, effects_id):
-        """Sets the effects_id of this SlideShape.
-
-
-        :param effects_id: The effects_id of this SlideShape.  # noqa: E501
-        :type: str
-        """
-
-        self._effects_id = effects_id
-
-    @property
     def effect(self):
         """Gets the effect of this SlideShape.  # noqa: E501
 
@@ -573,27 +519,6 @@ class SlideShape(object):
         """
 
         self._is_theme_effect = is_theme_effect
-
-    @property
-    def line_id(self):
-        """Gets the line_id of this SlideShape.  # noqa: E501
-
-
-        :return: The line_id of this SlideShape.  # noqa: E501
-        :rtype: str
-        """
-        return self._line_id
-
-    @line_id.setter
-    def line_id(self, line_id):
-        """Sets the line_id of this SlideShape.
-
-
-        :param line_id: The line_id of this SlideShape.  # noqa: E501
-        :type: str
-        """
-
-        self._line_id = line_id
 
     @property
     def line(self):

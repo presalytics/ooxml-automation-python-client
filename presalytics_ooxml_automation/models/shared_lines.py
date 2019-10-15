@@ -31,8 +31,11 @@ class SharedLines(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'solid_fills_id': 'str',
         'line_color_solid_fill': 'SharedSolidFills',
+        'connector_id': 'str',
+        'parent_connector': 'SlideConnector',
+        'shape_id': 'str',
+        'parent_shape': 'SlideShape',
         'dash_type_id': 'int',
         'head_end_type_id': 'int',
         'tail_end_type_id': 'int',
@@ -41,6 +44,20 @@ class SharedLines(object):
         'head_end_width_id': 'int',
         'tail_end_height_id': 'int',
         'tail_end_width_id': 'int',
+        'top_border_id': 'str',
+        'top_border': 'TableBorders',
+        'bottom_border_id': 'str',
+        'bottom_border': 'TableBorders',
+        'right_border_id': 'str',
+        'right_border': 'TableBorders',
+        'left_border_id': 'str',
+        'left_border': 'TableBorders',
+        't_lto_br_border_id': 'str',
+        't_lto_br_border': 'TableBorders',
+        'b_lto_tr_border_id': 'str',
+        'b_lto_tr_border': 'TableBorders',
+        'line_map_id': 'str',
+        'line_map': 'ThemeLineMap',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -49,8 +66,11 @@ class SharedLines(object):
     }
 
     attribute_map = {
-        'solid_fills_id': 'solidFillsId',
         'line_color_solid_fill': 'lineColorSolidFill',
+        'connector_id': 'connectorId',
+        'parent_connector': 'parentConnector',
+        'shape_id': 'shapeId',
+        'parent_shape': 'parentShape',
         'dash_type_id': 'dashTypeId',
         'head_end_type_id': 'headEndTypeId',
         'tail_end_type_id': 'tailEndTypeId',
@@ -59,6 +79,20 @@ class SharedLines(object):
         'head_end_width_id': 'headEndWidthId',
         'tail_end_height_id': 'tailEndHeightId',
         'tail_end_width_id': 'tailEndWidthId',
+        'top_border_id': 'topBorderId',
+        'top_border': 'topBorder',
+        'bottom_border_id': 'bottomBorderId',
+        'bottom_border': 'bottomBorder',
+        'right_border_id': 'rightBorderId',
+        'right_border': 'rightBorder',
+        'left_border_id': 'leftBorderId',
+        'left_border': 'leftBorder',
+        't_lto_br_border_id': 'tLtoBRBorderId',
+        't_lto_br_border': 'tLtoBRBorder',
+        'b_lto_tr_border_id': 'bLtoTRBorderId',
+        'b_lto_tr_border': 'bLtoTRBorder',
+        'line_map_id': 'lineMapId',
+        'line_map': 'lineMap',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -66,11 +100,14 @@ class SharedLines(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, solid_fills_id=None, line_color_solid_fill=None, dash_type_id=None, head_end_type_id=None, tail_end_type_id=None, weight=None, head_end_height_id=None, head_end_width_id=None, tail_end_height_id=None, tail_end_width_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, line_color_solid_fill=None, connector_id=None, parent_connector=None, shape_id=None, parent_shape=None, dash_type_id=None, head_end_type_id=None, tail_end_type_id=None, weight=None, head_end_height_id=None, head_end_width_id=None, tail_end_height_id=None, tail_end_width_id=None, top_border_id=None, top_border=None, bottom_border_id=None, bottom_border=None, right_border_id=None, right_border=None, left_border_id=None, left_border=None, t_lto_br_border_id=None, t_lto_br_border=None, b_lto_tr_border_id=None, b_lto_tr_border=None, line_map_id=None, line_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedLines - a model defined in OpenAPI"""  # noqa: E501
 
-        self._solid_fills_id = None
         self._line_color_solid_fill = None
+        self._connector_id = None
+        self._parent_connector = None
+        self._shape_id = None
+        self._parent_shape = None
         self._dash_type_id = None
         self._head_end_type_id = None
         self._tail_end_type_id = None
@@ -79,6 +116,20 @@ class SharedLines(object):
         self._head_end_width_id = None
         self._tail_end_height_id = None
         self._tail_end_width_id = None
+        self._top_border_id = None
+        self._top_border = None
+        self._bottom_border_id = None
+        self._bottom_border = None
+        self._right_border_id = None
+        self._right_border = None
+        self._left_border_id = None
+        self._left_border = None
+        self._t_lto_br_border_id = None
+        self._t_lto_br_border = None
+        self._b_lto_tr_border_id = None
+        self._b_lto_tr_border = None
+        self._line_map_id = None
+        self._line_map = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -86,9 +137,14 @@ class SharedLines(object):
         self._user_modified = None
         self.discriminator = None
 
-        self.solid_fills_id = solid_fills_id
         if line_color_solid_fill is not None:
             self.line_color_solid_fill = line_color_solid_fill
+        self.connector_id = connector_id
+        if parent_connector is not None:
+            self.parent_connector = parent_connector
+        self.shape_id = shape_id
+        if parent_shape is not None:
+            self.parent_shape = parent_shape
         if dash_type_id is not None:
             self.dash_type_id = dash_type_id
         if head_end_type_id is not None:
@@ -105,6 +161,27 @@ class SharedLines(object):
             self.tail_end_height_id = tail_end_height_id
         if tail_end_width_id is not None:
             self.tail_end_width_id = tail_end_width_id
+        self.top_border_id = top_border_id
+        if top_border is not None:
+            self.top_border = top_border
+        self.bottom_border_id = bottom_border_id
+        if bottom_border is not None:
+            self.bottom_border = bottom_border
+        self.right_border_id = right_border_id
+        if right_border is not None:
+            self.right_border = right_border
+        self.left_border_id = left_border_id
+        if left_border is not None:
+            self.left_border = left_border
+        self.t_lto_br_border_id = t_lto_br_border_id
+        if t_lto_br_border is not None:
+            self.t_lto_br_border = t_lto_br_border
+        self.b_lto_tr_border_id = b_lto_tr_border_id
+        if b_lto_tr_border is not None:
+            self.b_lto_tr_border = b_lto_tr_border
+        self.line_map_id = line_map_id
+        if line_map is not None:
+            self.line_map = line_map
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -115,27 +192,6 @@ class SharedLines(object):
             self.date_modified = date_modified
         if user_modified is not None:
             self.user_modified = user_modified
-
-    @property
-    def solid_fills_id(self):
-        """Gets the solid_fills_id of this SharedLines.  # noqa: E501
-
-
-        :return: The solid_fills_id of this SharedLines.  # noqa: E501
-        :rtype: str
-        """
-        return self._solid_fills_id
-
-    @solid_fills_id.setter
-    def solid_fills_id(self, solid_fills_id):
-        """Sets the solid_fills_id of this SharedLines.
-
-
-        :param solid_fills_id: The solid_fills_id of this SharedLines.  # noqa: E501
-        :type: str
-        """
-
-        self._solid_fills_id = solid_fills_id
 
     @property
     def line_color_solid_fill(self):
@@ -157,6 +213,90 @@ class SharedLines(object):
         """
 
         self._line_color_solid_fill = line_color_solid_fill
+
+    @property
+    def connector_id(self):
+        """Gets the connector_id of this SharedLines.  # noqa: E501
+
+
+        :return: The connector_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._connector_id
+
+    @connector_id.setter
+    def connector_id(self, connector_id):
+        """Sets the connector_id of this SharedLines.
+
+
+        :param connector_id: The connector_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._connector_id = connector_id
+
+    @property
+    def parent_connector(self):
+        """Gets the parent_connector of this SharedLines.  # noqa: E501
+
+
+        :return: The parent_connector of this SharedLines.  # noqa: E501
+        :rtype: SlideConnector
+        """
+        return self._parent_connector
+
+    @parent_connector.setter
+    def parent_connector(self, parent_connector):
+        """Sets the parent_connector of this SharedLines.
+
+
+        :param parent_connector: The parent_connector of this SharedLines.  # noqa: E501
+        :type: SlideConnector
+        """
+
+        self._parent_connector = parent_connector
+
+    @property
+    def shape_id(self):
+        """Gets the shape_id of this SharedLines.  # noqa: E501
+
+
+        :return: The shape_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._shape_id
+
+    @shape_id.setter
+    def shape_id(self, shape_id):
+        """Sets the shape_id of this SharedLines.
+
+
+        :param shape_id: The shape_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._shape_id = shape_id
+
+    @property
+    def parent_shape(self):
+        """Gets the parent_shape of this SharedLines.  # noqa: E501
+
+
+        :return: The parent_shape of this SharedLines.  # noqa: E501
+        :rtype: SlideShape
+        """
+        return self._parent_shape
+
+    @parent_shape.setter
+    def parent_shape(self, parent_shape):
+        """Sets the parent_shape of this SharedLines.
+
+
+        :param parent_shape: The parent_shape of this SharedLines.  # noqa: E501
+        :type: SlideShape
+        """
+
+        self._parent_shape = parent_shape
 
     @property
     def dash_type_id(self):
@@ -325,6 +465,300 @@ class SharedLines(object):
         """
 
         self._tail_end_width_id = tail_end_width_id
+
+    @property
+    def top_border_id(self):
+        """Gets the top_border_id of this SharedLines.  # noqa: E501
+
+
+        :return: The top_border_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._top_border_id
+
+    @top_border_id.setter
+    def top_border_id(self, top_border_id):
+        """Sets the top_border_id of this SharedLines.
+
+
+        :param top_border_id: The top_border_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._top_border_id = top_border_id
+
+    @property
+    def top_border(self):
+        """Gets the top_border of this SharedLines.  # noqa: E501
+
+
+        :return: The top_border of this SharedLines.  # noqa: E501
+        :rtype: TableBorders
+        """
+        return self._top_border
+
+    @top_border.setter
+    def top_border(self, top_border):
+        """Sets the top_border of this SharedLines.
+
+
+        :param top_border: The top_border of this SharedLines.  # noqa: E501
+        :type: TableBorders
+        """
+
+        self._top_border = top_border
+
+    @property
+    def bottom_border_id(self):
+        """Gets the bottom_border_id of this SharedLines.  # noqa: E501
+
+
+        :return: The bottom_border_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._bottom_border_id
+
+    @bottom_border_id.setter
+    def bottom_border_id(self, bottom_border_id):
+        """Sets the bottom_border_id of this SharedLines.
+
+
+        :param bottom_border_id: The bottom_border_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._bottom_border_id = bottom_border_id
+
+    @property
+    def bottom_border(self):
+        """Gets the bottom_border of this SharedLines.  # noqa: E501
+
+
+        :return: The bottom_border of this SharedLines.  # noqa: E501
+        :rtype: TableBorders
+        """
+        return self._bottom_border
+
+    @bottom_border.setter
+    def bottom_border(self, bottom_border):
+        """Sets the bottom_border of this SharedLines.
+
+
+        :param bottom_border: The bottom_border of this SharedLines.  # noqa: E501
+        :type: TableBorders
+        """
+
+        self._bottom_border = bottom_border
+
+    @property
+    def right_border_id(self):
+        """Gets the right_border_id of this SharedLines.  # noqa: E501
+
+
+        :return: The right_border_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._right_border_id
+
+    @right_border_id.setter
+    def right_border_id(self, right_border_id):
+        """Sets the right_border_id of this SharedLines.
+
+
+        :param right_border_id: The right_border_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._right_border_id = right_border_id
+
+    @property
+    def right_border(self):
+        """Gets the right_border of this SharedLines.  # noqa: E501
+
+
+        :return: The right_border of this SharedLines.  # noqa: E501
+        :rtype: TableBorders
+        """
+        return self._right_border
+
+    @right_border.setter
+    def right_border(self, right_border):
+        """Sets the right_border of this SharedLines.
+
+
+        :param right_border: The right_border of this SharedLines.  # noqa: E501
+        :type: TableBorders
+        """
+
+        self._right_border = right_border
+
+    @property
+    def left_border_id(self):
+        """Gets the left_border_id of this SharedLines.  # noqa: E501
+
+
+        :return: The left_border_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._left_border_id
+
+    @left_border_id.setter
+    def left_border_id(self, left_border_id):
+        """Sets the left_border_id of this SharedLines.
+
+
+        :param left_border_id: The left_border_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._left_border_id = left_border_id
+
+    @property
+    def left_border(self):
+        """Gets the left_border of this SharedLines.  # noqa: E501
+
+
+        :return: The left_border of this SharedLines.  # noqa: E501
+        :rtype: TableBorders
+        """
+        return self._left_border
+
+    @left_border.setter
+    def left_border(self, left_border):
+        """Sets the left_border of this SharedLines.
+
+
+        :param left_border: The left_border of this SharedLines.  # noqa: E501
+        :type: TableBorders
+        """
+
+        self._left_border = left_border
+
+    @property
+    def t_lto_br_border_id(self):
+        """Gets the t_lto_br_border_id of this SharedLines.  # noqa: E501
+
+
+        :return: The t_lto_br_border_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._t_lto_br_border_id
+
+    @t_lto_br_border_id.setter
+    def t_lto_br_border_id(self, t_lto_br_border_id):
+        """Sets the t_lto_br_border_id of this SharedLines.
+
+
+        :param t_lto_br_border_id: The t_lto_br_border_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._t_lto_br_border_id = t_lto_br_border_id
+
+    @property
+    def t_lto_br_border(self):
+        """Gets the t_lto_br_border of this SharedLines.  # noqa: E501
+
+
+        :return: The t_lto_br_border of this SharedLines.  # noqa: E501
+        :rtype: TableBorders
+        """
+        return self._t_lto_br_border
+
+    @t_lto_br_border.setter
+    def t_lto_br_border(self, t_lto_br_border):
+        """Sets the t_lto_br_border of this SharedLines.
+
+
+        :param t_lto_br_border: The t_lto_br_border of this SharedLines.  # noqa: E501
+        :type: TableBorders
+        """
+
+        self._t_lto_br_border = t_lto_br_border
+
+    @property
+    def b_lto_tr_border_id(self):
+        """Gets the b_lto_tr_border_id of this SharedLines.  # noqa: E501
+
+
+        :return: The b_lto_tr_border_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._b_lto_tr_border_id
+
+    @b_lto_tr_border_id.setter
+    def b_lto_tr_border_id(self, b_lto_tr_border_id):
+        """Sets the b_lto_tr_border_id of this SharedLines.
+
+
+        :param b_lto_tr_border_id: The b_lto_tr_border_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._b_lto_tr_border_id = b_lto_tr_border_id
+
+    @property
+    def b_lto_tr_border(self):
+        """Gets the b_lto_tr_border of this SharedLines.  # noqa: E501
+
+
+        :return: The b_lto_tr_border of this SharedLines.  # noqa: E501
+        :rtype: TableBorders
+        """
+        return self._b_lto_tr_border
+
+    @b_lto_tr_border.setter
+    def b_lto_tr_border(self, b_lto_tr_border):
+        """Sets the b_lto_tr_border of this SharedLines.
+
+
+        :param b_lto_tr_border: The b_lto_tr_border of this SharedLines.  # noqa: E501
+        :type: TableBorders
+        """
+
+        self._b_lto_tr_border = b_lto_tr_border
+
+    @property
+    def line_map_id(self):
+        """Gets the line_map_id of this SharedLines.  # noqa: E501
+
+
+        :return: The line_map_id of this SharedLines.  # noqa: E501
+        :rtype: str
+        """
+        return self._line_map_id
+
+    @line_map_id.setter
+    def line_map_id(self, line_map_id):
+        """Sets the line_map_id of this SharedLines.
+
+
+        :param line_map_id: The line_map_id of this SharedLines.  # noqa: E501
+        :type: str
+        """
+
+        self._line_map_id = line_map_id
+
+    @property
+    def line_map(self):
+        """Gets the line_map of this SharedLines.  # noqa: E501
+
+
+        :return: The line_map of this SharedLines.  # noqa: E501
+        :rtype: ThemeLineMap
+        """
+        return self._line_map
+
+    @line_map.setter
+    def line_map(self, line_map):
+        """Sets the line_map of this SharedLines.
+
+
+        :param line_map: The line_map of this SharedLines.  # noqa: E501
+        :type: ThemeLineMap
+        """
+
+        self._line_map = line_map
 
     @property
     def id(self):

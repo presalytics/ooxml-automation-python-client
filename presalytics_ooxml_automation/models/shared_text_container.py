@@ -35,6 +35,12 @@ class SharedTextContainer(object):
         'parent_shape': 'SlideShape',
         'outer_xml': 'str',
         'paragraphs': 'list[SharedParagraph]',
+        'axis_id': 'str',
+        'axis': 'ChartAxes',
+        'chart_id': 'str',
+        'chart': 'ChartCharts',
+        'table_cell_id': 'str',
+        'table_cell': 'TableCells',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -47,6 +53,12 @@ class SharedTextContainer(object):
         'parent_shape': 'parentShape',
         'outer_xml': 'outerXml',
         'paragraphs': 'paragraphs',
+        'axis_id': 'axisId',
+        'axis': 'axis',
+        'chart_id': 'chartId',
+        'chart': 'chart',
+        'table_cell_id': 'tableCellId',
+        'table_cell': 'tableCell',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -54,13 +66,19 @@ class SharedTextContainer(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, shape_id=None, parent_shape=None, outer_xml=None, paragraphs=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, shape_id=None, parent_shape=None, outer_xml=None, paragraphs=None, axis_id=None, axis=None, chart_id=None, chart=None, table_cell_id=None, table_cell=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedTextContainer - a model defined in OpenAPI"""  # noqa: E501
 
         self._shape_id = None
         self._parent_shape = None
         self._outer_xml = None
         self._paragraphs = None
+        self._axis_id = None
+        self._axis = None
+        self._chart_id = None
+        self._chart = None
+        self._table_cell_id = None
+        self._table_cell = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -73,6 +91,15 @@ class SharedTextContainer(object):
             self.parent_shape = parent_shape
         self.outer_xml = outer_xml
         self.paragraphs = paragraphs
+        self.axis_id = axis_id
+        if axis is not None:
+            self.axis = axis
+        self.chart_id = chart_id
+        if chart is not None:
+            self.chart = chart
+        self.table_cell_id = table_cell_id
+        if table_cell is not None:
+            self.table_cell = table_cell
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -167,6 +194,132 @@ class SharedTextContainer(object):
         """
 
         self._paragraphs = paragraphs
+
+    @property
+    def axis_id(self):
+        """Gets the axis_id of this SharedTextContainer.  # noqa: E501
+
+
+        :return: The axis_id of this SharedTextContainer.  # noqa: E501
+        :rtype: str
+        """
+        return self._axis_id
+
+    @axis_id.setter
+    def axis_id(self, axis_id):
+        """Sets the axis_id of this SharedTextContainer.
+
+
+        :param axis_id: The axis_id of this SharedTextContainer.  # noqa: E501
+        :type: str
+        """
+
+        self._axis_id = axis_id
+
+    @property
+    def axis(self):
+        """Gets the axis of this SharedTextContainer.  # noqa: E501
+
+
+        :return: The axis of this SharedTextContainer.  # noqa: E501
+        :rtype: ChartAxes
+        """
+        return self._axis
+
+    @axis.setter
+    def axis(self, axis):
+        """Sets the axis of this SharedTextContainer.
+
+
+        :param axis: The axis of this SharedTextContainer.  # noqa: E501
+        :type: ChartAxes
+        """
+
+        self._axis = axis
+
+    @property
+    def chart_id(self):
+        """Gets the chart_id of this SharedTextContainer.  # noqa: E501
+
+
+        :return: The chart_id of this SharedTextContainer.  # noqa: E501
+        :rtype: str
+        """
+        return self._chart_id
+
+    @chart_id.setter
+    def chart_id(self, chart_id):
+        """Sets the chart_id of this SharedTextContainer.
+
+
+        :param chart_id: The chart_id of this SharedTextContainer.  # noqa: E501
+        :type: str
+        """
+
+        self._chart_id = chart_id
+
+    @property
+    def chart(self):
+        """Gets the chart of this SharedTextContainer.  # noqa: E501
+
+
+        :return: The chart of this SharedTextContainer.  # noqa: E501
+        :rtype: ChartCharts
+        """
+        return self._chart
+
+    @chart.setter
+    def chart(self, chart):
+        """Sets the chart of this SharedTextContainer.
+
+
+        :param chart: The chart of this SharedTextContainer.  # noqa: E501
+        :type: ChartCharts
+        """
+
+        self._chart = chart
+
+    @property
+    def table_cell_id(self):
+        """Gets the table_cell_id of this SharedTextContainer.  # noqa: E501
+
+
+        :return: The table_cell_id of this SharedTextContainer.  # noqa: E501
+        :rtype: str
+        """
+        return self._table_cell_id
+
+    @table_cell_id.setter
+    def table_cell_id(self, table_cell_id):
+        """Sets the table_cell_id of this SharedTextContainer.
+
+
+        :param table_cell_id: The table_cell_id of this SharedTextContainer.  # noqa: E501
+        :type: str
+        """
+
+        self._table_cell_id = table_cell_id
+
+    @property
+    def table_cell(self):
+        """Gets the table_cell of this SharedTextContainer.  # noqa: E501
+
+
+        :return: The table_cell of this SharedTextContainer.  # noqa: E501
+        :rtype: TableCells
+        """
+        return self._table_cell
+
+    @table_cell.setter
+    def table_cell(self, table_cell):
+        """Sets the table_cell of this SharedTextContainer.
+
+
+        :param table_cell: The table_cell of this SharedTextContainer.  # noqa: E501
+        :type: TableCells
+        """
+
+        self._table_cell = table_cell
 
     @property
     def id(self):

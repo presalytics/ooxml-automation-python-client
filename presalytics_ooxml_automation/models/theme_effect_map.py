@@ -34,7 +34,6 @@ class ThemeEffectMap(object):
         'theme_id': 'str',
         'theme': 'ThemeThemes',
         'intensity_id': 'int',
-        'effect_id': 'str',
         'effect': 'SharedEffects',
         'id': 'str',
         'date_created': 'datetime',
@@ -47,7 +46,6 @@ class ThemeEffectMap(object):
         'theme_id': 'themeId',
         'theme': 'theme',
         'intensity_id': 'intensityId',
-        'effect_id': 'effectId',
         'effect': 'effect',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -56,13 +54,12 @@ class ThemeEffectMap(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, theme_id=None, theme=None, intensity_id=None, effect_id=None, effect=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, theme_id=None, theme=None, intensity_id=None, effect=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeEffectMap - a model defined in OpenAPI"""  # noqa: E501
 
         self._theme_id = None
         self._theme = None
         self._intensity_id = None
-        self._effect_id = None
         self._effect = None
         self._id = None
         self._date_created = None
@@ -76,7 +73,6 @@ class ThemeEffectMap(object):
             self.theme = theme
         if intensity_id is not None:
             self.intensity_id = intensity_id
-        self.effect_id = effect_id
         if effect is not None:
             self.effect = effect
         if id is not None:
@@ -152,27 +148,6 @@ class ThemeEffectMap(object):
         """
 
         self._intensity_id = intensity_id
-
-    @property
-    def effect_id(self):
-        """Gets the effect_id of this ThemeEffectMap.  # noqa: E501
-
-
-        :return: The effect_id of this ThemeEffectMap.  # noqa: E501
-        :rtype: str
-        """
-        return self._effect_id
-
-    @effect_id.setter
-    def effect_id(self, effect_id):
-        """Sets the effect_id of this ThemeEffectMap.
-
-
-        :param effect_id: The effect_id of this ThemeEffectMap.  # noqa: E501
-        :type: str
-        """
-
-        self._effect_id = effect_id
 
     @property
     def effect(self):

@@ -34,10 +34,15 @@ class SharedSolidFills(object):
         'hex_value': 'str',
         'is_user_color': 'bool',
         'color_type_id': 'int',
-        'theme_fill_map_id': 'str',
-        'theme_fill_map': 'SharedFillMap',
-        'color_transformations_id': 'str',
+        'fill_map_id': 'str',
+        'parent_fill_map': 'SharedFillMap',
         'color_transformations': 'SharedColorTransformations',
+        'parent_line_id': 'str',
+        'parent_line': 'SharedLines',
+        'parent_text_id': 'str',
+        'parent_text': 'SharedText',
+        'parent_gradient_stop_id': 'str',
+        'parent_gradient_stop': 'SharedGradientStops',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -49,10 +54,15 @@ class SharedSolidFills(object):
         'hex_value': 'hexValue',
         'is_user_color': 'isUserColor',
         'color_type_id': 'colorTypeId',
-        'theme_fill_map_id': 'themeFillMapId',
-        'theme_fill_map': 'themeFillMap',
-        'color_transformations_id': 'colorTransformationsId',
+        'fill_map_id': 'fillMapId',
+        'parent_fill_map': 'parentFillMap',
         'color_transformations': 'colorTransformations',
+        'parent_line_id': 'parentLineId',
+        'parent_line': 'parentLine',
+        'parent_text_id': 'parentTextId',
+        'parent_text': 'parentText',
+        'parent_gradient_stop_id': 'parentGradientStopId',
+        'parent_gradient_stop': 'parentGradientStop',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -60,16 +70,21 @@ class SharedSolidFills(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, hex_value=None, is_user_color=None, color_type_id=None, theme_fill_map_id=None, theme_fill_map=None, color_transformations_id=None, color_transformations=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, hex_value=None, is_user_color=None, color_type_id=None, fill_map_id=None, parent_fill_map=None, color_transformations=None, parent_line_id=None, parent_line=None, parent_text_id=None, parent_text=None, parent_gradient_stop_id=None, parent_gradient_stop=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedSolidFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._hex_value = None
         self._is_user_color = None
         self._color_type_id = None
-        self._theme_fill_map_id = None
-        self._theme_fill_map = None
-        self._color_transformations_id = None
+        self._fill_map_id = None
+        self._parent_fill_map = None
         self._color_transformations = None
+        self._parent_line_id = None
+        self._parent_line = None
+        self._parent_text_id = None
+        self._parent_text = None
+        self._parent_gradient_stop_id = None
+        self._parent_gradient_stop = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -81,12 +96,20 @@ class SharedSolidFills(object):
         if is_user_color is not None:
             self.is_user_color = is_user_color
         self.color_type_id = color_type_id
-        self.theme_fill_map_id = theme_fill_map_id
-        if theme_fill_map is not None:
-            self.theme_fill_map = theme_fill_map
-        self.color_transformations_id = color_transformations_id
+        self.fill_map_id = fill_map_id
+        if parent_fill_map is not None:
+            self.parent_fill_map = parent_fill_map
         if color_transformations is not None:
             self.color_transformations = color_transformations
+        self.parent_line_id = parent_line_id
+        if parent_line is not None:
+            self.parent_line = parent_line
+        self.parent_text_id = parent_text_id
+        if parent_text is not None:
+            self.parent_text = parent_text
+        self.parent_gradient_stop_id = parent_gradient_stop_id
+        if parent_gradient_stop is not None:
+            self.parent_gradient_stop = parent_gradient_stop
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -162,67 +185,46 @@ class SharedSolidFills(object):
         self._color_type_id = color_type_id
 
     @property
-    def theme_fill_map_id(self):
-        """Gets the theme_fill_map_id of this SharedSolidFills.  # noqa: E501
+    def fill_map_id(self):
+        """Gets the fill_map_id of this SharedSolidFills.  # noqa: E501
 
 
-        :return: The theme_fill_map_id of this SharedSolidFills.  # noqa: E501
+        :return: The fill_map_id of this SharedSolidFills.  # noqa: E501
         :rtype: str
         """
-        return self._theme_fill_map_id
+        return self._fill_map_id
 
-    @theme_fill_map_id.setter
-    def theme_fill_map_id(self, theme_fill_map_id):
-        """Sets the theme_fill_map_id of this SharedSolidFills.
+    @fill_map_id.setter
+    def fill_map_id(self, fill_map_id):
+        """Sets the fill_map_id of this SharedSolidFills.
 
 
-        :param theme_fill_map_id: The theme_fill_map_id of this SharedSolidFills.  # noqa: E501
+        :param fill_map_id: The fill_map_id of this SharedSolidFills.  # noqa: E501
         :type: str
         """
 
-        self._theme_fill_map_id = theme_fill_map_id
+        self._fill_map_id = fill_map_id
 
     @property
-    def theme_fill_map(self):
-        """Gets the theme_fill_map of this SharedSolidFills.  # noqa: E501
+    def parent_fill_map(self):
+        """Gets the parent_fill_map of this SharedSolidFills.  # noqa: E501
 
 
-        :return: The theme_fill_map of this SharedSolidFills.  # noqa: E501
+        :return: The parent_fill_map of this SharedSolidFills.  # noqa: E501
         :rtype: SharedFillMap
         """
-        return self._theme_fill_map
+        return self._parent_fill_map
 
-    @theme_fill_map.setter
-    def theme_fill_map(self, theme_fill_map):
-        """Sets the theme_fill_map of this SharedSolidFills.
+    @parent_fill_map.setter
+    def parent_fill_map(self, parent_fill_map):
+        """Sets the parent_fill_map of this SharedSolidFills.
 
 
-        :param theme_fill_map: The theme_fill_map of this SharedSolidFills.  # noqa: E501
+        :param parent_fill_map: The parent_fill_map of this SharedSolidFills.  # noqa: E501
         :type: SharedFillMap
         """
 
-        self._theme_fill_map = theme_fill_map
-
-    @property
-    def color_transformations_id(self):
-        """Gets the color_transformations_id of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The color_transformations_id of this SharedSolidFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._color_transformations_id
-
-    @color_transformations_id.setter
-    def color_transformations_id(self, color_transformations_id):
-        """Sets the color_transformations_id of this SharedSolidFills.
-
-
-        :param color_transformations_id: The color_transformations_id of this SharedSolidFills.  # noqa: E501
-        :type: str
-        """
-
-        self._color_transformations_id = color_transformations_id
+        self._parent_fill_map = parent_fill_map
 
     @property
     def color_transformations(self):
@@ -244,6 +246,132 @@ class SharedSolidFills(object):
         """
 
         self._color_transformations = color_transformations
+
+    @property
+    def parent_line_id(self):
+        """Gets the parent_line_id of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The parent_line_id of this SharedSolidFills.  # noqa: E501
+        :rtype: str
+        """
+        return self._parent_line_id
+
+    @parent_line_id.setter
+    def parent_line_id(self, parent_line_id):
+        """Sets the parent_line_id of this SharedSolidFills.
+
+
+        :param parent_line_id: The parent_line_id of this SharedSolidFills.  # noqa: E501
+        :type: str
+        """
+
+        self._parent_line_id = parent_line_id
+
+    @property
+    def parent_line(self):
+        """Gets the parent_line of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The parent_line of this SharedSolidFills.  # noqa: E501
+        :rtype: SharedLines
+        """
+        return self._parent_line
+
+    @parent_line.setter
+    def parent_line(self, parent_line):
+        """Sets the parent_line of this SharedSolidFills.
+
+
+        :param parent_line: The parent_line of this SharedSolidFills.  # noqa: E501
+        :type: SharedLines
+        """
+
+        self._parent_line = parent_line
+
+    @property
+    def parent_text_id(self):
+        """Gets the parent_text_id of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The parent_text_id of this SharedSolidFills.  # noqa: E501
+        :rtype: str
+        """
+        return self._parent_text_id
+
+    @parent_text_id.setter
+    def parent_text_id(self, parent_text_id):
+        """Sets the parent_text_id of this SharedSolidFills.
+
+
+        :param parent_text_id: The parent_text_id of this SharedSolidFills.  # noqa: E501
+        :type: str
+        """
+
+        self._parent_text_id = parent_text_id
+
+    @property
+    def parent_text(self):
+        """Gets the parent_text of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The parent_text of this SharedSolidFills.  # noqa: E501
+        :rtype: SharedText
+        """
+        return self._parent_text
+
+    @parent_text.setter
+    def parent_text(self, parent_text):
+        """Sets the parent_text of this SharedSolidFills.
+
+
+        :param parent_text: The parent_text of this SharedSolidFills.  # noqa: E501
+        :type: SharedText
+        """
+
+        self._parent_text = parent_text
+
+    @property
+    def parent_gradient_stop_id(self):
+        """Gets the parent_gradient_stop_id of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The parent_gradient_stop_id of this SharedSolidFills.  # noqa: E501
+        :rtype: str
+        """
+        return self._parent_gradient_stop_id
+
+    @parent_gradient_stop_id.setter
+    def parent_gradient_stop_id(self, parent_gradient_stop_id):
+        """Sets the parent_gradient_stop_id of this SharedSolidFills.
+
+
+        :param parent_gradient_stop_id: The parent_gradient_stop_id of this SharedSolidFills.  # noqa: E501
+        :type: str
+        """
+
+        self._parent_gradient_stop_id = parent_gradient_stop_id
+
+    @property
+    def parent_gradient_stop(self):
+        """Gets the parent_gradient_stop of this SharedSolidFills.  # noqa: E501
+
+
+        :return: The parent_gradient_stop of this SharedSolidFills.  # noqa: E501
+        :rtype: SharedGradientStops
+        """
+        return self._parent_gradient_stop
+
+    @parent_gradient_stop.setter
+    def parent_gradient_stop(self, parent_gradient_stop):
+        """Sets the parent_gradient_stop of this SharedSolidFills.
+
+
+        :param parent_gradient_stop: The parent_gradient_stop of this SharedSolidFills.  # noqa: E501
+        :type: SharedGradientStops
+        """
+
+        self._parent_gradient_stop = parent_gradient_stop
 
     @property
     def id(self):

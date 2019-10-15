@@ -32,6 +32,13 @@ class SharedEffects(object):
     """
     openapi_types = {
         'name': 'str',
+        'effect_attributes': 'list[SharedEffectAttributes]',
+        'shape_id': 'str',
+        'parent_shape': 'SlideShape',
+        'connector_id': 'str',
+        'parent_connector': 'SlideConnector',
+        'effect_map_id': 'str',
+        'effect_map': 'ThemeEffectMap',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -41,6 +48,13 @@ class SharedEffects(object):
 
     attribute_map = {
         'name': 'name',
+        'effect_attributes': 'effectAttributes',
+        'shape_id': 'shapeId',
+        'parent_shape': 'parentShape',
+        'connector_id': 'connectorId',
+        'parent_connector': 'parentConnector',
+        'effect_map_id': 'effectMapId',
+        'effect_map': 'effectMap',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -48,10 +62,17 @@ class SharedEffects(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, effect_attributes=None, shape_id=None, parent_shape=None, connector_id=None, parent_connector=None, effect_map_id=None, effect_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedEffects - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
+        self._effect_attributes = None
+        self._shape_id = None
+        self._parent_shape = None
+        self._connector_id = None
+        self._parent_connector = None
+        self._effect_map_id = None
+        self._effect_map = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -60,6 +81,16 @@ class SharedEffects(object):
         self.discriminator = None
 
         self.name = name
+        self.effect_attributes = effect_attributes
+        self.shape_id = shape_id
+        if parent_shape is not None:
+            self.parent_shape = parent_shape
+        self.connector_id = connector_id
+        if parent_connector is not None:
+            self.parent_connector = parent_connector
+        self.effect_map_id = effect_map_id
+        if effect_map is not None:
+            self.effect_map = effect_map
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -91,6 +122,153 @@ class SharedEffects(object):
         """
 
         self._name = name
+
+    @property
+    def effect_attributes(self):
+        """Gets the effect_attributes of this SharedEffects.  # noqa: E501
+
+
+        :return: The effect_attributes of this SharedEffects.  # noqa: E501
+        :rtype: list[SharedEffectAttributes]
+        """
+        return self._effect_attributes
+
+    @effect_attributes.setter
+    def effect_attributes(self, effect_attributes):
+        """Sets the effect_attributes of this SharedEffects.
+
+
+        :param effect_attributes: The effect_attributes of this SharedEffects.  # noqa: E501
+        :type: list[SharedEffectAttributes]
+        """
+
+        self._effect_attributes = effect_attributes
+
+    @property
+    def shape_id(self):
+        """Gets the shape_id of this SharedEffects.  # noqa: E501
+
+
+        :return: The shape_id of this SharedEffects.  # noqa: E501
+        :rtype: str
+        """
+        return self._shape_id
+
+    @shape_id.setter
+    def shape_id(self, shape_id):
+        """Sets the shape_id of this SharedEffects.
+
+
+        :param shape_id: The shape_id of this SharedEffects.  # noqa: E501
+        :type: str
+        """
+
+        self._shape_id = shape_id
+
+    @property
+    def parent_shape(self):
+        """Gets the parent_shape of this SharedEffects.  # noqa: E501
+
+
+        :return: The parent_shape of this SharedEffects.  # noqa: E501
+        :rtype: SlideShape
+        """
+        return self._parent_shape
+
+    @parent_shape.setter
+    def parent_shape(self, parent_shape):
+        """Sets the parent_shape of this SharedEffects.
+
+
+        :param parent_shape: The parent_shape of this SharedEffects.  # noqa: E501
+        :type: SlideShape
+        """
+
+        self._parent_shape = parent_shape
+
+    @property
+    def connector_id(self):
+        """Gets the connector_id of this SharedEffects.  # noqa: E501
+
+
+        :return: The connector_id of this SharedEffects.  # noqa: E501
+        :rtype: str
+        """
+        return self._connector_id
+
+    @connector_id.setter
+    def connector_id(self, connector_id):
+        """Sets the connector_id of this SharedEffects.
+
+
+        :param connector_id: The connector_id of this SharedEffects.  # noqa: E501
+        :type: str
+        """
+
+        self._connector_id = connector_id
+
+    @property
+    def parent_connector(self):
+        """Gets the parent_connector of this SharedEffects.  # noqa: E501
+
+
+        :return: The parent_connector of this SharedEffects.  # noqa: E501
+        :rtype: SlideConnector
+        """
+        return self._parent_connector
+
+    @parent_connector.setter
+    def parent_connector(self, parent_connector):
+        """Sets the parent_connector of this SharedEffects.
+
+
+        :param parent_connector: The parent_connector of this SharedEffects.  # noqa: E501
+        :type: SlideConnector
+        """
+
+        self._parent_connector = parent_connector
+
+    @property
+    def effect_map_id(self):
+        """Gets the effect_map_id of this SharedEffects.  # noqa: E501
+
+
+        :return: The effect_map_id of this SharedEffects.  # noqa: E501
+        :rtype: str
+        """
+        return self._effect_map_id
+
+    @effect_map_id.setter
+    def effect_map_id(self, effect_map_id):
+        """Sets the effect_map_id of this SharedEffects.
+
+
+        :param effect_map_id: The effect_map_id of this SharedEffects.  # noqa: E501
+        :type: str
+        """
+
+        self._effect_map_id = effect_map_id
+
+    @property
+    def effect_map(self):
+        """Gets the effect_map of this SharedEffects.  # noqa: E501
+
+
+        :return: The effect_map of this SharedEffects.  # noqa: E501
+        :rtype: ThemeEffectMap
+        """
+        return self._effect_map
+
+    @effect_map.setter
+    def effect_map(self, effect_map):
+        """Sets the effect_map of this SharedEffects.
+
+
+        :param effect_map: The effect_map of this SharedEffects.  # noqa: E501
+        :type: ThemeEffectMap
+        """
+
+        self._effect_map = effect_map
 
     @property
     def id(self):

@@ -36,6 +36,7 @@ class DocumentType(object):
         'file_extension': 'str',
         'description': 'str',
         'mime_type': 'str',
+        'ooxml_package_type': 'str',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -49,6 +50,7 @@ class DocumentType(object):
         'file_extension': 'fileExtension',
         'description': 'description',
         'mime_type': 'mimeType',
+        'ooxml_package_type': 'ooxmlPackageType',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -56,7 +58,7 @@ class DocumentType(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, type_id=None, name=None, file_extension=None, description=None, mime_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, type_id=None, name=None, file_extension=None, description=None, mime_type=None, ooxml_package_type=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """DocumentType - a model defined in OpenAPI"""  # noqa: E501
 
         self._type_id = None
@@ -64,6 +66,7 @@ class DocumentType(object):
         self._file_extension = None
         self._description = None
         self._mime_type = None
+        self._ooxml_package_type = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -77,6 +80,7 @@ class DocumentType(object):
         self.file_extension = file_extension
         self.description = description
         self.mime_type = mime_type
+        self.ooxml_package_type = ooxml_package_type
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -192,6 +196,27 @@ class DocumentType(object):
         """
 
         self._mime_type = mime_type
+
+    @property
+    def ooxml_package_type(self):
+        """Gets the ooxml_package_type of this DocumentType.  # noqa: E501
+
+
+        :return: The ooxml_package_type of this DocumentType.  # noqa: E501
+        :rtype: str
+        """
+        return self._ooxml_package_type
+
+    @ooxml_package_type.setter
+    def ooxml_package_type(self, ooxml_package_type):
+        """Sets the ooxml_package_type of this DocumentType.
+
+
+        :param ooxml_package_type: The ooxml_package_type of this DocumentType.  # noqa: E501
+        :type: str
+        """
+
+        self._ooxml_package_type = ooxml_package_type
 
     @property
     def id(self):

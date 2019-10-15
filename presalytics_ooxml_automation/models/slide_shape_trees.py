@@ -33,7 +33,6 @@ class SlideShapeTrees(object):
     openapi_types = {
         'slide_id': 'str',
         'slide': 'SlideSlides',
-        'group_elements': 'list[SlideGroupElements]',
         'group_element_id': 'str',
         'group_element': 'SlideGroupElements',
         'name': 'str',
@@ -54,7 +53,6 @@ class SlideShapeTrees(object):
     attribute_map = {
         'slide_id': 'slideId',
         'slide': 'slide',
-        'group_elements': 'groupElements',
         'group_element_id': 'groupElementId',
         'group_element': 'groupElement',
         'name': 'name',
@@ -72,12 +70,11 @@ class SlideShapeTrees(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, slide_id=None, slide=None, group_elements=None, group_element_id=None, group_element=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_url=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, slide_id=None, slide=None, group_element_id=None, group_element=None, name=None, hidden=None, title=None, ooxml_id=None, svg_blob_url=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideShapeTrees - a model defined in OpenAPI"""  # noqa: E501
 
         self._slide_id = None
         self._slide = None
-        self._group_elements = None
         self._group_element_id = None
         self._group_element = None
         self._name = None
@@ -98,7 +95,6 @@ class SlideShapeTrees(object):
         self.slide_id = slide_id
         if slide is not None:
             self.slide = slide
-        self.group_elements = group_elements
         self.group_element_id = group_element_id
         if group_element is not None:
             self.group_element = group_element
@@ -164,27 +160,6 @@ class SlideShapeTrees(object):
         """
 
         self._slide = slide
-
-    @property
-    def group_elements(self):
-        """Gets the group_elements of this SlideShapeTrees.  # noqa: E501
-
-
-        :return: The group_elements of this SlideShapeTrees.  # noqa: E501
-        :rtype: list[SlideGroupElements]
-        """
-        return self._group_elements
-
-    @group_elements.setter
-    def group_elements(self, group_elements):
-        """Sets the group_elements of this SlideShapeTrees.
-
-
-        :param group_elements: The group_elements of this SlideShapeTrees.  # noqa: E501
-        :type: list[SlideGroupElements]
-        """
-
-        self._group_elements = group_elements
 
     @property
     def group_element_id(self):

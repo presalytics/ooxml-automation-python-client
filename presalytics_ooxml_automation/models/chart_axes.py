@@ -33,7 +33,6 @@ class ChartAxes(object):
     openapi_types = {
         'charts_id': 'str',
         'chart': 'ChartCharts',
-        'title_text_container_id': 'str',
         'title_text_container': 'SharedTextContainer',
         'ooxml_id': 'int',
         'axis_data_type_id': 'int',
@@ -47,7 +46,6 @@ class ChartAxes(object):
     attribute_map = {
         'charts_id': 'chartsId',
         'chart': 'chart',
-        'title_text_container_id': 'titleTextContainerId',
         'title_text_container': 'titleTextContainer',
         'ooxml_id': 'ooxmlId',
         'axis_data_type_id': 'axisDataTypeId',
@@ -58,12 +56,11 @@ class ChartAxes(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, charts_id=None, chart=None, title_text_container_id=None, title_text_container=None, ooxml_id=None, axis_data_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, charts_id=None, chart=None, title_text_container=None, ooxml_id=None, axis_data_type_id=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ChartAxes - a model defined in OpenAPI"""  # noqa: E501
 
         self._charts_id = None
         self._chart = None
-        self._title_text_container_id = None
         self._title_text_container = None
         self._ooxml_id = None
         self._axis_data_type_id = None
@@ -78,7 +75,6 @@ class ChartAxes(object):
             self.charts_id = charts_id
         if chart is not None:
             self.chart = chart
-        self.title_text_container_id = title_text_container_id
         if title_text_container is not None:
             self.title_text_container = title_text_container
         if ooxml_id is not None:
@@ -137,27 +133,6 @@ class ChartAxes(object):
         """
 
         self._chart = chart
-
-    @property
-    def title_text_container_id(self):
-        """Gets the title_text_container_id of this ChartAxes.  # noqa: E501
-
-
-        :return: The title_text_container_id of this ChartAxes.  # noqa: E501
-        :rtype: str
-        """
-        return self._title_text_container_id
-
-    @title_text_container_id.setter
-    def title_text_container_id(self, title_text_container_id):
-        """Sets the title_text_container_id of this ChartAxes.
-
-
-        :param title_text_container_id: The title_text_container_id of this ChartAxes.  # noqa: E501
-        :type: str
-        """
-
-        self._title_text_container_id = title_text_container_id
 
     @property
     def title_text_container(self):

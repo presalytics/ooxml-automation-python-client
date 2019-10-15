@@ -33,7 +33,6 @@ class SlideSlides(object):
     openapi_types = {
         'document_id': 'str',
         'document': 'Document',
-        'slide_master_id': 'str',
         'slide_master': 'SlideSlideMasters',
         'number': 'int',
         'ooxml_id': 'int',
@@ -54,7 +53,6 @@ class SlideSlides(object):
     attribute_map = {
         'document_id': 'documentId',
         'document': 'document',
-        'slide_master_id': 'slideMasterId',
         'slide_master': 'slideMaster',
         'number': 'number',
         'ooxml_id': 'ooxmlId',
@@ -72,12 +70,11 @@ class SlideSlides(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, document_id=None, document=None, slide_master_id=None, slide_master=None, number=None, ooxml_id=None, svg_blob_url=None, slide_document_url=None, theme=None, shape_tree=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, document_id=None, document=None, slide_master=None, number=None, ooxml_id=None, svg_blob_url=None, slide_document_url=None, theme=None, shape_tree=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideSlides - a model defined in OpenAPI"""  # noqa: E501
 
         self._document_id = None
         self._document = None
-        self._slide_master_id = None
         self._slide_master = None
         self._number = None
         self._ooxml_id = None
@@ -98,7 +95,6 @@ class SlideSlides(object):
         self.document_id = document_id
         if document is not None:
             self.document = document
-        self.slide_master_id = slide_master_id
         if slide_master is not None:
             self.slide_master = slide_master
         if number is not None:
@@ -166,27 +162,6 @@ class SlideSlides(object):
         """
 
         self._document = document
-
-    @property
-    def slide_master_id(self):
-        """Gets the slide_master_id of this SlideSlides.  # noqa: E501
-
-
-        :return: The slide_master_id of this SlideSlides.  # noqa: E501
-        :rtype: str
-        """
-        return self._slide_master_id
-
-    @slide_master_id.setter
-    def slide_master_id(self, slide_master_id):
-        """Sets the slide_master_id of this SlideSlides.
-
-
-        :param slide_master_id: The slide_master_id of this SlideSlides.  # noqa: E501
-        :type: str
-        """
-
-        self._slide_master_id = slide_master_id
 
     @property
     def slide_master(self):

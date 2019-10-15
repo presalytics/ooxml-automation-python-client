@@ -34,7 +34,6 @@ class ThemeLineMap(object):
         'theme_id': 'str',
         'theme': 'ThemeThemes',
         'intensity_id': 'int',
-        'line_id': 'str',
         'line': 'SharedLines',
         'id': 'str',
         'date_created': 'datetime',
@@ -47,7 +46,6 @@ class ThemeLineMap(object):
         'theme_id': 'themeId',
         'theme': 'theme',
         'intensity_id': 'intensityId',
-        'line_id': 'lineId',
         'line': 'line',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -56,13 +54,12 @@ class ThemeLineMap(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, theme_id=None, theme=None, intensity_id=None, line_id=None, line=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, theme_id=None, theme=None, intensity_id=None, line=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeLineMap - a model defined in OpenAPI"""  # noqa: E501
 
         self._theme_id = None
         self._theme = None
         self._intensity_id = None
-        self._line_id = None
         self._line = None
         self._id = None
         self._date_created = None
@@ -76,7 +73,6 @@ class ThemeLineMap(object):
             self.theme = theme
         if intensity_id is not None:
             self.intensity_id = intensity_id
-        self.line_id = line_id
         if line is not None:
             self.line = line
         if id is not None:
@@ -152,27 +148,6 @@ class ThemeLineMap(object):
         """
 
         self._intensity_id = intensity_id
-
-    @property
-    def line_id(self):
-        """Gets the line_id of this ThemeLineMap.  # noqa: E501
-
-
-        :return: The line_id of this ThemeLineMap.  # noqa: E501
-        :rtype: str
-        """
-        return self._line_id
-
-    @line_id.setter
-    def line_id(self, line_id):
-        """Sets the line_id of this ThemeLineMap.
-
-
-        :param line_id: The line_id of this ThemeLineMap.  # noqa: E501
-        :type: str
-        """
-
-        self._line_id = line_id
 
     @property
     def line(self):

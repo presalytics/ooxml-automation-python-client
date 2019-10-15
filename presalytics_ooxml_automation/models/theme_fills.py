@@ -34,7 +34,6 @@ class ThemeFills(object):
         'theme_id': 'str',
         'theme': 'ThemeThemes',
         'intensity_id': 'int',
-        'fill_maps_id': 'str',
         'fill_map': 'SharedFillMap',
         'id': 'str',
         'date_created': 'datetime',
@@ -47,7 +46,6 @@ class ThemeFills(object):
         'theme_id': 'themeId',
         'theme': 'theme',
         'intensity_id': 'intensityId',
-        'fill_maps_id': 'fillMapsId',
         'fill_map': 'fillMap',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -56,13 +54,12 @@ class ThemeFills(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, theme_id=None, theme=None, intensity_id=None, fill_maps_id=None, fill_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, theme_id=None, theme=None, intensity_id=None, fill_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeFills - a model defined in OpenAPI"""  # noqa: E501
 
         self._theme_id = None
         self._theme = None
         self._intensity_id = None
-        self._fill_maps_id = None
         self._fill_map = None
         self._id = None
         self._date_created = None
@@ -76,7 +73,6 @@ class ThemeFills(object):
             self.theme = theme
         if intensity_id is not None:
             self.intensity_id = intensity_id
-        self.fill_maps_id = fill_maps_id
         if fill_map is not None:
             self.fill_map = fill_map
         if id is not None:
@@ -152,27 +148,6 @@ class ThemeFills(object):
         """
 
         self._intensity_id = intensity_id
-
-    @property
-    def fill_maps_id(self):
-        """Gets the fill_maps_id of this ThemeFills.  # noqa: E501
-
-
-        :return: The fill_maps_id of this ThemeFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._fill_maps_id
-
-    @fill_maps_id.setter
-    def fill_maps_id(self, fill_maps_id):
-        """Sets the fill_maps_id of this ThemeFills.
-
-
-        :param fill_maps_id: The fill_maps_id of this ThemeFills.  # noqa: E501
-        :type: str
-        """
-
-        self._fill_maps_id = fill_maps_id
 
     @property
     def fill_map(self):

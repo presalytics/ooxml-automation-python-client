@@ -31,6 +31,8 @@ class SlideSlideMasters(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'slide_id': 'str',
+        'parent_slide': 'SlideSlides',
         'color_map': 'SlideColorMaps',
         'id': 'str',
         'date_created': 'datetime',
@@ -40,6 +42,8 @@ class SlideSlideMasters(object):
     }
 
     attribute_map = {
+        'slide_id': 'slideId',
+        'parent_slide': 'parentSlide',
         'color_map': 'colorMap',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -48,9 +52,11 @@ class SlideSlideMasters(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, color_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, slide_id=None, parent_slide=None, color_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SlideSlideMasters - a model defined in OpenAPI"""  # noqa: E501
 
+        self._slide_id = None
+        self._parent_slide = None
         self._color_map = None
         self._id = None
         self._date_created = None
@@ -59,6 +65,9 @@ class SlideSlideMasters(object):
         self._user_modified = None
         self.discriminator = None
 
+        self.slide_id = slide_id
+        if parent_slide is not None:
+            self.parent_slide = parent_slide
         if color_map is not None:
             self.color_map = color_map
         if id is not None:
@@ -71,6 +80,48 @@ class SlideSlideMasters(object):
             self.date_modified = date_modified
         if user_modified is not None:
             self.user_modified = user_modified
+
+    @property
+    def slide_id(self):
+        """Gets the slide_id of this SlideSlideMasters.  # noqa: E501
+
+
+        :return: The slide_id of this SlideSlideMasters.  # noqa: E501
+        :rtype: str
+        """
+        return self._slide_id
+
+    @slide_id.setter
+    def slide_id(self, slide_id):
+        """Sets the slide_id of this SlideSlideMasters.
+
+
+        :param slide_id: The slide_id of this SlideSlideMasters.  # noqa: E501
+        :type: str
+        """
+
+        self._slide_id = slide_id
+
+    @property
+    def parent_slide(self):
+        """Gets the parent_slide of this SlideSlideMasters.  # noqa: E501
+
+
+        :return: The parent_slide of this SlideSlideMasters.  # noqa: E501
+        :rtype: SlideSlides
+        """
+        return self._parent_slide
+
+    @parent_slide.setter
+    def parent_slide(self, parent_slide):
+        """Sets the parent_slide of this SlideSlideMasters.
+
+
+        :param parent_slide: The parent_slide of this SlideSlideMasters.  # noqa: E501
+        :type: SlideSlides
+        """
+
+        self._parent_slide = parent_slide
 
     @property
     def color_map(self):

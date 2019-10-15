@@ -32,6 +32,9 @@ class SharedColorTransformations(object):
     """
     openapi_types = {
         'name': 'str',
+        'color_transformation_attributes': 'list[SharedColorTransformationAttributes]',
+        'solid_fills_id': 'str',
+        'parent_solid_fill': 'SharedSolidFills',
         'id': 'str',
         'date_created': 'datetime',
         'user_created': 'str',
@@ -41,6 +44,9 @@ class SharedColorTransformations(object):
 
     attribute_map = {
         'name': 'name',
+        'color_transformation_attributes': 'colorTransformationAttributes',
+        'solid_fills_id': 'solidFillsId',
+        'parent_solid_fill': 'parentSolidFill',
         'id': 'id',
         'date_created': 'dateCreated',
         'user_created': 'userCreated',
@@ -48,10 +54,13 @@ class SharedColorTransformations(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, color_transformation_attributes=None, solid_fills_id=None, parent_solid_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """SharedColorTransformations - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
+        self._color_transformation_attributes = None
+        self._solid_fills_id = None
+        self._parent_solid_fill = None
         self._id = None
         self._date_created = None
         self._user_created = None
@@ -60,6 +69,10 @@ class SharedColorTransformations(object):
         self.discriminator = None
 
         self.name = name
+        self.color_transformation_attributes = color_transformation_attributes
+        self.solid_fills_id = solid_fills_id
+        if parent_solid_fill is not None:
+            self.parent_solid_fill = parent_solid_fill
         if id is not None:
             self.id = id
         if date_created is not None:
@@ -91,6 +104,69 @@ class SharedColorTransformations(object):
         """
 
         self._name = name
+
+    @property
+    def color_transformation_attributes(self):
+        """Gets the color_transformation_attributes of this SharedColorTransformations.  # noqa: E501
+
+
+        :return: The color_transformation_attributes of this SharedColorTransformations.  # noqa: E501
+        :rtype: list[SharedColorTransformationAttributes]
+        """
+        return self._color_transformation_attributes
+
+    @color_transformation_attributes.setter
+    def color_transformation_attributes(self, color_transformation_attributes):
+        """Sets the color_transformation_attributes of this SharedColorTransformations.
+
+
+        :param color_transformation_attributes: The color_transformation_attributes of this SharedColorTransformations.  # noqa: E501
+        :type: list[SharedColorTransformationAttributes]
+        """
+
+        self._color_transformation_attributes = color_transformation_attributes
+
+    @property
+    def solid_fills_id(self):
+        """Gets the solid_fills_id of this SharedColorTransformations.  # noqa: E501
+
+
+        :return: The solid_fills_id of this SharedColorTransformations.  # noqa: E501
+        :rtype: str
+        """
+        return self._solid_fills_id
+
+    @solid_fills_id.setter
+    def solid_fills_id(self, solid_fills_id):
+        """Sets the solid_fills_id of this SharedColorTransformations.
+
+
+        :param solid_fills_id: The solid_fills_id of this SharedColorTransformations.  # noqa: E501
+        :type: str
+        """
+
+        self._solid_fills_id = solid_fills_id
+
+    @property
+    def parent_solid_fill(self):
+        """Gets the parent_solid_fill of this SharedColorTransformations.  # noqa: E501
+
+
+        :return: The parent_solid_fill of this SharedColorTransformations.  # noqa: E501
+        :rtype: SharedSolidFills
+        """
+        return self._parent_solid_fill
+
+    @parent_solid_fill.setter
+    def parent_solid_fill(self, parent_solid_fill):
+        """Sets the parent_solid_fill of this SharedColorTransformations.
+
+
+        :param parent_solid_fill: The parent_solid_fill of this SharedColorTransformations.  # noqa: E501
+        :type: SharedSolidFills
+        """
+
+        self._parent_solid_fill = parent_solid_fill
 
     @property
     def id(self):

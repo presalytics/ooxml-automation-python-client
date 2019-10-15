@@ -39,11 +39,8 @@ class TableCells(object):
         'column_span': 'int',
         'is_merged_vertical': 'bool',
         'is_merged_horozontal': 'bool',
-        'fill_map_id': 'str',
         'fill_map': 'SharedFillMap',
-        'text_container_id': 'str',
         'text_container': 'SharedTextContainer',
-        'border_id': 'str',
         'border': 'TableBorders',
         'id': 'str',
         'date_created': 'datetime',
@@ -61,11 +58,8 @@ class TableCells(object):
         'column_span': 'columnSpan',
         'is_merged_vertical': 'isMergedVertical',
         'is_merged_horozontal': 'isMergedHorozontal',
-        'fill_map_id': 'fillMapId',
         'fill_map': 'fillMap',
-        'text_container_id': 'textContainerId',
         'text_container': 'textContainer',
-        'border_id': 'borderId',
         'border': 'border',
         'id': 'id',
         'date_created': 'dateCreated',
@@ -74,7 +68,7 @@ class TableCells(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, row_id=None, row=None, column_id=None, column=None, row_span=None, column_span=None, is_merged_vertical=None, is_merged_horozontal=None, fill_map_id=None, fill_map=None, text_container_id=None, text_container=None, border_id=None, border=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, row_id=None, row=None, column_id=None, column=None, row_span=None, column_span=None, is_merged_vertical=None, is_merged_horozontal=None, fill_map=None, text_container=None, border=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """TableCells - a model defined in OpenAPI"""  # noqa: E501
 
         self._row_id = None
@@ -85,11 +79,8 @@ class TableCells(object):
         self._column_span = None
         self._is_merged_vertical = None
         self._is_merged_horozontal = None
-        self._fill_map_id = None
         self._fill_map = None
-        self._text_container_id = None
         self._text_container = None
-        self._border_id = None
         self._border = None
         self._id = None
         self._date_created = None
@@ -112,13 +103,10 @@ class TableCells(object):
             self.is_merged_vertical = is_merged_vertical
         if is_merged_horozontal is not None:
             self.is_merged_horozontal = is_merged_horozontal
-        self.fill_map_id = fill_map_id
         if fill_map is not None:
             self.fill_map = fill_map
-        self.text_container_id = text_container_id
         if text_container is not None:
             self.text_container = text_container
-        self.border_id = border_id
         if border is not None:
             self.border = border
         if id is not None:
@@ -301,27 +289,6 @@ class TableCells(object):
         self._is_merged_horozontal = is_merged_horozontal
 
     @property
-    def fill_map_id(self):
-        """Gets the fill_map_id of this TableCells.  # noqa: E501
-
-
-        :return: The fill_map_id of this TableCells.  # noqa: E501
-        :rtype: str
-        """
-        return self._fill_map_id
-
-    @fill_map_id.setter
-    def fill_map_id(self, fill_map_id):
-        """Sets the fill_map_id of this TableCells.
-
-
-        :param fill_map_id: The fill_map_id of this TableCells.  # noqa: E501
-        :type: str
-        """
-
-        self._fill_map_id = fill_map_id
-
-    @property
     def fill_map(self):
         """Gets the fill_map of this TableCells.  # noqa: E501
 
@@ -343,27 +310,6 @@ class TableCells(object):
         self._fill_map = fill_map
 
     @property
-    def text_container_id(self):
-        """Gets the text_container_id of this TableCells.  # noqa: E501
-
-
-        :return: The text_container_id of this TableCells.  # noqa: E501
-        :rtype: str
-        """
-        return self._text_container_id
-
-    @text_container_id.setter
-    def text_container_id(self, text_container_id):
-        """Sets the text_container_id of this TableCells.
-
-
-        :param text_container_id: The text_container_id of this TableCells.  # noqa: E501
-        :type: str
-        """
-
-        self._text_container_id = text_container_id
-
-    @property
     def text_container(self):
         """Gets the text_container of this TableCells.  # noqa: E501
 
@@ -383,27 +329,6 @@ class TableCells(object):
         """
 
         self._text_container = text_container
-
-    @property
-    def border_id(self):
-        """Gets the border_id of this TableCells.  # noqa: E501
-
-
-        :return: The border_id of this TableCells.  # noqa: E501
-        :rtype: str
-        """
-        return self._border_id
-
-    @border_id.setter
-    def border_id(self, border_id):
-        """Sets the border_id of this TableCells.
-
-
-        :param border_id: The border_id of this TableCells.  # noqa: E501
-        :type: str
-        """
-
-        self._border_id = border_id
 
     @property
     def border(self):

@@ -34,6 +34,13 @@ class ThemeThemes(object):
         'name': 'str',
         'slide_id': 'str',
         'slide': 'SlideSlides',
+        'background_fills': 'list[ThemeBackgroundFills]',
+        'colors': 'ThemeColors',
+        'custom_colors': 'list[ThemeCustomColors]',
+        'effect_maps': 'list[ThemeEffectMap]',
+        'fills': 'list[ThemeFills]',
+        'fonts': 'ThemeFonts',
+        'line_maps': 'list[ThemeLineMap]',
         'base_element_blob_url': 'str',
         'changed_base_element_blob_url': 'str',
         'package_uri': 'str',
@@ -48,6 +55,13 @@ class ThemeThemes(object):
         'name': 'name',
         'slide_id': 'slideId',
         'slide': 'slide',
+        'background_fills': 'backgroundFills',
+        'colors': 'colors',
+        'custom_colors': 'customColors',
+        'effect_maps': 'effectMaps',
+        'fills': 'fills',
+        'fonts': 'fonts',
+        'line_maps': 'lineMaps',
         'base_element_blob_url': 'baseElementBlobUrl',
         'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
         'package_uri': 'packageUri',
@@ -58,12 +72,19 @@ class ThemeThemes(object):
         'user_modified': 'userModified'
     }
 
-    def __init__(self, name=None, slide_id=None, slide=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
+    def __init__(self, name=None, slide_id=None, slide=None, background_fills=None, colors=None, custom_colors=None, effect_maps=None, fills=None, fonts=None, line_maps=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None):  # noqa: E501
         """ThemeThemes - a model defined in OpenAPI"""  # noqa: E501
 
         self._name = None
         self._slide_id = None
         self._slide = None
+        self._background_fills = None
+        self._colors = None
+        self._custom_colors = None
+        self._effect_maps = None
+        self._fills = None
+        self._fonts = None
+        self._line_maps = None
         self._base_element_blob_url = None
         self._changed_base_element_blob_url = None
         self._package_uri = None
@@ -78,6 +99,15 @@ class ThemeThemes(object):
         self.slide_id = slide_id
         if slide is not None:
             self.slide = slide
+        self.background_fills = background_fills
+        if colors is not None:
+            self.colors = colors
+        self.custom_colors = custom_colors
+        self.effect_maps = effect_maps
+        self.fills = fills
+        if fonts is not None:
+            self.fonts = fonts
+        self.line_maps = line_maps
         self.base_element_blob_url = base_element_blob_url
         self.changed_base_element_blob_url = changed_base_element_blob_url
         self.package_uri = package_uri
@@ -154,6 +184,153 @@ class ThemeThemes(object):
         """
 
         self._slide = slide
+
+    @property
+    def background_fills(self):
+        """Gets the background_fills of this ThemeThemes.  # noqa: E501
+
+
+        :return: The background_fills of this ThemeThemes.  # noqa: E501
+        :rtype: list[ThemeBackgroundFills]
+        """
+        return self._background_fills
+
+    @background_fills.setter
+    def background_fills(self, background_fills):
+        """Sets the background_fills of this ThemeThemes.
+
+
+        :param background_fills: The background_fills of this ThemeThemes.  # noqa: E501
+        :type: list[ThemeBackgroundFills]
+        """
+
+        self._background_fills = background_fills
+
+    @property
+    def colors(self):
+        """Gets the colors of this ThemeThemes.  # noqa: E501
+
+
+        :return: The colors of this ThemeThemes.  # noqa: E501
+        :rtype: ThemeColors
+        """
+        return self._colors
+
+    @colors.setter
+    def colors(self, colors):
+        """Sets the colors of this ThemeThemes.
+
+
+        :param colors: The colors of this ThemeThemes.  # noqa: E501
+        :type: ThemeColors
+        """
+
+        self._colors = colors
+
+    @property
+    def custom_colors(self):
+        """Gets the custom_colors of this ThemeThemes.  # noqa: E501
+
+
+        :return: The custom_colors of this ThemeThemes.  # noqa: E501
+        :rtype: list[ThemeCustomColors]
+        """
+        return self._custom_colors
+
+    @custom_colors.setter
+    def custom_colors(self, custom_colors):
+        """Sets the custom_colors of this ThemeThemes.
+
+
+        :param custom_colors: The custom_colors of this ThemeThemes.  # noqa: E501
+        :type: list[ThemeCustomColors]
+        """
+
+        self._custom_colors = custom_colors
+
+    @property
+    def effect_maps(self):
+        """Gets the effect_maps of this ThemeThemes.  # noqa: E501
+
+
+        :return: The effect_maps of this ThemeThemes.  # noqa: E501
+        :rtype: list[ThemeEffectMap]
+        """
+        return self._effect_maps
+
+    @effect_maps.setter
+    def effect_maps(self, effect_maps):
+        """Sets the effect_maps of this ThemeThemes.
+
+
+        :param effect_maps: The effect_maps of this ThemeThemes.  # noqa: E501
+        :type: list[ThemeEffectMap]
+        """
+
+        self._effect_maps = effect_maps
+
+    @property
+    def fills(self):
+        """Gets the fills of this ThemeThemes.  # noqa: E501
+
+
+        :return: The fills of this ThemeThemes.  # noqa: E501
+        :rtype: list[ThemeFills]
+        """
+        return self._fills
+
+    @fills.setter
+    def fills(self, fills):
+        """Sets the fills of this ThemeThemes.
+
+
+        :param fills: The fills of this ThemeThemes.  # noqa: E501
+        :type: list[ThemeFills]
+        """
+
+        self._fills = fills
+
+    @property
+    def fonts(self):
+        """Gets the fonts of this ThemeThemes.  # noqa: E501
+
+
+        :return: The fonts of this ThemeThemes.  # noqa: E501
+        :rtype: ThemeFonts
+        """
+        return self._fonts
+
+    @fonts.setter
+    def fonts(self, fonts):
+        """Sets the fonts of this ThemeThemes.
+
+
+        :param fonts: The fonts of this ThemeThemes.  # noqa: E501
+        :type: ThemeFonts
+        """
+
+        self._fonts = fonts
+
+    @property
+    def line_maps(self):
+        """Gets the line_maps of this ThemeThemes.  # noqa: E501
+
+
+        :return: The line_maps of this ThemeThemes.  # noqa: E501
+        :rtype: list[ThemeLineMap]
+        """
+        return self._line_maps
+
+    @line_maps.setter
+    def line_maps(self, line_maps):
+        """Sets the line_maps of this ThemeThemes.
+
+
+        :param line_maps: The line_maps of this ThemeThemes.  # noqa: E501
+        :type: list[ThemeLineMap]
+        """
+
+        self._line_maps = line_maps
 
     @property
     def base_element_blob_url(self):
