@@ -2741,7 +2741,7 @@ class DefaultApi(object):
         body_params = None
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'])  # noqa: E501
+            ['application/octet-stream'])  # noqa: E501
 
         # Authentication setting
         auth_settings = []  # noqa: E501
