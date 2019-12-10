@@ -36,27 +36,17 @@ class ThemeFonts(object):
         'heading_font': 'str',
         'body_font': 'str',
         'theme_id': 'str',
-        'theme': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'heading_font': 'headingFont',
         'body_font': 'bodyFont',
         'theme_id': 'themeId',
-        'theme': 'theme',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, heading_font=None, body_font=None, theme_id=None, theme=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, heading_font=None, body_font=None, theme_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ThemeFonts - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -65,29 +55,14 @@ class ThemeFonts(object):
         self._heading_font = None
         self._body_font = None
         self._theme_id = None
-        self._theme = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.heading_font = heading_font
         self.body_font = body_font
         self.theme_id = theme_id
-        if theme is not None:
-            self.theme = theme
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def heading_font(self):
@@ -153,27 +128,6 @@ class ThemeFonts(object):
         self._theme_id = theme_id
 
     @property
-    def theme(self):
-        """Gets the theme of this ThemeFonts.  # noqa: E501
-
-
-        :return: The theme of this ThemeFonts.  # noqa: E501
-        :rtype: object
-        """
-        return self._theme
-
-    @theme.setter
-    def theme(self, theme):
-        """Sets the theme of this ThemeFonts.
-
-
-        :param theme: The theme of this ThemeFonts.  # noqa: E501
-        :type: object
-        """
-
-        self._theme = theme
-
-    @property
     def id(self):
         """Gets the id of this ThemeFonts.  # noqa: E501
 
@@ -193,90 +147,6 @@ class ThemeFonts(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this ThemeFonts.  # noqa: E501
-
-
-        :return: The date_created of this ThemeFonts.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this ThemeFonts.
-
-
-        :param date_created: The date_created of this ThemeFonts.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this ThemeFonts.  # noqa: E501
-
-
-        :return: The user_created of this ThemeFonts.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this ThemeFonts.
-
-
-        :param user_created: The user_created of this ThemeFonts.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this ThemeFonts.  # noqa: E501
-
-
-        :return: The date_modified of this ThemeFonts.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this ThemeFonts.
-
-
-        :param date_modified: The date_modified of this ThemeFonts.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this ThemeFonts.  # noqa: E501
-
-
-        :return: The user_modified of this ThemeFonts.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this ThemeFonts.
-
-
-        :param user_modified: The user_modified of this ThemeFonts.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

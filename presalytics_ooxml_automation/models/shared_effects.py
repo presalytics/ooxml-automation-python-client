@@ -34,78 +34,39 @@ class SharedEffects(object):
     """
     openapi_types = {
         'name': 'str',
-        'effect_attributes': 'object',
         'shape_id': 'str',
-        'parent_shape': 'object',
         'connector_id': 'str',
-        'parent_connector': 'object',
         'effect_map_id': 'str',
-        'effect_map': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'effect_attributes': 'effectAttributes',
         'shape_id': 'shapeId',
-        'parent_shape': 'parentShape',
         'connector_id': 'connectorId',
-        'parent_connector': 'parentConnector',
         'effect_map_id': 'effectMapId',
-        'effect_map': 'effectMap',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, name=None, effect_attributes=None, shape_id=None, parent_shape=None, connector_id=None, parent_connector=None, effect_map_id=None, effect_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, name=None, shape_id=None, connector_id=None, effect_map_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedEffects - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._name = None
-        self._effect_attributes = None
         self._shape_id = None
-        self._parent_shape = None
         self._connector_id = None
-        self._parent_connector = None
         self._effect_map_id = None
-        self._effect_map = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.name = name
-        self.effect_attributes = effect_attributes
         self.shape_id = shape_id
-        if parent_shape is not None:
-            self.parent_shape = parent_shape
         self.connector_id = connector_id
-        if parent_connector is not None:
-            self.parent_connector = parent_connector
         self.effect_map_id = effect_map_id
-        if effect_map is not None:
-            self.effect_map = effect_map
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def name(self):
@@ -129,27 +90,6 @@ class SharedEffects(object):
         self._name = name
 
     @property
-    def effect_attributes(self):
-        """Gets the effect_attributes of this SharedEffects.  # noqa: E501
-
-
-        :return: The effect_attributes of this SharedEffects.  # noqa: E501
-        :rtype: object
-        """
-        return self._effect_attributes
-
-    @effect_attributes.setter
-    def effect_attributes(self, effect_attributes):
-        """Sets the effect_attributes of this SharedEffects.
-
-
-        :param effect_attributes: The effect_attributes of this SharedEffects.  # noqa: E501
-        :type: object
-        """
-
-        self._effect_attributes = effect_attributes
-
-    @property
     def shape_id(self):
         """Gets the shape_id of this SharedEffects.  # noqa: E501
 
@@ -169,27 +109,6 @@ class SharedEffects(object):
         """
 
         self._shape_id = shape_id
-
-    @property
-    def parent_shape(self):
-        """Gets the parent_shape of this SharedEffects.  # noqa: E501
-
-
-        :return: The parent_shape of this SharedEffects.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_shape
-
-    @parent_shape.setter
-    def parent_shape(self, parent_shape):
-        """Sets the parent_shape of this SharedEffects.
-
-
-        :param parent_shape: The parent_shape of this SharedEffects.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_shape = parent_shape
 
     @property
     def connector_id(self):
@@ -213,27 +132,6 @@ class SharedEffects(object):
         self._connector_id = connector_id
 
     @property
-    def parent_connector(self):
-        """Gets the parent_connector of this SharedEffects.  # noqa: E501
-
-
-        :return: The parent_connector of this SharedEffects.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_connector
-
-    @parent_connector.setter
-    def parent_connector(self, parent_connector):
-        """Sets the parent_connector of this SharedEffects.
-
-
-        :param parent_connector: The parent_connector of this SharedEffects.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_connector = parent_connector
-
-    @property
     def effect_map_id(self):
         """Gets the effect_map_id of this SharedEffects.  # noqa: E501
 
@@ -255,27 +153,6 @@ class SharedEffects(object):
         self._effect_map_id = effect_map_id
 
     @property
-    def effect_map(self):
-        """Gets the effect_map of this SharedEffects.  # noqa: E501
-
-
-        :return: The effect_map of this SharedEffects.  # noqa: E501
-        :rtype: object
-        """
-        return self._effect_map
-
-    @effect_map.setter
-    def effect_map(self, effect_map):
-        """Sets the effect_map of this SharedEffects.
-
-
-        :param effect_map: The effect_map of this SharedEffects.  # noqa: E501
-        :type: object
-        """
-
-        self._effect_map = effect_map
-
-    @property
     def id(self):
         """Gets the id of this SharedEffects.  # noqa: E501
 
@@ -295,90 +172,6 @@ class SharedEffects(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedEffects.  # noqa: E501
-
-
-        :return: The date_created of this SharedEffects.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedEffects.
-
-
-        :param date_created: The date_created of this SharedEffects.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedEffects.  # noqa: E501
-
-
-        :return: The user_created of this SharedEffects.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedEffects.
-
-
-        :param user_created: The user_created of this SharedEffects.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedEffects.  # noqa: E501
-
-
-        :return: The date_modified of this SharedEffects.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedEffects.
-
-
-        :param date_modified: The date_modified of this SharedEffects.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedEffects.  # noqa: E501
-
-
-        :return: The user_modified of this SharedEffects.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedEffects.
-
-
-        :param user_modified: The user_modified of this SharedEffects.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

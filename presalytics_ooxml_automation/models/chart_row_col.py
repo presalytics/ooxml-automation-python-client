@@ -38,11 +38,7 @@ class ChartRowCol(object):
         'row_qualifed_assy': 'str',
         'col_name': 'str',
         'col_qualified_assy': 'str',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
@@ -51,14 +47,10 @@ class ChartRowCol(object):
         'row_qualifed_assy': 'rowQualifedAssy',
         'col_name': 'colName',
         'col_qualified_assy': 'colQualifiedAssy',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, type_id=None, row_name=None, row_qualifed_assy=None, col_name=None, col_qualified_assy=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, type_id=None, row_name=None, row_qualifed_assy=None, col_name=None, col_qualified_assy=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ChartRowCol - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -70,10 +62,6 @@ class ChartRowCol(object):
         self._col_name = None
         self._col_qualified_assy = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         if type_id is not None:
@@ -84,14 +72,6 @@ class ChartRowCol(object):
         self.col_qualified_assy = col_qualified_assy
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def type_id(self):
@@ -218,90 +198,6 @@ class ChartRowCol(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this ChartRowCol.  # noqa: E501
-
-
-        :return: The date_created of this ChartRowCol.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this ChartRowCol.
-
-
-        :param date_created: The date_created of this ChartRowCol.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this ChartRowCol.  # noqa: E501
-
-
-        :return: The user_created of this ChartRowCol.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this ChartRowCol.
-
-
-        :param user_created: The user_created of this ChartRowCol.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this ChartRowCol.  # noqa: E501
-
-
-        :return: The date_modified of this ChartRowCol.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this ChartRowCol.
-
-
-        :param date_modified: The date_modified of this ChartRowCol.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this ChartRowCol.  # noqa: E501
-
-
-        :return: The user_modified of this ChartRowCol.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this ChartRowCol.
-
-
-        :param user_modified: The user_modified of this ChartRowCol.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

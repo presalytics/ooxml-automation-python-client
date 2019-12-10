@@ -34,7 +34,6 @@ class SlideColorMaps(object):
     """
     openapi_types = {
         'slide_master_id': 'str',
-        'slide_master': 'object',
         'accent1': 'int',
         'accent2': 'int',
         'accent3': 'int',
@@ -47,16 +46,11 @@ class SlideColorMaps(object):
         'background2': 'int',
         'hyperlink': 'int',
         'followed_hyperlink': 'int',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'slide_master_id': 'slideMasterId',
-        'slide_master': 'slideMaster',
         'accent1': 'accent1',
         'accent2': 'accent2',
         'accent3': 'accent3',
@@ -69,21 +63,16 @@ class SlideColorMaps(object):
         'background2': 'background2',
         'hyperlink': 'hyperlink',
         'followed_hyperlink': 'followedHyperlink',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, slide_master_id=None, slide_master=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, text1=None, text2=None, background1=None, background2=None, hyperlink=None, followed_hyperlink=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, slide_master_id=None, accent1=None, accent2=None, accent3=None, accent4=None, accent5=None, accent6=None, text1=None, text2=None, background1=None, background2=None, hyperlink=None, followed_hyperlink=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SlideColorMaps - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._slide_master_id = None
-        self._slide_master = None
         self._accent1 = None
         self._accent2 = None
         self._accent3 = None
@@ -97,15 +86,9 @@ class SlideColorMaps(object):
         self._hyperlink = None
         self._followed_hyperlink = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.slide_master_id = slide_master_id
-        if slide_master is not None:
-            self.slide_master = slide_master
         if accent1 is not None:
             self.accent1 = accent1
         if accent2 is not None:
@@ -132,14 +115,6 @@ class SlideColorMaps(object):
             self.followed_hyperlink = followed_hyperlink
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def slide_master_id(self):
@@ -161,27 +136,6 @@ class SlideColorMaps(object):
         """
 
         self._slide_master_id = slide_master_id
-
-    @property
-    def slide_master(self):
-        """Gets the slide_master of this SlideColorMaps.  # noqa: E501
-
-
-        :return: The slide_master of this SlideColorMaps.  # noqa: E501
-        :rtype: object
-        """
-        return self._slide_master
-
-    @slide_master.setter
-    def slide_master(self, slide_master):
-        """Sets the slide_master of this SlideColorMaps.
-
-
-        :param slide_master: The slide_master of this SlideColorMaps.  # noqa: E501
-        :type: object
-        """
-
-        self._slide_master = slide_master
 
     @property
     def accent1(self):
@@ -455,90 +409,6 @@ class SlideColorMaps(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SlideColorMaps.  # noqa: E501
-
-
-        :return: The date_created of this SlideColorMaps.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SlideColorMaps.
-
-
-        :param date_created: The date_created of this SlideColorMaps.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SlideColorMaps.  # noqa: E501
-
-
-        :return: The user_created of this SlideColorMaps.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SlideColorMaps.
-
-
-        :param user_created: The user_created of this SlideColorMaps.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SlideColorMaps.  # noqa: E501
-
-
-        :return: The date_modified of this SlideColorMaps.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SlideColorMaps.
-
-
-        :param date_modified: The date_modified of this SlideColorMaps.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SlideColorMaps.  # noqa: E501
-
-
-        :return: The user_modified of this SlideColorMaps.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SlideColorMaps.
-
-
-        :param user_modified: The user_modified of this SlideColorMaps.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

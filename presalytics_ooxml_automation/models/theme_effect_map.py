@@ -34,62 +34,32 @@ class ThemeEffectMap(object):
     """
     openapi_types = {
         'theme_id': 'str',
-        'theme': 'object',
         'intensity_id': 'int',
-        'effect': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'theme_id': 'themeId',
-        'theme': 'theme',
         'intensity_id': 'intensityId',
-        'effect': 'effect',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, theme_id=None, theme=None, intensity_id=None, effect=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, theme_id=None, intensity_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ThemeEffectMap - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._theme_id = None
-        self._theme = None
         self._intensity_id = None
-        self._effect = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.theme_id = theme_id
-        if theme is not None:
-            self.theme = theme
         if intensity_id is not None:
             self.intensity_id = intensity_id
-        if effect is not None:
-            self.effect = effect
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def theme_id(self):
@@ -113,27 +83,6 @@ class ThemeEffectMap(object):
         self._theme_id = theme_id
 
     @property
-    def theme(self):
-        """Gets the theme of this ThemeEffectMap.  # noqa: E501
-
-
-        :return: The theme of this ThemeEffectMap.  # noqa: E501
-        :rtype: object
-        """
-        return self._theme
-
-    @theme.setter
-    def theme(self, theme):
-        """Sets the theme of this ThemeEffectMap.
-
-
-        :param theme: The theme of this ThemeEffectMap.  # noqa: E501
-        :type: object
-        """
-
-        self._theme = theme
-
-    @property
     def intensity_id(self):
         """Gets the intensity_id of this ThemeEffectMap.  # noqa: E501
 
@@ -155,27 +104,6 @@ class ThemeEffectMap(object):
         self._intensity_id = intensity_id
 
     @property
-    def effect(self):
-        """Gets the effect of this ThemeEffectMap.  # noqa: E501
-
-
-        :return: The effect of this ThemeEffectMap.  # noqa: E501
-        :rtype: object
-        """
-        return self._effect
-
-    @effect.setter
-    def effect(self, effect):
-        """Sets the effect of this ThemeEffectMap.
-
-
-        :param effect: The effect of this ThemeEffectMap.  # noqa: E501
-        :type: object
-        """
-
-        self._effect = effect
-
-    @property
     def id(self):
         """Gets the id of this ThemeEffectMap.  # noqa: E501
 
@@ -195,90 +123,6 @@ class ThemeEffectMap(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this ThemeEffectMap.  # noqa: E501
-
-
-        :return: The date_created of this ThemeEffectMap.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this ThemeEffectMap.
-
-
-        :param date_created: The date_created of this ThemeEffectMap.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this ThemeEffectMap.  # noqa: E501
-
-
-        :return: The user_created of this ThemeEffectMap.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this ThemeEffectMap.
-
-
-        :param user_created: The user_created of this ThemeEffectMap.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this ThemeEffectMap.  # noqa: E501
-
-
-        :return: The date_modified of this ThemeEffectMap.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this ThemeEffectMap.
-
-
-        :param date_modified: The date_modified of this ThemeEffectMap.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this ThemeEffectMap.  # noqa: E501
-
-
-        :return: The user_modified of this ThemeEffectMap.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this ThemeEffectMap.
-
-
-        :param user_modified: The user_modified of this ThemeEffectMap.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

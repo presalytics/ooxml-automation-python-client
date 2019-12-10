@@ -34,66 +34,27 @@ class ChartChartData(object):
     """
     openapi_types = {
         'chart_id': 'str',
-        'chart': 'object',
-        'row_collection': 'object',
-        'column_collection': 'object',
-        'data_points': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'chart_id': 'chartId',
-        'chart': 'chart',
-        'row_collection': 'rowCollection',
-        'column_collection': 'columnCollection',
-        'data_points': 'dataPoints',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, chart_id=None, chart=None, row_collection=None, column_collection=None, data_points=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, chart_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ChartChartData - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._chart_id = None
-        self._chart = None
-        self._row_collection = None
-        self._column_collection = None
-        self._data_points = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.chart_id = chart_id
-        if chart is not None:
-            self.chart = chart
-        if row_collection is not None:
-            self.row_collection = row_collection
-        if column_collection is not None:
-            self.column_collection = column_collection
-        self.data_points = data_points
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def chart_id(self):
@@ -117,90 +78,6 @@ class ChartChartData(object):
         self._chart_id = chart_id
 
     @property
-    def chart(self):
-        """Gets the chart of this ChartChartData.  # noqa: E501
-
-
-        :return: The chart of this ChartChartData.  # noqa: E501
-        :rtype: object
-        """
-        return self._chart
-
-    @chart.setter
-    def chart(self, chart):
-        """Sets the chart of this ChartChartData.
-
-
-        :param chart: The chart of this ChartChartData.  # noqa: E501
-        :type: object
-        """
-
-        self._chart = chart
-
-    @property
-    def row_collection(self):
-        """Gets the row_collection of this ChartChartData.  # noqa: E501
-
-
-        :return: The row_collection of this ChartChartData.  # noqa: E501
-        :rtype: object
-        """
-        return self._row_collection
-
-    @row_collection.setter
-    def row_collection(self, row_collection):
-        """Sets the row_collection of this ChartChartData.
-
-
-        :param row_collection: The row_collection of this ChartChartData.  # noqa: E501
-        :type: object
-        """
-
-        self._row_collection = row_collection
-
-    @property
-    def column_collection(self):
-        """Gets the column_collection of this ChartChartData.  # noqa: E501
-
-
-        :return: The column_collection of this ChartChartData.  # noqa: E501
-        :rtype: object
-        """
-        return self._column_collection
-
-    @column_collection.setter
-    def column_collection(self, column_collection):
-        """Sets the column_collection of this ChartChartData.
-
-
-        :param column_collection: The column_collection of this ChartChartData.  # noqa: E501
-        :type: object
-        """
-
-        self._column_collection = column_collection
-
-    @property
-    def data_points(self):
-        """Gets the data_points of this ChartChartData.  # noqa: E501
-
-
-        :return: The data_points of this ChartChartData.  # noqa: E501
-        :rtype: object
-        """
-        return self._data_points
-
-    @data_points.setter
-    def data_points(self, data_points):
-        """Sets the data_points of this ChartChartData.
-
-
-        :param data_points: The data_points of this ChartChartData.  # noqa: E501
-        :type: object
-        """
-
-        self._data_points = data_points
-
-    @property
     def id(self):
         """Gets the id of this ChartChartData.  # noqa: E501
 
@@ -220,90 +97,6 @@ class ChartChartData(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this ChartChartData.  # noqa: E501
-
-
-        :return: The date_created of this ChartChartData.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this ChartChartData.
-
-
-        :param date_created: The date_created of this ChartChartData.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this ChartChartData.  # noqa: E501
-
-
-        :return: The user_created of this ChartChartData.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this ChartChartData.
-
-
-        :param user_created: The user_created of this ChartChartData.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this ChartChartData.  # noqa: E501
-
-
-        :return: The date_modified of this ChartChartData.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this ChartChartData.
-
-
-        :param date_modified: The date_modified of this ChartChartData.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this ChartChartData.  # noqa: E501
-
-
-        :return: The user_modified of this ChartChartData.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this ChartChartData.
-
-
-        :param user_modified: The user_modified of this ChartChartData.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

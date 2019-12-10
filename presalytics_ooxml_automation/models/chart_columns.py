@@ -36,31 +36,19 @@ class ChartColumns(object):
         'name': 'str',
         'index': 'int',
         'axis_id': 'str',
-        'axis': 'object',
         'column_collection_id': 'str',
-        'column_collection': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'index': 'index',
         'axis_id': 'axisId',
-        'axis': 'axis',
         'column_collection_id': 'columnCollectionId',
-        'column_collection': 'columnCollection',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, name=None, index=None, axis_id=None, axis=None, column_collection_id=None, column_collection=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, name=None, index=None, axis_id=None, column_collection_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ChartColumns - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -69,35 +57,17 @@ class ChartColumns(object):
         self._name = None
         self._index = None
         self._axis_id = None
-        self._axis = None
         self._column_collection_id = None
-        self._column_collection = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.name = name
         if index is not None:
             self.index = index
         self.axis_id = axis_id
-        if axis is not None:
-            self.axis = axis
         self.column_collection_id = column_collection_id
-        if column_collection is not None:
-            self.column_collection = column_collection
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def name(self):
@@ -163,27 +133,6 @@ class ChartColumns(object):
         self._axis_id = axis_id
 
     @property
-    def axis(self):
-        """Gets the axis of this ChartColumns.  # noqa: E501
-
-
-        :return: The axis of this ChartColumns.  # noqa: E501
-        :rtype: object
-        """
-        return self._axis
-
-    @axis.setter
-    def axis(self, axis):
-        """Sets the axis of this ChartColumns.
-
-
-        :param axis: The axis of this ChartColumns.  # noqa: E501
-        :type: object
-        """
-
-        self._axis = axis
-
-    @property
     def column_collection_id(self):
         """Gets the column_collection_id of this ChartColumns.  # noqa: E501
 
@@ -205,27 +154,6 @@ class ChartColumns(object):
         self._column_collection_id = column_collection_id
 
     @property
-    def column_collection(self):
-        """Gets the column_collection of this ChartColumns.  # noqa: E501
-
-
-        :return: The column_collection of this ChartColumns.  # noqa: E501
-        :rtype: object
-        """
-        return self._column_collection
-
-    @column_collection.setter
-    def column_collection(self, column_collection):
-        """Sets the column_collection of this ChartColumns.
-
-
-        :param column_collection: The column_collection of this ChartColumns.  # noqa: E501
-        :type: object
-        """
-
-        self._column_collection = column_collection
-
-    @property
     def id(self):
         """Gets the id of this ChartColumns.  # noqa: E501
 
@@ -245,90 +173,6 @@ class ChartColumns(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this ChartColumns.  # noqa: E501
-
-
-        :return: The date_created of this ChartColumns.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this ChartColumns.
-
-
-        :param date_created: The date_created of this ChartColumns.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this ChartColumns.  # noqa: E501
-
-
-        :return: The user_created of this ChartColumns.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this ChartColumns.
-
-
-        :param user_created: The user_created of this ChartColumns.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this ChartColumns.  # noqa: E501
-
-
-        :return: The date_modified of this ChartColumns.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this ChartColumns.
-
-
-        :param date_modified: The date_modified of this ChartColumns.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this ChartColumns.  # noqa: E501
-
-
-        :return: The user_modified of this ChartColumns.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this ChartColumns.
-
-
-        :param user_modified: The user_modified of this ChartColumns.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -36,29 +36,17 @@ class TableColumns(object):
         'index': 'int',
         'width': 'int',
         'table_id': 'str',
-        'table': 'object',
-        'cells': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'index': 'index',
         'width': 'width',
         'table_id': 'tableId',
-        'table': 'table',
-        'cells': 'cells',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, index=None, width=None, table_id=None, table=None, cells=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, index=None, width=None, table_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """TableColumns - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -67,13 +55,7 @@ class TableColumns(object):
         self._index = None
         self._width = None
         self._table_id = None
-        self._table = None
-        self._cells = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         if index is not None:
@@ -81,19 +63,8 @@ class TableColumns(object):
         if width is not None:
             self.width = width
         self.table_id = table_id
-        if table is not None:
-            self.table = table
-        self.cells = cells
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def index(self):
@@ -159,48 +130,6 @@ class TableColumns(object):
         self._table_id = table_id
 
     @property
-    def table(self):
-        """Gets the table of this TableColumns.  # noqa: E501
-
-
-        :return: The table of this TableColumns.  # noqa: E501
-        :rtype: object
-        """
-        return self._table
-
-    @table.setter
-    def table(self, table):
-        """Sets the table of this TableColumns.
-
-
-        :param table: The table of this TableColumns.  # noqa: E501
-        :type: object
-        """
-
-        self._table = table
-
-    @property
-    def cells(self):
-        """Gets the cells of this TableColumns.  # noqa: E501
-
-
-        :return: The cells of this TableColumns.  # noqa: E501
-        :rtype: object
-        """
-        return self._cells
-
-    @cells.setter
-    def cells(self, cells):
-        """Sets the cells of this TableColumns.
-
-
-        :param cells: The cells of this TableColumns.  # noqa: E501
-        :type: object
-        """
-
-        self._cells = cells
-
-    @property
     def id(self):
         """Gets the id of this TableColumns.  # noqa: E501
 
@@ -220,90 +149,6 @@ class TableColumns(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this TableColumns.  # noqa: E501
-
-
-        :return: The date_created of this TableColumns.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this TableColumns.
-
-
-        :param date_created: The date_created of this TableColumns.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this TableColumns.  # noqa: E501
-
-
-        :return: The user_created of this TableColumns.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this TableColumns.
-
-
-        :param user_created: The user_created of this TableColumns.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this TableColumns.  # noqa: E501
-
-
-        :return: The date_modified of this TableColumns.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this TableColumns.
-
-
-        :param date_modified: The date_modified of this TableColumns.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this TableColumns.  # noqa: E501
-
-
-        :return: The user_modified of this TableColumns.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this TableColumns.
-
-
-        :param user_modified: The user_modified of this TableColumns.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

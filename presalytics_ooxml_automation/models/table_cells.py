@@ -34,72 +34,41 @@ class TableCells(object):
     """
     openapi_types = {
         'row_id': 'str',
-        'row': 'object',
         'column_id': 'str',
-        'column': 'object',
         'row_span': 'int',
         'column_span': 'int',
         'is_merged_vertical': 'bool',
         'is_merged_horozontal': 'bool',
-        'fill_map': 'object',
-        'text_container': 'object',
-        'border': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'row_id': 'rowId',
-        'row': 'row',
         'column_id': 'columnId',
-        'column': 'column',
         'row_span': 'rowSpan',
         'column_span': 'columnSpan',
         'is_merged_vertical': 'isMergedVertical',
         'is_merged_horozontal': 'isMergedHorozontal',
-        'fill_map': 'fillMap',
-        'text_container': 'textContainer',
-        'border': 'border',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, row_id=None, row=None, column_id=None, column=None, row_span=None, column_span=None, is_merged_vertical=None, is_merged_horozontal=None, fill_map=None, text_container=None, border=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, row_id=None, column_id=None, row_span=None, column_span=None, is_merged_vertical=None, is_merged_horozontal=None, id=None, local_vars_configuration=None):  # noqa: E501
         """TableCells - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._row_id = None
-        self._row = None
         self._column_id = None
-        self._column = None
         self._row_span = None
         self._column_span = None
         self._is_merged_vertical = None
         self._is_merged_horozontal = None
-        self._fill_map = None
-        self._text_container = None
-        self._border = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.row_id = row_id
-        if row is not None:
-            self.row = row
         self.column_id = column_id
-        if column is not None:
-            self.column = column
         if row_span is not None:
             self.row_span = row_span
         if column_span is not None:
@@ -108,22 +77,8 @@ class TableCells(object):
             self.is_merged_vertical = is_merged_vertical
         if is_merged_horozontal is not None:
             self.is_merged_horozontal = is_merged_horozontal
-        if fill_map is not None:
-            self.fill_map = fill_map
-        if text_container is not None:
-            self.text_container = text_container
-        if border is not None:
-            self.border = border
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def row_id(self):
@@ -147,27 +102,6 @@ class TableCells(object):
         self._row_id = row_id
 
     @property
-    def row(self):
-        """Gets the row of this TableCells.  # noqa: E501
-
-
-        :return: The row of this TableCells.  # noqa: E501
-        :rtype: object
-        """
-        return self._row
-
-    @row.setter
-    def row(self, row):
-        """Sets the row of this TableCells.
-
-
-        :param row: The row of this TableCells.  # noqa: E501
-        :type: object
-        """
-
-        self._row = row
-
-    @property
     def column_id(self):
         """Gets the column_id of this TableCells.  # noqa: E501
 
@@ -187,27 +121,6 @@ class TableCells(object):
         """
 
         self._column_id = column_id
-
-    @property
-    def column(self):
-        """Gets the column of this TableCells.  # noqa: E501
-
-
-        :return: The column of this TableCells.  # noqa: E501
-        :rtype: object
-        """
-        return self._column
-
-    @column.setter
-    def column(self, column):
-        """Sets the column of this TableCells.
-
-
-        :param column: The column of this TableCells.  # noqa: E501
-        :type: object
-        """
-
-        self._column = column
 
     @property
     def row_span(self):
@@ -294,69 +207,6 @@ class TableCells(object):
         self._is_merged_horozontal = is_merged_horozontal
 
     @property
-    def fill_map(self):
-        """Gets the fill_map of this TableCells.  # noqa: E501
-
-
-        :return: The fill_map of this TableCells.  # noqa: E501
-        :rtype: object
-        """
-        return self._fill_map
-
-    @fill_map.setter
-    def fill_map(self, fill_map):
-        """Sets the fill_map of this TableCells.
-
-
-        :param fill_map: The fill_map of this TableCells.  # noqa: E501
-        :type: object
-        """
-
-        self._fill_map = fill_map
-
-    @property
-    def text_container(self):
-        """Gets the text_container of this TableCells.  # noqa: E501
-
-
-        :return: The text_container of this TableCells.  # noqa: E501
-        :rtype: object
-        """
-        return self._text_container
-
-    @text_container.setter
-    def text_container(self, text_container):
-        """Sets the text_container of this TableCells.
-
-
-        :param text_container: The text_container of this TableCells.  # noqa: E501
-        :type: object
-        """
-
-        self._text_container = text_container
-
-    @property
-    def border(self):
-        """Gets the border of this TableCells.  # noqa: E501
-
-
-        :return: The border of this TableCells.  # noqa: E501
-        :rtype: object
-        """
-        return self._border
-
-    @border.setter
-    def border(self, border):
-        """Sets the border of this TableCells.
-
-
-        :param border: The border of this TableCells.  # noqa: E501
-        :type: object
-        """
-
-        self._border = border
-
-    @property
     def id(self):
         """Gets the id of this TableCells.  # noqa: E501
 
@@ -376,90 +226,6 @@ class TableCells(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this TableCells.  # noqa: E501
-
-
-        :return: The date_created of this TableCells.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this TableCells.
-
-
-        :param date_created: The date_created of this TableCells.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this TableCells.  # noqa: E501
-
-
-        :return: The user_created of this TableCells.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this TableCells.
-
-
-        :param user_created: The user_created of this TableCells.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this TableCells.  # noqa: E501
-
-
-        :return: The date_modified of this TableCells.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this TableCells.
-
-
-        :param date_modified: The date_modified of this TableCells.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this TableCells.  # noqa: E501
-
-
-        :return: The user_modified of this TableCells.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this TableCells.
-
-
-        :param user_modified: The user_modified of this TableCells.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -34,72 +34,26 @@ class SlideSmartArts(object):
     """
     openapi_types = {
         'graphics_id': 'str',
-        'parent_graphic': 'object',
-        'svg_blob_url': 'str',
-        'base_element_blob_url': 'str',
-        'changed_base_element_blob_url': 'str',
-        'package_uri': 'str',
-        'name': 'str',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'svg_blob_url': 'str'
     }
 
     attribute_map = {
         'graphics_id': 'graphicsId',
-        'parent_graphic': 'parentGraphic',
-        'svg_blob_url': 'svgBlobUrl',
-        'base_element_blob_url': 'baseElementBlobUrl',
-        'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
-        'package_uri': 'packageUri',
-        'name': 'name',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'svg_blob_url': 'svgBlobUrl'
     }
 
-    def __init__(self, graphics_id=None, parent_graphic=None, svg_blob_url=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, name=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, graphics_id=None, svg_blob_url=None, local_vars_configuration=None):  # noqa: E501
         """SlideSmartArts - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._graphics_id = None
-        self._parent_graphic = None
         self._svg_blob_url = None
-        self._base_element_blob_url = None
-        self._changed_base_element_blob_url = None
-        self._package_uri = None
-        self._name = None
-        self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.graphics_id = graphics_id
-        if parent_graphic is not None:
-            self.parent_graphic = parent_graphic
         self.svg_blob_url = svg_blob_url
-        self.base_element_blob_url = base_element_blob_url
-        self.changed_base_element_blob_url = changed_base_element_blob_url
-        self.package_uri = package_uri
-        self.name = name
-        if id is not None:
-            self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def graphics_id(self):
@@ -123,27 +77,6 @@ class SlideSmartArts(object):
         self._graphics_id = graphics_id
 
     @property
-    def parent_graphic(self):
-        """Gets the parent_graphic of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The parent_graphic of this SlideSmartArts.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_graphic
-
-    @parent_graphic.setter
-    def parent_graphic(self, parent_graphic):
-        """Sets the parent_graphic of this SlideSmartArts.
-
-
-        :param parent_graphic: The parent_graphic of this SlideSmartArts.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_graphic = parent_graphic
-
-    @property
     def svg_blob_url(self):
         """Gets the svg_blob_url of this SlideSmartArts.  # noqa: E501
 
@@ -163,195 +96,6 @@ class SlideSmartArts(object):
         """
 
         self._svg_blob_url = svg_blob_url
-
-    @property
-    def base_element_blob_url(self):
-        """Gets the base_element_blob_url of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The base_element_blob_url of this SlideSmartArts.  # noqa: E501
-        :rtype: str
-        """
-        return self._base_element_blob_url
-
-    @base_element_blob_url.setter
-    def base_element_blob_url(self, base_element_blob_url):
-        """Sets the base_element_blob_url of this SlideSmartArts.
-
-
-        :param base_element_blob_url: The base_element_blob_url of this SlideSmartArts.  # noqa: E501
-        :type: str
-        """
-
-        self._base_element_blob_url = base_element_blob_url
-
-    @property
-    def changed_base_element_blob_url(self):
-        """Gets the changed_base_element_blob_url of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The changed_base_element_blob_url of this SlideSmartArts.  # noqa: E501
-        :rtype: str
-        """
-        return self._changed_base_element_blob_url
-
-    @changed_base_element_blob_url.setter
-    def changed_base_element_blob_url(self, changed_base_element_blob_url):
-        """Sets the changed_base_element_blob_url of this SlideSmartArts.
-
-
-        :param changed_base_element_blob_url: The changed_base_element_blob_url of this SlideSmartArts.  # noqa: E501
-        :type: str
-        """
-
-        self._changed_base_element_blob_url = changed_base_element_blob_url
-
-    @property
-    def package_uri(self):
-        """Gets the package_uri of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The package_uri of this SlideSmartArts.  # noqa: E501
-        :rtype: str
-        """
-        return self._package_uri
-
-    @package_uri.setter
-    def package_uri(self, package_uri):
-        """Sets the package_uri of this SlideSmartArts.
-
-
-        :param package_uri: The package_uri of this SlideSmartArts.  # noqa: E501
-        :type: str
-        """
-
-        self._package_uri = package_uri
-
-    @property
-    def name(self):
-        """Gets the name of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The name of this SlideSmartArts.  # noqa: E501
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this SlideSmartArts.
-
-
-        :param name: The name of this SlideSmartArts.  # noqa: E501
-        :type: str
-        """
-
-        self._name = name
-
-    @property
-    def id(self):
-        """Gets the id of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The id of this SlideSmartArts.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this SlideSmartArts.
-
-
-        :param id: The id of this SlideSmartArts.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The date_created of this SlideSmartArts.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SlideSmartArts.
-
-
-        :param date_created: The date_created of this SlideSmartArts.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The user_created of this SlideSmartArts.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SlideSmartArts.
-
-
-        :param user_created: The user_created of this SlideSmartArts.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The date_modified of this SlideSmartArts.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SlideSmartArts.
-
-
-        :param date_modified: The date_modified of this SlideSmartArts.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SlideSmartArts.  # noqa: E501
-
-
-        :return: The user_modified of this SlideSmartArts.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SlideSmartArts.
-
-
-        :param user_modified: The user_modified of this SlideSmartArts.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

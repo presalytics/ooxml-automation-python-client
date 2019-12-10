@@ -34,62 +34,32 @@ class SharedGradientStops(object):
     """
     openapi_types = {
         'gradient_fills_id': 'str',
-        'gradient_fill': 'object',
         'position': 'int',
-        'solid_fill': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'gradient_fills_id': 'gradientFillsId',
-        'gradient_fill': 'gradientFill',
         'position': 'position',
-        'solid_fill': 'solidFill',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, gradient_fills_id=None, gradient_fill=None, position=None, solid_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, gradient_fills_id=None, position=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedGradientStops - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._gradient_fills_id = None
-        self._gradient_fill = None
         self._position = None
-        self._solid_fill = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.gradient_fills_id = gradient_fills_id
-        if gradient_fill is not None:
-            self.gradient_fill = gradient_fill
         if position is not None:
             self.position = position
-        if solid_fill is not None:
-            self.solid_fill = solid_fill
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def gradient_fills_id(self):
@@ -113,27 +83,6 @@ class SharedGradientStops(object):
         self._gradient_fills_id = gradient_fills_id
 
     @property
-    def gradient_fill(self):
-        """Gets the gradient_fill of this SharedGradientStops.  # noqa: E501
-
-
-        :return: The gradient_fill of this SharedGradientStops.  # noqa: E501
-        :rtype: object
-        """
-        return self._gradient_fill
-
-    @gradient_fill.setter
-    def gradient_fill(self, gradient_fill):
-        """Sets the gradient_fill of this SharedGradientStops.
-
-
-        :param gradient_fill: The gradient_fill of this SharedGradientStops.  # noqa: E501
-        :type: object
-        """
-
-        self._gradient_fill = gradient_fill
-
-    @property
     def position(self):
         """Gets the position of this SharedGradientStops.  # noqa: E501
 
@@ -155,27 +104,6 @@ class SharedGradientStops(object):
         self._position = position
 
     @property
-    def solid_fill(self):
-        """Gets the solid_fill of this SharedGradientStops.  # noqa: E501
-
-
-        :return: The solid_fill of this SharedGradientStops.  # noqa: E501
-        :rtype: object
-        """
-        return self._solid_fill
-
-    @solid_fill.setter
-    def solid_fill(self, solid_fill):
-        """Sets the solid_fill of this SharedGradientStops.
-
-
-        :param solid_fill: The solid_fill of this SharedGradientStops.  # noqa: E501
-        :type: object
-        """
-
-        self._solid_fill = solid_fill
-
-    @property
     def id(self):
         """Gets the id of this SharedGradientStops.  # noqa: E501
 
@@ -195,90 +123,6 @@ class SharedGradientStops(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedGradientStops.  # noqa: E501
-
-
-        :return: The date_created of this SharedGradientStops.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedGradientStops.
-
-
-        :param date_created: The date_created of this SharedGradientStops.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedGradientStops.  # noqa: E501
-
-
-        :return: The user_created of this SharedGradientStops.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedGradientStops.
-
-
-        :param user_created: The user_created of this SharedGradientStops.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedGradientStops.  # noqa: E501
-
-
-        :return: The date_modified of this SharedGradientStops.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedGradientStops.
-
-
-        :param date_modified: The date_modified of this SharedGradientStops.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedGradientStops.  # noqa: E501
-
-
-        :return: The user_modified of this SharedGradientStops.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedGradientStops.
-
-
-        :param user_modified: The user_modified of this SharedGradientStops.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

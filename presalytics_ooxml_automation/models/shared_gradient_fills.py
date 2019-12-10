@@ -34,74 +34,45 @@ class SharedGradientFills(object):
     """
     openapi_types = {
         'fill_map_id': 'str',
-        'fill_map': 'object',
         'angle': 'int',
         'rotate_with_shape': 'bool',
         'is_path': 'bool',
         'path_type': 'str',
-        'gradient_stops': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'fill_map_id': 'fillMapId',
-        'fill_map': 'fillMap',
         'angle': 'angle',
         'rotate_with_shape': 'rotateWithShape',
         'is_path': 'isPath',
         'path_type': 'pathType',
-        'gradient_stops': 'gradientStops',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, fill_map_id=None, fill_map=None, angle=None, rotate_with_shape=None, is_path=None, path_type=None, gradient_stops=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, fill_map_id=None, angle=None, rotate_with_shape=None, is_path=None, path_type=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedGradientFills - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._fill_map_id = None
-        self._fill_map = None
         self._angle = None
         self._rotate_with_shape = None
         self._is_path = None
         self._path_type = None
-        self._gradient_stops = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.fill_map_id = fill_map_id
-        if fill_map is not None:
-            self.fill_map = fill_map
         self.angle = angle
         if rotate_with_shape is not None:
             self.rotate_with_shape = rotate_with_shape
         if is_path is not None:
             self.is_path = is_path
         self.path_type = path_type
-        self.gradient_stops = gradient_stops
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def fill_map_id(self):
@@ -123,27 +94,6 @@ class SharedGradientFills(object):
         """
 
         self._fill_map_id = fill_map_id
-
-    @property
-    def fill_map(self):
-        """Gets the fill_map of this SharedGradientFills.  # noqa: E501
-
-
-        :return: The fill_map of this SharedGradientFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._fill_map
-
-    @fill_map.setter
-    def fill_map(self, fill_map):
-        """Sets the fill_map of this SharedGradientFills.
-
-
-        :param fill_map: The fill_map of this SharedGradientFills.  # noqa: E501
-        :type: object
-        """
-
-        self._fill_map = fill_map
 
     @property
     def angle(self):
@@ -230,27 +180,6 @@ class SharedGradientFills(object):
         self._path_type = path_type
 
     @property
-    def gradient_stops(self):
-        """Gets the gradient_stops of this SharedGradientFills.  # noqa: E501
-
-
-        :return: The gradient_stops of this SharedGradientFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._gradient_stops
-
-    @gradient_stops.setter
-    def gradient_stops(self, gradient_stops):
-        """Sets the gradient_stops of this SharedGradientFills.
-
-
-        :param gradient_stops: The gradient_stops of this SharedGradientFills.  # noqa: E501
-        :type: object
-        """
-
-        self._gradient_stops = gradient_stops
-
-    @property
     def id(self):
         """Gets the id of this SharedGradientFills.  # noqa: E501
 
@@ -270,90 +199,6 @@ class SharedGradientFills(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedGradientFills.  # noqa: E501
-
-
-        :return: The date_created of this SharedGradientFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedGradientFills.
-
-
-        :param date_created: The date_created of this SharedGradientFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedGradientFills.  # noqa: E501
-
-
-        :return: The user_created of this SharedGradientFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedGradientFills.
-
-
-        :param user_created: The user_created of this SharedGradientFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedGradientFills.  # noqa: E501
-
-
-        :return: The date_modified of this SharedGradientFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedGradientFills.
-
-
-        :param date_modified: The date_modified of this SharedGradientFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedGradientFills.  # noqa: E501
-
-
-        :return: The user_modified of this SharedGradientFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedGradientFills.
-
-
-        :param user_modified: The user_modified of this SharedGradientFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

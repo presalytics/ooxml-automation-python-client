@@ -37,19 +37,10 @@ class SharedSolidFills(object):
         'is_user_color': 'bool',
         'color_type_id': 'int',
         'fill_map_id': 'str',
-        'parent_fill_map': 'object',
-        'color_transformations': 'object',
         'parent_line_id': 'str',
-        'parent_line': 'object',
         'parent_text_id': 'str',
-        'parent_text': 'object',
         'parent_gradient_stop_id': 'str',
-        'parent_gradient_stop': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
@@ -57,22 +48,13 @@ class SharedSolidFills(object):
         'is_user_color': 'isUserColor',
         'color_type_id': 'colorTypeId',
         'fill_map_id': 'fillMapId',
-        'parent_fill_map': 'parentFillMap',
-        'color_transformations': 'colorTransformations',
         'parent_line_id': 'parentLineId',
-        'parent_line': 'parentLine',
         'parent_text_id': 'parentTextId',
-        'parent_text': 'parentText',
         'parent_gradient_stop_id': 'parentGradientStopId',
-        'parent_gradient_stop': 'parentGradientStop',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, hex_value=None, is_user_color=None, color_type_id=None, fill_map_id=None, parent_fill_map=None, color_transformations=None, parent_line_id=None, parent_line=None, parent_text_id=None, parent_text=None, parent_gradient_stop_id=None, parent_gradient_stop=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, hex_value=None, is_user_color=None, color_type_id=None, fill_map_id=None, parent_line_id=None, parent_text_id=None, parent_gradient_stop_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedSolidFills - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -82,19 +64,10 @@ class SharedSolidFills(object):
         self._is_user_color = None
         self._color_type_id = None
         self._fill_map_id = None
-        self._parent_fill_map = None
-        self._color_transformations = None
         self._parent_line_id = None
-        self._parent_line = None
         self._parent_text_id = None
-        self._parent_text = None
         self._parent_gradient_stop_id = None
-        self._parent_gradient_stop = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.hex_value = hex_value
@@ -102,29 +75,11 @@ class SharedSolidFills(object):
             self.is_user_color = is_user_color
         self.color_type_id = color_type_id
         self.fill_map_id = fill_map_id
-        if parent_fill_map is not None:
-            self.parent_fill_map = parent_fill_map
-        if color_transformations is not None:
-            self.color_transformations = color_transformations
         self.parent_line_id = parent_line_id
-        if parent_line is not None:
-            self.parent_line = parent_line
         self.parent_text_id = parent_text_id
-        if parent_text is not None:
-            self.parent_text = parent_text
         self.parent_gradient_stop_id = parent_gradient_stop_id
-        if parent_gradient_stop is not None:
-            self.parent_gradient_stop = parent_gradient_stop
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def hex_value(self):
@@ -211,48 +166,6 @@ class SharedSolidFills(object):
         self._fill_map_id = fill_map_id
 
     @property
-    def parent_fill_map(self):
-        """Gets the parent_fill_map of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The parent_fill_map of this SharedSolidFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_fill_map
-
-    @parent_fill_map.setter
-    def parent_fill_map(self, parent_fill_map):
-        """Sets the parent_fill_map of this SharedSolidFills.
-
-
-        :param parent_fill_map: The parent_fill_map of this SharedSolidFills.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_fill_map = parent_fill_map
-
-    @property
-    def color_transformations(self):
-        """Gets the color_transformations of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The color_transformations of this SharedSolidFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._color_transformations
-
-    @color_transformations.setter
-    def color_transformations(self, color_transformations):
-        """Sets the color_transformations of this SharedSolidFills.
-
-
-        :param color_transformations: The color_transformations of this SharedSolidFills.  # noqa: E501
-        :type: object
-        """
-
-        self._color_transformations = color_transformations
-
-    @property
     def parent_line_id(self):
         """Gets the parent_line_id of this SharedSolidFills.  # noqa: E501
 
@@ -272,27 +185,6 @@ class SharedSolidFills(object):
         """
 
         self._parent_line_id = parent_line_id
-
-    @property
-    def parent_line(self):
-        """Gets the parent_line of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The parent_line of this SharedSolidFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_line
-
-    @parent_line.setter
-    def parent_line(self, parent_line):
-        """Sets the parent_line of this SharedSolidFills.
-
-
-        :param parent_line: The parent_line of this SharedSolidFills.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_line = parent_line
 
     @property
     def parent_text_id(self):
@@ -316,27 +208,6 @@ class SharedSolidFills(object):
         self._parent_text_id = parent_text_id
 
     @property
-    def parent_text(self):
-        """Gets the parent_text of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The parent_text of this SharedSolidFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_text
-
-    @parent_text.setter
-    def parent_text(self, parent_text):
-        """Sets the parent_text of this SharedSolidFills.
-
-
-        :param parent_text: The parent_text of this SharedSolidFills.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_text = parent_text
-
-    @property
     def parent_gradient_stop_id(self):
         """Gets the parent_gradient_stop_id of this SharedSolidFills.  # noqa: E501
 
@@ -358,27 +229,6 @@ class SharedSolidFills(object):
         self._parent_gradient_stop_id = parent_gradient_stop_id
 
     @property
-    def parent_gradient_stop(self):
-        """Gets the parent_gradient_stop of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The parent_gradient_stop of this SharedSolidFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_gradient_stop
-
-    @parent_gradient_stop.setter
-    def parent_gradient_stop(self, parent_gradient_stop):
-        """Sets the parent_gradient_stop of this SharedSolidFills.
-
-
-        :param parent_gradient_stop: The parent_gradient_stop of this SharedSolidFills.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_gradient_stop = parent_gradient_stop
-
-    @property
     def id(self):
         """Gets the id of this SharedSolidFills.  # noqa: E501
 
@@ -398,90 +248,6 @@ class SharedSolidFills(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The date_created of this SharedSolidFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedSolidFills.
-
-
-        :param date_created: The date_created of this SharedSolidFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The user_created of this SharedSolidFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedSolidFills.
-
-
-        :param user_created: The user_created of this SharedSolidFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The date_modified of this SharedSolidFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedSolidFills.
-
-
-        :param date_modified: The date_modified of this SharedSolidFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedSolidFills.  # noqa: E501
-
-
-        :return: The user_modified of this SharedSolidFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedSolidFills.
-
-
-        :param user_modified: The user_modified of this SharedSolidFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

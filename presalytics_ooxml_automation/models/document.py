@@ -39,17 +39,7 @@ class Document(object):
         'document_type_id': 'int',
         'blob_location': 'str',
         'table_styles_xml_blob_url': 'str',
-        'title': 'str',
-        'slides': 'object',
-        'base_element_blob_url': 'str',
-        'changed_base_element_blob_url': 'str',
-        'package_uri': 'str',
-        'name': 'str',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'title': 'str'
     }
 
     attribute_map = {
@@ -59,20 +49,10 @@ class Document(object):
         'document_type_id': 'documentTypeId',
         'blob_location': 'blobLocation',
         'table_styles_xml_blob_url': 'tableStylesXmlBlobUrl',
-        'title': 'title',
-        'slides': 'slides',
-        'base_element_blob_url': 'baseElementBlobUrl',
-        'changed_base_element_blob_url': 'changedBaseElementBlobUrl',
-        'package_uri': 'packageUri',
-        'name': 'name',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'title': 'title'
     }
 
-    def __init__(self, story_id=None, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, title=None, slides=None, base_element_blob_url=None, changed_base_element_blob_url=None, package_uri=None, name=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, story_id=None, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, title=None, local_vars_configuration=None):  # noqa: E501
         """Document - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -85,16 +65,6 @@ class Document(object):
         self._blob_location = None
         self._table_styles_xml_blob_url = None
         self._title = None
-        self._slides = None
-        self._base_element_blob_url = None
-        self._changed_base_element_blob_url = None
-        self._package_uri = None
-        self._name = None
-        self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         if story_id is not None:
@@ -107,21 +77,6 @@ class Document(object):
         self.blob_location = blob_location
         self.table_styles_xml_blob_url = table_styles_xml_blob_url
         self.title = title
-        self.slides = slides
-        self.base_element_blob_url = base_element_blob_url
-        self.changed_base_element_blob_url = changed_base_element_blob_url
-        self.package_uri = package_uri
-        self.name = name
-        if id is not None:
-            self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def story_id(self):
@@ -269,216 +224,6 @@ class Document(object):
         """
 
         self._title = title
-
-    @property
-    def slides(self):
-        """Gets the slides of this Document.  # noqa: E501
-
-
-        :return: The slides of this Document.  # noqa: E501
-        :rtype: object
-        """
-        return self._slides
-
-    @slides.setter
-    def slides(self, slides):
-        """Sets the slides of this Document.
-
-
-        :param slides: The slides of this Document.  # noqa: E501
-        :type: object
-        """
-
-        self._slides = slides
-
-    @property
-    def base_element_blob_url(self):
-        """Gets the base_element_blob_url of this Document.  # noqa: E501
-
-
-        :return: The base_element_blob_url of this Document.  # noqa: E501
-        :rtype: str
-        """
-        return self._base_element_blob_url
-
-    @base_element_blob_url.setter
-    def base_element_blob_url(self, base_element_blob_url):
-        """Sets the base_element_blob_url of this Document.
-
-
-        :param base_element_blob_url: The base_element_blob_url of this Document.  # noqa: E501
-        :type: str
-        """
-
-        self._base_element_blob_url = base_element_blob_url
-
-    @property
-    def changed_base_element_blob_url(self):
-        """Gets the changed_base_element_blob_url of this Document.  # noqa: E501
-
-
-        :return: The changed_base_element_blob_url of this Document.  # noqa: E501
-        :rtype: str
-        """
-        return self._changed_base_element_blob_url
-
-    @changed_base_element_blob_url.setter
-    def changed_base_element_blob_url(self, changed_base_element_blob_url):
-        """Sets the changed_base_element_blob_url of this Document.
-
-
-        :param changed_base_element_blob_url: The changed_base_element_blob_url of this Document.  # noqa: E501
-        :type: str
-        """
-
-        self._changed_base_element_blob_url = changed_base_element_blob_url
-
-    @property
-    def package_uri(self):
-        """Gets the package_uri of this Document.  # noqa: E501
-
-
-        :return: The package_uri of this Document.  # noqa: E501
-        :rtype: str
-        """
-        return self._package_uri
-
-    @package_uri.setter
-    def package_uri(self, package_uri):
-        """Sets the package_uri of this Document.
-
-
-        :param package_uri: The package_uri of this Document.  # noqa: E501
-        :type: str
-        """
-
-        self._package_uri = package_uri
-
-    @property
-    def name(self):
-        """Gets the name of this Document.  # noqa: E501
-
-
-        :return: The name of this Document.  # noqa: E501
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this Document.
-
-
-        :param name: The name of this Document.  # noqa: E501
-        :type: str
-        """
-
-        self._name = name
-
-    @property
-    def id(self):
-        """Gets the id of this Document.  # noqa: E501
-
-
-        :return: The id of this Document.  # noqa: E501
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Document.
-
-
-        :param id: The id of this Document.  # noqa: E501
-        :type: str
-        """
-
-        self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this Document.  # noqa: E501
-
-
-        :return: The date_created of this Document.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this Document.
-
-
-        :param date_created: The date_created of this Document.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this Document.  # noqa: E501
-
-
-        :return: The user_created of this Document.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this Document.
-
-
-        :param user_created: The user_created of this Document.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this Document.  # noqa: E501
-
-
-        :return: The date_modified of this Document.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this Document.
-
-
-        :param date_modified: The date_modified of this Document.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this Document.  # noqa: E501
-
-
-        :return: The user_modified of this Document.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this Document.
-
-
-        :param user_modified: The user_modified of this Document.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

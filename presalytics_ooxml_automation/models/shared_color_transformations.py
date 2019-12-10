@@ -34,60 +34,31 @@ class SharedColorTransformations(object):
     """
     openapi_types = {
         'name': 'str',
-        'color_transformation_attributes': 'object',
         'solid_fills_id': 'str',
-        'parent_solid_fill': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'color_transformation_attributes': 'colorTransformationAttributes',
         'solid_fills_id': 'solidFillsId',
-        'parent_solid_fill': 'parentSolidFill',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, name=None, color_transformation_attributes=None, solid_fills_id=None, parent_solid_fill=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, name=None, solid_fills_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedColorTransformations - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._name = None
-        self._color_transformation_attributes = None
         self._solid_fills_id = None
-        self._parent_solid_fill = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.name = name
-        self.color_transformation_attributes = color_transformation_attributes
         self.solid_fills_id = solid_fills_id
-        if parent_solid_fill is not None:
-            self.parent_solid_fill = parent_solid_fill
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def name(self):
@@ -111,27 +82,6 @@ class SharedColorTransformations(object):
         self._name = name
 
     @property
-    def color_transformation_attributes(self):
-        """Gets the color_transformation_attributes of this SharedColorTransformations.  # noqa: E501
-
-
-        :return: The color_transformation_attributes of this SharedColorTransformations.  # noqa: E501
-        :rtype: object
-        """
-        return self._color_transformation_attributes
-
-    @color_transformation_attributes.setter
-    def color_transformation_attributes(self, color_transformation_attributes):
-        """Sets the color_transformation_attributes of this SharedColorTransformations.
-
-
-        :param color_transformation_attributes: The color_transformation_attributes of this SharedColorTransformations.  # noqa: E501
-        :type: object
-        """
-
-        self._color_transformation_attributes = color_transformation_attributes
-
-    @property
     def solid_fills_id(self):
         """Gets the solid_fills_id of this SharedColorTransformations.  # noqa: E501
 
@@ -153,27 +103,6 @@ class SharedColorTransformations(object):
         self._solid_fills_id = solid_fills_id
 
     @property
-    def parent_solid_fill(self):
-        """Gets the parent_solid_fill of this SharedColorTransformations.  # noqa: E501
-
-
-        :return: The parent_solid_fill of this SharedColorTransformations.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_solid_fill
-
-    @parent_solid_fill.setter
-    def parent_solid_fill(self, parent_solid_fill):
-        """Sets the parent_solid_fill of this SharedColorTransformations.
-
-
-        :param parent_solid_fill: The parent_solid_fill of this SharedColorTransformations.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_solid_fill = parent_solid_fill
-
-    @property
     def id(self):
         """Gets the id of this SharedColorTransformations.  # noqa: E501
 
@@ -193,90 +122,6 @@ class SharedColorTransformations(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedColorTransformations.  # noqa: E501
-
-
-        :return: The date_created of this SharedColorTransformations.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedColorTransformations.
-
-
-        :param date_created: The date_created of this SharedColorTransformations.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedColorTransformations.  # noqa: E501
-
-
-        :return: The user_created of this SharedColorTransformations.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedColorTransformations.
-
-
-        :param user_created: The user_created of this SharedColorTransformations.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedColorTransformations.  # noqa: E501
-
-
-        :return: The date_modified of this SharedColorTransformations.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedColorTransformations.
-
-
-        :param date_modified: The date_modified of this SharedColorTransformations.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedColorTransformations.  # noqa: E501
-
-
-        :return: The user_modified of this SharedColorTransformations.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedColorTransformations.
-
-
-        :param user_modified: The user_modified of this SharedColorTransformations.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

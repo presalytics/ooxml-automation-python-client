@@ -34,62 +34,32 @@ class ThemeBackgroundFills(object):
     """
     openapi_types = {
         'theme_id': 'str',
-        'theme': 'object',
         'intensity_id': 'int',
-        'fill_map': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'theme_id': 'themeId',
-        'theme': 'theme',
         'intensity_id': 'intensityId',
-        'fill_map': 'fillMap',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, theme_id=None, theme=None, intensity_id=None, fill_map=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, theme_id=None, intensity_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ThemeBackgroundFills - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._theme_id = None
-        self._theme = None
         self._intensity_id = None
-        self._fill_map = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.theme_id = theme_id
-        if theme is not None:
-            self.theme = theme
         if intensity_id is not None:
             self.intensity_id = intensity_id
-        if fill_map is not None:
-            self.fill_map = fill_map
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def theme_id(self):
@@ -113,27 +83,6 @@ class ThemeBackgroundFills(object):
         self._theme_id = theme_id
 
     @property
-    def theme(self):
-        """Gets the theme of this ThemeBackgroundFills.  # noqa: E501
-
-
-        :return: The theme of this ThemeBackgroundFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._theme
-
-    @theme.setter
-    def theme(self, theme):
-        """Sets the theme of this ThemeBackgroundFills.
-
-
-        :param theme: The theme of this ThemeBackgroundFills.  # noqa: E501
-        :type: object
-        """
-
-        self._theme = theme
-
-    @property
     def intensity_id(self):
         """Gets the intensity_id of this ThemeBackgroundFills.  # noqa: E501
 
@@ -155,27 +104,6 @@ class ThemeBackgroundFills(object):
         self._intensity_id = intensity_id
 
     @property
-    def fill_map(self):
-        """Gets the fill_map of this ThemeBackgroundFills.  # noqa: E501
-
-
-        :return: The fill_map of this ThemeBackgroundFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._fill_map
-
-    @fill_map.setter
-    def fill_map(self, fill_map):
-        """Sets the fill_map of this ThemeBackgroundFills.
-
-
-        :param fill_map: The fill_map of this ThemeBackgroundFills.  # noqa: E501
-        :type: object
-        """
-
-        self._fill_map = fill_map
-
-    @property
     def id(self):
         """Gets the id of this ThemeBackgroundFills.  # noqa: E501
 
@@ -195,90 +123,6 @@ class ThemeBackgroundFills(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this ThemeBackgroundFills.  # noqa: E501
-
-
-        :return: The date_created of this ThemeBackgroundFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this ThemeBackgroundFills.
-
-
-        :param date_created: The date_created of this ThemeBackgroundFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this ThemeBackgroundFills.  # noqa: E501
-
-
-        :return: The user_created of this ThemeBackgroundFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this ThemeBackgroundFills.
-
-
-        :param user_created: The user_created of this ThemeBackgroundFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this ThemeBackgroundFills.  # noqa: E501
-
-
-        :return: The date_modified of this ThemeBackgroundFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this ThemeBackgroundFills.
-
-
-        :param date_modified: The date_modified of this ThemeBackgroundFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this ThemeBackgroundFills.  # noqa: E501
-
-
-        :return: The user_modified of this ThemeBackgroundFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this ThemeBackgroundFills.
-
-
-        :param user_modified: The user_modified of this ThemeBackgroundFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

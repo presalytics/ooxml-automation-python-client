@@ -33,125 +33,45 @@ class SlideGroupElements(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'shape_tree': 'object',
         'shape_tree_id': 'str',
         'parent_group_element_id': 'str',
-        'parent_group_element': 'object',
         'group_element_type_id': 'int',
         'group_element_type_pk': 'str',
-        'type_info': 'object',
-        'group': 'object',
-        'shape': 'object',
-        'connector': 'object',
-        'graphic': 'object',
         'ultimate_parent_shape_tree_id': 'str',
-        'child_group_elements': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
-        'shape_tree': 'shapeTree',
         'shape_tree_id': 'shapeTreeId',
         'parent_group_element_id': 'parentGroupElementId',
-        'parent_group_element': 'parentGroupElement',
         'group_element_type_id': 'groupElementTypeId',
         'group_element_type_pk': 'groupElementTypePk',
-        'type_info': 'typeInfo',
-        'group': 'group',
-        'shape': 'shape',
-        'connector': 'connector',
-        'graphic': 'graphic',
         'ultimate_parent_shape_tree_id': 'ultimateParentShapeTreeId',
-        'child_group_elements': 'childGroupElements',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, shape_tree=None, shape_tree_id=None, parent_group_element_id=None, parent_group_element=None, group_element_type_id=None, group_element_type_pk=None, type_info=None, group=None, shape=None, connector=None, graphic=None, ultimate_parent_shape_tree_id=None, child_group_elements=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, shape_tree_id=None, parent_group_element_id=None, group_element_type_id=None, group_element_type_pk=None, ultimate_parent_shape_tree_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SlideGroupElements - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._shape_tree = None
         self._shape_tree_id = None
         self._parent_group_element_id = None
-        self._parent_group_element = None
         self._group_element_type_id = None
         self._group_element_type_pk = None
-        self._type_info = None
-        self._group = None
-        self._shape = None
-        self._connector = None
-        self._graphic = None
         self._ultimate_parent_shape_tree_id = None
-        self._child_group_elements = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
-        if shape_tree is not None:
-            self.shape_tree = shape_tree
         self.shape_tree_id = shape_tree_id
         self.parent_group_element_id = parent_group_element_id
-        if parent_group_element is not None:
-            self.parent_group_element = parent_group_element
         if group_element_type_id is not None:
             self.group_element_type_id = group_element_type_id
         self.group_element_type_pk = group_element_type_pk
-        if type_info is not None:
-            self.type_info = type_info
-        if group is not None:
-            self.group = group
-        if shape is not None:
-            self.shape = shape
-        if connector is not None:
-            self.connector = connector
-        if graphic is not None:
-            self.graphic = graphic
         self.ultimate_parent_shape_tree_id = ultimate_parent_shape_tree_id
-        self.child_group_elements = child_group_elements
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
-
-    @property
-    def shape_tree(self):
-        """Gets the shape_tree of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The shape_tree of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._shape_tree
-
-    @shape_tree.setter
-    def shape_tree(self, shape_tree):
-        """Sets the shape_tree of this SlideGroupElements.
-
-
-        :param shape_tree: The shape_tree of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._shape_tree = shape_tree
 
     @property
     def shape_tree_id(self):
@@ -196,27 +116,6 @@ class SlideGroupElements(object):
         self._parent_group_element_id = parent_group_element_id
 
     @property
-    def parent_group_element(self):
-        """Gets the parent_group_element of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The parent_group_element of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_group_element
-
-    @parent_group_element.setter
-    def parent_group_element(self, parent_group_element):
-        """Sets the parent_group_element of this SlideGroupElements.
-
-
-        :param parent_group_element: The parent_group_element of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_group_element = parent_group_element
-
-    @property
     def group_element_type_id(self):
         """Gets the group_element_type_id of this SlideGroupElements.  # noqa: E501
 
@@ -259,111 +158,6 @@ class SlideGroupElements(object):
         self._group_element_type_pk = group_element_type_pk
 
     @property
-    def type_info(self):
-        """Gets the type_info of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The type_info of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._type_info
-
-    @type_info.setter
-    def type_info(self, type_info):
-        """Sets the type_info of this SlideGroupElements.
-
-
-        :param type_info: The type_info of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._type_info = type_info
-
-    @property
-    def group(self):
-        """Gets the group of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The group of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._group
-
-    @group.setter
-    def group(self, group):
-        """Sets the group of this SlideGroupElements.
-
-
-        :param group: The group of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._group = group
-
-    @property
-    def shape(self):
-        """Gets the shape of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The shape of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._shape
-
-    @shape.setter
-    def shape(self, shape):
-        """Sets the shape of this SlideGroupElements.
-
-
-        :param shape: The shape of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._shape = shape
-
-    @property
-    def connector(self):
-        """Gets the connector of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The connector of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._connector
-
-    @connector.setter
-    def connector(self, connector):
-        """Sets the connector of this SlideGroupElements.
-
-
-        :param connector: The connector of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._connector = connector
-
-    @property
-    def graphic(self):
-        """Gets the graphic of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The graphic of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._graphic
-
-    @graphic.setter
-    def graphic(self, graphic):
-        """Sets the graphic of this SlideGroupElements.
-
-
-        :param graphic: The graphic of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._graphic = graphic
-
-    @property
     def ultimate_parent_shape_tree_id(self):
         """Gets the ultimate_parent_shape_tree_id of this SlideGroupElements.  # noqa: E501
 
@@ -385,27 +179,6 @@ class SlideGroupElements(object):
         self._ultimate_parent_shape_tree_id = ultimate_parent_shape_tree_id
 
     @property
-    def child_group_elements(self):
-        """Gets the child_group_elements of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The child_group_elements of this SlideGroupElements.  # noqa: E501
-        :rtype: object
-        """
-        return self._child_group_elements
-
-    @child_group_elements.setter
-    def child_group_elements(self, child_group_elements):
-        """Sets the child_group_elements of this SlideGroupElements.
-
-
-        :param child_group_elements: The child_group_elements of this SlideGroupElements.  # noqa: E501
-        :type: object
-        """
-
-        self._child_group_elements = child_group_elements
-
-    @property
     def id(self):
         """Gets the id of this SlideGroupElements.  # noqa: E501
 
@@ -425,90 +198,6 @@ class SlideGroupElements(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The date_created of this SlideGroupElements.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SlideGroupElements.
-
-
-        :param date_created: The date_created of this SlideGroupElements.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The user_created of this SlideGroupElements.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SlideGroupElements.
-
-
-        :param user_created: The user_created of this SlideGroupElements.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The date_modified of this SlideGroupElements.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SlideGroupElements.
-
-
-        :param date_modified: The date_modified of this SlideGroupElements.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SlideGroupElements.  # noqa: E501
-
-
-        :return: The user_modified of this SlideGroupElements.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SlideGroupElements.
-
-
-        :param user_modified: The user_modified of this SlideGroupElements.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

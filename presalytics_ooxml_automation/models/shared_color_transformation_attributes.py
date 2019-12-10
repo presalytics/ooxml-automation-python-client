@@ -34,60 +34,35 @@ class SharedColorTransformationAttributes(object):
     """
     openapi_types = {
         'color_transformations_id': 'str',
-        'color_transformation': 'object',
         'name': 'str',
         'value': 'str',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'color_transformations_id': 'colorTransformationsId',
-        'color_transformation': 'colorTransformation',
         'name': 'name',
         'value': 'value',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, color_transformations_id=None, color_transformation=None, name=None, value=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, color_transformations_id=None, name=None, value=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedColorTransformationAttributes - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._color_transformations_id = None
-        self._color_transformation = None
         self._name = None
         self._value = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.color_transformations_id = color_transformations_id
-        if color_transformation is not None:
-            self.color_transformation = color_transformation
         self.name = name
         self.value = value
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def color_transformations_id(self):
@@ -109,27 +84,6 @@ class SharedColorTransformationAttributes(object):
         """
 
         self._color_transformations_id = color_transformations_id
-
-    @property
-    def color_transformation(self):
-        """Gets the color_transformation of this SharedColorTransformationAttributes.  # noqa: E501
-
-
-        :return: The color_transformation of this SharedColorTransformationAttributes.  # noqa: E501
-        :rtype: object
-        """
-        return self._color_transformation
-
-    @color_transformation.setter
-    def color_transformation(self, color_transformation):
-        """Sets the color_transformation of this SharedColorTransformationAttributes.
-
-
-        :param color_transformation: The color_transformation of this SharedColorTransformationAttributes.  # noqa: E501
-        :type: object
-        """
-
-        self._color_transformation = color_transformation
 
     @property
     def name(self):
@@ -193,90 +147,6 @@ class SharedColorTransformationAttributes(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedColorTransformationAttributes.  # noqa: E501
-
-
-        :return: The date_created of this SharedColorTransformationAttributes.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedColorTransformationAttributes.
-
-
-        :param date_created: The date_created of this SharedColorTransformationAttributes.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedColorTransformationAttributes.  # noqa: E501
-
-
-        :return: The user_created of this SharedColorTransformationAttributes.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedColorTransformationAttributes.
-
-
-        :param user_created: The user_created of this SharedColorTransformationAttributes.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedColorTransformationAttributes.  # noqa: E501
-
-
-        :return: The date_modified of this SharedColorTransformationAttributes.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedColorTransformationAttributes.
-
-
-        :param date_modified: The date_modified of this SharedColorTransformationAttributes.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedColorTransformationAttributes.  # noqa: E501
-
-
-        :return: The user_modified of this SharedColorTransformationAttributes.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedColorTransformationAttributes.
-
-
-        :param user_modified: The user_modified of this SharedColorTransformationAttributes.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

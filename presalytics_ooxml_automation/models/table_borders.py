@@ -34,82 +34,27 @@ class TableBorders(object):
     """
     openapi_types = {
         'cell_id': 'str',
-        'cell': 'object',
-        'top': 'object',
-        'bottom': 'object',
-        'right': 'object',
-        'left': 'object',
-        't_lto_br': 'object',
-        'b_lto_tr': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'cell_id': 'cellId',
-        'cell': 'cell',
-        'top': 'top',
-        'bottom': 'bottom',
-        'right': 'right',
-        'left': 'left',
-        't_lto_br': 'tLtoBR',
-        'b_lto_tr': 'bLtoTR',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, cell_id=None, cell=None, top=None, bottom=None, right=None, left=None, t_lto_br=None, b_lto_tr=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, cell_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """TableBorders - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._cell_id = None
-        self._cell = None
-        self._top = None
-        self._bottom = None
-        self._right = None
-        self._left = None
-        self._t_lto_br = None
-        self._b_lto_tr = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.cell_id = cell_id
-        if cell is not None:
-            self.cell = cell
-        if top is not None:
-            self.top = top
-        if bottom is not None:
-            self.bottom = bottom
-        if right is not None:
-            self.right = right
-        if left is not None:
-            self.left = left
-        if t_lto_br is not None:
-            self.t_lto_br = t_lto_br
-        if b_lto_tr is not None:
-            self.b_lto_tr = b_lto_tr
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def cell_id(self):
@@ -133,153 +78,6 @@ class TableBorders(object):
         self._cell_id = cell_id
 
     @property
-    def cell(self):
-        """Gets the cell of this TableBorders.  # noqa: E501
-
-
-        :return: The cell of this TableBorders.  # noqa: E501
-        :rtype: object
-        """
-        return self._cell
-
-    @cell.setter
-    def cell(self, cell):
-        """Sets the cell of this TableBorders.
-
-
-        :param cell: The cell of this TableBorders.  # noqa: E501
-        :type: object
-        """
-
-        self._cell = cell
-
-    @property
-    def top(self):
-        """Gets the top of this TableBorders.  # noqa: E501
-
-
-        :return: The top of this TableBorders.  # noqa: E501
-        :rtype: object
-        """
-        return self._top
-
-    @top.setter
-    def top(self, top):
-        """Sets the top of this TableBorders.
-
-
-        :param top: The top of this TableBorders.  # noqa: E501
-        :type: object
-        """
-
-        self._top = top
-
-    @property
-    def bottom(self):
-        """Gets the bottom of this TableBorders.  # noqa: E501
-
-
-        :return: The bottom of this TableBorders.  # noqa: E501
-        :rtype: object
-        """
-        return self._bottom
-
-    @bottom.setter
-    def bottom(self, bottom):
-        """Sets the bottom of this TableBorders.
-
-
-        :param bottom: The bottom of this TableBorders.  # noqa: E501
-        :type: object
-        """
-
-        self._bottom = bottom
-
-    @property
-    def right(self):
-        """Gets the right of this TableBorders.  # noqa: E501
-
-
-        :return: The right of this TableBorders.  # noqa: E501
-        :rtype: object
-        """
-        return self._right
-
-    @right.setter
-    def right(self, right):
-        """Sets the right of this TableBorders.
-
-
-        :param right: The right of this TableBorders.  # noqa: E501
-        :type: object
-        """
-
-        self._right = right
-
-    @property
-    def left(self):
-        """Gets the left of this TableBorders.  # noqa: E501
-
-
-        :return: The left of this TableBorders.  # noqa: E501
-        :rtype: object
-        """
-        return self._left
-
-    @left.setter
-    def left(self, left):
-        """Sets the left of this TableBorders.
-
-
-        :param left: The left of this TableBorders.  # noqa: E501
-        :type: object
-        """
-
-        self._left = left
-
-    @property
-    def t_lto_br(self):
-        """Gets the t_lto_br of this TableBorders.  # noqa: E501
-
-
-        :return: The t_lto_br of this TableBorders.  # noqa: E501
-        :rtype: object
-        """
-        return self._t_lto_br
-
-    @t_lto_br.setter
-    def t_lto_br(self, t_lto_br):
-        """Sets the t_lto_br of this TableBorders.
-
-
-        :param t_lto_br: The t_lto_br of this TableBorders.  # noqa: E501
-        :type: object
-        """
-
-        self._t_lto_br = t_lto_br
-
-    @property
-    def b_lto_tr(self):
-        """Gets the b_lto_tr of this TableBorders.  # noqa: E501
-
-
-        :return: The b_lto_tr of this TableBorders.  # noqa: E501
-        :rtype: object
-        """
-        return self._b_lto_tr
-
-    @b_lto_tr.setter
-    def b_lto_tr(self, b_lto_tr):
-        """Sets the b_lto_tr of this TableBorders.
-
-
-        :param b_lto_tr: The b_lto_tr of this TableBorders.  # noqa: E501
-        :type: object
-        """
-
-        self._b_lto_tr = b_lto_tr
-
-    @property
     def id(self):
         """Gets the id of this TableBorders.  # noqa: E501
 
@@ -299,90 +97,6 @@ class TableBorders(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this TableBorders.  # noqa: E501
-
-
-        :return: The date_created of this TableBorders.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this TableBorders.
-
-
-        :param date_created: The date_created of this TableBorders.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this TableBorders.  # noqa: E501
-
-
-        :return: The user_created of this TableBorders.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this TableBorders.
-
-
-        :param user_created: The user_created of this TableBorders.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this TableBorders.  # noqa: E501
-
-
-        :return: The date_modified of this TableBorders.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this TableBorders.
-
-
-        :param date_modified: The date_modified of this TableBorders.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this TableBorders.  # noqa: E501
-
-
-        :return: The user_modified of this TableBorders.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this TableBorders.
-
-
-        :param user_modified: The user_modified of this TableBorders.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

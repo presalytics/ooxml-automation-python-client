@@ -34,87 +34,43 @@ class SharedTextContainer(object):
     """
     openapi_types = {
         'shape_id': 'str',
-        'parent_shape': 'object',
         'outer_xml': 'str',
-        'paragraphs': 'object',
         'axis_id': 'str',
-        'axis': 'object',
         'chart_id': 'str',
-        'chart': 'object',
         'table_cell_id': 'str',
-        'table_cell': 'object',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'shape_id': 'shapeId',
-        'parent_shape': 'parentShape',
         'outer_xml': 'outerXml',
-        'paragraphs': 'paragraphs',
         'axis_id': 'axisId',
-        'axis': 'axis',
         'chart_id': 'chartId',
-        'chart': 'chart',
         'table_cell_id': 'tableCellId',
-        'table_cell': 'tableCell',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, shape_id=None, parent_shape=None, outer_xml=None, paragraphs=None, axis_id=None, axis=None, chart_id=None, chart=None, table_cell_id=None, table_cell=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, shape_id=None, outer_xml=None, axis_id=None, chart_id=None, table_cell_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedTextContainer - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._shape_id = None
-        self._parent_shape = None
         self._outer_xml = None
-        self._paragraphs = None
         self._axis_id = None
-        self._axis = None
         self._chart_id = None
-        self._chart = None
         self._table_cell_id = None
-        self._table_cell = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.shape_id = shape_id
-        if parent_shape is not None:
-            self.parent_shape = parent_shape
         self.outer_xml = outer_xml
-        self.paragraphs = paragraphs
         self.axis_id = axis_id
-        if axis is not None:
-            self.axis = axis
         self.chart_id = chart_id
-        if chart is not None:
-            self.chart = chart
         self.table_cell_id = table_cell_id
-        if table_cell is not None:
-            self.table_cell = table_cell
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def shape_id(self):
@@ -138,27 +94,6 @@ class SharedTextContainer(object):
         self._shape_id = shape_id
 
     @property
-    def parent_shape(self):
-        """Gets the parent_shape of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The parent_shape of this SharedTextContainer.  # noqa: E501
-        :rtype: object
-        """
-        return self._parent_shape
-
-    @parent_shape.setter
-    def parent_shape(self, parent_shape):
-        """Sets the parent_shape of this SharedTextContainer.
-
-
-        :param parent_shape: The parent_shape of this SharedTextContainer.  # noqa: E501
-        :type: object
-        """
-
-        self._parent_shape = parent_shape
-
-    @property
     def outer_xml(self):
         """Gets the outer_xml of this SharedTextContainer.  # noqa: E501
 
@@ -178,27 +113,6 @@ class SharedTextContainer(object):
         """
 
         self._outer_xml = outer_xml
-
-    @property
-    def paragraphs(self):
-        """Gets the paragraphs of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The paragraphs of this SharedTextContainer.  # noqa: E501
-        :rtype: object
-        """
-        return self._paragraphs
-
-    @paragraphs.setter
-    def paragraphs(self, paragraphs):
-        """Sets the paragraphs of this SharedTextContainer.
-
-
-        :param paragraphs: The paragraphs of this SharedTextContainer.  # noqa: E501
-        :type: object
-        """
-
-        self._paragraphs = paragraphs
 
     @property
     def axis_id(self):
@@ -222,27 +136,6 @@ class SharedTextContainer(object):
         self._axis_id = axis_id
 
     @property
-    def axis(self):
-        """Gets the axis of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The axis of this SharedTextContainer.  # noqa: E501
-        :rtype: object
-        """
-        return self._axis
-
-    @axis.setter
-    def axis(self, axis):
-        """Sets the axis of this SharedTextContainer.
-
-
-        :param axis: The axis of this SharedTextContainer.  # noqa: E501
-        :type: object
-        """
-
-        self._axis = axis
-
-    @property
     def chart_id(self):
         """Gets the chart_id of this SharedTextContainer.  # noqa: E501
 
@@ -262,27 +155,6 @@ class SharedTextContainer(object):
         """
 
         self._chart_id = chart_id
-
-    @property
-    def chart(self):
-        """Gets the chart of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The chart of this SharedTextContainer.  # noqa: E501
-        :rtype: object
-        """
-        return self._chart
-
-    @chart.setter
-    def chart(self, chart):
-        """Sets the chart of this SharedTextContainer.
-
-
-        :param chart: The chart of this SharedTextContainer.  # noqa: E501
-        :type: object
-        """
-
-        self._chart = chart
 
     @property
     def table_cell_id(self):
@@ -306,27 +178,6 @@ class SharedTextContainer(object):
         self._table_cell_id = table_cell_id
 
     @property
-    def table_cell(self):
-        """Gets the table_cell of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The table_cell of this SharedTextContainer.  # noqa: E501
-        :rtype: object
-        """
-        return self._table_cell
-
-    @table_cell.setter
-    def table_cell(self, table_cell):
-        """Sets the table_cell of this SharedTextContainer.
-
-
-        :param table_cell: The table_cell of this SharedTextContainer.  # noqa: E501
-        :type: object
-        """
-
-        self._table_cell = table_cell
-
-    @property
     def id(self):
         """Gets the id of this SharedTextContainer.  # noqa: E501
 
@@ -346,90 +197,6 @@ class SharedTextContainer(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The date_created of this SharedTextContainer.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedTextContainer.
-
-
-        :param date_created: The date_created of this SharedTextContainer.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The user_created of this SharedTextContainer.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedTextContainer.
-
-
-        :param user_created: The user_created of this SharedTextContainer.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The date_modified of this SharedTextContainer.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedTextContainer.
-
-
-        :param date_modified: The date_modified of this SharedTextContainer.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedTextContainer.  # noqa: E501
-
-
-        :return: The user_modified of this SharedTextContainer.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedTextContainer.
-
-
-        :param user_modified: The user_modified of this SharedTextContainer.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

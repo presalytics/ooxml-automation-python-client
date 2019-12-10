@@ -34,8 +34,6 @@ class SharedImageFills(object):
     """
     openapi_types = {
         'fill_map_id': 'str',
-        'fill_map': 'object',
-        'picture': 'object',
         'compression_state': 'str',
         'stretch': 'bool',
         'tile': 'str',
@@ -43,17 +41,11 @@ class SharedImageFills(object):
         'source_rectangle': 'str',
         'dpi': 'int',
         'effects_json': 'str',
-        'id': 'str',
-        'date_created': 'datetime',
-        'user_created': 'str',
-        'date_modified': 'datetime',
-        'user_modified': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'fill_map_id': 'fillMapId',
-        'fill_map': 'fillMap',
-        'picture': 'picture',
         'compression_state': 'compressionState',
         'stretch': 'stretch',
         'tile': 'tile',
@@ -61,22 +53,16 @@ class SharedImageFills(object):
         'source_rectangle': 'sourceRectangle',
         'dpi': 'dpi',
         'effects_json': 'effectsJson',
-        'id': 'id',
-        'date_created': 'dateCreated',
-        'user_created': 'userCreated',
-        'date_modified': 'dateModified',
-        'user_modified': 'userModified'
+        'id': 'id'
     }
 
-    def __init__(self, fill_map_id=None, fill_map=None, picture=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, dpi=None, effects_json=None, id=None, date_created=None, user_created=None, date_modified=None, user_modified=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, fill_map_id=None, compression_state=None, stretch=None, tile=None, rotate_with_shape=None, source_rectangle=None, dpi=None, effects_json=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedImageFills - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._fill_map_id = None
-        self._fill_map = None
-        self._picture = None
         self._compression_state = None
         self._stretch = None
         self._tile = None
@@ -85,17 +71,9 @@ class SharedImageFills(object):
         self._dpi = None
         self._effects_json = None
         self._id = None
-        self._date_created = None
-        self._user_created = None
-        self._date_modified = None
-        self._user_modified = None
         self.discriminator = None
 
         self.fill_map_id = fill_map_id
-        if fill_map is not None:
-            self.fill_map = fill_map
-        if picture is not None:
-            self.picture = picture
         self.compression_state = compression_state
         if stretch is not None:
             self.stretch = stretch
@@ -107,14 +85,6 @@ class SharedImageFills(object):
         self.effects_json = effects_json
         if id is not None:
             self.id = id
-        if date_created is not None:
-            self.date_created = date_created
-        if user_created is not None:
-            self.user_created = user_created
-        if date_modified is not None:
-            self.date_modified = date_modified
-        if user_modified is not None:
-            self.user_modified = user_modified
 
     @property
     def fill_map_id(self):
@@ -136,48 +106,6 @@ class SharedImageFills(object):
         """
 
         self._fill_map_id = fill_map_id
-
-    @property
-    def fill_map(self):
-        """Gets the fill_map of this SharedImageFills.  # noqa: E501
-
-
-        :return: The fill_map of this SharedImageFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._fill_map
-
-    @fill_map.setter
-    def fill_map(self, fill_map):
-        """Sets the fill_map of this SharedImageFills.
-
-
-        :param fill_map: The fill_map of this SharedImageFills.  # noqa: E501
-        :type: object
-        """
-
-        self._fill_map = fill_map
-
-    @property
-    def picture(self):
-        """Gets the picture of this SharedImageFills.  # noqa: E501
-
-
-        :return: The picture of this SharedImageFills.  # noqa: E501
-        :rtype: object
-        """
-        return self._picture
-
-    @picture.setter
-    def picture(self, picture):
-        """Sets the picture of this SharedImageFills.
-
-
-        :param picture: The picture of this SharedImageFills.  # noqa: E501
-        :type: object
-        """
-
-        self._picture = picture
 
     @property
     def compression_state(self):
@@ -346,90 +274,6 @@ class SharedImageFills(object):
         """
 
         self._id = id
-
-    @property
-    def date_created(self):
-        """Gets the date_created of this SharedImageFills.  # noqa: E501
-
-
-        :return: The date_created of this SharedImageFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_created
-
-    @date_created.setter
-    def date_created(self, date_created):
-        """Sets the date_created of this SharedImageFills.
-
-
-        :param date_created: The date_created of this SharedImageFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_created = date_created
-
-    @property
-    def user_created(self):
-        """Gets the user_created of this SharedImageFills.  # noqa: E501
-
-
-        :return: The user_created of this SharedImageFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_created
-
-    @user_created.setter
-    def user_created(self, user_created):
-        """Sets the user_created of this SharedImageFills.
-
-
-        :param user_created: The user_created of this SharedImageFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_created = user_created
-
-    @property
-    def date_modified(self):
-        """Gets the date_modified of this SharedImageFills.  # noqa: E501
-
-
-        :return: The date_modified of this SharedImageFills.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._date_modified
-
-    @date_modified.setter
-    def date_modified(self, date_modified):
-        """Sets the date_modified of this SharedImageFills.
-
-
-        :param date_modified: The date_modified of this SharedImageFills.  # noqa: E501
-        :type: datetime
-        """
-
-        self._date_modified = date_modified
-
-    @property
-    def user_modified(self):
-        """Gets the user_modified of this SharedImageFills.  # noqa: E501
-
-
-        :return: The user_modified of this SharedImageFills.  # noqa: E501
-        :rtype: str
-        """
-        return self._user_modified
-
-    @user_modified.setter
-    def user_modified(self, user_modified):
-        """Sets the user_modified of this SharedImageFills.
-
-
-        :param user_modified: The user_modified of this SharedImageFills.  # noqa: E501
-        :type: str
-        """
-
-        self._user_modified = user_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""
