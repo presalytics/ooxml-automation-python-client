@@ -36,17 +36,19 @@ class SharedPictures(object):
         'graphics_id': 'str',
         'image_fills_id': 'str',
         'image_file_blob_url': 'str',
-        'file_extension': 'str'
+        'file_extension': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
         'graphics_id': 'graphicsId',
         'image_fills_id': 'imageFillsId',
         'image_file_blob_url': 'imageFileBlobUrl',
-        'file_extension': 'fileExtension'
+        'file_extension': 'fileExtension',
+        'id': 'id'
     }
 
-    def __init__(self, graphics_id=None, image_fills_id=None, image_file_blob_url=None, file_extension=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, graphics_id=None, image_fills_id=None, image_file_blob_url=None, file_extension=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SharedPictures - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -56,12 +58,15 @@ class SharedPictures(object):
         self._image_fills_id = None
         self._image_file_blob_url = None
         self._file_extension = None
+        self._id = None
         self.discriminator = None
 
         self.graphics_id = graphics_id
         self.image_fills_id = image_fills_id
         self.image_file_blob_url = image_file_blob_url
         self.file_extension = file_extension
+        if id is not None:
+            self.id = id
 
     @property
     def graphics_id(self):
@@ -146,6 +151,27 @@ class SharedPictures(object):
         """
 
         self._file_extension = file_extension
+
+    @property
+    def id(self):
+        """Gets the id of this SharedPictures.  # noqa: E501
+
+
+        :return: The id of this SharedPictures.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SharedPictures.
+
+
+        :param id: The id of this SharedPictures.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

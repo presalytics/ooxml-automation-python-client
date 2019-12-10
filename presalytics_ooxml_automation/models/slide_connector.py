@@ -48,7 +48,8 @@ class SlideConnector(object):
         'flip_horizontal': 'bool',
         'flip_vertical': 'bool',
         'rotation': 'int',
-        'hidden': 'bool'
+        'hidden': 'bool',
+        'id': 'str'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class SlideConnector(object):
         'flip_horizontal': 'flipHorizontal',
         'flip_vertical': 'flipVertical',
         'rotation': 'rotation',
-        'hidden': 'hidden'
+        'hidden': 'hidden',
+        'id': 'id'
     }
 
-    def __init__(self, start_connection_shape_id=None, start_connection_idx=None, end_connection_shape_id=None, end_connection_idx=None, group_elements_id=None, ooxml_id=None, svg_blob_url=None, preset_type_id=None, free_form_path_xml=None, is_theme_fill=None, is_theme_effect=None, is_theme_line=None, flip_horizontal=None, flip_vertical=None, rotation=None, hidden=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, start_connection_shape_id=None, start_connection_idx=None, end_connection_shape_id=None, end_connection_idx=None, group_elements_id=None, ooxml_id=None, svg_blob_url=None, preset_type_id=None, free_form_path_xml=None, is_theme_fill=None, is_theme_effect=None, is_theme_line=None, flip_horizontal=None, flip_vertical=None, rotation=None, hidden=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SlideConnector - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -92,6 +94,7 @@ class SlideConnector(object):
         self._flip_vertical = None
         self._rotation = None
         self._hidden = None
+        self._id = None
         self.discriminator = None
 
         self.start_connection_shape_id = start_connection_shape_id
@@ -120,6 +123,8 @@ class SlideConnector(object):
             self.rotation = rotation
         if hidden is not None:
             self.hidden = hidden
+        if id is not None:
+            self.id = id
 
     @property
     def start_connection_shape_id(self):
@@ -456,6 +461,27 @@ class SlideConnector(object):
         """
 
         self._hidden = hidden
+
+    @property
+    def id(self):
+        """Gets the id of this SlideConnector.  # noqa: E501
+
+
+        :return: The id of this SlideConnector.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SlideConnector.
+
+
+        :param id: The id of this SlideConnector.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

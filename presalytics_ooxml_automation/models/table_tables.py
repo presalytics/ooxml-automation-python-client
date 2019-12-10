@@ -36,17 +36,19 @@ class TableTables(object):
         'svg_blob_url': 'str',
         'has_style_part': 'bool',
         'style_part_outer_xml': 'str',
-        'parent_graphic_id': 'str'
+        'parent_graphic_id': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
         'svg_blob_url': 'svgBlobUrl',
         'has_style_part': 'hasStylePart',
         'style_part_outer_xml': 'stylePartOuterXml',
-        'parent_graphic_id': 'parentGraphicId'
+        'parent_graphic_id': 'parentGraphicId',
+        'id': 'id'
     }
 
-    def __init__(self, svg_blob_url=None, has_style_part=None, style_part_outer_xml=None, parent_graphic_id=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, svg_blob_url=None, has_style_part=None, style_part_outer_xml=None, parent_graphic_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """TableTables - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -56,6 +58,7 @@ class TableTables(object):
         self._has_style_part = None
         self._style_part_outer_xml = None
         self._parent_graphic_id = None
+        self._id = None
         self.discriminator = None
 
         self.svg_blob_url = svg_blob_url
@@ -63,6 +66,8 @@ class TableTables(object):
             self.has_style_part = has_style_part
         self.style_part_outer_xml = style_part_outer_xml
         self.parent_graphic_id = parent_graphic_id
+        if id is not None:
+            self.id = id
 
     @property
     def svg_blob_url(self):
@@ -147,6 +152,27 @@ class TableTables(object):
         """
 
         self._parent_graphic_id = parent_graphic_id
+
+    @property
+    def id(self):
+        """Gets the id of this TableTables.  # noqa: E501
+
+
+        :return: The id of this TableTables.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this TableTables.
+
+
+        :param id: The id of this TableTables.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

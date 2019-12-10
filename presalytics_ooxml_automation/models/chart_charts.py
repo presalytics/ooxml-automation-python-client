@@ -34,15 +34,17 @@ class ChartCharts(object):
     """
     openapi_types = {
         'parent_graphic_id': 'str',
-        'svg_blob_url': 'str'
+        'svg_blob_url': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
         'parent_graphic_id': 'parentGraphicId',
-        'svg_blob_url': 'svgBlobUrl'
+        'svg_blob_url': 'svgBlobUrl',
+        'id': 'id'
     }
 
-    def __init__(self, parent_graphic_id=None, svg_blob_url=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, parent_graphic_id=None, svg_blob_url=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ChartCharts - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -50,10 +52,13 @@ class ChartCharts(object):
 
         self._parent_graphic_id = None
         self._svg_blob_url = None
+        self._id = None
         self.discriminator = None
 
         self.parent_graphic_id = parent_graphic_id
         self.svg_blob_url = svg_blob_url
+        if id is not None:
+            self.id = id
 
     @property
     def parent_graphic_id(self):
@@ -96,6 +101,27 @@ class ChartCharts(object):
         """
 
         self._svg_blob_url = svg_blob_url
+
+    @property
+    def id(self):
+        """Gets the id of this ChartCharts.  # noqa: E501
+
+
+        :return: The id of this ChartCharts.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ChartCharts.
+
+
+        :param id: The id of this ChartCharts.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

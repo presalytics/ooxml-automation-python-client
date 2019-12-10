@@ -48,7 +48,8 @@ class SlideShape(object):
         'flip_horizontal': 'bool',
         'flip_vertical': 'bool',
         'rotation': 'int',
-        'hidden': 'bool'
+        'hidden': 'bool',
+        'id': 'str'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class SlideShape(object):
         'flip_horizontal': 'flipHorizontal',
         'flip_vertical': 'flipVertical',
         'rotation': 'rotation',
-        'hidden': 'hidden'
+        'hidden': 'hidden',
+        'id': 'id'
     }
 
-    def __init__(self, height=None, width=None, x_offset=None, y_offset=None, group_elements_id=None, ooxml_id=None, svg_blob_url=None, preset_type_id=None, free_form_path_xml=None, is_theme_fill=None, is_theme_effect=None, is_theme_line=None, flip_horizontal=None, flip_vertical=None, rotation=None, hidden=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, height=None, width=None, x_offset=None, y_offset=None, group_elements_id=None, ooxml_id=None, svg_blob_url=None, preset_type_id=None, free_form_path_xml=None, is_theme_fill=None, is_theme_effect=None, is_theme_line=None, flip_horizontal=None, flip_vertical=None, rotation=None, hidden=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SlideShape - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -92,6 +94,7 @@ class SlideShape(object):
         self._flip_vertical = None
         self._rotation = None
         self._hidden = None
+        self._id = None
         self.discriminator = None
 
         if height is not None:
@@ -122,6 +125,8 @@ class SlideShape(object):
             self.rotation = rotation
         if hidden is not None:
             self.hidden = hidden
+        if id is not None:
+            self.id = id
 
     @property
     def height(self):
@@ -458,6 +463,27 @@ class SlideShape(object):
         """
 
         self._hidden = hidden
+
+    @property
+    def id(self):
+        """Gets the id of this SlideShape.  # noqa: E501
+
+
+        :return: The id of this SlideShape.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SlideShape.
+
+
+        :param id: The id of this SlideShape.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

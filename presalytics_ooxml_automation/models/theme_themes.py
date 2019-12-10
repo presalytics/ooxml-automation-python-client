@@ -33,23 +33,28 @@ class ThemeThemes(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'slide_id': 'str'
+        'slide_id': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
-        'slide_id': 'slideId'
+        'slide_id': 'slideId',
+        'id': 'id'
     }
 
-    def __init__(self, slide_id=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, slide_id=None, id=None, local_vars_configuration=None):  # noqa: E501
         """ThemeThemes - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._slide_id = None
+        self._id = None
         self.discriminator = None
 
         self.slide_id = slide_id
+        if id is not None:
+            self.id = id
 
     @property
     def slide_id(self):
@@ -71,6 +76,27 @@ class ThemeThemes(object):
         """
 
         self._slide_id = slide_id
+
+    @property
+    def id(self):
+        """Gets the id of this ThemeThemes.  # noqa: E501
+
+
+        :return: The id of this ThemeThemes.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ThemeThemes.
+
+
+        :param id: The id of this ThemeThemes.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

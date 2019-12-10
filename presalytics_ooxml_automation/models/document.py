@@ -39,7 +39,8 @@ class Document(object):
         'document_type_id': 'int',
         'blob_location': 'str',
         'table_styles_xml_blob_url': 'str',
-        'title': 'str'
+        'title': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class Document(object):
         'document_type_id': 'documentTypeId',
         'blob_location': 'blobLocation',
         'table_styles_xml_blob_url': 'tableStylesXmlBlobUrl',
-        'title': 'title'
+        'title': 'title',
+        'id': 'id'
     }
 
-    def __init__(self, story_id=None, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, title=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, story_id=None, filename=None, owner_guid=None, document_type_id=None, blob_location=None, table_styles_xml_blob_url=None, title=None, id=None, local_vars_configuration=None):  # noqa: E501
         """Document - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -65,6 +67,7 @@ class Document(object):
         self._blob_location = None
         self._table_styles_xml_blob_url = None
         self._title = None
+        self._id = None
         self.discriminator = None
 
         if story_id is not None:
@@ -77,6 +80,8 @@ class Document(object):
         self.blob_location = blob_location
         self.table_styles_xml_blob_url = table_styles_xml_blob_url
         self.title = title
+        if id is not None:
+            self.id = id
 
     @property
     def story_id(self):
@@ -224,6 +229,27 @@ class Document(object):
         """
 
         self._title = title
+
+    @property
+    def id(self):
+        """Gets the id of this Document.  # noqa: E501
+
+
+        :return: The id of this Document.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Document.
+
+
+        :param id: The id of this Document.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,8 @@ class SlideSlides(object):
         'number': 'int',
         'ooxml_id': 'int',
         'svg_blob_url': 'str',
-        'slide_document_url': 'str'
+        'slide_document_url': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class SlideSlides(object):
         'number': 'number',
         'ooxml_id': 'ooxmlId',
         'svg_blob_url': 'svgBlobUrl',
-        'slide_document_url': 'slideDocumentUrl'
+        'slide_document_url': 'slideDocumentUrl',
+        'id': 'id'
     }
 
-    def __init__(self, document_id=None, number=None, ooxml_id=None, svg_blob_url=None, slide_document_url=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, document_id=None, number=None, ooxml_id=None, svg_blob_url=None, slide_document_url=None, id=None, local_vars_configuration=None):  # noqa: E501
         """SlideSlides - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -59,6 +61,7 @@ class SlideSlides(object):
         self._ooxml_id = None
         self._svg_blob_url = None
         self._slide_document_url = None
+        self._id = None
         self.discriminator = None
 
         self.document_id = document_id
@@ -68,6 +71,8 @@ class SlideSlides(object):
             self.ooxml_id = ooxml_id
         self.svg_blob_url = svg_blob_url
         self.slide_document_url = slide_document_url
+        if id is not None:
+            self.id = id
 
     @property
     def document_id(self):
@@ -173,6 +178,27 @@ class SlideSlides(object):
         """
 
         self._slide_document_url = slide_document_url
+
+    @property
+    def id(self):
+        """Gets the id of this SlideSlides.  # noqa: E501
+
+
+        :return: The id of this SlideSlides.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SlideSlides.
+
+
+        :param id: The id of this SlideSlides.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
